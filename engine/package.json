@@ -1,0 +1,30 @@
+{
+  "name": "breach-zero-cyber-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Code-rendered 9:16 cybersecurity short-video engine powered by Remotion 4",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "sync:episodes": "python3 ../scripts/sync_episode_registry.py",
+    "typecheck": "python3 ../scripts/sync_episode_registry.py && tsc --noEmit",
+    "uat:dom": "node scripts/uat-dom-audit.mjs",
+    "render:s01e01": "remotion render src/index.ts s01e01-forgotten-bucket ../renders/s01e01-forgotten-bucket.mp4",
+    "render:s01e02": "remotion render src/index.ts s01e02-crown-jewels ../renders/s01e02-crown-jewels.mp4",
+    "render:s01e03": "remotion render src/index.ts s01e03-lobby-printer-pivot ../renders/s01e03-lobby-printer-pivot.mp4",
+    "render:s01e04": "remotion render src/index.ts s01e04-automated-cmdb-shield ../renders/s01e04-automated-cmdb-shield.mp4",
+    "render:s02e01": "remotion render src/index.ts s02e01-the-100k-gamble ../renders/s02e01-the-100k-gamble.mp4",
+    "still:s01e01": "remotion still src/index.ts s01e01-forgotten-bucket ../renders/s01e01-preview-frame.png --frame=1575",
+    "still:s01e02": "remotion still src/index.ts s01e02-crown-jewels ../renders/s01e02-preview-frame.png --frame=1620"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.286",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.286"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5.7.3"
+  }
+}

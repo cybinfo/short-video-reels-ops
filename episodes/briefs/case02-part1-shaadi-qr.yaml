@@ -1,0 +1,36 @@
+id: s02e01-shaadi-qr-trap
+season: 2
+episodeNumber: 1
+part: 1
+title: "Shagun QR Ya Hotel Wi-Fi? Reception Par 8 Lakh Saaf!"
+cyberConcept: "Quishing (Malicious QR Sticker Overlay), Rogue Hotel Wi-Fi & Scanner Traps"
+caseTag: "HOTEL RECEPTION · 8 LAKH SAAF"
+realIncident:
+  incident: "RBI & MHA I4C 1930 Advisory (2024) Wedding Shagun QR Overlay & Rogue Public Wi-Fi UPI Fraud"
+  year: 2024
+  impact: "Fraudsters paste tampered UPI collect/APK QR stickers over venue Shagun standees or spoof reception Wi-Fi portals to drain wedding guests"
+  lesson: "Receiving Shagun never needs a UPI PIN, always verify merchant name before paying, avoid open hotel Wi-Fi for banking, and dial 1930 in the golden hour."
+scrollStopper:
+  badge: "RECEPTION ALERT · 10:15 PM"
+  text: "3 Mehmaano Ke A/c Se Rs 8,40,000 Saaf!"
+  tone: "danger"
+plates:
+  hookHero: "characters/case02-shaadi-qr.png"
+  hookSecondary: "characters/sharma-shock.png"
+  hookTertiary: "characters/kabir-closeup.png"
+  clueHero: "characters/case02-hotel-wifi.png"
+  clueSecondary: "characters/case02-smart-printer.png"
+  twistHero: "characters/handoff-shadow.png"
+  twistSecondary: "characters/kabir-investigating.png"
+  payoffHero: "characters/kabir-closeup.png"
+  payoffSecondary: "characters/kabir-investigating.png"
+beats:
+  hook: "Grand Hotel reception par dulha-dulhan muskura rahe the, tabhi teen mehmaano ke phone ek saath baje: Aath lakh chalis hazaar gayab! Shagun dete hi khaate khali ho gaye!"
+  escalation: "Hairaani ki baat thi ki kisi ne anjaan call nahi uthaya! Ek mehmaan ne Hotel Wi-Fi joda, doosre ne lobby printer par ID scan karwayi, aur teesre ne Shagun QR scan kiya!"
+  framework: "Jab Cyber Jasoos Kabir ne jaanch shuru ki, toh raaz gehra gaya. Theek das bajkar barah minute par lobby ke ek chhupe jaal ne chupke se UPI payment divert kar diya!"
+  micro_payoff: "Yaad rakhiye, paise lene ke liye UPI PIN kabhi nahi lagta, aur free Wi-Fi par bank app mat kholiye! Thagi hote hi 1930 milaiye, par hotel lobby ka jaal abhi zinda tha!"
+  cliffhanger_vote: "Shak ke ghere mein teen suraag hain: Hotel Reception Wi-Fi, Lobby Smart Printer, ya Shagun QR Standee! Asli jaal kaunsa hai? Neeche A, B, C comment kijiye, kyunki agle hi pal..."
+suspects:
+  - { key: A, name: "Hotel Reception Wi-Fi", role: "10:05 PM · Free Lounge", timestampBadge: "10:05 PM", clue: "Fake Captive Portal!", image: "characters/case02-hotel-wifi.png" }
+  - { key: B, name: "Lobby Smart Printer", role: "10:08 PM · ID Check-In", timestampBadge: "10:08 PM", clue: "Cached Guest IDs!", image: "characters/case02-smart-printer.png" }
+  - { key: C, name: "Shagun QR Standee", role: "10:12 PM · Stage Gate", timestampBadge: "10:12 PM", clue: "Sticker Par Fake QR!", image: "characters/case02-shaadi-qr.png" }

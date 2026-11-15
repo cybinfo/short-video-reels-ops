@@ -1,0 +1,180 @@
+{
+  "id": "s02e01-the-100k-gamble",
+  "season": 2,
+  "episode": 1,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Risk Assessment & Prioritization",
+  "episodeTitle": "The $100K CISO Gamble",
+  "companyName": "NovaPay",
+  "securityDomain": "Quantitative Risk Assessment (SLE, ARO & ALE)",
+  "realBreachParallel": {
+    "incident": "Target Payment Card Breach",
+    "year": 2013,
+    "impact": "$292M total breach cost and 40M payment cards compromised",
+    "lesson": "Chasing raw technical severity scores without business-impact prioritization leaves revenue-critical payment paths exposed."
+  },
+  "voiceConfig": {
+    "mode": "draft_say",
+    "engineLicense": "MACOS_DRAFT",
+    "audioFile": "episodes/s02-risk-assessment/s02e01-the-100k-gamble.wav",
+    "captionsFile": "episodes/s02-risk-assessment/s02e01-the-100k-gamble.captions.json",
+    "targetWpm": 165
+  },
+  "durationSeconds": 51,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Nine critical vulnerabilities flashed red at NovaPay—and patching the 9.8 score first nearly cost ten million dollars.",
+    "hookPattern": "contradiction_shock",
+    "previousVoteResult": {
+      "winningOption": "B",
+      "percentage": 64,
+      "outcomeVerdict": "64% shielded the CVSS 7.5 Checkout API first, while 29% fell straight into the CVSS 9.8 Cafeteria Server trap!"
+    }
+  },
+  "scriptSegments": [
+    {
+      "id": "s02e01-seg-01",
+      "startSec": 0,
+      "endSec": 4.5,
+      "phase": "hook",
+      "narration": "Nine critical vulnerabilities flashed red at NovaPay—and patching the 9.8 score first nearly cost ten million dollars.",
+      "highlightKeywords": ["Nine critical", "9.8 score", "nearly cost", "ten million dollars"]
+    },
+    {
+      "id": "s02e01-seg-02",
+      "startSec": 4.5,
+      "endSec": 15,
+      "phase": "escalation",
+      "narration": "Why? Because that 9.8 lived on an isolated cafeteria menu box holding zero customer data. Meanwhile, a 7.5 bug sat wide open on NovaPay's live ten-million-dollar payment checkout API.",
+      "highlightKeywords": ["cafeteria menu", "zero customer data", "7.5 bug", "payment checkout API"]
+    },
+    {
+      "id": "s02e01-seg-03",
+      "startSec": 15,
+      "endSec": 35,
+      "phase": "framework",
+      "narration": "CVSS measures technical severity, never business risk. Real CISOs prioritize using Likelihood times Business Impact, backed by Annualized Loss Expectancy: Single Loss Expectancy multiplied by Annual Rate of Occurrence. Spending $60K to eliminate a $4 million annual payment loss beats patching harmless 9.8s every time.",
+      "highlightKeywords": ["CVSS", "Likelihood times Business Impact", "Annualized Loss Expectancy", "$60K", "$4 million"]
+    },
+    {
+      "id": "s02e01-seg-04",
+      "startSec": 35,
+      "endSec": 43,
+      "phase": "micro_payoff",
+      "narration": "In 2013, Target suffered $292 million in breach costs after real payment-path threats drowned inside thousands of unprioritized security alerts.",
+      "highlightKeywords": ["Target", "$292 million", "payment-path", "unprioritized"]
+    },
+    {
+      "id": "s02e01-seg-05",
+      "startSec": 43,
+      "endSec": 51,
+      "phase": "cliffhanger_vote",
+      "narration": "You have $40K left and a risky legacy Fraud Engine costing $150K to rewrite. Mitigate, Transfer via Insurance, or Avoid? Vote now.",
+      "highlightKeywords": ["$40K left", "Fraud Engine", "Mitigate", "Transfer via Insurance", "Avoid"]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s02e01-sc-01",
+      "startSec": 0,
+      "endSec": 6,
+      "kind": "comment_spotlight",
+      "props": {
+        "optionPicked": "B",
+        "percentage": 64,
+        "voterQuote": "Ignore the 9.8 lunch server—a live exploit on the 7.5 Checkout API drains $10M by Friday!",
+        "verdictLabel": "64% BEAT THE CVSS 9.8 TRAP",
+        "verdictTone": "success"
+      }
+    },
+    {
+      "id": "s02e01-sc-02",
+      "startSec": 6,
+      "endSec": 15,
+      "kind": "breach_terminal",
+      "props": {
+        "windowTitle": "VULN SCANNER VS. EXPLOIT TELEMETRY",
+        "timestamp": "14:22:11 UTC",
+        "severity": "CRITICAL",
+        "metricBadge": "CVSS 9.8 DECOY VS 7.5 ACTIVE EXPLOIT",
+        "logLines": [
+          { "time": "14:22:01", "text": "CVE-MENU-98: CVSS 9.8 | Asset: Cafeteria-PDF | Data: $0", "level": "info" },
+          { "time": "14:22:06", "text": "CVE-PAY-75: CVSS 7.5 | Asset: Checkout-API | Rev: $10M/wk", "level": "alert" },
+          { "time": "14:22:11", "text": "THREAT_INTEL: Active PoC hitting Checkout-API token endpoint", "level": "alert" }
+        ]
+      }
+    },
+    {
+      "id": "s02e01-sc-03",
+      "startSec": 15,
+      "endSec": 28,
+      "kind": "risk_heatmap",
+      "props": {
+        "title": "NovaPay ALE Risk Matrix (ALE = SLE × ARO)",
+        "budgetAvailable": "$100,000 Friday CISO Budget",
+        "items": [
+          { "id": "r1", "asset": "Checkout API (CVSS 7.5)", "likelihood": 5, "impact": 5, "annualLoss": "$4.0M ALE", "fixCost": "$60K", "action": "MITIGATE" },
+          { "id": "r2", "asset": "Legacy Fraud Engine", "likelihood": 3, "impact": 4, "annualLoss": "$900K ALE", "fixCost": "$150K", "action": "TRANSFER" },
+          { "id": "r3", "asset": "Deprecated Partner FTP", "likelihood": 4, "impact": 3, "annualLoss": "$320K ALE", "fixCost": "$0 Kill", "action": "AVOID" },
+          { "id": "r4", "asset": "Cafeteria Menu (CVSS 9.8)", "likelihood": 2, "impact": 1, "annualLoss": "$500 ALE", "fixCost": "$15K", "action": "ACCEPT" }
+        ]
+      }
+    },
+    {
+      "id": "s02e01-sc-04",
+      "startSec": 28,
+      "endSec": 35,
+      "kind": "network_attack_graph",
+      "props": {
+        "title": "$60K Spent — $10M Checkout Revenue Shielded",
+        "subtitle": "$40K budget remains while Legacy Fraud Engine still carries $900K ALE",
+        "nodes": [
+          { "id": "botnet", "label": "Exploit Botnet", "sublabel": "CVE-PAY-75 Payload", "tier": "public", "compromised": true },
+          { "id": "checkout", "label": "Checkout API", "sublabel": "Patched + WAF ($60K)", "tier": "crown_jewel", "compromised": false },
+          { "id": "fraud-eng", "label": "Legacy Fraud Engine", "sublabel": "$150K Full Rewrite Needed", "tier": "restricted", "compromised": false }
+        ],
+        "edges": [
+          { "from": "botnet", "to": "checkout", "label": "Exploit Neutralized", "attackPath": false },
+          { "from": "botnet", "to": "fraud-eng", "label": "$900K Residual ALE", "attackPath": true }
+        ]
+      }
+    },
+    {
+      "id": "s02e01-sc-05",
+      "startSec": 35,
+      "endSec": 43,
+      "kind": "payoff_proof_card",
+      "props": {
+        "takeawayHeadline": "CVSS SEVERITY ≠ BUSINESS RISK",
+        "coreRule": "Prioritize fixes by ALE (Single Loss Expectancy × Annual Rate of Occurrence), not raw scanner scores.",
+        "realBreachName": "Target Payment Breach (2013)",
+        "realBreachStat": "$292M Breach Cost · 40M Cards Stolen",
+        "realBreachCause": "High-impact payment intrusion signals were buried beneath unprioritized alert volume & third-party gaps."
+      }
+    },
+    {
+      "id": "s02e01-sc-06",
+      "startSec": 43,
+      "endSec": 51,
+      "kind": "vote_cliffhanger",
+      "props": {
+        "crisisPrompt": "$40K budget left! NovaPay's Legacy Fraud Engine carries $900K ALE, and a full rewrite costs $150K. Your move?",
+        "countdownLabel": "BOARD MEETING IN 24 HOURS",
+        "options": [
+          { "key": "A", "label": "Mitigate Partially ($40K)", "detail": "Deploy strict rate-limits & WAF virtual patching" },
+          { "key": "B", "label": "Transfer Risk ($35K)", "detail": "Buy a $2M cyber insurance policy rider today" },
+          { "key": "C", "label": "Avoid Risk ($0 Spend)", "detail": "Shut down instant fraud scoring & freeze new signups" }
+        ],
+        "ctaLine": "Comment A, B, or C — Episode 2 reveals which CISO gamble survives the Board!",
+        "loopBridgeText": "Because earlier this morning..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "Season 2 Premiere! 64% of you saved NovaPay's Checkout API while 29% fell for the CVSS 9.8 Cafeteria Server decoy. Here is why CISOs rank bugs with ALE (SLE × ARO) instead of raw CVSS scores. You spent $60K saving $10M—now you have $40K left and a $900K risk on the Legacy Fraud Engine. Mitigate, Transfer, or Avoid? Vote A, B, or C!",
+    "youtubeShortsTitle": "The $100K CISO Gamble: Why Fixing a CVSS 9.8 Bug First Can Bankrupt You",
+    "linkedinPost": "A CVSS 9.8 vulnerability on a breakroom menu server is noise. A CVSS 7.5 with an active exploit on your $10M/week checkout API is an existential emergency.\n\nIn the Season 2 Premiere of BreachZero, we break down Quantitative Risk Assessment: Risk = Likelihood × Business Impact, grounded in ALE = SLE × ARO.\n\nAfter spending $60K to lock down Checkout, you have $40K left—and a Legacy Fraud Engine carrying $900K ALE that costs $150K to rewrite. How do you treat the risk before Friday's Board meeting: A) Partial Mitigation ($40K virtual patch), B) Risk Transfer ($35K cyber insurance rider), or C) Risk Avoidance (turn off instant signups)?",
+    "pinnedCommentVote": "YOU HAVE $40K LEFT BEFORE FRIDAY'S BOARD MEETING — Legacy Fraud Engine has $900K ALE ($150K rewrite cost). Pick your Risk Treatment:\nA = Mitigate ($40K virtual patch + rate limits)\nB = Transfer ($35K cyber insurance rider)\nC = Avoid ($0 — shut down instant signups)\nVote A, B, or C!",
+    "hashtags": ["#RiskAssessment", "#CVSS", "#CyberRisk", "#CISO", "#InfoSec", "#BreachZero"]
+  }
+}

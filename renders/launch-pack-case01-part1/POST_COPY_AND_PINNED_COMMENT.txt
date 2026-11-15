@@ -1,0 +1,71 @@
+CYBER JASOOS (@cyberjasoos) - CASE #01 PART 1 MAC + ANDROID LAUNCH PACK
+==========================================================================
+
+[1] ACCOUNT SIGNUP & PROFILE SETUP FIELDS
+-----------------------------------------
+Signup Email    : realcyberjasoos@gmail.com
+Primary Handle  : @cyberjasoos (enter: cyberjasoos - REGISTERED!)
+Fallback Handle : @thecyberjasoos / @realcyberjasoos
+Account Mode    : Professional -> Creator -> Reel creator (Show category on profile: UNCHECKED)
+2FA & Quality   : Authenticator App 2FA ON | Upload at highest quality: ON
+
+SEO Name (copy-paste, 26 chars, < 30 limit):
+Cyber Jasoos | Cyber Crime
+
+3-Line Bio (copy-paste, 119 chars, <= 150 limit):
+Asli Cyber Fraud Cases | 60s Rahasya
+Saboot Dekho - A, B ya C Gaddar Pehchano!
+5-Sec Suraksha Kavach | Cyber Help: 1930
+
+External Link-in-Bio:
+URL   : https://cybercrime.gov.in
+Title : Report Fraud: 1930 / cybercrime.gov.in
+
+Brand Assets in brand-and-cover/:
+- 01-profile-dp-1080x1080.png              -> Profile Picture (1080x1080)
+- 02-case01-part1-reel-cover-1080x1920.png -> Case #01 Part 1 Reel Cover (1080x1920)
+- 03-highlight-cases.png                   -> Story Highlight: Cases
+- 04-highlight-polls.png                   -> Story Highlight: Polls
+- 05-highlight-5s-kavach.png               -> Story Highlight: 5s Kavach
+- 06-highlight-1930-help.png               -> Story Highlight: 1930 Help
+
+[2] REEL CAPTION + HASHTAGS (COPY-PASTE BLOCK, <= 2200 CHARS)
+-------------------------------------------------------------
+Subah beti ki doli uthne wali thi, magar aadhi raat Sharma Ji ke pairon tale zameen khisak gayi - shaadi account se poore Rs 12 Lakh saaf! Phone shaam se Puja Ghar mein band rakha tha, na koi anjaan call aaya na link khula - par Cyber Jasoos ki jaanch mein khula ki sangeet ke shor mein theek 7:42 PM par kisi ne chupke se *21* call-forwarding lagayi, jisse bank ki saari IVR OTP calls chhat par chalu ek farzi SIM par jaa rahi thin! Shak ke ghere mein 3 apne hain: A) Pados Ka Golu (7:40 PM 2 minute phone maangkar phone off aur gayab), B) Ramu Kaka (7:42 PM Puja Ghar ke paas, jeb mein naye SIM ka packet), ya C) Pappu Chachu (5 Lakh maange, 11:25 PM chhat par chupke baat karte dikhe). Asli gaddar kaun hai? Neeche A, B, ya C comment kijiye!
+
+#CyberJasoos #AsliGaddarKaun #ShaadiMystery #HindiCrimeStory #OTPScamAlert #CyberSafetyIndia
+
+[3] FIRST COMMENT TO POST & PIN WITHIN 60s (COPY-PASTE BLOCK)
+-------------------------------------------------------------
+LIVE TRACE: CHORI KA SIM ABHI BHI GHAR KI CHHAT PAR CHALU HAI!
+A = Pados Ka Golu (7:40 PM 2 minute phone maangkar gayab, phone switched off)
+B = Ramu Kaka (7:42 PM Puja Ghar ke paas, jeb mein naye SIM ka packet)
+C = Pappu Chachu (5 Lakh udhaar maange, 11:25 PM chhat par chupke baat karte mile)
+Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!
+
+[4] STORY 3-OPTION POLL STICKER TEXT (NEVER USE QUIZ STICKER — QUIZ SPOILS ANSWER!)
+-----------------------------------------------------------------------------------
+Question : Rs 12 Lakh Shaadi Scam - Chhat Par Chhupa Gaddar Kaun?
+Options (<= 22 chars each, tap "Add another option" on POLL sticker):
+  Option 1 -> A: Pados Ka Golu  (16 chars)
+  Option 2 -> B: Ramu Kaka      (12 chars)
+  Option 3 -> C: Pappu Chachu   (15 chars)
+
+[5] 3 SOCRATIC HINGLISH VOTER REPLIES (T+5m..T+45m, ZERO SPOILERS)
+------------------------------------------------------------------
+Reply to Vote A (Pados Ka Golu):
+Golu ne 7:40 PM par phone zaroor liya aur ab uska number off hai, par live trace wala farzi SIM toh abhi bhi isi ghar ki chhat par chalu hai - phir chhat par kaun tha?
+
+Reply to Vote B (Ramu Kaka):
+Ramu Kaka theek 7:42 PM par Puja Ghar ke paas naye SIM packet ke saath mile, par raat 11:25 PM par chhat par chupke se baat kaun kar raha tha?
+
+Reply to Vote C (Pappu Chachu):
+Chachu ne 5 Lakh zaroor maange aur 11:25 PM par chhat par dikhe, par sangeet ke shor mein 7:40 PM par Sharma Ji ka phone 2 minute kisne liya tha?
+
+[6] TONIGHT'S 7:45 PM IST HYBRID LAUNCH CHECKLIST (85% MAC WEB + 15% ANDROID)
+-----------------------------------------------------------------------------
+[ ] T-5m (Mac Web Upload + 9:16 Crop): On Mac instagram.com, click "+ Create -> Post -> Select from computer", pick case01-part1-shaadi-12lakh-scam.mp4 (= 00-case01-part1-publish-ready.mp4), click the bottom-left Crop icon -> select "Original (9:16)" (CRITICAL!), click Next, and pick brand-and-cover/02-case01-part1-reel-cover-1080x1920.png as Cover photo.
+[ ] T-2m (Mac Web Caption): Paste Block [2] Reel Caption + Hashtags on Mac Web (toggle "Add AI label" under Advanced settings if shown on web).
+[ ] T+0m (Mac Web Publish -> 10s Android Pin & AI Label): Click Share at 7:45 PM IST on Mac Web and post Block [3] as your first comment from Mac. Open the Reel on your Android app: (1) long-press that comment -> tap the top thumbtack Pin icon; (2) tap 3-dots -> Edit -> toggle "Add AI label" ON -> Done.
+[ ] T+3m (Android Story 3-Option POLL Booster): In the Android app, tap Share -> Add to story, place the Block [4] 3-option POLL Sticker (NEVER Quiz Sticker, which flashes green and spoils Part 2!) clear of the Reel preview center, publish Story, and save to "Polls" + "Cases" Highlights.
+[ ] T+5m..T+45m (Mac Web Socratic Replies): Reply to early A, B, and C voter comments right from Mac instagram.com using Block [5] counter-clue questions.

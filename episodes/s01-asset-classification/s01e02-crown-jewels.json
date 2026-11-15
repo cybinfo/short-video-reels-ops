@@ -1,0 +1,698 @@
+{
+  "id": "s01e02-crown-jewels",
+  "season": 1,
+  "episode": 2,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Case #01: Shaadi Ke 12 Lakh Gayab",
+  "episodeTitle": "74% Logon Ne Pappu Chachu Ko Chor Maana — Par Asli Gaddar Nikla...",
+  "companyName": "CYBER JASOOS",
+  "visualTheme": "noir_cinema",
+  "coldOpenTag": "74% GALAT · ASLI GADDAR REVEAL",
+  "hudPartBadge": "PART 2/2",
+  "introSfx": {
+    "file": "sfx/shaadi-distant-intro.wav",
+    "durationSec": 3.6,
+    "volume": 0.24
+  },
+  "speakerLabels": {
+    "chachu": "PAPPU CHACHU · CALL AUDIO"
+  },
+  "securityDomain": "CYBER JASOOS · FINALE",
+  "realBreachParallel": {
+    "incident": "DoT Advisory (PIB Release ID 1995304, 11 Jan 2024) *#21# / ##002# Call-Forwarding Check & MHA I4C 1930 (cybercrime.gov.in)",
+    "year": 2024,
+    "impact": "Reporting unauthorized transfers on 1930 during the golden hour enables banks and I4C to place an immediate lien/hold on recipient accounts before funds are cashed out, while ##002# clears active GSM call-forwarding rules",
+    "lesson": "Dial *#21# in five seconds to inspect active voice-call and IVR OTP forwarding, dial ##002# to erase all forwarding rules, and call MHA I4C 1930 immediately in the golden hour to place a lien/hold before cash-out."
+  },
+  "voiceConfig": {
+    "mode": "edge_neural",
+    "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+    "edgeVoices": {
+      "narrator": "ur-IN-SalmanNeural",
+      "chachu": "hi-IN-MadhurNeural"
+    },
+    "edgeRates": {
+      "narrator": "+9%",
+      "chachu": "+2%"
+    },
+    "edgePitches": {
+      "narrator": "-3Hz",
+      "chachu": "-7Hz"
+    },
+    "edgeFormants": {
+      "narrator": 1.0,
+      "chachu": 0.91
+    },
+    "audioFile": "audio/s01e02-crown-jewels.wav",
+    "captionsFile": "audio/s01e02-crown-jewels.captions.json",
+    "targetWpm": 170
+  },
+  "durationSeconds": 56.14,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Chauhattar percent logon ne Pappu Chachu par shak kiya, par chhat ki asli baat suniye: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Aur Kaka ke paas dulhan ka SIM tha, asli gaddar pados ka Golu nikla!",
+    "hookPattern": "comment_callout",
+    "previousVoteResult": {
+      "winningOption": "C",
+      "percentage": 74,
+      "outcomeVerdict": "74% suspected Pappu Chachu after his terrace whisper and Rs 5 Lakh ask, while he was quietly pawning his own scooter to help Sharma Ji and Ramu Kaka carried the bride's new SIM — neighbor Golu (Option A), trapped in a fake loan snare, dialed *21* during his evening 2-minute phone excuse and hid the active red keypad phone behind the terrace water tank."
+    }
+  },
+  "scriptSegments": [
+    {
+      "id": "s01e02-seg-01",
+      "startSec": 0,
+      "endSec": 13.27,
+      "phase": "hook",
+      "speaker": "narrator",
+      "narration": "Chauhattar percent logon ne Pappu Chachu par shak kiya, par chhat ki asli baat suniye: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Aur Kaka ke paas dulhan ka SIM tha, asli gaddar pados ka Golu nikla!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.1,
+          "roman": "Chauhattar percent logon ne Pappu Chachu par shak kiya, par chhat ki asli baat suniye:",
+          "hi": "چوہتر پرسنٹ لوگوں نے پپو چاچو پر شک کیا، پر چھت کی اصلی بات سنیے،"
+        },
+        {
+          "speaker": "chachu",
+          "emotion": "phone_call",
+          "rate": "+2%",
+          "pitch": "-7Hz",
+          "pauseAfter": 0.12,
+          "roman": "Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai!",
+          "hi": "भैया मेरा स्कूटर गिरवी रख लो, सुबह भतीजी की डोली है!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.12,
+          "roman": "Aur Kaka ke paas dulhan ka SIM tha, asli gaddar pados ka Golu nikla!",
+          "hi": "اور کاکا کے پاس دلہن کا سم تھا، اصلی غدار پڑوس کا گولو نکلا!"
+        }
+      ],
+      "highlightKeywords": [
+        "Chauhattar percent",
+        "Pappu Chachu",
+        "scooter girvi",
+        "dulhan ka SIM",
+        "pados ka Golu"
+      ]
+    },
+    {
+      "id": "s01e02-seg-02",
+      "startSec": 13.27,
+      "endSec": 23.67,
+      "phase": "escalation",
+      "speaker": "narrator",
+      "narration": "Jab Cyber Jasoos chhat par pahuncha, toh paani ki tanki ke peeche chhupa laal phone chalu mila! Karz ke jaal mein phanse Golu ne shaam ko do minute phone maangkar star ikkis code lagaya tha!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-3Hz",
+          "breathBefore": true,
+          "pauseAfter": 0.1,
+          "roman": "Jab Cyber Jasoos chhat par pahuncha, toh paani ki tanki ke peeche chhupa laal phone chalu mila!",
+          "hi": "جب سائبر جاسوس چھت پر پہنچا، تو پانی کی ٹنکی کے پیچھے چھپا لال فون چالو ملا!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+14%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.12,
+          "roman": "Karz ke jaal mein phanse Golu ne shaam ko do minute phone maangkar star ikkis code lagaya tha!",
+          "hi": "قرض کے جال میں پھنسے گولو نے شام کو دو منٹ فون مانگ کر اسٹار اکیس کوڈ لگایا تھا!"
+        }
+      ],
+      "highlightKeywords": [
+        "Cyber Jasoos",
+        "paani ki tanki",
+        "laal phone",
+        "do minute phone",
+        "star ikkis"
+      ]
+    },
+    {
+      "id": "s01e02-seg-03",
+      "startSec": 23.67,
+      "endSec": 33.99,
+      "phase": "framework",
+      "speaker": "narrator",
+      "narration": "Aise chhupe jaal ko pakadne mein paanch second lagte hain. Abhi phone mein star hash 21 hash milakar chhupa jaal pakdiye, aur hash hash 002 hash se saara khel fauran mita dijiye!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.1,
+          "roman": "Aise chhupe jaal ko pakadne mein paanch second lagte hain.",
+          "hi": "ایسے چھپے جال کو پکڑنے میں پانچ سیکنڈ لگتے ہیں۔"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.12,
+          "roman": "Abhi phone mein star hash 21 hash milakar chhupa jaal pakdiye, aur hash hash 002 hash se saara khel fauran mita dijiye!",
+          "hi": "ابھی فون میں اسٹار ہیش اکیس ہیش ملا کر چھپا جال پکڑیے، اور ہیش ہیش زیرو زیرو دو ہیش سے سارا کھیل فوراً مٹا دیجئے!"
+        }
+      ],
+      "highlightKeywords": [
+        "paanch second",
+        "star hash 21 hash",
+        "chhupa jaal",
+        "hash hash 002 hash",
+        "fauran mita dijiye!"
+      ]
+    },
+    {
+      "id": "s01e02-seg-04",
+      "startSec": 33.99,
+      "endSec": 43.08,
+      "phase": "micro_payoff",
+      "speaker": "narrator",
+      "narration": "Subah beti ki doli uthne se pehle Cyber Helpline 1930 ne chori ki rakam bank mein hi rok li, aur Sharma Ji ke poore baarah lakh nikalne se pehle bacha liye!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+14%",
+          "pitch": "-3Hz",
+          "breathBefore": true,
+          "pauseAfter": 0.1,
+          "roman": "Subah beti ki doli uthne se pehle Cyber Helpline 1930 ne chori ki rakam bank mein hi rok li,",
+          "hi": "صبح بیٹی کی ڈولی اٹھنے سے پہلے سائبر ہیلپ لائن انیس سو تیس نے چوری کی رقم بینک میں ہی روک لی،"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.12,
+          "roman": "aur Sharma Ji ke poore baarah lakh nikalne se pehle bacha liye!",
+          "hi": "اور شرما جی کے پورے بارہ لاکھ نکلنے سے پہلے بچا لیے!"
+        }
+      ],
+      "highlightKeywords": [
+        "beti ki doli",
+        "1930",
+        "rakam",
+        "rok li,",
+        "baarah lakh",
+        "bacha liye!"
+      ]
+    },
+    {
+      "id": "s01e02-seg-05",
+      "startSec": 43.08,
+      "endSec": 56.14,
+      "phase": "cliffhanger_vote",
+      "speaker": "narrator",
+      "narration": "Ab Cyber Jasoos agla parda kahan uthaye: Hotel Wi-Fi, Daftaron ka Smart Printer, aur Shaadi ka Shagun QR? Comment mein A, B, C likhiye, kyunki nazar aane wala har shak sach nahi hota, jaise...",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.1,
+          "roman": "Ab Cyber Jasoos agla parda kahan uthaye: Hotel Wi-Fi, Daftaron ka Smart Printer, aur Shaadi ka Shagun QR?",
+          "hi": "اب سائبر جاسوس اگلا پردہ کہاں اٹھائے: ہوٹل وائی فائی، دفتروں کا اسمارٹ پرنٹر، اور شادی کا شگن کیو آر؟"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+15%",
+          "pitch": "-4Hz",
+          "pauseAfter": 0.12,
+          "roman": "Comment mein A, B, C likhiye, kyunki nazar aane wala har shak sach nahi hota, jaise...",
+          "hi": "کمنٹ میں اے، بی، سی لکھیے، کیونکہ نظر آنے والا ہر شک سچ نہیں ہوتا، جیسے"
+        }
+      ],
+      "highlightKeywords": [
+        "Cyber Jasoos",
+        "Hotel Wi-Fi,",
+        "Smart Printer,",
+        "Shagun QR?",
+        "A, B, C",
+        "sach nahi hota,"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01e02-sc-01",
+      "startSec": 0,
+      "endSec": 13.27,
+      "kind": "detective_crime_hook",
+      "sfxCues": [
+        {
+          "file": "sfx/noir-suspect-slam.wav",
+          "offsetRatio": 0.845,
+          "volume": 0.52
+        }
+      ],
+      "props": {
+        "caseBadge": "CASE #01 · FINALE",
+        "timeLabel": "RAAT 11:45 PM",
+        "locationLabel": "CHHAT KA SACH",
+        "phoneStatus": "74% Logon Ka Shak Galat Nikla!",
+        "bankAlertTitle": "ASLI GADDAR BE-NAQAAB!",
+        "amountLost": "PADOS KA GOLU (A)",
+        "mode": "suspect_unmask",
+        "cutRatios": [
+          0.684,
+          0.845
+        ],
+        "scrollStopper": {
+          "badge": "POLL RESULT · 74% VOTED C",
+          "text": "Pappu Chachu = NIRDOSH! Asli Raaz Khula",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "74% VOTED C · PAPPU CHACHU",
+          "SUSPECT B · RAMU KAKA",
+          "ASLI GADDAR BE-NAQAAB!"
+        ],
+        "shotTags": [
+          "SCOOTER GIRVI",
+          "DULHAN KA SIM",
+          "CAUGHT ON CHHAT!"
+        ],
+        "shotValues": [
+          "CHACHU = NIRDOSH!",
+          "KAKA = NIRDOSH!",
+          "PADOS KA GOLU (A)"
+        ],
+        "tertiaryImage": "characters/pappu-chachu.png",
+        "secondaryImage": "characters/ramu-kaka.png",
+        "heroImage": "characters/golu-caught-tanki.png",
+        "shockPills": [
+          "CHACHU NIRDOSH",
+          "KAKA NIRDOSH",
+          "GOLU PAKDA GAYA!"
+        ]
+      }
+    },
+    {
+      "id": "s01e02-sc-02",
+      "startSec": 13.27,
+      "endSec": 23.67,
+      "kind": "detective_wifi_clue",
+      "sfxCues": [
+        {
+          "file": "sfx/rooftop-wind-drip.wav",
+          "offsetFrames": 2,
+          "volume": 0.34
+        },
+        {
+          "file": "sfx/puja-phone-vibrate.wav",
+          "offsetRatio": 0.46,
+          "volume": 0.46
+        }
+      ],
+      "props": {
+        "lockedParallax": true,
+        "headline": "PAANI KI TANKI KE PEECHE LAAL PHONE!",
+        "subline": "7:40 PM · 2 Min Phone Bahana · *21* Code",
+        "heroImage": "characters/tanki-burner-phone.png",
+        "secondaryImage": "characters/golu-phone-dial.png",
+        "interceptBanner": {
+          "badge": "LIVE USSD LOG · *21* ACTIVE",
+          "text": "7:42 PM Voice-OTP Divert -> Chhat SIM",
+          "tone": "amber"
+        },
+        "devices": [
+          {
+            "name": "Pappu Chachu (11:25 PM)",
+            "status": "Chhat Par Scooter Girvi Ki Baat",
+            "suspicious": false
+          },
+          {
+            "name": "Ramu Kaka (7:42 PM)",
+            "status": "Dulhan Ke Naye SIM Ka Packet",
+            "suspicious": false
+          },
+          {
+            "name": "Golu (7:40 PM · 2 Min)",
+            "status": "7:42 PM PAR *21* CODE LAGAYA!",
+            "suspicious": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s01e02-sc-03",
+      "startSec": 23.67,
+      "endSec": 33.99,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/keypad-tap-seq.wav",
+          "offsetRatio": 0.14,
+          "volume": 0.4
+        },
+        {
+          "file": "sfx/ussd-dial-tones.wav",
+          "offsetRatio": 0.54,
+          "volume": 0.64
+        }
+      ],
+      "props": {
+        "variant": "cctv_backdoor",
+        "tone": "emerald",
+        "badge": "5 SECOND SURAKSHA KAVACH",
+        "headline": "Abhi *#21# Milakar Chhupa Jaal Pakdiye!",
+        "secondaryImage": "characters/kabir-investigating.png",
+        "heroImage": "characters/puja-otp-divert.png",
+        "stepOneTitle": "Dial *#21# (5 Sec Check)",
+        "stepOneTag": "CHHUPA JAAL PAKDIYE",
+        "stepTwoTitle": "Dial ##002# = Sab Mita Dein!",
+        "stepTwoTag": "SAARA JAAL MITA DEIN",
+        "ussdTilesStepOne": [
+          "*",
+          "#",
+          "2",
+          "1",
+          "#"
+        ],
+        "ussdTilesStepTwo": [
+          "#",
+          "#",
+          "0",
+          "0",
+          "2",
+          "#"
+        ],
+        "exposedItems": [
+          "*#21# Check",
+          "##002# Erase",
+          "1930 Helpline"
+        ]
+      }
+    },
+    {
+      "id": "s01e02-sc-04",
+      "startSec": 33.99,
+      "endSec": 43.08,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/dawn-temple-bell.wav",
+          "offsetFrames": 6,
+          "volume": 0.36
+        },
+        {
+          "file": "sfx/stamp-slam.wav",
+          "offsetRatio": 0.44,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "variant": "contact_match",
+        "tone": "emerald",
+        "badge": "HELPLINE 1930 · SUBAH DOLI SE PEHLE",
+        "headline": "1930 Ne Chori Ki Rakam Bank Mein Roki!",
+        "secondaryImage": "characters/shaadi-baraat-gate.png",
+        "heroImage": "characters/sharma-relief-dawn.png",
+        "crossedOutLabel": "GOLU KA *21* JAAL KHATAM",
+        "matchHeadline": "RS 12,00,000 BANK HOLD · PAISA BACH GAYA!",
+        "matchSubline": "Subah Doli Se Pehle 1930 Ne Chori Ki Rakam Freeze Karwayi",
+        "verdictPillLeft": "✓ 1930 GOLDEN-HOUR LIEN HOLD",
+        "verdictPillRight": "GOLDEN HOUR RECOVERY"
+      }
+    },
+    {
+      "id": "s01e02-sc-05",
+      "startSec": 43.08,
+      "endSec": 56.14,
+      "kind": "detective_suspect_board",
+      "props": {
+        "boardMode": "next_case_vote",
+        "prompt": "CASE #02: AGLA PARDA KAHAN?",
+        "partBadge": "CASE #02 KAL",
+        "spotlightRightBadge": "CASE #02 KAL",
+        "followHandleLine": "AGLA CASE DEKHNE KE LIYE FOLLOW @CYBERJASOOS",
+        "forensicClueBar": "CYBER JASOOS · NAYA SACHCHA CASE CHUNIYE!",
+        "suspects": [
+          {
+            "key": "A",
+            "name": "Hotel Wi-Fi",
+            "role": "Free Lounge Net",
+            "timestampBadge": "CASE A",
+            "clue": "Wi-Fi Se Bank Login Chori",
+            "image": "characters/case02-hotel-wifi.png"
+          },
+          {
+            "key": "B",
+            "name": "Smart Printer",
+            "role": "Office Scanner",
+            "timestampBadge": "CASE B",
+            "clue": "500 Aadhaar-PAN Leak",
+            "image": "characters/case02-smart-printer.png"
+          },
+          {
+            "key": "C",
+            "name": "Shagun QR Trap",
+            "role": "Shaadi Lifafa",
+            "timestampBadge": "CASE C",
+            "clue": "1 Scan Mein Khaata Saaf",
+            "image": "characters/case02-shaadi-qr.png"
+          }
+        ],
+        "optionTimingsSec": [
+          2.49,
+          3.579,
+          5.28
+        ],
+        "ctaLine": "Agla Case kaunsa kholein? A, B, C comment!",
+        "loopBridgeText": "Kyunki nazar aane wala har shak sach nahi hota, jaise..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "74% logon ne Pappu Chachu (Option C) par shak kiya — magar chhat par woh bechare apna scooter girvi rakhne ki baat kar rahe the, aur Ramu Kaka ki jeb mein dulhan ka naya SIM tha! Asli gaddar nikla Option A, Pados Ka Golu! Jab Cyber Jasoos chhat par pahuncha, toh paani ki tanki ke peeche chhupa laal keypad phone abhi bhi chalu mila. Farzi loan jaal mein phanse Golu ne shaam ko do minute phone maangkar *21* call-forwarding code lagaya tha. Abhi apne phone mein *#21# milakar chhupa call/IVR-OTP divert pakdiye aur ##002# se har khufiya divert fauran mita dijiye! Subah doli uthne se pehle Cyber Helpline 1930 ne chori ki rakam nikalne se pehle bank mein freeze/hold karwayi aur Sharma Ji ke poore Rs 12 Lakh bacha liye! Ab Cyber Jasoos agla parda kahan uthaye: A) Hotel Wi-Fi, B) Daftaron ka Smart Printer, ya C) Shaadi ka Shagun QR?",
+    "youtubeShortsTitle": "74% Logon Ne Pappu Chachu Ko Chor Maana — Par Asli Gaddar Nikla... #Shorts",
+    "linkedinPost": "Case #01 Finale — Cyber Jasoos:\n\n74% suspected Pappu Chachu on the terrace, who was quietly pawning his own scooter for his niece's wedding, while Ramu Kaka carried the bride's new SIM. When Cyber Jasoos inspected the terrace, the active red keypad phone was still hidden behind the water tank — neighbor Golu (trapped in a fake loan snare) had used a 2-minute phone excuse at 7:40 PM to dial *21* unconditional voice-call forwarding.\n\n5-Second Suraksha Kavach (DoT Advisory PIB Release ID 1995304, 11 Jan 2024 & MHA I4C 1930):\n1. Dial *#21# right now to detect hidden voice-call / Bank IVR OTP diverts.\n2. Dial ##002# to erase all unauthorized diverts immediately.\n3. Call 1930 in the golden hour — before dawn, 1930 placed an immediate lien/hold on the recipient bank account (chori ki rakam nikalne se pehle freeze/hold karwayi) before Sharma Ji's Rs 12,00,000 could be cashed out.\n\nCase #02 Vote: A) Hotel Wi-Fi, B) Office Smart Printer, or C) Wedding Shagun QR?",
+    "pinnedCommentVote": "74% LOGON KA SHAK GALAT NIKLA — CHACHU SCOOTER GIRVI RAKH RAHE THE, KAKA KE PAAS DULHAN KA NAYA SIM THA, ASLI GADDAR PADOS KA GOLU (A) NIKLA!\nPehle apne phone mein *#21# milakar chhupa divert pakdiye aur ##002# se fauran mita dijiye, phir bataiye Cyber Jasoos Case #02 kahan khole?\nA = Hotel Wi-Fi (CASE A · Free Lounge Net)\nB = Smart Printer (CASE B · Office Scanner)\nC = Shagun QR Trap (CASE C · Shaadi Lifafa)\nNeeche A, B, ya C comment kijiye!",
+    "hashtags": [
+      "#CyberJasoos",
+      "#AsliGaddarKaun",
+      "#ShaadiMystery",
+      "#LoanAppScam",
+      "#OTPDivertAlert",
+      "#1930Helpline"
+    ]
+  },
+  "pollBranches": {
+    "A": {
+      "episodeTitle": "{pct}% Logon Ne Sahi Pakda — Pados Ka Golu Hi Asli Gaddar Nikla!",
+      "coldOpenTag": "{pct}% SAHI · ASLI GADDAR REVEAL",
+      "outcomeVerdict": "{pct}% nailed Option A (Pados Ka Golu) from his 2-minute 7:40 PM phone excuse — while Pappu Chachu was quietly pawning his own scooter for his niece's wedding and Ramu Kaka carried the bride's new SIM!",
+      "openingLine": "{pct_word} percent logon ne bilkul sahi pakda! Chhat par Chachu toh bas yeh keh rahe the: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Aur Kaka ke paas dulhan ka SIM tha, asli gaddar Golu hi nikla!",
+      "seg01": {
+        "narration": "{pct_word} percent logon ne bilkul sahi pakda! Chhat par Chachu toh bas yeh keh rahe the: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Aur Kaka ke paas dulhan ka SIM tha, asli gaddar Golu hi nikla!",
+        "ttsClauses": [
+          {
+            "speaker": "narrator",
+            "rate": "+15%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.1,
+            "roman": "{pct_word} percent logon ne bilkul sahi pakda! Chhat par Chachu toh bas yeh keh rahe the:",
+            "hi": "{pct_urdu} پرسنٹ لوگوں نے بالکل صحیح پکڑا، چھت پر چاچو تو بس یہ کہہ رہے تھے،"
+          },
+          {
+            "speaker": "chachu",
+            "emotion": "phone_call",
+            "rate": "+2%",
+            "pitch": "-7Hz",
+            "pauseAfter": 0.12,
+            "roman": "Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai!",
+            "hi": "भैया मेरा स्कूटर गिरवी रख लो, सुबह भतीजी की डोली है!"
+          },
+          {
+            "speaker": "narrator",
+            "rate": "+15%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.12,
+            "roman": "Aur Kaka ke paas dulhan ka SIM tha, asli gaddar Golu hi nikla!",
+            "hi": "اور کاکا کے پاس دلہن کا سم تھا، اصلی غدار گولو ہی نکلا!"
+          }
+        ],
+        "highlightKeywords": [
+          "{pct_word} percent",
+          "sahi pakda!",
+          "scooter girvi",
+          "dulhan ka SIM",
+          "Golu hi nikla!"
+        ]
+      },
+      "scene01Props": {
+        "phoneStatus": "{pct}% Janta Ne Asli Chor Pakad Liya!",
+        "scrollStopper": {
+          "badge": "POLL RESULT · {pct}% VOTED A",
+          "text": "Sahi Nishana! Golu Hi Gaddar Nikla",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "CHACHU = NIRDOSH (SCOOTER)",
+          "KAKA = NIRDOSH (DULHAN SIM)",
+          "{pct}% VOTED A · GOLU CAUGHT!"
+        ]
+      },
+      "postCopy": {
+        "instagramCaption": "{pct}% logon ne bilkul sahi nishana lagaya — Option A, Pados Ka Golu hi asli gaddar nikla! Chhat par Pappu Chachu bhatiji ki shaadi ke liye apna scooter girvi rakh rahe the, aur Ramu Kaka ki jeb mein dulhan ka naya SIM tha. Abhi *#21# milakar chhupa call/IVR-OTP divert pakdiye aur ##002# se fauran mita dijiye! Agla Case: A) Hotel Wi-Fi, B) Smart Printer, ya C) Shagun QR?",
+        "youtubeShortsTitle": "{pct}% Logon Ne Sahi Pakda — Pados Ka Golu Hi Asli Gaddar Nikla! #Shorts",
+        "linkedinPost": "Case #01 Finale — Cyber Jasoos:\n\n{pct}% of viewers nailed Option A (Golu) from his 2-minute 7:40 PM phone excuse, while Pappu Chachu was pawning his scooter for his niece's wedding and Ramu Kaka held the bride's SIM.\n\nPer DoT Advisory (PIB Release ID 1995304, 11 Jan 2024) & MHA I4C 1930: dial *#21# to check active call forwarding, ##002# to erase it, and 1930 in the golden hour. Next case vote: A) Hotel Wi-Fi, B) Smart Printer, or C) Shagun QR?",
+        "pinnedCommentVote": "{pct}% LOGON NE BILKUL SAHI PAKDA — ASLI GADDAR PADOS KA GOLU (A) HI NIKLA!\nAbhi *#21# aur ##002# se apna phone surakshit kijiye, phir Case #02 chuniye:\nA = Hotel Wi-Fi (CASE A · Free Lounge Net)\nB = Smart Printer (CASE B · Office Scanner)\nC = Shagun QR Trap (CASE C · Shaadi Lifafa)\nNeeche A, B, ya C comment kijiye!",
+        "hashtags": [
+          "#CyberJasoos",
+          "#AsliGaddarKaun",
+          "#ShaadiMystery",
+          "#LoanAppScam",
+          "#OTPDivertAlert",
+          "#1930Helpline"
+        ]
+      }
+    },
+    "B": {
+      "episodeTitle": "{pct}% Logon Ne Ramu Kaka Ko Chor Maana — Par Asli Gaddar Nikla...",
+      "coldOpenTag": "{pct}% GALAT · ASLI GADDAR REVEAL",
+      "outcomeVerdict": "{pct}% suspected Ramu Kaka over the new SIM packet near the Puja room, while that SIM belonged to the bride and Pappu Chachu was pawning his scooter for his niece's wedding — neighbor Golu (Option A) dialed *21* at 7:42 PM and hid the active red phone behind the terrace tank.",
+      "openingLine": "{pct_word} percent logon ne Ramu Kaka par shak kiya, jabki unke paas dulhan ka SIM tha, aur Chachu bole: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Asli gaddar pados ka Golu nikla!",
+      "seg01": {
+        "narration": "{pct_word} percent logon ne Ramu Kaka par shak kiya, jabki unke paas dulhan ka SIM tha, aur Chachu bole: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Asli gaddar pados ka Golu nikla!",
+        "ttsClauses": [
+          {
+            "speaker": "narrator",
+            "rate": "+15%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.1,
+            "roman": "{pct_word} percent logon ne Ramu Kaka par shak kiya, jabki unke paas dulhan ka SIM tha, aur Chachu bole:",
+            "hi": "{pct_urdu} پرسنٹ لوگوں نے رامو کاکا پر شک کیا، جبکہ ان کے پاس دلہن کا سم تھا، اور چاچو بولے،"
+          },
+          {
+            "speaker": "chachu",
+            "emotion": "phone_call",
+            "rate": "+2%",
+            "pitch": "-7Hz",
+            "pauseAfter": 0.12,
+            "roman": "Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai!",
+            "hi": "भैया मेरा स्कूटर गिरवी रख लो, सुबह भतीजी की डोली है!"
+          },
+          {
+            "speaker": "narrator",
+            "rate": "+15%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.12,
+            "roman": "Asli gaddar pados ka Golu nikla!",
+            "hi": "اصلی غدار پڑوس کا گولو نکلا!"
+          }
+        ],
+        "highlightKeywords": [
+          "{pct_word} percent",
+          "Ramu Kaka",
+          "dulhan ka SIM",
+          "scooter girvi",
+          "pados ka Golu"
+        ]
+      },
+      "scene01Props": {
+        "phoneStatus": "{pct}% Logon Ka Shak Galat Nikla!",
+        "scrollStopper": {
+          "badge": "POLL RESULT · {pct}% VOTED B",
+          "text": "Ramu Kaka = NIRDOSH! Asli Raaz Khula",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "SUSPECT C · PAPPU CHACHU",
+          "{pct}% VOTED B · RAMU KAKA",
+          "ASLI GADDAR BE-NAQAAB!"
+        ]
+      },
+      "postCopy": {
+        "instagramCaption": "{pct}% logon ne Ramu Kaka (Option B) par shak kiya — magar unki jeb mein dulhan ka naya SIM tha, aur Pappu Chachu bhatiji ki shaadi ke liye apna scooter girvi rakh rahe the! Asli gaddar nikla Option A, Pados Ka Golu! Abhi *#21# milakar chhupa call/IVR-OTP divert pakdiye aur ##002# se fauran mita dijiye! Agla Case: A) Hotel Wi-Fi, B) Smart Printer, ya C) Shagun QR?",
+        "youtubeShortsTitle": "{pct}% Logon Ne Ramu Kaka Ko Chor Maana — Par Asli Gaddar Nikla... #Shorts",
+        "linkedinPost": "Case #01 Finale — Cyber Jasoos:\n\n{pct}% suspected Ramu Kaka over the SIM packet near the Puja room (which was the bride's new SIM), while Pappu Chachu was pawning his scooter. Neighbor Golu (Option A) had used a 2-minute phone excuse at 7:40 PM to dial *21*.\n\nPer DoT Advisory (PIB Release ID 1995304, 11 Jan 2024) & MHA I4C 1930: dial *#21# to check active call forwarding, ##002# to erase it, and 1930 in the golden hour. Next case vote: A) Hotel Wi-Fi, B) Smart Printer, or C) Shagun QR?",
+        "pinnedCommentVote": "{pct}% LOGON KA SHAK GALAT NIKLA — KAKA KE PAAS DULHAN KA NAYA SIM THA, CHACHU SCOOTER GIRVI RAKH RAHE THE, ASLI GADDAR PADOS KA GOLU (A) NIKLA!\nPehle *#21# aur ##002# dial kijiye, phir Case #02 chuniye:\nA = Hotel Wi-Fi (CASE A · Free Lounge Net)\nB = Smart Printer (CASE B · Office Scanner)\nC = Shagun QR Trap (CASE C · Shaadi Lifafa)\nNeeche A, B, ya C comment kijiye!",
+        "hashtags": [
+          "#CyberJasoos",
+          "#AsliGaddarKaun",
+          "#ShaadiMystery",
+          "#LoanAppScam",
+          "#OTPDivertAlert",
+          "#1930Helpline"
+        ]
+      }
+    },
+    "C": {
+      "episodeTitle": "{pct}% Logon Ne Pappu Chachu Ko Chor Maana — Par Asli Gaddar Nikla...",
+      "coldOpenTag": "{pct}% GALAT · ASLI GADDAR REVEAL",
+      "outcomeVerdict": "{pct}% suspected Pappu Chachu after his terrace whisper and Rs 5 Lakh ask, while he was quietly pawning his own scooter to help Sharma Ji and Ramu Kaka carried the bride's new SIM — neighbor Golu (Option A), trapped in a fake loan snare, dialed *21* during his evening 2-minute phone excuse and hid the active red keypad phone behind the terrace water tank.",
+      "openingLine": "{pct_word} percent logon ne Pappu Chachu par shak kiya, par chhat ki asli baat suniye: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Aur Kaka ke paas dulhan ka SIM tha, asli gaddar pados ka Golu nikla!",
+      "seg01": {
+        "narration": "{pct_word} percent logon ne Pappu Chachu par shak kiya, par chhat ki asli baat suniye: Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai! Aur Kaka ke paas dulhan ka SIM tha, asli gaddar pados ka Golu nikla!",
+        "ttsClauses": [
+          {
+            "speaker": "narrator",
+            "rate": "+15%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.1,
+            "roman": "{pct_word} percent logon ne Pappu Chachu par shak kiya, par chhat ki asli baat suniye:",
+            "hi": "{pct_urdu} پرسنٹ لوگوں نے پپو چاچو پر شک کیا، پر چھت کی اصلی بات سنیے،"
+          },
+          {
+            "speaker": "chachu",
+            "emotion": "phone_call",
+            "rate": "+2%",
+            "pitch": "-7Hz",
+            "pauseAfter": 0.12,
+            "roman": "Bhaiya mera scooter girvi rakh lo, subah bhatiji ki doli hai!",
+            "hi": "भैया मेरा स्कूटर गिरवी रख लो, सुबह भतीजी की डोली है!"
+          },
+          {
+            "speaker": "narrator",
+            "rate": "+15%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.12,
+            "roman": "Aur Kaka ke paas dulhan ka SIM tha, asli gaddar pados ka Golu nikla!",
+            "hi": "اور کاکا کے پاس دلہن کا سم تھا، اصلی غدار پڑوس کا گولو نکلا!"
+          }
+        ],
+        "highlightKeywords": [
+          "{pct_word} percent",
+          "Pappu Chachu",
+          "scooter girvi",
+          "dulhan ka SIM",
+          "pados ka Golu"
+        ]
+      },
+      "scene01Props": {
+        "phoneStatus": "{pct}% Logon Ka Shak Galat Nikla!",
+        "scrollStopper": {
+          "badge": "POLL RESULT · {pct}% VOTED C",
+          "text": "Pappu Chachu = NIRDOSH! Asli Raaz Khula",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "{pct}% VOTED C · PAPPU CHACHU",
+          "SUSPECT B · RAMU KAKA",
+          "ASLI GADDAR BE-NAQAAB!"
+        ]
+      },
+      "postCopy": {
+        "instagramCaption": "{pct}% logon ne Pappu Chachu (Option C) par shak kiya — magar chhat par woh bechare apna scooter girvi rakhne ki baat kar rahe the, aur Ramu Kaka ki jeb mein dulhan ka naya SIM tha! Asli gaddar nikla Option A, Pados Ka Golu! Jab Cyber Jasoos chhat par pahuncha, toh paani ki tanki ke peeche chhupa laal keypad phone abhi bhi chalu mila. Farzi loan jaal mein phanse Golu ne shaam ko do minute phone maangkar *21* call-forwarding code lagaya tha. Abhi apne phone mein *#21# milakar chhupa call/IVR-OTP divert pakdiye aur ##002# se har khufiya divert fauran mita dijiye! Subah doli uthne se pehle Cyber Helpline 1930 ne chori ki rakam nikalne se pehle bank mein freeze/hold karwayi aur Sharma Ji ke poore Rs 12 Lakh bacha liye! Ab Cyber Jasoos agla parda kahan uthaye: A) Hotel Wi-Fi, B) Daftaron ka Smart Printer, ya C) Shaadi ka Shagun QR?",
+        "youtubeShortsTitle": "{pct}% Logon Ne Pappu Chachu Ko Chor Maana — Par Asli Gaddar Nikla... #Shorts",
+        "linkedinPost": "Case #01 Finale — Cyber Jasoos:\n\n{pct}% suspected Pappu Chachu on the terrace, who was quietly pawning his own scooter for his niece's wedding, while Ramu Kaka carried the bride's new SIM. When Cyber Jasoos inspected the terrace, the active red keypad phone was still hidden behind the water tank — neighbor Golu (trapped in a fake loan snare) had used a 2-minute phone excuse at 7:40 PM to dial *21* unconditional voice-call forwarding.\n\n5-Second Suraksha Kavach (DoT Advisory PIB Release ID 1995304, 11 Jan 2024 & MHA I4C 1930):\n1. Dial *#21# right now to detect hidden voice-call / Bank IVR OTP diverts.\n2. Dial ##002# to erase all unauthorized diverts immediately.\n3. Call 1930 in the golden hour — before dawn, 1930 placed an immediate lien/hold on the recipient bank account (chori ki rakam nikalne se pehle freeze/hold karwayi) before Sharma Ji's Rs 12,00,000 could be cashed out.\n\nCase #02 Vote: A) Hotel Wi-Fi, B) Office Smart Printer, or C) Wedding Shagun QR?",
+        "pinnedCommentVote": "{pct}% LOGON KA SHAK GALAT NIKLA — CHACHU SCOOTER GIRVI RAKH RAHE THE, KAKA KE PAAS DULHAN KA NAYA SIM THA, ASLI GADDAR PADOS KA GOLU (A) NIKLA!\nPehle apne phone mein *#21# milakar chhupa divert pakdiye aur ##002# se fauran mita dijiye, phir bataiye Cyber Jasoos Case #02 kahan khole?\nA = Hotel Wi-Fi (CASE A · Free Lounge Net)\nB = Smart Printer (CASE B · Office Scanner)\nC = Shagun QR Trap (CASE C · Shaadi Lifafa)\nNeeche A, B, ya C comment kijiye!",
+        "hashtags": [
+          "#CyberJasoos",
+          "#AsliGaddarKaun",
+          "#ShaadiMystery",
+          "#LoanAppScam",
+          "#OTPDivertAlert",
+          "#1930Helpline"
+        ]
+      }
+    }
+  }
+}

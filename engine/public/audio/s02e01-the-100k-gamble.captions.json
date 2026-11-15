@@ -1,0 +1,800 @@
+[
+  {
+    "word": "Nine",
+    "startSec": 0.0,
+    "endSec": 0.137,
+    "emphasis": true
+  },
+  {
+    "word": "critical",
+    "startSec": 0.137,
+    "endSec": 0.5478,
+    "emphasis": true
+  },
+  {
+    "word": "vulnerabilities",
+    "startSec": 0.5478,
+    "endSec": 1.3695,
+    "emphasis": false
+  },
+  {
+    "word": "flashed",
+    "startSec": 1.3695,
+    "endSec": 1.6434,
+    "emphasis": false
+  },
+  {
+    "word": "red",
+    "startSec": 1.6434,
+    "endSec": 1.7804,
+    "emphasis": false
+  },
+  {
+    "word": "at",
+    "startSec": 1.7804,
+    "endSec": 1.9173,
+    "emphasis": false
+  },
+  {
+    "word": "NovaPay\u2014and",
+    "startSec": 1.9173,
+    "endSec": 2.3282,
+    "emphasis": false
+  },
+  {
+    "word": "patching",
+    "startSec": 2.3282,
+    "endSec": 2.6021,
+    "emphasis": false
+  },
+  {
+    "word": "the",
+    "startSec": 2.6021,
+    "endSec": 2.739,
+    "emphasis": false
+  },
+  {
+    "word": "9.8",
+    "startSec": 2.739,
+    "endSec": 3.0129,
+    "emphasis": true
+  },
+  {
+    "word": "score",
+    "startSec": 3.0129,
+    "endSec": 3.1499,
+    "emphasis": true
+  },
+  {
+    "word": "first",
+    "startSec": 3.1499,
+    "endSec": 3.2869,
+    "emphasis": false
+  },
+  {
+    "word": "nearly",
+    "startSec": 3.2869,
+    "endSec": 3.5608,
+    "emphasis": true
+  },
+  {
+    "word": "cost",
+    "startSec": 3.5608,
+    "endSec": 3.6977,
+    "emphasis": true
+  },
+  {
+    "word": "ten",
+    "startSec": 3.6977,
+    "endSec": 3.8347,
+    "emphasis": true
+  },
+  {
+    "word": "million",
+    "startSec": 3.8347,
+    "endSec": 4.1086,
+    "emphasis": true
+  },
+  {
+    "word": "dollars.",
+    "startSec": 4.1086,
+    "endSec": 4.4304,
+    "emphasis": true
+  },
+  {
+    "word": "Why?",
+    "startSec": 4.5,
+    "endSec": 4.7299,
+    "emphasis": false
+  },
+  {
+    "word": "Because",
+    "startSec": 4.7299,
+    "endSec": 5.0704,
+    "emphasis": false
+  },
+  {
+    "word": "that",
+    "startSec": 5.0704,
+    "endSec": 5.2406,
+    "emphasis": false
+  },
+  {
+    "word": "9.8",
+    "startSec": 5.2406,
+    "endSec": 5.5812,
+    "emphasis": false
+  },
+  {
+    "word": "lived",
+    "startSec": 5.5812,
+    "endSec": 5.9217,
+    "emphasis": false
+  },
+  {
+    "word": "on",
+    "startSec": 5.9217,
+    "endSec": 6.0919,
+    "emphasis": false
+  },
+  {
+    "word": "an",
+    "startSec": 6.0919,
+    "endSec": 6.2622,
+    "emphasis": false
+  },
+  {
+    "word": "isolated",
+    "startSec": 6.2622,
+    "endSec": 6.9433,
+    "emphasis": false
+  },
+  {
+    "word": "cafeteria",
+    "startSec": 6.9433,
+    "endSec": 7.6243,
+    "emphasis": true
+  },
+  {
+    "word": "menu",
+    "startSec": 7.6243,
+    "endSec": 7.9648,
+    "emphasis": true
+  },
+  {
+    "word": "box",
+    "startSec": 7.9648,
+    "endSec": 8.1351,
+    "emphasis": false
+  },
+  {
+    "word": "holding",
+    "startSec": 8.1351,
+    "endSec": 8.4756,
+    "emphasis": false
+  },
+  {
+    "word": "zero",
+    "startSec": 8.4756,
+    "endSec": 8.8161,
+    "emphasis": true
+  },
+  {
+    "word": "customer",
+    "startSec": 8.8161,
+    "endSec": 9.3269,
+    "emphasis": true
+  },
+  {
+    "word": "data.",
+    "startSec": 9.3269,
+    "endSec": 9.727,
+    "emphasis": true
+  },
+  {
+    "word": "Meanwhile,",
+    "startSec": 9.727,
+    "endSec": 10.2974,
+    "emphasis": false
+  },
+  {
+    "word": "a",
+    "startSec": 10.2974,
+    "endSec": 10.4677,
+    "emphasis": false
+  },
+  {
+    "word": "7.5",
+    "startSec": 10.4677,
+    "endSec": 10.8082,
+    "emphasis": true
+  },
+  {
+    "word": "bug",
+    "startSec": 10.8082,
+    "endSec": 10.9785,
+    "emphasis": true
+  },
+  {
+    "word": "sat",
+    "startSec": 10.9785,
+    "endSec": 11.1487,
+    "emphasis": false
+  },
+  {
+    "word": "wide",
+    "startSec": 11.1487,
+    "endSec": 11.319,
+    "emphasis": false
+  },
+  {
+    "word": "open",
+    "startSec": 11.319,
+    "endSec": 11.6595,
+    "emphasis": false
+  },
+  {
+    "word": "on",
+    "startSec": 11.6595,
+    "endSec": 11.8298,
+    "emphasis": false
+  },
+  {
+    "word": "NovaPay's",
+    "startSec": 11.8298,
+    "endSec": 12.3406,
+    "emphasis": false
+  },
+  {
+    "word": "live",
+    "startSec": 12.3406,
+    "endSec": 12.5108,
+    "emphasis": false
+  },
+  {
+    "word": "ten-million-dollar",
+    "startSec": 12.5108,
+    "endSec": 13.3621,
+    "emphasis": false
+  },
+  {
+    "word": "payment",
+    "startSec": 13.3621,
+    "endSec": 13.7027,
+    "emphasis": true
+  },
+  {
+    "word": "checkout",
+    "startSec": 13.7027,
+    "endSec": 14.0432,
+    "emphasis": true
+  },
+  {
+    "word": "API.",
+    "startSec": 14.0432,
+    "endSec": 14.4433,
+    "emphasis": true
+  },
+  {
+    "word": "CVSS",
+    "startSec": 15.0,
+    "endSec": 15.1944,
+    "emphasis": true
+  },
+  {
+    "word": "measures",
+    "startSec": 15.1944,
+    "endSec": 15.7778,
+    "emphasis": false
+  },
+  {
+    "word": "technical",
+    "startSec": 15.7778,
+    "endSec": 16.3611,
+    "emphasis": false
+  },
+  {
+    "word": "severity,",
+    "startSec": 16.3611,
+    "endSec": 17.2069,
+    "emphasis": false
+  },
+  {
+    "word": "never",
+    "startSec": 17.2069,
+    "endSec": 17.5958,
+    "emphasis": false
+  },
+  {
+    "word": "business",
+    "startSec": 17.5958,
+    "endSec": 18.1792,
+    "emphasis": false
+  },
+  {
+    "word": "risk.",
+    "startSec": 18.1792,
+    "endSec": 18.4417,
+    "emphasis": false
+  },
+  {
+    "word": "Real",
+    "startSec": 18.4417,
+    "endSec": 18.6361,
+    "emphasis": false
+  },
+  {
+    "word": "CISOs",
+    "startSec": 18.6361,
+    "endSec": 19.025,
+    "emphasis": false
+  },
+  {
+    "word": "prioritize",
+    "startSec": 19.025,
+    "endSec": 19.6083,
+    "emphasis": false
+  },
+  {
+    "word": "using",
+    "startSec": 19.6083,
+    "endSec": 19.9972,
+    "emphasis": false
+  },
+  {
+    "word": "Likelihood",
+    "startSec": 19.9972,
+    "endSec": 20.775,
+    "emphasis": true
+  },
+  {
+    "word": "times",
+    "startSec": 20.775,
+    "endSec": 21.1639,
+    "emphasis": true
+  },
+  {
+    "word": "Business",
+    "startSec": 21.1639,
+    "endSec": 21.7472,
+    "emphasis": true
+  },
+  {
+    "word": "Impact,",
+    "startSec": 21.7472,
+    "endSec": 22.2042,
+    "emphasis": true
+  },
+  {
+    "word": "backed",
+    "startSec": 22.2042,
+    "endSec": 22.5931,
+    "emphasis": false
+  },
+  {
+    "word": "by",
+    "startSec": 22.5931,
+    "endSec": 22.7875,
+    "emphasis": false
+  },
+  {
+    "word": "Annualized",
+    "startSec": 22.7875,
+    "endSec": 23.5653,
+    "emphasis": true
+  },
+  {
+    "word": "Loss",
+    "startSec": 23.5653,
+    "endSec": 23.7597,
+    "emphasis": true
+  },
+  {
+    "word": "Expectancy:",
+    "startSec": 23.7597,
+    "endSec": 24.6055,
+    "emphasis": true
+  },
+  {
+    "word": "Single",
+    "startSec": 24.6055,
+    "endSec": 24.9944,
+    "emphasis": false
+  },
+  {
+    "word": "Loss",
+    "startSec": 24.9944,
+    "endSec": 25.1889,
+    "emphasis": false
+  },
+  {
+    "word": "Expectancy",
+    "startSec": 25.1889,
+    "endSec": 25.9667,
+    "emphasis": false
+  },
+  {
+    "word": "multiplied",
+    "startSec": 25.9667,
+    "endSec": 26.55,
+    "emphasis": false
+  },
+  {
+    "word": "by",
+    "startSec": 26.55,
+    "endSec": 26.7444,
+    "emphasis": false
+  },
+  {
+    "word": "Annual",
+    "startSec": 26.7444,
+    "endSec": 27.1333,
+    "emphasis": false
+  },
+  {
+    "word": "Rate",
+    "startSec": 27.1333,
+    "endSec": 27.3278,
+    "emphasis": false
+  },
+  {
+    "word": "of",
+    "startSec": 27.3278,
+    "endSec": 27.5222,
+    "emphasis": false
+  },
+  {
+    "word": "Occurrence.",
+    "startSec": 27.5222,
+    "endSec": 28.1736,
+    "emphasis": false
+  },
+  {
+    "word": "Spending",
+    "startSec": 28.1736,
+    "endSec": 28.5625,
+    "emphasis": false
+  },
+  {
+    "word": "$60K",
+    "startSec": 28.5625,
+    "endSec": 28.7569,
+    "emphasis": true
+  },
+  {
+    "word": "to",
+    "startSec": 28.7569,
+    "endSec": 28.9514,
+    "emphasis": false
+  },
+  {
+    "word": "eliminate",
+    "startSec": 28.9514,
+    "endSec": 29.7292,
+    "emphasis": false
+  },
+  {
+    "word": "a",
+    "startSec": 29.7292,
+    "endSec": 29.9236,
+    "emphasis": false
+  },
+  {
+    "word": "$4",
+    "startSec": 29.9236,
+    "endSec": 30.3125,
+    "emphasis": true
+  },
+  {
+    "word": "million",
+    "startSec": 30.3125,
+    "endSec": 30.7014,
+    "emphasis": true
+  },
+  {
+    "word": "annual",
+    "startSec": 30.7014,
+    "endSec": 31.0903,
+    "emphasis": false
+  },
+  {
+    "word": "payment",
+    "startSec": 31.0903,
+    "endSec": 31.4792,
+    "emphasis": false
+  },
+  {
+    "word": "loss",
+    "startSec": 31.4792,
+    "endSec": 31.6736,
+    "emphasis": false
+  },
+  {
+    "word": "beats",
+    "startSec": 31.6736,
+    "endSec": 31.868,
+    "emphasis": false
+  },
+  {
+    "word": "patching",
+    "startSec": 31.868,
+    "endSec": 32.2569,
+    "emphasis": false
+  },
+  {
+    "word": "harmless",
+    "startSec": 32.2569,
+    "endSec": 32.6458,
+    "emphasis": false
+  },
+  {
+    "word": "9.8s",
+    "startSec": 32.6458,
+    "endSec": 32.8403,
+    "emphasis": false
+  },
+  {
+    "word": "every",
+    "startSec": 32.8403,
+    "endSec": 33.4236,
+    "emphasis": false
+  },
+  {
+    "word": "time.",
+    "startSec": 33.4236,
+    "endSec": 33.6861,
+    "emphasis": false
+  },
+  {
+    "word": "In",
+    "startSec": 35.0,
+    "endSec": 35.195,
+    "emphasis": false
+  },
+  {
+    "word": "2013,",
+    "startSec": 35.195,
+    "endSec": 35.6532,
+    "emphasis": false
+  },
+  {
+    "word": "Target",
+    "startSec": 35.6532,
+    "endSec": 36.0432,
+    "emphasis": true
+  },
+  {
+    "word": "suffered",
+    "startSec": 36.0432,
+    "endSec": 36.6281,
+    "emphasis": false
+  },
+  {
+    "word": "$292",
+    "startSec": 36.6281,
+    "endSec": 37.0181,
+    "emphasis": true
+  },
+  {
+    "word": "million",
+    "startSec": 37.0181,
+    "endSec": 37.408,
+    "emphasis": true
+  },
+  {
+    "word": "in",
+    "startSec": 37.408,
+    "endSec": 37.603,
+    "emphasis": false
+  },
+  {
+    "word": "breach",
+    "startSec": 37.603,
+    "endSec": 37.798,
+    "emphasis": false
+  },
+  {
+    "word": "costs",
+    "startSec": 37.798,
+    "endSec": 37.993,
+    "emphasis": false
+  },
+  {
+    "word": "after",
+    "startSec": 37.993,
+    "endSec": 38.383,
+    "emphasis": false
+  },
+  {
+    "word": "real",
+    "startSec": 38.383,
+    "endSec": 38.5779,
+    "emphasis": false
+  },
+  {
+    "word": "payment-path",
+    "startSec": 38.5779,
+    "endSec": 39.1629,
+    "emphasis": true
+  },
+  {
+    "word": "threats",
+    "startSec": 39.1629,
+    "endSec": 39.3579,
+    "emphasis": false
+  },
+  {
+    "word": "drowned",
+    "startSec": 39.3579,
+    "endSec": 39.7478,
+    "emphasis": false
+  },
+  {
+    "word": "inside",
+    "startSec": 39.7478,
+    "endSec": 40.1378,
+    "emphasis": false
+  },
+  {
+    "word": "thousands",
+    "startSec": 40.1378,
+    "endSec": 40.5278,
+    "emphasis": false
+  },
+  {
+    "word": "of",
+    "startSec": 40.5278,
+    "endSec": 40.7227,
+    "emphasis": false
+  },
+  {
+    "word": "unprioritized",
+    "startSec": 40.7227,
+    "endSec": 41.6977,
+    "emphasis": true
+  },
+  {
+    "word": "security",
+    "startSec": 41.6977,
+    "endSec": 42.4776,
+    "emphasis": false
+  },
+  {
+    "word": "alerts.",
+    "startSec": 42.4776,
+    "endSec": 42.9358,
+    "emphasis": false
+  },
+  {
+    "word": "You",
+    "startSec": 43.0,
+    "endSec": 43.2109,
+    "emphasis": false
+  },
+  {
+    "word": "have",
+    "startSec": 43.2109,
+    "endSec": 43.4219,
+    "emphasis": false
+  },
+  {
+    "word": "$40K",
+    "startSec": 43.4219,
+    "endSec": 43.6328,
+    "emphasis": true
+  },
+  {
+    "word": "left",
+    "startSec": 43.6328,
+    "endSec": 43.8438,
+    "emphasis": true
+  },
+  {
+    "word": "and",
+    "startSec": 43.8438,
+    "endSec": 44.0547,
+    "emphasis": false
+  },
+  {
+    "word": "a",
+    "startSec": 44.0547,
+    "endSec": 44.2656,
+    "emphasis": false
+  },
+  {
+    "word": "risky",
+    "startSec": 44.2656,
+    "endSec": 44.6875,
+    "emphasis": false
+  },
+  {
+    "word": "legacy",
+    "startSec": 44.6875,
+    "endSec": 45.3203,
+    "emphasis": false
+  },
+  {
+    "word": "Fraud",
+    "startSec": 45.3203,
+    "endSec": 45.5313,
+    "emphasis": true
+  },
+  {
+    "word": "Engine",
+    "startSec": 45.5313,
+    "endSec": 45.9532,
+    "emphasis": true
+  },
+  {
+    "word": "costing",
+    "startSec": 45.9532,
+    "endSec": 46.375,
+    "emphasis": false
+  },
+  {
+    "word": "$150K",
+    "startSec": 46.375,
+    "endSec": 46.586,
+    "emphasis": false
+  },
+  {
+    "word": "to",
+    "startSec": 46.586,
+    "endSec": 46.7969,
+    "emphasis": false
+  },
+  {
+    "word": "rewrite.",
+    "startSec": 46.7969,
+    "endSec": 47.2926,
+    "emphasis": false
+  },
+  {
+    "word": "Mitigate,",
+    "startSec": 47.2926,
+    "endSec": 47.9993,
+    "emphasis": true
+  },
+  {
+    "word": "Transfer",
+    "startSec": 47.9993,
+    "endSec": 48.4212,
+    "emphasis": true
+  },
+  {
+    "word": "via",
+    "startSec": 48.4212,
+    "endSec": 48.6321,
+    "emphasis": true
+  },
+  {
+    "word": "Insurance,",
+    "startSec": 48.6321,
+    "endSec": 49.3387,
+    "emphasis": true
+  },
+  {
+    "word": "or",
+    "startSec": 49.3387,
+    "endSec": 49.5497,
+    "emphasis": false
+  },
+  {
+    "word": "Avoid?",
+    "startSec": 49.5497,
+    "endSec": 50.0454,
+    "emphasis": true
+  },
+  {
+    "word": "Vote",
+    "startSec": 50.0454,
+    "endSec": 50.2563,
+    "emphasis": false
+  },
+  {
+    "word": "now.",
+    "startSec": 50.2563,
+    "endSec": 50.5411,
+    "emphasis": false
+  }
+]

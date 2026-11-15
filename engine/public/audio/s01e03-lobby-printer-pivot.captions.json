@@ -1,0 +1,806 @@
+[
+  {
+    "word": "Fifty-four",
+    "startSec": 0.0,
+    "endSec": 0.3986,
+    "emphasis": true
+  },
+  {
+    "word": "percent",
+    "startSec": 0.3986,
+    "endSec": 0.6643,
+    "emphasis": true
+  },
+  {
+    "word": "of",
+    "startSec": 0.6643,
+    "endSec": 0.7972,
+    "emphasis": false
+  },
+  {
+    "word": "you",
+    "startSec": 0.7972,
+    "endSec": 0.93,
+    "emphasis": false
+  },
+  {
+    "word": "blamed",
+    "startSec": 0.93,
+    "endSec": 1.1958,
+    "emphasis": false
+  },
+  {
+    "word": "Guest",
+    "startSec": 1.1958,
+    "endSec": 1.3286,
+    "emphasis": true
+  },
+  {
+    "word": "Wi-Fi,",
+    "startSec": 1.3286,
+    "endSec": 1.6409,
+    "emphasis": true
+  },
+  {
+    "word": "while",
+    "startSec": 1.6409,
+    "endSec": 1.9066,
+    "emphasis": false
+  },
+  {
+    "word": "thirty-one",
+    "startSec": 1.9066,
+    "endSec": 2.1723,
+    "emphasis": true
+  },
+  {
+    "word": "percent",
+    "startSec": 2.1723,
+    "endSec": 2.438,
+    "emphasis": true
+  },
+  {
+    "word": "nailed",
+    "startSec": 2.438,
+    "endSec": 2.7038,
+    "emphasis": false
+  },
+  {
+    "word": "the",
+    "startSec": 2.7038,
+    "endSec": 2.8366,
+    "emphasis": false
+  },
+  {
+    "word": "real",
+    "startSec": 2.8366,
+    "endSec": 2.9695,
+    "emphasis": false
+  },
+  {
+    "word": "killer:",
+    "startSec": 2.9695,
+    "endSec": 3.2817,
+    "emphasis": false
+  },
+  {
+    "word": "the",
+    "startSec": 3.2817,
+    "endSec": 3.4146,
+    "emphasis": false
+  },
+  {
+    "word": "Smart",
+    "startSec": 3.4146,
+    "endSec": 3.5474,
+    "emphasis": true
+  },
+  {
+    "word": "Lobby",
+    "startSec": 3.5474,
+    "endSec": 3.8132,
+    "emphasis": true
+  },
+  {
+    "word": "Printer.",
+    "startSec": 3.8132,
+    "endSec": 4.1254,
+    "emphasis": true
+  },
+  {
+    "word": "Tagged",
+    "startSec": 4.5,
+    "endSec": 4.8106,
+    "emphasis": false
+  },
+  {
+    "word": "Tier-Four",
+    "startSec": 4.8106,
+    "endSec": 5.1212,
+    "emphasis": true
+  },
+  {
+    "word": "Public",
+    "startSec": 5.1212,
+    "endSec": 5.4318,
+    "emphasis": true
+  },
+  {
+    "word": "and",
+    "startSec": 5.4318,
+    "endSec": 5.5871,
+    "emphasis": false
+  },
+  {
+    "word": "ignored,",
+    "startSec": 5.5871,
+    "endSec": 6.1074,
+    "emphasis": false
+  },
+  {
+    "word": "that",
+    "startSec": 6.1074,
+    "endSec": 6.2627,
+    "emphasis": false
+  },
+  {
+    "word": "printer",
+    "startSec": 6.2627,
+    "endSec": 6.5733,
+    "emphasis": false
+  },
+  {
+    "word": "had",
+    "startSec": 6.5733,
+    "endSec": 6.7286,
+    "emphasis": false
+  },
+  {
+    "word": "scan-to-email",
+    "startSec": 6.7286,
+    "endSec": 7.1945,
+    "emphasis": true
+  },
+  {
+    "word": "enabled",
+    "startSec": 7.1945,
+    "endSec": 7.6604,
+    "emphasis": false
+  },
+  {
+    "word": "using",
+    "startSec": 7.6604,
+    "endSec": 7.971,
+    "emphasis": false
+  },
+  {
+    "word": "an",
+    "startSec": 7.971,
+    "endSec": 8.1263,
+    "emphasis": false
+  },
+  {
+    "word": "over-privileged",
+    "startSec": 8.1263,
+    "endSec": 9.0582,
+    "emphasis": false
+  },
+  {
+    "word": "Active",
+    "startSec": 9.0582,
+    "endSec": 9.3688,
+    "emphasis": true
+  },
+  {
+    "word": "Directory",
+    "startSec": 9.3688,
+    "endSec": 9.99,
+    "emphasis": true
+  },
+  {
+    "word": "service",
+    "startSec": 9.99,
+    "endSec": 10.3006,
+    "emphasis": false
+  },
+  {
+    "word": "account.",
+    "startSec": 10.3006,
+    "endSec": 10.6656,
+    "emphasis": false
+  },
+  {
+    "word": "Attackers",
+    "startSec": 10.6656,
+    "endSec": 11.1315,
+    "emphasis": false
+  },
+  {
+    "word": "dumped",
+    "startSec": 11.1315,
+    "endSec": 11.4421,
+    "emphasis": false
+  },
+  {
+    "word": "its",
+    "startSec": 11.4421,
+    "endSec": 11.5974,
+    "emphasis": false
+  },
+  {
+    "word": "cleartext",
+    "startSec": 11.5974,
+    "endSec": 11.908,
+    "emphasis": true
+  },
+  {
+    "word": "LDAP",
+    "startSec": 11.908,
+    "endSec": 12.0633,
+    "emphasis": true
+  },
+  {
+    "word": "password",
+    "startSec": 12.0633,
+    "endSec": 12.3739,
+    "emphasis": false
+  },
+  {
+    "word": "in",
+    "startSec": 12.3739,
+    "endSec": 12.5292,
+    "emphasis": false
+  },
+  {
+    "word": "ninety",
+    "startSec": 12.5292,
+    "endSec": 12.9951,
+    "emphasis": true
+  },
+  {
+    "word": "seconds",
+    "startSec": 12.9951,
+    "endSec": 13.3057,
+    "emphasis": true
+  },
+  {
+    "word": "and",
+    "startSec": 13.3057,
+    "endSec": 13.461,
+    "emphasis": false
+  },
+  {
+    "word": "walked",
+    "startSec": 13.461,
+    "endSec": 13.7716,
+    "emphasis": false
+  },
+  {
+    "word": "straight",
+    "startSec": 13.7716,
+    "endSec": 13.9269,
+    "emphasis": false
+  },
+  {
+    "word": "inside.",
+    "startSec": 13.9269,
+    "endSec": 14.2919,
+    "emphasis": false
+  },
+  {
+    "word": "Static",
+    "startSec": 15.0,
+    "endSec": 15.3758,
+    "emphasis": false
+  },
+  {
+    "word": "labels",
+    "startSec": 15.3758,
+    "endSec": 15.7516,
+    "emphasis": false
+  },
+  {
+    "word": "fail",
+    "startSec": 15.7516,
+    "endSec": 15.9395,
+    "emphasis": false
+  },
+  {
+    "word": "without",
+    "startSec": 15.9395,
+    "endSec": 16.3153,
+    "emphasis": false
+  },
+  {
+    "word": "Attack-Path",
+    "startSec": 16.3153,
+    "endSec": 16.879,
+    "emphasis": true
+  },
+  {
+    "word": "Classification.",
+    "startSec": 16.879,
+    "endSec": 17.8842,
+    "emphasis": true
+  },
+  {
+    "word": "Because",
+    "startSec": 17.8842,
+    "endSec": 18.26,
+    "emphasis": false
+  },
+  {
+    "word": "of",
+    "startSec": 18.26,
+    "endSec": 18.4479,
+    "emphasis": false
+  },
+  {
+    "word": "Transitive",
+    "startSec": 18.4479,
+    "endSec": 19.0116,
+    "emphasis": true
+  },
+  {
+    "word": "Trust,",
+    "startSec": 19.0116,
+    "endSec": 19.2653,
+    "emphasis": true
+  },
+  {
+    "word": "any",
+    "startSec": 19.2653,
+    "endSec": 19.6411,
+    "emphasis": false
+  },
+  {
+    "word": "Tier-Four",
+    "startSec": 19.6411,
+    "endSec": 20.0169,
+    "emphasis": false
+  },
+  {
+    "word": "device",
+    "startSec": 20.0169,
+    "endSec": 20.3927,
+    "emphasis": false
+  },
+  {
+    "word": "holding",
+    "startSec": 20.3927,
+    "endSec": 20.7685,
+    "emphasis": false
+  },
+  {
+    "word": "credentials",
+    "startSec": 20.7685,
+    "endSec": 21.3322,
+    "emphasis": true
+  },
+  {
+    "word": "or",
+    "startSec": 21.3322,
+    "endSec": 21.5201,
+    "emphasis": false
+  },
+  {
+    "word": "flat",
+    "startSec": 21.5201,
+    "endSec": 21.708,
+    "emphasis": false
+  },
+  {
+    "word": "network",
+    "startSec": 21.708,
+    "endSec": 22.0838,
+    "emphasis": false
+  },
+  {
+    "word": "routes",
+    "startSec": 22.0838,
+    "endSec": 22.4596,
+    "emphasis": false
+  },
+  {
+    "word": "into",
+    "startSec": 22.4596,
+    "endSec": 22.8354,
+    "emphasis": false
+  },
+  {
+    "word": "Tier-One",
+    "startSec": 22.8354,
+    "endSec": 23.2111,
+    "emphasis": false
+  },
+  {
+    "word": "inherits",
+    "startSec": 23.2111,
+    "endSec": 23.7748,
+    "emphasis": false
+  },
+  {
+    "word": "Crown",
+    "startSec": 23.7748,
+    "endSec": 23.9627,
+    "emphasis": true
+  },
+  {
+    "word": "Jewel",
+    "startSec": 23.9627,
+    "endSec": 24.3385,
+    "emphasis": true
+  },
+  {
+    "word": "risk.",
+    "startSec": 24.3385,
+    "endSec": 24.5922,
+    "emphasis": true
+  },
+  {
+    "word": "You",
+    "startSec": 24.5922,
+    "endSec": 24.7801,
+    "emphasis": false
+  },
+  {
+    "word": "never",
+    "startSec": 24.7801,
+    "endSec": 25.1559,
+    "emphasis": false
+  },
+  {
+    "word": "classify",
+    "startSec": 25.1559,
+    "endSec": 25.7196,
+    "emphasis": false
+  },
+  {
+    "word": "an",
+    "startSec": 25.7196,
+    "endSec": 25.9075,
+    "emphasis": false
+  },
+  {
+    "word": "asset",
+    "startSec": 25.9075,
+    "endSec": 26.2833,
+    "emphasis": false
+  },
+  {
+    "word": "only",
+    "startSec": 26.2833,
+    "endSec": 26.6591,
+    "emphasis": false
+  },
+  {
+    "word": "by",
+    "startSec": 26.6591,
+    "endSec": 26.847,
+    "emphasis": false
+  },
+  {
+    "word": "the",
+    "startSec": 26.847,
+    "endSec": 27.0349,
+    "emphasis": false
+  },
+  {
+    "word": "data",
+    "startSec": 27.0349,
+    "endSec": 27.4107,
+    "emphasis": false
+  },
+  {
+    "word": "sitting",
+    "startSec": 27.4107,
+    "endSec": 27.7865,
+    "emphasis": false
+  },
+  {
+    "word": "on",
+    "startSec": 27.7865,
+    "endSec": 27.9744,
+    "emphasis": false
+  },
+  {
+    "word": "it\u2014you",
+    "startSec": 27.9744,
+    "endSec": 28.3502,
+    "emphasis": false
+  },
+  {
+    "word": "classify",
+    "startSec": 28.3502,
+    "endSec": 28.9139,
+    "emphasis": false
+  },
+  {
+    "word": "every",
+    "startSec": 28.9139,
+    "endSec": 29.4776,
+    "emphasis": false
+  },
+  {
+    "word": "identity",
+    "startSec": 29.4776,
+    "endSec": 30.2291,
+    "emphasis": false
+  },
+  {
+    "word": "and",
+    "startSec": 30.2291,
+    "endSec": 30.417,
+    "emphasis": false
+  },
+  {
+    "word": "subnet",
+    "startSec": 30.417,
+    "endSec": 30.7928,
+    "emphasis": true
+  },
+  {
+    "word": "it",
+    "startSec": 30.7928,
+    "endSec": 30.9807,
+    "emphasis": false
+  },
+  {
+    "word": "can",
+    "startSec": 30.9807,
+    "endSec": 31.1686,
+    "emphasis": false
+  },
+  {
+    "word": "touch.",
+    "startSec": 31.1686,
+    "endSec": 31.4223,
+    "emphasis": false
+  },
+  {
+    "word": "Attackers",
+    "startSec": 35.0,
+    "endSec": 35.5997,
+    "emphasis": false
+  },
+  {
+    "word": "proved",
+    "startSec": 35.5997,
+    "endSec": 35.9996,
+    "emphasis": false
+  },
+  {
+    "word": "this",
+    "startSec": 35.9996,
+    "endSec": 36.1995,
+    "emphasis": false
+  },
+  {
+    "word": "by",
+    "startSec": 36.1995,
+    "endSec": 36.3994,
+    "emphasis": false
+  },
+  {
+    "word": "stealing",
+    "startSec": 36.3994,
+    "endSec": 36.7992,
+    "emphasis": false
+  },
+  {
+    "word": "ten",
+    "startSec": 36.7992,
+    "endSec": 36.9991,
+    "emphasis": true
+  },
+  {
+    "word": "gigabytes",
+    "startSec": 36.9991,
+    "endSec": 37.7988,
+    "emphasis": true
+  },
+  {
+    "word": "of",
+    "startSec": 37.7988,
+    "endSec": 37.9987,
+    "emphasis": false
+  },
+  {
+    "word": "casino",
+    "startSec": 37.9987,
+    "endSec": 38.5984,
+    "emphasis": true
+  },
+  {
+    "word": "VIP",
+    "startSec": 38.5984,
+    "endSec": 38.7983,
+    "emphasis": true
+  },
+  {
+    "word": "data",
+    "startSec": 38.7983,
+    "endSec": 39.1982,
+    "emphasis": false
+  },
+  {
+    "word": "through",
+    "startSec": 39.1982,
+    "endSec": 39.3981,
+    "emphasis": false
+  },
+  {
+    "word": "a",
+    "startSec": 39.3981,
+    "endSec": 39.598,
+    "emphasis": false
+  },
+  {
+    "word": "lobby",
+    "startSec": 39.598,
+    "endSec": 39.9978,
+    "emphasis": false
+  },
+  {
+    "word": "fish-tank",
+    "startSec": 39.9978,
+    "endSec": 40.3976,
+    "emphasis": true
+  },
+  {
+    "word": "thermometer,",
+    "startSec": 40.3976,
+    "endSec": 41.2672,
+    "emphasis": true
+  },
+  {
+    "word": "echoing",
+    "startSec": 41.2672,
+    "endSec": 41.6671,
+    "emphasis": false
+  },
+  {
+    "word": "Target's",
+    "startSec": 41.6671,
+    "endSec": 42.0669,
+    "emphasis": true
+  },
+  {
+    "word": "HVAC",
+    "startSec": 42.0669,
+    "endSec": 42.2668,
+    "emphasis": true
+  },
+  {
+    "word": "pivot.",
+    "startSec": 42.2668,
+    "endSec": 42.7366,
+    "emphasis": false
+  },
+  {
+    "word": "Regulators",
+    "startSec": 43.0,
+    "endSec": 43.5852,
+    "emphasis": true
+  },
+  {
+    "word": "audit",
+    "startSec": 43.5852,
+    "endSec": 43.8779,
+    "emphasis": true
+  },
+  {
+    "word": "NovaPay",
+    "startSec": 43.8779,
+    "endSec": 44.3168,
+    "emphasis": false
+  },
+  {
+    "word": "tomorrow",
+    "startSec": 44.3168,
+    "endSec": 44.7557,
+    "emphasis": true
+  },
+  {
+    "word": "morning.",
+    "startSec": 44.7557,
+    "endSec": 45.0995,
+    "emphasis": true
+  },
+  {
+    "word": "How",
+    "startSec": 45.0995,
+    "endSec": 45.2458,
+    "emphasis": false
+  },
+  {
+    "word": "do",
+    "startSec": 45.2458,
+    "endSec": 45.3922,
+    "emphasis": false
+  },
+  {
+    "word": "we",
+    "startSec": 45.3922,
+    "endSec": 45.5385,
+    "emphasis": false
+  },
+  {
+    "word": "eliminate",
+    "startSec": 45.5385,
+    "endSec": 46.1237,
+    "emphasis": false
+  },
+  {
+    "word": "shadow",
+    "startSec": 46.1237,
+    "endSec": 46.4163,
+    "emphasis": false
+  },
+  {
+    "word": "pivots",
+    "startSec": 46.4163,
+    "endSec": 46.7089,
+    "emphasis": false
+  },
+  {
+    "word": "permanently:",
+    "startSec": 46.7089,
+    "endSec": 47.3454,
+    "emphasis": false
+  },
+  {
+    "word": "Quarterly",
+    "startSec": 47.3454,
+    "endSec": 47.7843,
+    "emphasis": false
+  },
+  {
+    "word": "Spreadsheets,",
+    "startSec": 47.7843,
+    "endSec": 48.1281,
+    "emphasis": false
+  },
+  {
+    "word": "Continuous",
+    "startSec": 48.1281,
+    "endSec": 48.5671,
+    "emphasis": true
+  },
+  {
+    "word": "Auto-Discovery,",
+    "startSec": 48.5671,
+    "endSec": 49.4961,
+    "emphasis": true
+  },
+  {
+    "word": "or",
+    "startSec": 49.4961,
+    "endSec": 49.6424,
+    "emphasis": false
+  },
+  {
+    "word": "IoT",
+    "startSec": 49.6424,
+    "endSec": 49.7887,
+    "emphasis": false
+  },
+  {
+    "word": "Bans?",
+    "startSec": 49.7887,
+    "endSec": 49.9863,
+    "emphasis": false
+  },
+  {
+    "word": "Comment",
+    "startSec": 49.9863,
+    "endSec": 50.2789,
+    "emphasis": true
+  },
+  {
+    "word": "below.",
+    "startSec": 50.2789,
+    "endSec": 50.6227,
+    "emphasis": true
+  }
+]

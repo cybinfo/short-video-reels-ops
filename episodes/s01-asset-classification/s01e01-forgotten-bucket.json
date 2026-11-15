@@ -1,0 +1,501 @@
+{
+  "id": "s01e01-forgotten-bucket",
+  "season": 1,
+  "episode": 1,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Case #01: Shaadi Ke 12 Lakh Gayab",
+  "episodeTitle": "Guddi Didi Ki Shaadi Ke 12 Lakh Gayab!",
+  "companyName": "CYBER JASOOS",
+  "visualTheme": "noir_cinema",
+  "coldOpenTag": "SHAADI KI RAAT · 12 LAKH GAYAB",
+  "hudPartBadge": "PART 1/2",
+  "introSfx": {
+    "file": "sfx/shaadi-distant-intro.wav",
+    "durationSec": 3.6,
+    "volume": 0.26
+  },
+  "speakerLabels": {
+    "sharma": "SHARMA JI KI AAWAAZ"
+  },
+  "securityDomain": "CYBER JASOOS · CASE #01",
+  "realBreachParallel": {
+    "incident": "DoT Advisory (PIB Release ID 1995304, 11 Jan 2024) USSD *401# / *21* Call-Forwarding Fraud & MHA I4C 1930 (cybercrime.gov.in)",
+    "year": 2024,
+    "impact": "Fraudsters trick mobile users into dialing unconditional call-forwarding USSD codes (*21* / *401#) so incoming voice calls and Bank IVR OTP verification calls route silently to attacker-controlled SIMs",
+    "lesson": "Never hand an unlocked phone to anyone even for two minutes to place a call, and dial *#21# to verify zero active voice-call or IVR OTP forwarding."
+  },
+  "voiceConfig": {
+    "mode": "edge_neural",
+    "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+    "edgeVoices": {
+      "narrator": "ur-IN-SalmanNeural",
+      "sharma": "hi-IN-MadhurNeural"
+    },
+    "edgeRates": {
+      "narrator": "+8%"
+    },
+    "edgePitches": {
+      "narrator": "-3Hz"
+    },
+    "edgeFormants": {
+      "narrator": 1.0
+    },
+    "audioFile": "audio/s01e01-forgotten-bucket.wav",
+    "captionsFile": "audio/s01e01-forgotten-bucket.captions.json",
+    "targetWpm": 168
+  },
+  "durationSeconds": 56.43,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Subah beti ki doli uthne wali thi, magar aadhi raat Sharma Ji ki cheekh goonj uthi: Arre, shaadi ke poore baarah lakh kahan gaye?! Dekhte hi dekhte shaadi ka khaata saaf ho chuka tha!",
+    "hookPattern": "mid_breach_timestamp"
+  },
+  "scriptSegments": [
+    {
+      "id": "s01e01-seg-01",
+      "startSec": 0,
+      "endSec": 11.06,
+      "phase": "hook",
+      "speaker": "narrator",
+      "narration": "Subah beti ki doli uthne wali thi, magar aadhi raat Sharma Ji ki cheekh goonj uthi: Arre, shaadi ke poore baarah lakh kahan gaye?! Dekhte hi dekhte shaadi ka khaata saaf ho chuka tha!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.14,
+          "roman": "Subah beti ki doli uthne wali thi, magar aadhi raat Sharma Ji ki cheekh goonj uthi:",
+          "hi": "صبح بیٹی کی ڈولی اٹھنے والی تھی، مگر آدھی رات شرما جی کی چیخ گونج اٹھی،"
+        },
+        {
+          "speaker": "sharma",
+          "emotion": "room_panic",
+          "rate": "+2%",
+          "pitch": "+2Hz",
+          "pauseAfter": 0.18,
+          "roman": "Arre, shaadi ke poore baarah lakh kahan gaye?!",
+          "hi": "अरे, शादी के पूरे बारह लाख कहाँ गए?!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+11%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.18,
+          "roman": "Dekhte hi dekhte shaadi ka khaata saaf ho chuka tha!",
+          "hi": "دیکھتے ہی دیکھتے شادی کا کھاتہ صاف ہو چکا تھا!"
+        }
+      ],
+      "highlightKeywords": [
+        "doli uthne",
+        "cheekh goonj",
+        "baarah lakh",
+        "kahan gaye?!",
+        "saaf ho chuka"
+      ]
+    },
+    {
+      "id": "s01e01-seg-02",
+      "startSec": 11.06,
+      "endSec": 23.06,
+      "phase": "escalation",
+      "speaker": "narrator",
+      "narration": "Sabse khaufnaak baat thi ki Sharma Ji ka phone shaam se Puja Ghar mein band rakha tha! Na koi anjaan call aaya, na link khula, phir bhi bank ki saari OTP calls kisi khufiya number par jaa rahi thin!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-4Hz",
+          "breathBefore": true,
+          "pauseAfter": 0.17,
+          "roman": "Sabse khaufnaak baat thi ki Sharma Ji ka phone shaam se Puja Ghar mein band rakha tha!",
+          "hi": "سب سے خوفناک بات تھی کہ شرما جی کا فون شام سے پوجا گھر میں بند رکھا تھا!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+11%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.18,
+          "roman": "Na koi anjaan call aaya, na link khula, phir bhi bank ki saari OTP calls kisi khufiya number par jaa rahi thin!",
+          "hi": "نہ کوئی انجان کال آیا، نہ لنک کھلا، پھر بھی بینک کی ساری او ٹی پی کالز کسی خفیہ نمبر پر جا رہی تھیں!"
+        }
+      ],
+      "highlightKeywords": [
+        "khaufnaak baat",
+        "Puja Ghar",
+        "band rakha",
+        "OTP calls",
+        "khufiya number"
+      ]
+    },
+    {
+      "id": "s01e01-seg-03",
+      "startSec": 23.06,
+      "endSec": 33.21,
+      "phase": "framework",
+      "speaker": "narrator",
+      "narration": "Jab Cyber Jasoos ne jaanch ki, toh gehra raaz khula. Sangeet ke shor mein theek saat bayaalis par kisi ne chupke se star ikkis code lagaya, aur saboot mita diya!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.18,
+          "roman": "Jab Cyber Jasoos ne jaanch ki, toh gehra raaz khula.",
+          "hi": "جب سائبر جاسوس نے جانچ کی، تو گہرا راز کھلا۔"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+11%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.14,
+          "roman": "Sangeet ke shor mein theek saat bayaalis par kisi ne chupke se star ikkis code lagaya,",
+          "hi": "سنگیت کے شور میں ٹھیک سات بیالیس پر کسی نے چپکے سے اسٹار اکیس کوڈ لگایا،"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.2,
+          "roman": "aur saboot mita diya!",
+          "hi": "اور ثبوت مٹا دیا!"
+        }
+      ],
+      "highlightKeywords": [
+        "Cyber Jasoos",
+        "gehra raaz",
+        "saat bayaalis",
+        "star ikkis",
+        "saboot mita diya!"
+      ]
+    },
+    {
+      "id": "s01e01-seg-04",
+      "startSec": 33.21,
+      "endSec": 40.23,
+      "phase": "micro_payoff",
+      "speaker": "narrator",
+      "narration": "Aur hosh toh tab ude: jis farzi SIM par OTP calls gayin, woh SIM abhi bhi shaadi ghar ki chhat par chalu tha!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+8%",
+          "pitch": "-4Hz",
+          "breathBefore": true,
+          "pauseAfter": 0.2,
+          "roman": "Aur hosh toh tab ude:",
+          "hi": "اور ہوش تو تب اڑے،"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+11%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.2,
+          "roman": "jis farzi SIM par OTP calls gayin, woh SIM abhi bhi shaadi ghar ki chhat par chalu tha!",
+          "hi": "جس فرضی سم پر او ٹی پی کالز گئیں، وہ سم ابھی بھی شادی گھر کی چھت پر چالو تھا!"
+        }
+      ],
+      "highlightKeywords": [
+        "hosh toh tab",
+        "farzi SIM",
+        "OTP calls",
+        "shaadi ghar",
+        "chhat par chalu"
+      ]
+    },
+    {
+      "id": "s01e01-seg-05",
+      "startSec": 40.23,
+      "endSec": 56.43,
+      "phase": "cliffhanger_vote",
+      "speaker": "narrator",
+      "narration": "Shak ke ghere mein teen apne hain: do minute phone maangkar gayab pados ka Golu, jeb mein naye SIM wala Ramu Kaka, aur chhat par chupke baat karte Pappu Chachu! Asli gaddar kaun hai? Neeche A, B, C comment kijiye, kyunki bas kuch hi ghanton baad...",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Shak ke ghere mein teen apne hain:",
+          "hi": "شک کے گھیرے میں تین اپنے ہیں،"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+11%",
+          "pitch": "-2Hz",
+          "pauseAfter": 0.18,
+          "roman": "do minute phone maangkar gayab pados ka Golu, jeb mein naye SIM wala Ramu Kaka, aur chhat par chupke baat karte Pappu Chachu!",
+          "hi": "دو منٹ فون مانگ کر غائب پڑوس کا گولو، جیب میں نئے سم والا رامو کاکا، اور چھت پر چپکے بات کرتے پپو چاچو!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+9%",
+          "pitch": "-4Hz",
+          "pauseAfter": 0.18,
+          "roman": "Asli gaddar kaun hai? Neeche A, B, C comment kijiye, kyunki bas kuch hi ghanton baad...",
+          "hi": "اصلی غدار کون ہے؟ نیچے اے، بی، سی کمنٹ کیجئے، کیونکہ بس کچھ ہی گھنٹوں بعد"
+        }
+      ],
+      "highlightKeywords": [
+        "Golu,",
+        "Ramu Kaka,",
+        "Pappu Chachu!",
+        "Asli gaddar",
+        "A, B, C",
+        "ghanton baad..."
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01e01-sc-01",
+      "startSec": 0,
+      "endSec": 11.06,
+      "kind": "detective_crime_hook",
+      "sfxCues": [
+        {
+          "file": "sfx/bank-sms-chime.wav",
+          "offsetFrames": 4,
+          "volume": 0.42
+        },
+        {
+          "file": "sfx/cash-drain-ticks.wav",
+          "offsetRatio": 0.34,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "caseBadge": "CASE #01 · PART 1",
+        "timeLabel": "RAAT 11:30 PM",
+        "locationLabel": "SHARMA JI KA GHAR",
+        "phoneStatus": "Subah Beti Ki Doli Uthne Wali Thi",
+        "bankAlertTitle": "SHAADI ACCOUNT KHALI!",
+        "amountLost": "Rs 12,00,000",
+        "mode": "loss_drain",
+        "cutRatios": [
+          0.24,
+          0.64
+        ],
+        "scrollStopper": {
+          "badge": "BANK ALERT · 11:30 PM",
+          "text": "A/c XX4821 Debited Rs 12,00,000 · Bal: Rs 0",
+          "tone": "danger",
+          "currencyBadge": "Rs"
+        },
+        "shotTitles": [
+          "SUBAH BETI KI DOLI",
+          "SHAADI ACCOUNT KHALI!",
+          "SHAADI ACCOUNT KHALI!"
+        ],
+        "shotTags": [
+          "SHAADI SAVINGS",
+          "DRAINING LIVE!",
+          "ACCOUNT EMPTY!"
+        ],
+        "tertiaryImage": "characters/sharma-shock.png",
+        "secondaryImage": "characters/sharma-eyes-closeup.png",
+        "secondaryParallaxMode": "macro",
+        "heroImage": "characters/shaadi-baraat-gate.png",
+        "shockPills": [
+          "SUBAH DOLI",
+          "PHONE BAND THA",
+          "12 LAKH SAAF!"
+        ]
+      }
+    },
+    {
+      "id": "s01e01-sc-02",
+      "startSec": 11.06,
+      "endSec": 23.06,
+      "kind": "detective_wifi_clue",
+      "sfxCues": [
+        {
+          "file": "sfx/puja-phone-vibrate.wav",
+          "offsetRatio": 0.46,
+          "volume": 0.46
+        },
+        {
+          "file": "sfx/bank-sms-chime.wav",
+          "offsetRatio": 0.47,
+          "volume": 0.38
+        }
+      ],
+      "props": {
+        "headline": "BAND PHONE SE BANK OTP CALLS DIVERT!",
+        "subline": "11:20 PM OTP Calls · 7:42 PM Wale *21* Code Se",
+        "heroImage": "characters/puja-phone.png",
+        "secondaryImage": "characters/puja-otp-divert.png",
+        "interceptBanner": {
+          "badge": "VOICE OTP CALL · 11:21 PM",
+          "text": "IVR OTP CALL -> *21* FORWARDED!",
+          "tone": "danger"
+        },
+        "devices": [
+          {
+            "name": "Anjaan Call / Link",
+            "status": "0 Call · Koi Link Nahi Khula",
+            "icon": "call",
+            "suspicious": false
+          },
+          {
+            "name": "Puja Ghar Ka Phone",
+            "status": "Chupchaap Band Rakha Tha",
+            "icon": "phone",
+            "suspicious": false
+          },
+          {
+            "name": "11:20 PM Call (7:42 *21*)",
+            "status": "SAARI OTP CALLS DOOSRE SIM PAR!",
+            "icon": "alert",
+            "suspicious": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s01e01-sc-03",
+      "startSec": 23.06,
+      "endSec": 33.21,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/keypad-tap-seq.wav",
+          "offsetRatio": 0.14,
+          "volume": 0.4
+        },
+        {
+          "file": "sfx/ussd-dial-tones.wav",
+          "offsetRatio": 0.54,
+          "volume": 0.64
+        }
+      ],
+      "props": {
+        "variant": "cctv_backdoor",
+        "tone": "amber",
+        "badge": "TELECOM LOG · SHAAM 7:42 PM",
+        "headline": "Theek 7:42 PM Par 2 Minute *21* Trap!",
+        "secondaryImage": "characters/kabir-investigating.png",
+        "heroImage": "characters/handoff-shadow.png",
+        "stepOneTitle": "2 Min Phone Maanga",
+        "stepOneTag": "7:42 PM · DIALED *21* CODE",
+        "stepTwoTitle": "Call History Mita Di!",
+        "stepTwoTag": "CALL LOG DELETED",
+        "ussdTilesStepOne": [
+          "*",
+          "2",
+          "1",
+          "*"
+        ],
+        "ussdTilesStepTwo": [
+          "*",
+          "2",
+          "1",
+          "*"
+        ],
+        "exposedItems": [
+          "7:42 PM Log",
+          "*21* Chalu",
+          "Saboot Gayab"
+        ]
+      }
+    },
+    {
+      "id": "s01e01-sc-04",
+      "startSec": 33.21,
+      "endSec": 40.23,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/heartbeat-radar-ping.wav",
+          "offsetFrames": 2,
+          "volume": 0.48
+        },
+        {
+          "file": "sfx/rooftop-wind-drip.wav",
+          "offsetFrames": 4,
+          "volume": 0.32
+        },
+        {
+          "file": "sfx/stamp-slam.wav",
+          "offsetRatio": 0.44,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "variant": "contact_match",
+        "tone": "crimson",
+        "lockedParallax": true,
+        "badge": "LIVE TOWER TRACE · RAAT 11:32 PM",
+        "headline": "Chori Ka SIM Ghar Ki Chhat Par Chalu!",
+        "secondaryImage": "characters/shaadi-chhat-wide.png",
+        "heroImage": "characters/shaadi-chhat-signal.png",
+        "radarPinLabel": "LIVE CELL-TOWER LOCK · 11:32 PM",
+        "crossedOutLabel": "BAHAR KA ANJAAN HACKER",
+        "matchHeadline": "GADDAR ABHI GHAR KE ANDAR HAI!",
+        "matchSubline": "Chhat Ke Signal Ne 3 Apnon Ko Ghera",
+        "verdictPillLeft": "▲ INSIDER BETRAYAL CONFIRMED",
+        "verdictPillRight": "3 SUSPECTS INSIDE HOME"
+      }
+    },
+    {
+      "id": "s01e01-sc-05",
+      "startSec": 40.23,
+      "endSec": 56.43,
+      "kind": "detective_suspect_board",
+      "props": {
+        "boardMode": "suspect_vote",
+        "prompt": "ASLI GADDAR KAUN HAI?",
+        "partBadge": "PART 2 JALD",
+        "spotlightRightBadge": "SIM LIVE @ CHHAT",
+        "followHandleLine": "PART 2 REVEAL KE LIYE FOLLOW @CYBERJASOOS",
+        "forensicClueBar": "LIVE TRACE: CHORI KA SIM GHAR KI CHHAT PAR CHALU!",
+        "suspects": [
+          {
+            "key": "A",
+            "name": "Pados Ka Golu",
+            "role": "7:40 PM · 2 Min",
+            "timestampBadge": "7:40 PM",
+            "clue": "Phone Off · Gayab!",
+            "image": "characters/golu.png"
+          },
+          {
+            "key": "B",
+            "name": "Ramu Kaka",
+            "role": "7:42 PM · Puja Ghar",
+            "timestampBadge": "7:42 PM",
+            "clue": "Jeb Mein SIM Packet!",
+            "image": "characters/ramu-kaka.png"
+          },
+          {
+            "key": "C",
+            "name": "Pappu Chachu",
+            "role": "11:25 PM · 5L Udhaar",
+            "timestampBadge": "11:25 PM",
+            "clue": "Chhat Par Whisper!",
+            "image": "characters/pappu-chachu.png"
+          }
+        ],
+        "optionTimingsSec": [
+          2.21,
+          4.84,
+          7.02
+        ],
+        "ctaLine": "Chhat par chhupa gaddar kaun? A, B, C comment!",
+        "loopBridgeText": "Kyunki bas kuch hi ghanton baad..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "Subah beti ki doli uthne wali thi, magar aadhi raat Sharma Ji ke pairon tale zameen khisak gayi — shaadi account se poore Rs 12 Lakh saaf! Phone shaam se Puja Ghar mein band rakha tha, na koi anjaan call aaya na link khula — par Cyber Jasoos ki jaanch mein khula ki sangeet ke shor mein theek 7:42 PM par kisi ne chupke se *21* call-forwarding lagayi, jisse bank ki saari IVR OTP calls chhat par chalu ek farzi SIM par jaa rahi thin! Shak ke ghere mein 3 apne hain: A) Pados Ka Golu (7:40 PM 2 minute phone maangkar phone off aur gayab), B) Ramu Kaka (7:42 PM Puja Ghar ke paas, jeb mein naye SIM ka packet), ya C) Pappu Chachu (5 Lakh maange, 11:25 PM chhat par chupke baat karte dikhe). Asli gaddar kaun hai? Neeche A, B, ya C comment kijiye!",
+    "youtubeShortsTitle": "Subah Beti Ki Doli, Raat 12 Lakh Saaf! Chhat Par Chhupa Gaddar Kaun? #Shorts",
+    "linkedinPost": "Live Terrace SIM & The *21* Voice-OTP Call-Forwarding Trap — Case #01 (Cyber Jasoos):\n\nPer DoT Advisory (PIB Release ID 1995304, 11 Jan 2024) and MHA I4C 1930 (cybercrime.gov.in), even when a smartphone sits untouched in the Puja room all evening, a brief unlocked moment during wedding festivities lets an insider dial USSD *21* unconditional call forwarding (logged at 7:42 PM) to divert Bank IVR 'Call-Me' voice OTP calls — and live tower trace shows the rogue SIM is still active on the wedding house terrace!\n\nThree insiders, three guilty secrets: A) Golu (7:40 PM 2 minute phone maangkar gayab, now unreachable), B) Ramu Kaka (7:42 PM Puja room, new SIM packet in pocket), or C) Pappu Chachu (asked Rs 5L, whispering on terrace at 11:25 PM). Who is the real culprit?",
+    "pinnedCommentVote": "LIVE TRACE: CHORI KA SIM ABHI BHI GHAR KI CHHAT PAR CHALU HAI!\nA = Pados Ka Golu (7:40 PM 2 minute phone maangkar gayab, phone switched off)\nB = Ramu Kaka (7:42 PM Puja Ghar ke paas, jeb mein naye SIM ka packet)\nC = Pappu Chachu (5 Lakh udhaar maange, 11:25 PM chhat par chupke baat karte mile)\nSaboot milaiye aur A, B, ya C comment kijiye — Part 2 mein teeno raaz khulenge!",
+    "hashtags": [
+      "#CyberJasoos",
+      "#AsliGaddarKaun",
+      "#ShaadiMystery",
+      "#HindiCrimeStory",
+      "#OTPScamAlert",
+      "#CyberSafetyIndia"
+    ]
+  }
+}

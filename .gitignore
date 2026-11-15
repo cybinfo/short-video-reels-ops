@@ -1,0 +1,31 @@
+# Local governance & scratch files
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+WhatsApp Image*
+temp_*.html
+temp_*.md
+
+# Python, Node & Remotion caches
+.DS_Store
+**/__pycache__/
+*.pyc
+.venv_audio/
+engine/node_modules/
+.remotion/
+engine/.remotion/
+
+# Rendered videos, UAT artifacts & generated teleprompter exports
+renders/*.mp4
+renders/*.mov
+renders/launch-pack-*/*.mp4
+renders/uat/
+renders/teleprompter-export.md
+episodes/**/raw_mic_*
+
+# Local SQLite telemetry & untracked credentials
+data/*.sqlite3*
+.env*
+secrets/
+
+

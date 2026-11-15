@@ -1,0 +1,320 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CyberJasoosEpisodeManifest",
+  "description": "Data-driven 9:16 cybersecurity thriller episode manifest for Cyber Jasoos / Remotion + acoustic WordBoundary alignment + retention validation.",
+  "type": "object",
+  "required": [
+    "id",
+    "season",
+    "episode",
+    "totalEpisodesInSeason",
+    "seasonTitle",
+    "episodeTitle",
+    "companyName",
+    "securityDomain",
+    "realBreachParallel",
+    "voiceConfig",
+    "durationSeconds",
+    "fps",
+    "hook",
+    "scriptSegments",
+    "scenes",
+    "postCopy"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^s[0-9]{2}e[0-9]{2}-[a-z0-9-]+$" },
+    "season": { "type": "integer", "minimum": 1 },
+    "episode": { "type": "integer", "minimum": 1 },
+    "totalEpisodesInSeason": { "type": "integer", "minimum": 2, "maximum": 8 },
+    "seasonTitle": { "type": "string", "minLength": 5 },
+    "episodeTitle": { "type": "string", "minLength": 5 },
+    "companyName": { "type": "string", "minLength": 2 },
+    "visualTheme": {
+      "type": "string",
+      "enum": ["bright_detective", "dark_cyber", "noir_cinema"]
+    },
+    "coldOpenTag": { "type": "string" },
+    "hudPartBadge": { "type": "string" },
+    "introSfx": {
+      "type": "object",
+      "required": ["file"],
+      "properties": {
+        "file": { "type": "string" },
+        "durationSec": { "type": "number" },
+        "volume": { "type": "number" }
+      }
+    },
+    "speakerLabels": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "pollBranches": {
+      "type": "object",
+      "required": ["A", "B", "C"],
+      "additionalProperties": false,
+      "properties": {
+        "A": { "$ref": "#/$defs/pollBranch" },
+        "B": { "$ref": "#/$defs/pollBranch" },
+        "C": { "$ref": "#/$defs/pollBranch" }
+      }
+    },
+    "securityDomain": { "type": "string", "minLength": 5 },
+    "realBreachParallel": {
+      "type": "object",
+      "required": ["incident", "year", "impact", "lesson"],
+      "properties": {
+        "incident": { "type": "string" },
+        "year": { "type": "integer" },
+        "impact": { "type": "string" },
+        "lesson": { "type": "string" }
+      }
+    },
+    "voiceConfig": {
+      "type": "object",
+      "required": ["mode", "engineLicense", "targetWpm"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["recorded", "commercial_clone", "draft_say", "kokoro_neural", "edge_neural"]
+        },
+        "engineLicense": {
+          "type": "string",
+          "enum": ["OWN_VOICE", "COMMERCIAL_API", "APACHE_2_0", "MIT", "EDGE_READ_ALOUD_PREVIEW", "MACOS_DRAFT"]
+        },
+        "azureSpeechRegion": { "type": "string" },
+        "kokoroVoice": { "type": "string" },
+        "kokoroVoices": { "type": "object" },
+        "kokoroLang": { "type": "string" },
+        "kokoroSpeed": { "type": "number" },
+        "kokoroSpeeds": { "type": "object" },
+        "edgeVoices": { "type": "object" },
+        "edgeRates": { "type": "object" },
+        "edgePitches": { "type": "object" },
+        "edgeFormants": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0.85,
+            "maximum": 1.25
+          }
+        },
+        "audioFile": { "type": "string" },
+        "captionsFile": { "type": "string" },
+        "targetWpm": { "type": "integer", "minimum": 145, "maximum": 185 }
+      }
+    },
+    "durationSeconds": { "type": "number", "minimum": 42, "maximum": 58 },
+    "fps": { "type": "integer", "const": 30 },
+    "hook": {
+      "type": "object",
+      "required": ["openingLine", "hookPattern"],
+      "properties": {
+        "openingLine": { "type": "string", "minLength": 15 },
+        "hookPattern": {
+          "type": "string",
+          "enum": ["comment_callout", "mid_breach_timestamp", "contradiction_shock"]
+        },
+        "previousVoteResult": {
+          "type": "object",
+          "required": ["winningOption", "percentage", "outcomeVerdict"],
+          "properties": {
+            "winningOption": { "type": "string", "enum": ["A", "B", "C"] },
+            "percentage": { "type": "integer", "minimum": 1, "maximum": 99 },
+            "outcomeVerdict": { "type": "string" }
+          }
+        }
+      }
+    },
+    "scriptSegments": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "startSec", "endSec", "phase", "narration", "highlightKeywords"],
+        "properties": {
+          "id": { "type": "string" },
+          "startSec": { "type": "number", "minimum": 0 },
+          "endSec": { "type": "number", "minimum": 1 },
+          "phase": {
+            "type": "string",
+            "enum": ["hook", "escalation", "framework", "micro_payoff", "cliffhanger_vote"]
+          },
+          "narration": { "type": "string", "minLength": 10 },
+          "speaker": { "type": "string", "enum": ["jyoti", "rajat", "narrator", "kabir", "sharma", "chachu"] },
+          "ttsHindi": { "type": "string" },
+          "ttsClauses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["roman"],
+              "anyOf": [
+                { "required": ["hi"] },
+                { "required": ["tts"] }
+              ],
+              "properties": {
+                "roman": { "type": "string" },
+                "hi": { "type": "string" },
+                "tts": { "type": "string" },
+                "speaker": { "type": "string", "enum": ["jyoti", "rajat", "narrator", "kabir", "sharma", "chachu"] },
+                "rate": { "type": "string" },
+                "pitch": { "type": "string" },
+                "pauseAfter": { "type": "number", "minimum": 0.02, "maximum": 1.2 },
+                "breathBefore": { "type": "boolean" },
+                "emotion": { "type": "string" }
+              }
+            }
+          },
+          "highlightKeywords": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["id", "startSec", "endSec", "kind", "props"],
+        "properties": {
+          "id": { "type": "string" },
+          "startSec": { "type": "number", "minimum": 0 },
+          "endSec": { "type": "number", "minimum": 1 },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "comment_spotlight",
+              "breach_terminal",
+              "network_attack_graph",
+              "asset_tier_matrix",
+              "risk_heatmap",
+              "payoff_proof_card",
+              "vote_cliffhanger",
+              "detective_crime_hook",
+              "detective_wifi_clue",
+              "detective_evidence_twist",
+              "detective_suspect_board"
+            ]
+          },
+          "sfxCues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["file"],
+              "properties": {
+                "file": { "type": "string" },
+                "offsetRatio": { "type": "number" },
+                "offsetFrames": { "type": "integer" },
+                "volume": { "type": "number" }
+              }
+            }
+          },
+          "props": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "lockedParallax": { "type": "boolean" },
+              "parallaxMode": {
+                "type": "string",
+                "enum": ["standard", "macro", "locked"]
+              },
+              "secondaryParallaxMode": {
+                "type": "string",
+                "enum": ["standard", "macro", "locked"]
+              },
+              "tertiaryParallaxMode": {
+                "type": "string",
+                "enum": ["standard", "macro", "locked"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "postCopy": {
+      "type": "object",
+      "required": ["instagramCaption", "youtubeShortsTitle", "linkedinPost", "pinnedCommentVote", "hashtags"],
+      "properties": {
+        "instagramCaption": { "type": "string" },
+        "youtubeShortsTitle": { "type": "string", "maxLength": 100 },
+        "linkedinPost": { "type": "string" },
+        "pinnedCommentVote": { "type": "string" },
+        "hashtags": { "type": "array", "minItems": 4, "maxItems": 10, "items": { "type": "string" } }
+      }
+    }
+  },
+  "$defs": {
+    "pollBranch": {
+      "type": "object",
+      "required": [
+        "episodeTitle",
+        "coldOpenTag",
+        "outcomeVerdict",
+        "openingLine",
+        "seg01",
+        "scene01Props",
+        "postCopy"
+      ],
+      "properties": {
+        "episodeTitle": { "type": "string", "minLength": 5 },
+        "coldOpenTag": { "type": "string", "minLength": 3 },
+        "outcomeVerdict": { "type": "string", "minLength": 10 },
+        "openingLine": { "type": "string", "minLength": 15 },
+        "seg01": {
+          "type": "object",
+          "required": ["narration", "ttsClauses", "highlightKeywords"],
+          "properties": {
+            "narration": { "type": "string", "minLength": 10 },
+            "ttsClauses": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["roman"],
+                "anyOf": [
+                  { "required": ["hi"] },
+                  { "required": ["tts"] }
+                ]
+              }
+            },
+            "highlightKeywords": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "scene01Props": {
+          "type": "object",
+          "required": ["phoneStatus", "scrollStopper", "shotTitles"],
+          "properties": {
+            "phoneStatus": { "type": "string" },
+            "scrollStopper": {
+              "type": "object",
+              "required": ["badge", "text", "tone"],
+              "properties": {
+                "badge": { "type": "string" },
+                "text": { "type": "string" },
+                "tone": { "type": "string" }
+              }
+            },
+            "shotTitles": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "postCopy": {
+          "type": "object",
+          "required": ["instagramCaption", "youtubeShortsTitle", "linkedinPost", "pinnedCommentVote", "hashtags"],
+          "properties": {
+            "instagramCaption": { "type": "string" },
+            "youtubeShortsTitle": { "type": "string" },
+            "linkedinPost": { "type": "string" },
+            "pinnedCommentVote": { "type": "string" },
+            "hashtags": { "type": "array", "minItems": 4, "maxItems": 10, "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}

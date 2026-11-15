@@ -1,0 +1,180 @@
+{
+  "id": "s01e04-automated-cmdb-shield",
+  "season": 1,
+  "episode": 4,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Shadow IT & Asset Classification",
+  "episodeTitle": "Season Finale — Zero Blind Spots",
+  "companyName": "NovaPay",
+  "securityDomain": "Continuous Asset Discovery & Zero-Trust Segmentation",
+  "realBreachParallel": {
+    "incident": "MGM Resorts Hybrid Identity & Asset Sprawl Intrusion",
+    "year": 2023,
+    "impact": "$100M+ business disruption across casino floors, hotels, and hybrid cloud systems",
+    "lesson": "Point-in-time spreadsheets decay in hours; continuous discovery and micro-segmentation contain lateral blast radius."
+  },
+  "voiceConfig": {
+    "mode": "draft_say",
+    "engineLicense": "MACOS_DRAFT",
+    "audioFile": "episodes/s01-asset-classification/s01e04-automated-cmdb-shield.wav",
+    "captionsFile": "episodes/s01-asset-classification/s01e04-automated-cmdb-shield.captions.json",
+    "targetWpm": 165
+  },
+  "durationSeconds": 52,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Seventy-nine percent of you locked in Option B—while the fourteen percent running Excel audits got breached by Tuesday.",
+    "hookPattern": "comment_callout",
+    "previousVoteResult": {
+      "winningOption": "B",
+      "percentage": 79,
+      "outcomeVerdict": "Continuous Auto-Discovery + Zero-Trust Segmentation quarantined rogue hardware in 8 seconds; quarterly spreadsheets drifted within 48 hours."
+    }
+  },
+  "scriptSegments": [
+    {
+      "id": "s01e04-seg-01",
+      "startSec": 0,
+      "endSec": 4.5,
+      "phase": "hook",
+      "narration": "Seventy-nine percent of you locked in Option B—while the fourteen percent running Excel audits got breached by Tuesday.",
+      "highlightKeywords": ["Seventy-nine percent", "Option B", "Excel audits", "breached by Tuesday"]
+    },
+    {
+      "id": "s01e04-seg-02",
+      "startSec": 4.5,
+      "endSec": 15,
+      "phase": "escalation",
+      "narration": "Developers spin up containers in seconds, turning quarterly spreadsheets into fiction on Day Two. And banning IoT failed the moment facilities plugged a cellular LTE badge reader into corporate switching.",
+      "highlightKeywords": ["containers in seconds", "spreadsheets", "LTE badge reader", "corporate switching"]
+    },
+    {
+      "id": "s01e04-seg-03",
+      "startSec": 15,
+      "endSec": 35,
+      "phase": "framework",
+      "narration": "Real asset defense runs on three automated pillars: Continuous Cloud and Network Discovery, Policy-as-Code Data Tagging the instant new storage spawns, and Zero-Trust Micro-Segmentation between every tier. Even if a rogue lobby device gets compromised today, automated segmentation walls choke its lateral blast radius to zero.",
+      "highlightKeywords": ["Continuous", "Discovery", "Policy-as-Code", "Zero-Trust Micro-Segmentation", "blast radius"]
+    },
+    {
+      "id": "s01e04-seg-04",
+      "startSec": 35,
+      "endSec": 43,
+      "phase": "micro_payoff",
+      "narration": "In 2023, MGM Resorts suffered over $100 million in disruption when attackers weaponized sprawling hybrid identities across interconnected enterprise systems.",
+      "highlightKeywords": ["MGM Resorts", "$100 million", "hybrid identities", "interconnected"]
+    },
+    {
+      "id": "s01e04-seg-05",
+      "startSec": 43,
+      "endSec": 52,
+      "phase": "cliffhanger_vote",
+      "narration": "Season Two begins now: NovaPay sees all 1,400 assets, nine critical bugs flash red, and you have $100K before Friday. Which bug dies first?",
+      "highlightKeywords": ["Season Two", "1,400 assets", "nine critical bugs", "$100K", "Which bug dies first"]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01e04-sc-01",
+      "startSec": 0,
+      "endSec": 6,
+      "kind": "comment_spotlight",
+      "props": {
+        "optionPicked": "B",
+        "percentage": 79,
+        "voterQuote": "Spreadsheets rot in 24 hours—automate continuous discovery and micro-segment every VLAN!",
+        "verdictLabel": "79% PASSED REGULATOR AUDIT",
+        "verdictTone": "success"
+      }
+    },
+    {
+      "id": "s01e04-sc-02",
+      "startSec": 6,
+      "endSec": 15,
+      "kind": "breach_terminal",
+      "props": {
+        "windowTitle": "LIVE CMDB // AUTO-QUARANTINE ENGINE",
+        "timestamp": "11:04:08 UTC",
+        "severity": "WARNING",
+        "metricBadge": "ROGUE DEVICE ISOLATED IN 8.4S",
+        "logLines": [
+          { "time": "11:04:00", "text": "NAC_SENSOR: Unknown MAC (LTE-Badge-09) joined Switch-HQ-2", "level": "warn" },
+          { "time": "11:04:04", "text": "TAG_ENGINE: Unclassified hardware -> Assigned Quarantine VLAN-999", "level": "info" },
+          { "time": "11:04:08", "text": "EAST_WEST_FW: Blocked SMB/LDAP probe toward Tier-1 Prod", "level": "alert" }
+        ]
+      }
+    },
+    {
+      "id": "s01e04-sc-03",
+      "startSec": 15,
+      "endSec": 25,
+      "kind": "asset_tier_matrix",
+      "props": {
+        "title": "Automated CMDB & Policy-as-Code Shield",
+        "activeTier": "NAC + Cloud API Telemetry",
+        "tiers": [
+          { "rank": 1, "name": "Cloud Event Guardrails", "tag": "REAL-TIME", "examples": "Auto-block public S3 ACLs & untagged KMS vaults", "blastRadius": "0 Orphaned Ghost Buckets", "colorTone": "crimson" },
+          { "rank": 2, "name": "Identity Scope Lock", "tag": "LEAST-PRIV", "examples": "No shared AD accounts on Tier-3/4 hardware", "blastRadius": "Transitive Pivots Severed", "colorTone": "amber" },
+          { "rank": 3, "name": "NAC + Cloud API Telemetry", "tag": "LIVE CMDB", "examples": "Every container, laptop & webhook indexed <60s", "blastRadius": "Zero Shadow IT Drift", "colorTone": "cyan" },
+          { "rank": 4, "name": "Zero-Trust Micro-Segments", "tag": "CONTAINED", "examples": "Lobby & IoT locked to egress-only sandbox", "blastRadius": "Lateral Blast Radius = 0", "colorTone": "emerald" }
+        ]
+      }
+    },
+    {
+      "id": "s01e04-sc-04",
+      "startSec": 25,
+      "endSec": 35,
+      "kind": "network_attack_graph",
+      "props": {
+        "title": "Blast-Radius Containment Verified",
+        "subtitle": "Rogue LTE device quarantined before touching internal identities",
+        "nodes": [
+          { "id": "lte-box", "label": "Rogue Badge Box", "sublabel": "Untracked Cellular IoT", "tier": "untracked", "compromised": true },
+          { "id": "zt-wall", "label": "VLAN-999 Sandbox", "sublabel": "Zero-Trust Policy Gate", "tier": "restricted", "compromised": false },
+          { "id": "core-ledger", "label": "NovaPay Core Vault", "sublabel": "$10M/wk Revenue Engine", "tier": "crown_jewel", "compromised": false }
+        ],
+        "edges": [
+          { "from": "lte-box", "to": "zt-wall", "label": "Auto-Quarantined 8.4s", "attackPath": true },
+          { "from": "zt-wall", "to": "core-ledger", "label": "East-West Denied", "attackPath": false }
+        ]
+      }
+    },
+    {
+      "id": "s01e04-sc-05",
+      "startSec": 35,
+      "endSec": 43,
+      "kind": "payoff_proof_card",
+      "props": {
+        "takeawayHeadline": "SEASON 1 MASTER RULE: AUTOMATE VISIBILITY",
+        "coreRule": "Continuous discovery + automated tier tagging + micro-segmentation turn breaches into isolated dead ends.",
+        "realBreachName": "MGM Resorts Intrusion (2023)",
+        "realBreachStat": "$100M+ Disruption · Multi-Day Outage",
+        "realBreachCause": "Attackers leveraged hybrid identity permissions and sprawling connected systems to cascade impact."
+      }
+    },
+    {
+      "id": "s01e04-sc-06",
+      "startSec": 43,
+      "endSec": 52,
+      "kind": "vote_cliffhanger",
+      "props": {
+        "crisisPrompt": "NovaPay sees all 1,400 assets — 9 Critical bugs flash red! You get $100K to protect $10M in revenue before Friday. Which bug first?",
+        "countdownLabel": "SEASON 2 PREMIERE VOTE",
+        "options": [
+          { "key": "A", "label": "Cafeteria Menu Server (CVSS 9.8)", "detail": "Highest CVSS score, static lunch PDFs, zero PII" },
+          { "key": "B", "label": "Checkout Payment API (CVSS 7.5)", "detail": "Lower score, live $10M/wk card flow + active exploit" },
+          { "key": "C", "label": "Offline Tape Archive (CVSS 9.1)", "detail": "Air-gapped vault room requiring dual physical keys" }
+        ],
+        "ctaLine": "Vote A, B, or C — your call launches Season 2: Risk Assessment!",
+        "loopBridgeText": "Look how far NovaPay came since..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "79% of you crushed the Season 1 Finale with Option B—while the 14% using Excel sheets drifted out of compliance in 48 hours! Now NovaPay finally sees all 1,400 assets... and 9 Critical alerts flash red at once. You have $100K to protect $10M before Friday. Which bug do you fix first? Vote A, B, or C for Season 2!",
+    "youtubeShortsTitle": "Zero Blind Spots: Why Excel Asset Audits Fail in 48 Hours (S1 Finale)",
+    "linkedinPost": "Season 1 Finale of BreachZero: Quarterly asset spreadsheets become fiction the second an engineer deploys a new container or facilities plugs in an LTE sensor.\n\n79% of voters chose Continuous Auto-Discovery + Policy-as-Code Tagging + Zero-Trust Segmentation—the exact combination that prevents $100M+ enterprise cascades like MGM Resorts (2023).\n\nNow Season 2 (Risk Assessment) begins: Full visibility just lit up 9 'Critical' bugs at once. With $100K before Friday to protect $10M in weekly checkout revenue, do you patch A) CVSS 9.8 Cafeteria Server, B) CVSS 7.5 Live Checkout API, or C) CVSS 9.1 Air-Gapped Archive?",
+    "pinnedCommentVote": "SEASON 2 CLIFFHANGER VOTE — You have $100K & 48 hours to protect $10M in NovaPay revenue. Which vulnerability do you patch first?\nA = Cafeteria Menu Server (CVSS 9.8)\nB = Checkout Payment API (CVSS 7.5)\nC = Offline Tape Archive (CVSS 9.1)\nReply A, B, or C!",
+    "hashtags": ["#CMDB", "#ZeroTrust", "#CloudSecurity", "#RiskAssessment", "#CISO", "#BreachZero"]
+  }
+}

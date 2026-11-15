@@ -1,0 +1,182 @@
+{
+  "id": "s01e03-lobby-printer-pivot",
+  "season": 1,
+  "episode": 3,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Shadow IT & Asset Classification",
+  "episodeTitle": "The Harmless Lobby Printer Pivot",
+  "companyName": "NovaPay",
+  "securityDomain": "Transitive Trust & Attack-Path Classification",
+  "realBreachParallel": {
+    "incident": "Casino Fish-Tank IoT & Target HVAC Vendor Pivot",
+    "year": 2017,
+    "impact": "10 GB of VIP casino database records stolen via IoT; $292M+ in parallel vendor-pivot breaches",
+    "lesson": "Any Tier-4 IoT or vendor node with credential or network reach into Tier-1 inherits Crown Jewel risk."
+  },
+  "voiceConfig": {
+    "mode": "draft_say",
+    "engineLicense": "MACOS_DRAFT",
+    "audioFile": "episodes/s01-asset-classification/s01e03-lobby-printer-pivot.wav",
+    "captionsFile": "episodes/s01-asset-classification/s01e03-lobby-printer-pivot.captions.json",
+    "targetWpm": 165
+  },
+  "durationSeconds": 51,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Fifty-four percent of you blamed Guest Wi-Fi, while thirty-one percent nailed the real killer: the Smart Lobby Printer.",
+    "hookPattern": "comment_callout",
+    "previousVoteResult": {
+      "winningOption": "A",
+      "percentage": 54,
+      "outcomeVerdict": "54% watched the segmented Guest Wi-Fi router, while the 31% who picked Option B spotted the Lobby Printer's cached Active Directory credentials!"
+    }
+  },
+  "scriptSegments": [
+    {
+      "id": "s01e03-seg-01",
+      "startSec": 0,
+      "endSec": 4.5,
+      "phase": "hook",
+      "narration": "Fifty-four percent of you blamed Guest Wi-Fi, while thirty-one percent nailed the real killer: the Smart Lobby Printer.",
+      "highlightKeywords": ["Fifty-four percent", "Guest Wi-Fi", "thirty-one percent", "Smart Lobby Printer"]
+    },
+    {
+      "id": "s01e03-seg-02",
+      "startSec": 4.5,
+      "endSec": 15,
+      "phase": "escalation",
+      "narration": "Tagged Tier-Four Public and ignored, that printer had scan-to-email enabled using an over-privileged Active Directory service account. Attackers dumped its cleartext LDAP password in ninety seconds and walked straight inside.",
+      "highlightKeywords": ["Tier-Four Public", "scan-to-email", "Active Directory", "cleartext LDAP", "ninety seconds"]
+    },
+    {
+      "id": "s01e03-seg-03",
+      "startSec": 15,
+      "endSec": 35,
+      "phase": "framework",
+      "narration": "Static labels fail without Attack-Path Classification. Because of Transitive Trust, any Tier-Four device holding credentials or flat network routes into Tier-One inherits Crown Jewel risk. You never classify an asset only by the data sitting on it—you classify every identity and subnet it can touch.",
+      "highlightKeywords": ["Attack-Path Classification", "Transitive Trust", "credentials", "Crown Jewel risk", "subnet"]
+    },
+    {
+      "id": "s01e03-seg-04",
+      "startSec": 35,
+      "endSec": 43,
+      "phase": "micro_payoff",
+      "narration": "Attackers proved this by stealing ten gigabytes of casino VIP data through a lobby fish-tank thermometer, echoing Target's HVAC pivot.",
+      "highlightKeywords": ["ten gigabytes", "casino VIP", "fish-tank thermometer", "Target's HVAC"]
+    },
+    {
+      "id": "s01e03-seg-05",
+      "startSec": 43,
+      "endSec": 51,
+      "phase": "cliffhanger_vote",
+      "narration": "Regulators audit NovaPay tomorrow morning. How do we eliminate shadow pivots permanently: Quarterly Spreadsheets, Continuous Auto-Discovery, or IoT Bans? Comment below.",
+      "highlightKeywords": ["Regulators audit", "tomorrow morning", "Continuous Auto-Discovery", "Comment below"]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01e03-sc-01",
+      "startSec": 0,
+      "endSec": 6,
+      "kind": "comment_spotlight",
+      "props": {
+        "optionPicked": "B",
+        "percentage": 31,
+        "voterQuote": "It is ALWAYS the office printer—scan-to-folder service accounts have domain-wide LDAP read!",
+        "verdictLabel": "31% SPOTTED THE LDAP PIVOT",
+        "verdictTone": "success"
+      }
+    },
+    {
+      "id": "s01e03-sc-02",
+      "startSec": 6,
+      "endSec": 15,
+      "kind": "breach_terminal",
+      "props": {
+        "windowTitle": "PRINTER FIRMWARE // CREDENTIAL HARVEST",
+        "timestamp": "03:09:18 UTC",
+        "severity": "CRITICAL",
+        "metricBadge": "LDAP BIND CREDENTIALS DUMPED",
+        "logLines": [
+          { "time": "03:08:02", "text": "PORT_9100: Default admin console opened on lobby-mfp-04", "level": "warn" },
+          { "time": "03:08:47", "text": "LDAP_EXPORT: Extracted NOVAPAY\\svc_scan_ldap in cleartext", "level": "alert" },
+          { "time": "03:09:18", "text": "LATERAL_AUTH: svc_scan_ldap authenticated to Prod-Core-VLAN", "level": "alert" }
+        ]
+      }
+    },
+    {
+      "id": "s01e03-sc-03",
+      "startSec": 15,
+      "endSec": 26,
+      "kind": "network_attack_graph",
+      "props": {
+        "title": "Transitive Trust Lateral Pivot",
+        "subtitle": "How a Tier-4 Lobby Printer bridged directly into Tier-1 Production",
+        "nodes": [
+          { "id": "printer", "label": "Smart Lobby Printer", "sublabel": "Tagged Tier 4 Public", "tier": "public", "compromised": true },
+          { "id": "ad-svc", "label": "svc_scan_ldap", "sublabel": "Domain-Wide AD Account", "tier": "internal", "compromised": true },
+          { "id": "prod-api", "label": "Core App Subnet", "sublabel": "Flat VLAN Route", "tier": "restricted", "compromised": true },
+          { "id": "vault", "label": "Tier 1 Payment DB", "sublabel": "Crown Jewel Target", "tier": "crown_jewel", "compromised": true }
+        ],
+        "edges": [
+          { "from": "printer", "to": "ad-svc", "label": "Cleartext LDAP Bind", "attackPath": true },
+          { "from": "ad-svc", "to": "prod-api", "label": "Shared Service Token", "attackPath": true },
+          { "from": "prod-api", "to": "vault", "label": "East-West Pivot", "attackPath": true }
+        ]
+      }
+    },
+    {
+      "id": "s01e03-sc-04",
+      "startSec": 26,
+      "endSec": 35,
+      "kind": "asset_tier_matrix",
+      "props": {
+        "title": "Attack-Path Tier Promotion Rule",
+        "activeTier": "Effective Tier 1 (Promoted)",
+        "tiers": [
+          { "rank": 1, "name": "Effective Tier 1 (Promoted)", "tag": "INHERITED", "examples": "Lobby Printer holding Domain LDAP Creds", "blastRadius": "Reaches Tier-1 Vault in 3 Hops", "colorTone": "crimson" },
+          { "rank": 2, "name": "Vendor & HVAC Bridges", "tag": "HIGH", "examples": "Billing Portals, Building Controllers on Corp LAN", "blastRadius": "Bypasses Perimeter MFA", "colorTone": "amber" },
+          { "rank": 3, "name": "Segmented Internal Tools", "tag": "ISOLATED", "examples": "Scoped Service Accounts + Strict ACLs", "blastRadius": "Contained to Single VLAN", "colorTone": "cyan" },
+          { "rank": 4, "name": "True Tier 4 Public", "tag": "ZERO-TRUST", "examples": "Air-Gapped Guest Wi-Fi with Zero AD Reach", "blastRadius": "Zero Lateral Paths", "colorTone": "emerald" }
+        ]
+      }
+    },
+    {
+      "id": "s01e03-sc-05",
+      "startSec": 35,
+      "endSec": 43,
+      "kind": "payoff_proof_card",
+      "props": {
+        "takeawayHeadline": "CLASSIFY THE REACH, NOT THE BOX",
+        "coreRule": "Transitive Trust means any Tier-4 device with credentials or routes into Tier-1 must be isolated or treated as Tier-1.",
+        "realBreachName": "Casino Fish-Tank IoT (2017) & Target HVAC (2013)",
+        "realBreachStat": "10 GB VIP Data Stolen · $292M+ Vendor Pivot Lesson",
+        "realBreachCause": "Unsegmented IoT and vendor systems provided a trusted bridge into core databases."
+      }
+    },
+    {
+      "id": "s01e03-sc-06",
+      "startSec": 43,
+      "endSec": 51,
+      "kind": "vote_cliffhanger",
+      "props": {
+        "crisisPrompt": "Regulators walk into NovaPay tomorrow at 9 AM. How do you stop shadow assets & IoT pivots permanently?",
+        "countdownLabel": "SEASON 1 FINALE VOTE",
+        "options": [
+          { "key": "A", "label": "Quarterly Excel Spreadsheet Audit", "detail": "Mandate manual asset sign-off every 90 days" },
+          { "key": "B", "label": "Continuous Auto-Discovery + Zero-Trust", "detail": "Real-time network/cloud scan + micro-segmentation" },
+          { "key": "C", "label": "Ban All Office IoT Devices", "detail": "Rip out every smart printer, TV & badge scanner" }
+        ],
+        "ctaLine": "Vote A, B, or C — Season 1 Finale drops next with your verdict!",
+        "loopBridgeText": "Because remember what happened when..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "54% guessed Guest Wi-Fi—while 31% called the Smart Lobby Printer! Tagged 'Tier-4 Public,' it stored an Active Directory scan-to-email password that gave attackers a straight highway to Production. Regulators arrive tomorrow morning: how do you end shadow pivots forever? Vote A, B, or C!",
+    "youtubeShortsTitle": "How a 'Harmless' Lobby Printer Hacked Production in 90 Seconds",
+    "linkedinPost": "Never classify an asset only by the data stored on it—classify it by every credential and network path it can reach.\n\nIn S01E03 of BreachZero, 31% of commenters nailed the trap: NovaPay's Tier-4 Smart Lobby Printer cached an over-privileged LDAP account, echoing the infamous Casino Fish-Tank IoT heist and Target's HVAC pivot.\n\nTomorrow is audit day. How do you stop shadow pivots permanently: A) Quarterly Excel Audits, B) Continuous Auto-Discovery + Zero-Trust Segmentation, or C) Ban All IoT Devices?",
+    "pinnedCommentVote": "FINAL S01 DECISION BEFORE REGULATORS ARRIVE TOMORROW:\nA = Quarterly Excel Spreadsheet Audit\nB = Continuous Network & Cloud Auto-Discovery + Zero-Trust Segmentation\nC = Ban All IoT Devices\nComment A, B, or C!",
+    "hashtags": ["#ZeroTrust", "#IoTSecurity", "#LateralMovement", "#CyberSecurity", "#CISO", "#BreachZero"]
+  }
+}
