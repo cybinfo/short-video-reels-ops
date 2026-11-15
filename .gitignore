@@ -21,6 +21,8 @@ engine/.remotion/
 renders/*.mp4
 renders/*.mov
 renders/launch-pack-*/*.mp4
+renders/guide/*.mp4
+renders/guide/launch-pack-*/*.mp4
 renders/uat/
 renders/teleprompter-export.md
 episodes/**/raw_mic_*

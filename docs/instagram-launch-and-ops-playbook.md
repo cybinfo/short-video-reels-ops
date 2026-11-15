@@ -1,21 +1,33 @@
 # Cyber Jasoos (`@cyberjasoos`) — Unified Production, Self-Healing Engine & Instagram Operations Handbook
 
 Canonical single-source Markdown handbook for **Cyber Jasoos (`@cyberjasoos`)**, structured in exact lockstep with the **5-Tab Centralized Web Hub** ([`docs/index.html`](index.html), exported to static GitHub Pages via `scripts/export_sanitized_pages.py`):
-1. **End-to-End Reel Factory Workflow** (`4-Pillar Self-Healing Pipeline + Part 1 & Part 2 YAML Briefs`)
-2. **Master Script & CLI Directory** (`All 21 Python Scripts + Remotion 4 Engine Commands`)
+1. **End-to-End Reel Factory Workflow** (`3m 07s Hinglish Master Video Guide, 4-Pillar Self-Healing Pipeline + Part 1 & Part 2 YAML Briefs`)
+2. **Master Script & CLI Directory** (`All 23 Python Scripts + Remotion 4 Engine Commands`)
 3. **Show Spec, Safe Zones, Voice Provenance & 6-Season Curriculum** (`42–58s Clock, NOIR_GRID, Season 2 NovaPay Arc`)
 4. **Hybrid Instagram Launch, Active Case Ops & Part 1 -> Part 2 Poll Loop** (`85% Mac Web + 15% Android SOP`)
 5. **One-Time Account Privacy & $0 Meta Graph API Setup** (`Android Trust Anchor, Handle Matrix & Graph v22.0`)
 
 ## 1. End-to-End Reel Factory Workflow
 
+### End-to-End Hinglish Video Guide (`3m 07s` · 4 Chapters)
+
+- **Master Stitched Video (`1080x1920 @ 30fps`, `FFMETADATA1` Chapter Markers)**: `renders/guide/cyber-jasoos-automation-master-guide.mp4` (`open renders/guide/cyber-jasoos-automation-master-guide.mp4`)
+- **Non-Crime Tutorial / Explainer YAML Preset**: Set `preset: guide_walkthrough` in any YAML Story Brief (`compile_story_brief.py` + `story_brief_templates.py`), generate deterministic `1080x1920` UI/YAML/CLI/Safe-Zone plates via `scripts/render_guide_plates.py`, build chapter MP4s via `scripts/build_episode.py --mp4-output`, and stitch chapters via `scripts/stitch_video_guide.py`.
+
+| Chapter & Timestamp | Walkthrough Coverage | Standalone Chapter Reel MP4 |
+| :--- | :--- | :--- |
+| **`00:00 — Ch 1 (51.9s)`** | 5-Tab Web Hub, `.png/.jpg` Auto-Cast & 35-Line Story Brief (`preset: guide_walkthrough`) | `renders/guide/ch01-story-brief-autocast.mp4` |
+| **`00:52 — Ch 2 (47.2s)`** | Single-Command `build_episode.py`, Voice Modes & Safe-Zone Self-Heal | `renders/guide/ch02-self-healing-build.mp4` |
+| **`01:39 — Ch 3 (44.1s)`** | `7:40 PM IST` Upload SOP, Comment Tally & `95%` Zero-AI Part 2 Branch | `renders/guide/ch03-upload-and-poll-branch.mp4` |
+| **`02:23 — Ch 4 (43.8s)`** | SQLite Mosseri Growth Ledger & Auto-Inherited Defaults | `renders/guide/ch04-growth-ledger-learning.mp4` |
+
 ### 4-Pillar Deterministic Self-Healing & Auto-Improvement Engine
 
 Every stage from 35-line YAML brief to rendered launch pack and post-publish parameter tuning runs 100% deterministically in local Python + TypeScript with zero external model runtime dependencies:
 
 1. **Pillar 1 — Zero-Touch Episode Registry (`scripts/sync_episode_registry.py`)**: Scans `episodes/**/*.json` (excluding `schema.json` and `briefs/`) and generates `engine/src/generated/episodeRegistry.ts` so every episode registers in Remotion automatically.
-2. **Pillar 2 — Auto-Calibrated `1080x1920` Cast Framing & 2.5D Mattes (`scripts/standardize_cast.py --auto-frame` + `scripts/generate_depth_mattes.py`)**: Locks raw plates in `<case_dir>/raw/` to eye-line-calibrated `1080x1920` PNGs, deterministically inpaints third-party stencils, and generates Apache-2.0 `fg/*.png` + `bg/*.jpg` parallax depth layers.
-3. **Pillar 3 — Story Brief Compiler & Self-Healing Builder (`scripts/compile_story_brief.py` + `scripts/build_episode.py` + `scripts/self_heal_rules.py`)**: Compiles `.yaml`/`.json` briefs (seeded by `data/learned_defaults.json`) into validated `EpisodeManifest` JSONs, conforms `44.1kHz` narration + word captions, iteratively heals speech-rate/WPM/text/DOM drift (`--max-heal-iters 3`), runs Headless Chrome `npm run uat:dom`, and emits the MP4 + `POST_COPY_AND_PINNED_COMMENT.txt` + grid-safe Reel cover.
+2. **Pillar 2 — Auto-Calibrated `1080x1920` Cast Framing & 2.5D Mattes (`scripts/standardize_cast.py --auto-frame` + `scripts/generate_depth_mattes.py` + `scripts/render_guide_plates.py`)**: Locks raw `.png/.jpg/.webp` plates in `<case_dir>/raw/` to eye-line-calibrated `1080x1920` PNGs, deterministically inpaints third-party stencils, renders walkthrough plates (`assets/characters/guide01/raw/`), and generates Apache-2.0 `fg/*.png` + `bg/*.jpg` parallax depth layers.
+3. **Pillar 3 — Story Brief Compiler, Self-Healing Builder & Guide Stitcher (`scripts/compile_story_brief.py` + `scripts/build_episode.py` + `scripts/self_heal_rules.py` + `scripts/stitch_video_guide.py`)**: Compiles `.yaml`/`.json` briefs (`crime_case` or `preset: guide_walkthrough`, seeded by `data/learned_defaults.json`) into validated `EpisodeManifest` JSONs, conforms `44.1kHz` narration + word captions, iteratively heals speech-rate/WPM/text/DOM drift (`--max-heal-iters 3`), runs Headless Chrome `npm run uat:dom`, emits the MP4 (`--mp4-output`) + `POST_COPY_AND_PINNED_COMMENT.txt` + grid-safe Reel cover, and stitches multi-chapter MP4 guides with `FFMETADATA1` chapters.
 4. **Pillar 4 — SQLite Growth Telemetry Ledger (`scripts/growth_ledger.py` + `scripts/instagram_ops.py record-metrics` & `learn`)**: Logs per-Reel reach, saves, shares, skip rate, poll votes, hook style, and IST upload hour into `data/growth_ledger.sqlite3`, then writes top-performing duration, WPM, hook archetype, and IST slot priors to `data/learned_defaults.json`.
 
 ### Step-by-Step Reel Factory CLI Pipeline
@@ -117,27 +129,29 @@ suspects:
   - { key: C, name: "Midnight SIM Swap", role: "Case #03C · No Network", timestampBadge: "02:10 AM", clue: "Dead Signal Bars!", image: "characters/kabir-investigating.png" }
 ```
 
-## 2. Master Script & CLI Directory (All 21 Python Scripts + Engine Commands)
+## 2. Master Script & CLI Directory (All 23 Python Scripts + Engine Commands)
 
-### Episode Authoring, Self-Healing Builder, Voice & Validation (`9` Scripts)
+### Episode Authoring, Self-Healing Builder, Guide Stitcher, Voice & Validation (`10` Scripts)
 
 | Script (`scripts/`) | Mode | Key CLI Flags / Entrypoints & Primary Output |
 | :--- | :--- | :--- |
-| `build_episode.py` | CLI | `--brief \| --episode`, `--output-manifest`, `--case-dir`, `--voice-mode {edge,kokoro,recorded,draft_say}`, `--voice-input`, `--launch-pack-dir`, `--max-heal-iters 3`, `--skip-dom-audit`, `--render-mp4` -> end-to-end healed MP4 + launch copy pack + Reel cover. |
-| `compile_story_brief.py` | CLI + Lib | `--brief/-b`, `--output/-o`, `--defaults data/learned_defaults.json` -> compiles 30–40 line `.yaml`/`.json` briefs (+ `pollBranches`) into validated `EpisodeManifest` JSONs. |
-| `story_brief_templates.py` | Library | `build_noir_scenes`, `build_clauses`, `expand_poll_branches`, `build_post_copy`, `ensure_loop_suspension` -> pure deterministic template builders imported by `compile_story_brief.py`. |
+| `build_episode.py` | CLI | `--brief \| --episode`, `--output-manifest`, `--case-dir`, `--voice-mode {edge,kokoro,recorded,draft_say}`, `--voice-input`, `--launch-pack-dir`, `--max-heal-iters 3`, `--skip-dom-audit`, `--render-mp4`, `--mp4-output` -> end-to-end healed MP4 + launch copy pack + Reel cover. |
+| `compile_story_brief.py` | CLI + Lib | `--brief/-b`, `--output/-o`, `--defaults data/learned_defaults.json` -> compiles 30–40 line `.yaml`/`.json` briefs (`crime_case` or `preset: guide_walkthrough`, + `pollBranches`) into validated `EpisodeManifest` JSONs. |
+| `story_brief_templates.py` | Library | `build_noir_scenes`, `build_clauses`, `expand_poll_branches`, `build_post_copy`, `ensure_loop_suspension` -> pure deterministic template builders (including `preset: guide_walkthrough`) imported by `compile_story_brief.py`. |
 | `self_heal_rules.py` | Library | `compute_rate_heal_adjustment`, `heal_manifest_text_guards`, `heal_dom_defects`, `generate_launch_copy_pack` -> pure deterministic speech-rate, text-guard & DOM overflow healers imported by `build_episode.py`. |
+| `stitch_video_guide.py` | CLI + Lib | `--inputs <ch.mp4...>`, `--titles <title...>`, `--output <master.mp4>` -> FFmpeg `1080x1920 @ 30fps` multi-chapter MP4 stitcher with embedded `FFMETADATA1` chapter markers (`renders/guide/cyber-jasoos-automation-master-guide.mp4`). |
 | `sync_episode_registry.py` | CLI + Lib | `--episodes-dir`, `--output`, `--quiet` -> auto-discovers `episodes/**/*.json` and writes `engine/src/generated/episodeRegistry.ts`. |
 | `validate_episode.py` | CLI + Lib | `targets`, `--publish-ready` -> validates Draft 2020-12 JSON Schema, `42–58s` retention clock, `130–195 WPM`, hook fillers, `...` loop suspension, and commercial voice licensing. |
 | `competitor_hooks.py` | CLI + Lib | `--score "<hook>"`, `--analyze-url <url>`, `--json` -> scores cold-open hooks (`0–100` across numbers, breach verbs, curiosity gap, `< 22` words & zero filler) or inspects reference URLs via `yt-dlp`. |
 | `prepare_voice.py` | CLI + Lib | `--episode`, `--mode {recorded,edge,kokoro,draft}`, `--input`, `--voice`, `--rate`, `--output-dir`, `--whisper`, `--sync-manifest` -> conforms `44.1kHz` WAV (`-14 LUFS`) + word-timestamp `*.captions.json`. |
 | `export_teleprompter.py` | CLI + Lib | `--output`, `--episodes-dir` -> exports Voice Memos teleprompter script (`**BOLD CAPS**` stress cues, `//` `< 250ms` breath markers & mic checklist) to untracked `renders/teleprompter-export.md`. |
 
-### Cast Standardization, 2.5D Mattes, Procedural Foley & UI Mockups (`7` Scripts)
+### Cast Standardization, Guide Plates, 2.5D Mattes, Procedural Foley & UI Mockups (`8` Scripts)
 
 | Script (`scripts/`) | Mode | Key CLI Flags / Entrypoints & Primary Output |
 | :--- | :--- | :--- |
-| `standardize_cast.py` | CLI + Lib | `--case-dir`, `--only`, `--broll`, `--auto-frame` -> locks raw plates to `1080x1920` eye-line portraits, inpaints stray water-tank stencils & syncs `engine/public/characters/*.png`. |
+| `standardize_cast.py` | CLI + Lib | `--case-dir`, `--only`, `--broll`, `--auto-frame` -> locks raw `.png/.jpg/.webp` plates to `1080x1920` eye-line portraits, inpaints stray water-tank stencils & syncs `engine/public/characters/*.png`. |
+| `render_guide_plates.py` | CLI | `--out-dir assets/characters/guide01/raw` -> deterministic `1080x1920` UI, YAML, CLI & Safe-Zone visual plate generator for walkthrough/explainer Reels. |
 | `generate_depth_mattes.py` | CLI | `--only`, `--skip-existing`, `--qa-out` -> runs Apache-2.0 Depth-Anything-V2 (`onnx/model_fp16.onnx`) to emit `1080x1920` RGBA `fg/*.png` & blurred `540x960` `bg/*.jpg` parallax plates. |
 | `generate_cinema_foley.py` | CLI | Procedural NumPy/FFmpeg synthesis of `44.1kHz` 16-bit mono noir thriller beds, USSD dial tones, bank chimes, phone vibrations & impacts in `engine/public/sfx/*.wav` (`0` sample packs). |
 | `generate_sfx.py` | CLI | Deterministic Python stdlib WAV synthesizer for enterprise/SOC stingers, radar pings, blueprint whooshes & alert cues in `engine/public/sfx/*.wav`. |

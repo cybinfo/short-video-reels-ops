@@ -86,7 +86,7 @@ export const DetectiveWifiClueScene: React.FC<{
   });
   const radarPulse = (Math.sin(frame * 0.18) + 1) / 2;
   const rows = data.devices.slice(0, 4);
-  const rowRevealRatios = [0.06, 0.26, 0.48, 0.64];
+  const rowRevealRatios = [0.06, 0.24, 0.42, 0.60];
 
   if (isNoirCinema && data.heroImage) {
     // 2-Angle Forensic Clue Cinema: Shot 1 Establishing Clue (0-46%) -> Shot 2 Live Signal Intercept (46-100%)
@@ -416,7 +416,7 @@ export const DetectiveWifiClueScene: React.FC<{
                       : '1.5px solid rgba(148, 163, 184, 0.28)',
                     boxShadow: '0 12px 28px rgba(0, 0, 0, 0.7)',
                     opacity: interpolate(rowIn, [0, 1], [0, 1]),
-                    transform: `translateX(${interpolate(rowIn, [0, 1], [-14, 0], {
+                    transform: `translateX(${interpolate(rowIn, [0, 1], [-5, 0], {
                       extrapolateLeft: 'clamp',
                       extrapolateRight: 'clamp',
                     })}px)`,

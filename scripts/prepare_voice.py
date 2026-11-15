@@ -165,6 +165,10 @@ def snap_words_off_silence(wav_path: Path, captions: list[dict]) -> None:
                         push = min(ne - 0.04, cand_e)
                         captions[idx + 1]["startSec"] = round(push, 4)
                         cand_e = float(captions[idx + 1]["startSec"])
+                    elif ne - ns > 0.045:
+                        push = min(ne - 0.022, max(ns + 0.02, 0.5 * (ns + min(ne, cand_e))))
+                        captions[idx + 1]["startSec"] = round(push, 4)
+                        cand_e = float(captions[idx + 1]["startSec"])
                     else:
                         cand_e = ns
             if cand_e > cand_s + 0.015:

@@ -36,7 +36,7 @@
         <span class="tag tag-cyan">ZERO-AI REEL FACTORY</span>
       </div>
       <h1>Centralized 5-Tab Cyber Jasoos Reels Factory, Launch &amp; CLI Hub</h1>
-      <p>Organized around repeatable daily episode creation first: compile Case #02–Season 6 Reels from 35-line YAML briefs in <strong>Tab 1</strong>, execute tonight's <strong>85% Mac Web (<code>instagram.com</code>) + 15% Android App</strong> Case #01 launch in <strong>Tab 2</strong>, browse all 21 Python &amp; Remotion CLI tools in <strong>Tab 3</strong>, check safe zones &amp; the 6-season map in <strong>Tab 4</strong>, and reference one-time setup in <strong>Tab 5</strong>.</p>
+      <p>Organized around repeatable daily episode creation first: watch the <strong>3m 07s Hinglish Video Guide</strong> &amp; compile Case #02–Season 6 Reels from 35-line YAML briefs in <strong>Tab 1</strong>, execute tonight's <strong>85% Mac Web (<code>instagram.com</code>) + 15% Android App</strong> Case #01 launch in <strong>Tab 2</strong>, browse all 23 Python &amp; Remotion CLI tools in <strong>Tab 3</strong>, check safe zones &amp; the 6-season map in <strong>Tab 4</strong>, and reference one-time setup in <strong>Tab 5</strong>.</p>
       <div class="badge-row" aria-label="Verified Instagram character limits">
         <span class="tag tag-emerald">Name: 26 / 29 (&lt; 30 chars)</span>
         <span class="tag tag-emerald">Bio: 119 / 150 (&lt;= 150 chars)</span>
@@ -65,29 +65,56 @@
     </section>
 
     <div data-tab-panel="factory">
+      <section class="phase-card" id="videoGuide">
+        <div class="badge-row">
+          <span class="tag tag-gold">WATCH FIRST · 3M 07S HINGLISH VIDEO WALKTHROUGH</span>
+          <span class="tag tag-cyan">4 FFMETADATA1 CHAPTERS · 1080X1920 @ 30FPS</span>
+          <span class="tag tag-emerald">YAML PRESET: GUIDE_WALKTHROUGH</span>
+        </div>
+        <h2>End-to-End Hinglish Video Guide (3m 07s · 4 Chapters)</h2>
+        <p>Master stitched video at <code>renders/guide/cyber-jasoos-automation-master-guide.mp4</code> — produced by this exact pipeline using YAML Story Briefs with <code>preset: guide_walkthrough</code> (built for non-crime explainer &amp; tutorial Reels alongside default <code>crime_case</code> mysteries), deterministic plates from <code>scripts/render_guide_plates.py</code>, and multi-chapter stitching via <code>scripts/stitch_video_guide.py</code>.</p>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Open Master Guide (3m 07s)</span><button type="button" class="copy-btn" data-copy="cp-open-guide">Copy Command</button></div>
+          <pre id="cp-open-guide">open renders/guide/cyber-jasoos-automation-master-guide.mp4</pre>
+        </div>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Chapter &amp; Timestamp</th><th>What You See in Action</th><th>Standalone Chapter Reel MP4</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>00:00 — Ch 1 (51.9s)</strong></td><td>5-Tab Web Hub, <code>.png/.jpg</code> Auto-Cast &amp; 35-Line Story Brief (<code>preset: guide_walkthrough</code>)</td><td><code>renders/guide/ch01-story-brief-autocast.mp4</code></td></tr>
+              <tr><td><strong>00:52 — Ch 2 (47.2s)</strong></td><td>Single-Command <code>build_episode.py</code>, Voice Modes &amp; Safe-Zone Self-Heal</td><td><code>renders/guide/ch02-self-healing-build.mp4</code></td></tr>
+              <tr><td><strong>01:39 — Ch 3 (44.1s)</strong></td><td><code>7:40 PM IST</code> Upload SOP, Comment Tally &amp; <code>95%</code> Zero-AI Part 2 Branch</td><td><code>renders/guide/ch03-upload-and-poll-branch.mp4</code></td></tr>
+              <tr><td><strong>02:23 — Ch 4 (43.8s)</strong></td><td>SQLite Mosseri Growth Ledger &amp; Auto-Inherited Defaults</td><td><code>renders/guide/ch04-growth-ledger-learning.mp4</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section class="phase-card" id="automation">
         <div class="badge-row">
           <span class="tag tag-cyan">TAB 1 · REPEATABLE END-TO-END REEL PIPELINE</span>
           <span class="tag tag-emerald">$0 RUNTIME · PYTHON + ONNX + REMOTION 4</span>
         </div>
         <h2>1. Repeatable 6-Stage Reel Factory (Zero-AI Automation vs. Human Split)</h2>
-        <p>Every new Case #02–Season 6 episode flows through these 6 deterministic local stages — zero external prompt APIs required, while keeping story hooks, optional human voiceover, and 30-second mobile Meta actions in your control.</p>
+        <p>Every new Case #02–Season 6 episode (or non-crime explainer Reel via <code>preset: guide_walkthrough</code>) flows through these 6 deterministic local stages — zero external prompt APIs required, while keeping story hooks, optional human voiceover, and 30-second mobile Meta actions in your control.</p>
 
         <div class="stage-grid">
           <div class="stage-card">
             <div class="split-row"><span class="tag tag-emerald">20% Zero-AI</span><span class="tag tag-gold">80% Human Creative</span></div>
             <h3>Stage 1: Hook Score &amp; 35-Line Brief</h3>
-            <p>You pick the real RBI / I4C <code>1930</code> scam twist and write a 35-line YAML brief. <code>competitor_hooks.py --score</code> grades cold-open hooks (<code>0-100</code>) for concrete numbers, breach verbs, curiosity gap &amp; <code>&lt; 22</code> words; <code>compile_story_brief.py</code> + <code>story_brief_templates.py</code> expand it into a validated <code>EpisodeManifest</code>.</p>
+            <p>You pick the real RBI / I4C <code>1930</code> scam twist and write a 35-line YAML brief (or set <code>preset: guide_walkthrough</code> for tutorial/explainer Reels). <code>competitor_hooks.py --score</code> grades cold-open hooks (<code>0-100</code>); <code>compile_story_brief.py</code> + <code>story_brief_templates.py</code> expand it into a validated <code>EpisodeManifest</code>.</p>
           </div>
           <div class="stage-card">
             <div class="split-row"><span class="tag tag-emerald">90% Zero-AI</span><span class="tag tag-gold">10% Human Art Drop</span></div>
             <h3>Stage 2: Auto-Cast Framing &amp; Local ONNX 2.5D Mattes</h3>
-            <p>Drop raw character/B-roll art into <code>assets/characters/caseXX/raw/</code>. <code>standardize_cast.py --auto-frame</code> locks <code>1080x1920</code> portrait framing via local saliency, <code>generate_depth_mattes.py</code> builds Apache-2.0 Depth-Anything-V2 <code>fg/*.png</code> + <code>bg/*.jpg</code> parallax plates, and <code>sync_episode_registry.py</code> registers compositions.</p>
+            <p>Drop raw <code>.png/.jpg/.webp</code> character/B-roll art into <code>assets/characters/caseXX/raw/</code> (or generate walkthrough plates via <code>render_guide_plates.py</code>). <code>standardize_cast.py --auto-frame</code> locks <code>1080x1920</code> portrait framing, <code>generate_depth_mattes.py</code> builds Apache-2.0 Depth-Anything-V2 <code>fg/*.png</code> + <code>bg/*.jpg</code> parallax plates, and <code>sync_episode_registry.py</code> registers compositions.</p>
           </div>
           <div class="stage-card">
             <div class="split-row"><span class="tag tag-emerald">100% Zero-AI</span><span class="tag tag-cyan">Optional Human Voice</span></div>
             <h3>Stage 3: Self-Healing Voice, Foley &amp; Safe-Zone Build</h3>
-            <p><code>build_episode.py</code> + <code>self_heal_rules.py</code> run <code>prepare_voice.py</code> (or ingest Voice Memos takes from <code>export_teleprompter.py</code>), mix 18 procedural 44.1kHz WAVs from <code>generate_cinema_foley.py</code> &amp; <code>generate_sfx.py</code>, auto-heal WPM/clock (<code>42.5-57.5s</code>, <code>132-192 WPM</code>), and pass <code>validate_episode.py</code> + <code>npm run uat:dom</code>.</p>
+            <p><code>build_episode.py</code> (supports <code>--mp4-output</code>) + <code>self_heal_rules.py</code> run <code>prepare_voice.py</code> (or ingest Voice Memos takes from <code>export_teleprompter.py</code>), mix 18 procedural 44.1kHz WAVs from <code>generate_cinema_foley.py</code> &amp; <code>generate_sfx.py</code>, auto-heal WPM/clock (<code>42.5-57.5s</code>, <code>132-192 WPM</code>), pass <code>validate_episode.py</code> + <code>npm run uat:dom</code>, and optionally stitch multi-chapter guides via <code>stitch_video_guide.py</code>.</p>
           </div>
           <div class="stage-card">
             <div class="split-row"><span class="tag tag-emerald">85% Zero-AI</span><span class="tag tag-gold">15% Human Visual QA</span></div>
@@ -441,23 +468,24 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
     <div data-tab-panel="cli" hidden>
       <section class="phase-card" id="cliDirectory">
         <div class="badge-row">
-          <span class="tag tag-cyan">TAB 3 · 100% TOOL COVERAGE (21 PYTHON SCRIPTS + REMOTION ENGINE)</span>
+          <span class="tag tag-cyan">TAB 3 · 100% TOOL COVERAGE (23 PYTHON SCRIPTS + REMOTION ENGINE)</span>
           <span class="tag tag-emerald">MODULAR ZERO-HARDCODING STACK</span>
         </div>
-        <h2>3. Master Script &amp; CLI Directory (All 21 Python Tools + Remotion Studio)</h2>
+        <h2>3. Master Script &amp; CLI Directory (All 23 Python Tools + Remotion Studio)</h2>
         <p>Complete reference covering every script in <code>scripts/</code> and <code>engine/</code> across 4 functional groups. Type any tool or flag into the search bar above to filter rows instantly.</p>
 
-        <h3>Group 1 — Orchestration, Brief Compiler, Registry &amp; Remotion Engine</h3>
+        <h3>Group 1 — Orchestration, Brief Compiler, Guide Stitcher, Registry &amp; Remotion Engine</h3>
         <div class="table-scroll">
           <table class="meta-table">
             <thead>
               <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
             </thead>
             <tbody>
-              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py --brief &lt;yaml&gt; --render-mp4</code></td><td>Single-command closed-loop orchestrator: compiles brief, conforms cast/mattes, heals TTS WPM &amp; DOM defects, and writes <code>renders/launch-pack-&lt;id&gt;/</code>.</td></tr>
+              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py --brief &lt;yaml&gt; --render-mp4 [--mp4-output &lt;mp4&gt;]</code></td><td>Single-command closed-loop orchestrator: compiles brief, conforms cast/mattes, heals TTS WPM &amp; DOM defects, renders MP4 (<code>--mp4-output</code>), and writes <code>renders/launch-pack-&lt;id&gt;/</code>.</td></tr>
               <tr><td><code>self_heal_rules.py</code></td><td>Library imported by <code>build_episode.py</code></td><td>Deterministic TTS rate-adjustment math (<code>42.5-57.5s</code>, <code>132-192 WPM</code>), <code>NOIR_GRID</code> badge compaction, DOM defect repair &amp; launch-copy pack writer.</td></tr>
-              <tr><td><code>compile_story_brief.py</code></td><td><code>python3 scripts/compile_story_brief.py --brief &lt;yaml&gt; -o &lt;json&gt;</code></td><td>Compiles a 30-35 line <code>.yaml</code>/<code>.json</code> story brief into a schema-valid 500-line <code>noir_cinema</code> <code>EpisodeManifest</code> with <code>pollBranches</code>.</td></tr>
-              <tr><td><code>story_brief_templates.py</code></td><td>Library imported by <code>compile_story_brief.py</code></td><td>Builds the 5 <code>detective_*</code> scenes, splits Hindi-Urdu TTS clauses with <code>...</code> Loop Suspension Guard, and expands <code>pollBranches</code> <code>A/B/C</code>.</td></tr>
+              <tr><td><code>compile_story_brief.py</code></td><td><code>python3 scripts/compile_story_brief.py --brief &lt;yaml&gt; -o &lt;json&gt;</code></td><td>Compiles a 30-35 line <code>.yaml</code>/<code>.json</code> story brief (<code>crime_case</code> or <code>preset: guide_walkthrough</code>) into a schema-valid <code>noir_cinema</code> <code>EpisodeManifest</code> with <code>pollBranches</code>.</td></tr>
+              <tr><td><code>story_brief_templates.py</code></td><td>Library imported by <code>compile_story_brief.py</code></td><td>Builds the 5 <code>detective_*</code> scenes (plus <code>preset: guide_walkthrough</code> labels), splits Hindi-Urdu TTS clauses with <code>...</code> Loop Suspension Guard, and expands <code>pollBranches</code> <code>A/B/C</code>.</td></tr>
+              <tr><td><code>stitch_video_guide.py</code></td><td><code>python3 scripts/stitch_video_guide.py --inputs &lt;ch.mp4...&gt; --titles &lt;t...&gt; --output &lt;master.mp4&gt;</code></td><td>FFmpeg <code>1080x1920 @ 30fps</code> multi-chapter MP4 stitcher with embedded <code>FFMETADATA1</code> chapter markers (<code>--inputs</code>, <code>--titles</code>, <code>--output</code>).</td></tr>
               <tr><td><code>sync_episode_registry.py</code></td><td><code>python3 scripts/sync_episode_registry.py</code></td><td>Scans <code>episodes/**/*.json</code> sorted by <code>(season, episode, id)</code> and regenerates <code>engine/src/generated/episodeRegistry.ts</code> automatically.</td></tr>
               <tr><td><code>validate_episode.py</code></td><td><code>python3 scripts/validate_episode.py episodes/ --publish-ready</code></td><td>Enforces Draft 2020-12 JSON Schema, <code>42-58s</code> retention clock, <code>130-195 WPM</code>, 5-phase order, and commercial voice license gate (rejects <code>CC-BY-NC</code>).</td></tr>
               <tr><td><code>npm run studio</code> / <code>npm start</code></td><td><code>cd engine &amp;&amp; npm run studio</code> (<code>npx remotion studio</code>)</td><td>Launches interactive Remotion 4 timeline preview &amp; frame-by-frame safe-zone inspector on <code>127.0.0.1</code> (<code>studio</code> script in <code>engine/package.json</code>).</td></tr>
@@ -482,14 +510,15 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
           </table>
         </div>
 
-        <h3>Group 3 — Cast Framing, 2.5D Depth Mattes, Brand Covers &amp; Instagram UI Mockups</h3>
+        <h3>Group 3 — Cast Framing, Guide Plates, 2.5D Depth Mattes, Brand Covers &amp; Instagram UI Mockups</h3>
         <div class="table-scroll">
           <table class="meta-table">
             <thead>
               <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
             </thead>
             <tbody>
-              <tr><td><code>standardize_cast.py</code></td><td><code>.venv_audio/bin/python scripts/standardize_cast.py --case-dir assets/characters/case01 --auto-frame</code></td><td>Conforms raw portrait/B-roll art to <code>1080x1920</code> portrait lock using local ONNX saliency crop &amp; trademark cleanup into <code>engine/public/characters/</code>.</td></tr>
+              <tr><td><code>standardize_cast.py</code></td><td><code>.venv_audio/bin/python scripts/standardize_cast.py --case-dir assets/characters/case01 --auto-frame</code></td><td>Conforms raw <code>.png/.jpg/.webp</code> portrait/B-roll art to <code>1080x1920</code> portrait lock using local ONNX saliency auto-frame (<code>--auto-frame</code>) &amp; trademark cleanup into <code>engine/public/characters/</code>.</td></tr>
+              <tr><td><code>render_guide_plates.py</code></td><td><code>python3 scripts/render_guide_plates.py --out-dir assets/characters/guide01/raw</code></td><td>Deterministic <code>1080x1920</code> UI, YAML, CLI &amp; Safe-Zone visual plate generator (<code>assets/characters/guide01/raw/</code>) for walkthrough &amp; tutorial Reels.</td></tr>
               <tr><td><code>generate_depth_mattes.py</code></td><td><code>.venv_audio/bin/python scripts/generate_depth_mattes.py --skip-existing</code></td><td>Runs local Apache-2.0 Depth-Anything-V2 ONNX to generate native <code>1080x1920</code> foreground alpha mattes (<code>fg/*.png</code>) &amp; blurred backgrounds (<code>bg/*.jpg</code>).</td></tr>
               <tr><td><code>generate_ig_brand_kit.py</code></td><td><code>.venv_audio/bin/python scripts/generate_ig_brand_kit.py --episode &lt;json&gt; --output &lt;png&gt;</code></td><td>Renders <code>1080x1080</code> Kabir Profile DP, <code>3:4</code>-grid-safe <code>1080x1920</code> Reel Covers (dynamic <code>%</code> on Part 2), and 4 Story Highlight icons.</td></tr>
               <tr><td><code>render_instagram_ui_mockup.py</code></td><td><code>.venv_audio/bin/python scripts/render_instagram_ui_mockup.py --multi-shot-grid -o &lt;png&gt;</code></td><td>Composites translucent Instagram Reels mobile UI chrome, caption drawer &amp; <code>x &gt;= 956</code> <code>124px</code> right-rail icons onto single frames or multi-shot QA grids.</td></tr>

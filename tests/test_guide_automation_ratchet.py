@@ -213,6 +213,29 @@ class GuideAutomationRatchetTests(unittest.TestCase):
             self.assertEqual((v_stream["width"], v_stream["height"]), (1080, 1920))
             self.assertEqual([c["tags"]["title"] for c in probe["chapters"]], ["Ch 1", "Ch 2"])
 
+    def test_pre_voice_stale_caption_guard_and_wifi_slide_bound(self) -> None:
+        ep_id = "s09e09-stale-cap-unit"
+        stale_cap = REPO_ROOT / "engine" / "public" / "audio" / f"{ep_id}.captions.json"
+        try:
+            stale_cap.parent.mkdir(parents=True, exist_ok=True)
+            stale_cap.write_text(
+                json.dumps([{"word": "Stale", "startSec": 0.1, "endSec": 0.25, "peak": [0.0]}]),
+                encoding="utf-8",
+            )
+            compiled = compile_story_brief.compile_brief(_guide_brief(part=1, id=ep_id))
+            self.assertEqual(compiled["id"], ep_id)
+            direct_errs = validate_episode.validate_manifest(compiled)
+            self.assertTrue(any(e.startswith("Caption Silence Guard:") for e in direct_errs), direct_errs)
+        finally:
+            stale_cap.unlink(missing_ok=True)
+        self.assertFalse(stale_cap.exists())
+        self.assertEqual(validate_episode.validate_manifest(compiled), [])
+
+        wifi_tsx = (REPO_ROOT / "engine" / "src" / "components" / "DetectiveWifiClueScene.tsx").read_text(encoding="utf-8")
+        self.assertIn("[0.06, 0.24, 0.42, 0.60]", wifi_tsx)
+        self.assertIn("interpolate(rowIn, [0, 1], [-5, 0]", wifi_tsx)
+        self.assertNotIn("interpolate(rowIn, [0, 1], [-14, 0]", wifi_tsx)
+
 
 if __name__ == "__main__":
     unittest.main()

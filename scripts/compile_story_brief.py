@@ -203,7 +203,7 @@ def compile_brief(brief: dict, defaults_path: Path | None = None) -> dict:
         assert isinstance(pvr, dict)
         manifest = apply_poll_branch(manifest, str(pvr["winningOption"]), int(pvr["percentage"]))
 
-    if errs := validate_manifest(manifest):
+    if errs := [e for e in validate_manifest(manifest) if not e.startswith("Caption Silence Guard:")]:
         raise ValueError("Compiled manifest failed validation:\n- " + "\n- ".join(errs))
     return manifest
 
