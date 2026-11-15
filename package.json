@@ -1,0 +1,12 @@
+{
+  "name": "social-media-short-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SocialMediaShortVideo Creator Studio & Autonomous Short-Form Video Pipeline",
+  "scripts": {
+    "test": "python3 -m unittest",
+    "test:e2e": "node tests/e2e/run_smoke.mjs",
+    "sync:ui": "node ../shared/personal-ui/sync-personal-ui.mjs --target=creator",
+    "qa:auto": "node ../shared/personal-ui/sync-personal-ui.mjs --check && python3 -m unittest && node tests/e2e/run_smoke.mjs"
+  }
+}
