@@ -10,6 +10,7 @@ temp_*.md
 .DS_Store
 **/__pycache__/
 *.pyc
+**/.tmp_*
 .venv_audio/
 engine/node_modules/
 .remotion/
