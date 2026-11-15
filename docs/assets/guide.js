@@ -1,14 +1,18 @@
 (function () {
   var STORAGE_KEY = "cyberjasoos_launch_checks_v1";
+  var STORAGE_KEY_V2 = "cj-guide-checks-v2";
   var THEME_KEY = "cyberjasoos_launch_theme_v1";
+  var THEME_KEY_V2 = "cj-guide-theme";
   var TAB_KEY = "cyberjasoos_active_tab_v1";
-  var VALID_TABS = { factory: 1, launch: 1, cli: 1, spec: 1, setup: 1, all: 1 };
+  var VALID_TABS = { factory: "factory", launch: "launch", ops: "launch", cli: "cli", spec: "spec", arch: "spec", setup: "setup", all: "all", gates: "all" };
   var checks = Array.prototype.slice.call(document.querySelectorAll(".step-check"));
   var progFill = document.getElementById("progFill");
+  var setupProgFill = document.getElementById("setupProgressFill");
   var progText = document.getElementById("progText");
   var progWrap = document.getElementById("progBarWrap");
-  var tabBtns = Array.prototype.slice.call(document.querySelectorAll("[data-tab-btn]"));
+  var tabBtns = Array.prototype.slice.call(document.querySelectorAll("[data-tab-btn], [data-tab]"));
   var tabPanels = Array.prototype.slice.call(document.querySelectorAll("[data-tab-panel]"));
+  var gatesPanel = document.getElementById("panel-gates");
   var searchInput = document.getElementById("searchInput");
   var searchClearBtn = document.getElementById("searchClearBtn");
   var searchStatus = document.getElementById("searchStatus");
@@ -16,7 +20,7 @@
 
   function loadTheme() {
     try {
-      var savedTheme = localStorage.getItem(THEME_KEY);
+      var savedTheme = localStorage.getItem(THEME_KEY_V2) || localStorage.getItem(THEME_KEY);
       if (savedTheme === "light" || savedTheme === "dark") {
         document.documentElement.setAttribute("data-theme", savedTheme);
       }
@@ -27,25 +31,42 @@
     Array.prototype.slice.call(document.querySelectorAll(".is-search-hidden")).forEach(function (el) {
       el.classList.remove("is-search-hidden");
     });
+    Array.prototype.slice.call(document.querySelectorAll(".search-match")).forEach(function (el) {
+      el.classList.remove("search-match");
+    });
   }
 
   function renderTabs(viewTab) {
+    var canonical = VALID_TABS[viewTab] || "factory";
     tabBtns.forEach(function (btn) {
-      var isSel = btn.getAttribute("data-tab-btn") === viewTab;
+      var btnTab = VALID_TABS[btn.getAttribute("data-tab-btn") || btn.getAttribute("data-tab")] || "factory";
+      var isSel = btnTab === canonical;
       btn.setAttribute("aria-selected", isSel ? "true" : "false");
+      btn.classList.toggle("active", isSel);
     });
     tabPanels.forEach(function (panel) {
-      var pName = panel.getAttribute("data-tab-panel");
-      if (viewTab === "all" || pName === viewTab) {
+      var pName = VALID_TABS[panel.getAttribute("data-tab-panel")] || panel.getAttribute("data-tab-panel");
+      if (canonical === "all" || pName === canonical) {
         panel.removeAttribute("hidden");
+        panel.classList.add("active");
       } else {
         panel.setAttribute("hidden", "");
+        panel.classList.remove("active");
       }
     });
+    if (gatesPanel) {
+      if (canonical === "all") {
+        gatesPanel.removeAttribute("hidden");
+        gatesPanel.classList.add("active");
+      } else {
+        gatesPanel.setAttribute("hidden", "");
+        gatesPanel.classList.remove("active");
+      }
+    }
   }
 
   function setActiveTab(tabId, persist) {
-    var nextTab = VALID_TABS[tabId] ? tabId : "factory";
+    var nextTab = VALID_TABS[tabId] || "factory";
     activeTab = nextTab;
     if (persist && searchInput && searchInput.value) {
       searchInput.value = "";
@@ -86,11 +107,13 @@
       units.forEach(function (u) {
         if (u.textContent.toLowerCase().indexOf(q) !== -1) {
           unitHits += 1;
+          u.classList.add("search-match");
         } else if (!headHit) {
           u.classList.add("is-search-hidden");
         }
       });
       if (unitHits > 0 || headHit || (!units.length && card.textContent.toLowerCase().indexOf(q) !== -1)) {
+        card.classList.add("search-match");
         if (headHit && unitHits > 0) {
           units.forEach(function (u) {
             if (u.textContent.toLowerCase().indexOf(q) === -1) u.classList.add("is-search-hidden");
@@ -122,10 +145,13 @@
     });
     var pct = checks.length ? Math.round((doneCount / checks.length) * 100) : 0;
     if (progFill) progFill.style.width = pct + "%";
+    if (setupProgFill) setupProgFill.style.width = pct + "%";
     if (progWrap) progWrap.setAttribute("aria-valuenow", String(pct));
     if (progText) progText.textContent = doneCount + " / " + checks.length + " Completed (" + pct + "%)";
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      var serialized = JSON.stringify(state);
+      localStorage.setItem(STORAGE_KEY, serialized);
+      localStorage.setItem(STORAGE_KEY_V2, serialized);
     } catch (e) {}
   }
 
@@ -154,12 +180,12 @@
   }
 
   try {
-    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY_V2) || localStorage.getItem(STORAGE_KEY) || "{}");
     checks.forEach(function (cb) {
       if (saved[cb.id]) cb.checked = true;
     });
     var savedTab = localStorage.getItem(TAB_KEY);
-    if (savedTab && VALID_TABS[savedTab]) activeTab = savedTab;
+    if (savedTab && VALID_TABS[savedTab]) activeTab = VALID_TABS[savedTab];
   } catch (e) {}
 
   loadTheme();
@@ -168,7 +194,7 @@
 
   tabBtns.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      setActiveTab(btn.getAttribute("data-tab-btn") || "factory", true);
+      setActiveTab(btn.getAttribute("data-tab-btn") || btn.getAttribute("data-tab") || "factory", true);
     });
   });
 
@@ -204,6 +230,7 @@
       document.documentElement.setAttribute("data-theme", cur);
       try {
         localStorage.setItem(THEME_KEY, cur);
+        localStorage.setItem(THEME_KEY_V2, cur);
       } catch (e) {}
     });
   }
@@ -215,9 +242,11 @@
       if (!target) return;
       copyText(target.textContent || "");
       btn.setAttribute("data-copied", "1");
+      btn.classList.add("copied");
       btn.textContent = "Copied!";
       setTimeout(function () {
         btn.removeAttribute("data-copied");
+        btn.classList.remove("copied");
         btn.textContent = orig;
       }, 1600);
     });

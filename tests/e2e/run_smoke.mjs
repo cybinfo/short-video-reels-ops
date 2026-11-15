@@ -4,6 +4,7 @@
  * asset link integrity, and Remotion engine structure without network listeners.
  */
 
+import { execSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -45,4 +46,10 @@ for (const token of ["--bg-primary", "--accent-crimson", "--emerald", "--amber",
 const enginePkg = JSON.parse(fs.readFileSync(enginePkgPath, "utf8"));
 assert(Boolean(enginePkg.dependencies && enginePkg.dependencies.remotion), "engine/package.json missing remotion dependency");
 
-console.log("[PASS] SocialMediaShortVideo E2E smoke verification passed (docs/index.html + Remotion engine).");
+execSync("node scripts/auto_qa_creator.mjs", {
+  cwd: repoRoot,
+  env: { ...process.env, UI_ONLY: "1" },
+  stdio: "inherit",
+});
+
+console.log("[PASS] SocialMediaShortVideo E2E smoke + Headless Chrome UI verification passed.");

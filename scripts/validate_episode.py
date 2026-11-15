@@ -470,10 +470,11 @@ def _collect_targets(raw_args: list[str]) -> list[Path]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Validate Cyber Jasoos / BreachZero episode manifests.")
+    parser.add_argument("--all", action="store_true", help="Validate all live episode manifests under episodes/.")
     parser.add_argument("--publish-ready", action="store_true", help="Reject preview/draft voice licenses (EDGE_READ_ALOUD_PREVIEW, MACOS_DRAFT).")
     parser.add_argument("targets", nargs="*", help="Episode JSON file(s) or directory.")
     args = parser.parse_args(argv)
-    targets = _collect_targets(args.targets)
+    targets = _collect_targets([] if args.all and not args.targets else args.targets)
     if not targets:
         print("No episode manifests found.", file=sys.stderr)
         return 1

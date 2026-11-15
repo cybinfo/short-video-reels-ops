@@ -5,7 +5,8 @@ GEMINI.md
 WhatsApp Image*
 temp_*.html
 temp_*.md
-docs/assets/00-personal-ui-shared.css
+output/
+tests/screenshots/
 
 # Python, Node & Remotion caches
 .DS_Store

@@ -199,6 +199,76 @@ class SelfHealingPipelineRatchetTests(unittest.TestCase):
             self.assertEqual(inherited["hook"]["hookPattern"], "contradiction_shock")
             self.assertEqual(validate_episode.validate_manifest(inherited), [])
 
+    def test_pillar5_layout_defect_code_healing_and_overrun_condensation(self) -> None:
+        graph_scene = {
+            "id": "sc-graph-01",
+            "kind": "network_attack_graph",
+            "startSec": 10.0,
+            "endSec": 22.0,
+            "props": {
+                "headline": "LATERAL MOVEMENT VIA COMPROMISED JENKINS RUNNER TOKEN OVERFLOWING STAGE",
+                "subline": "Attacker pivoted across three VPC peering links while East-West firewall rules stayed permissive",
+                "nodes": [
+                    {"id": "n1", "label": "Untracked Jenkins CI Build Runner Box", "detail": "World-readable env token dump"},
+                    {"id": "n2", "label": "Production KMS Master Vault Cluster", "detail": "Full decrypt role assumed"},
+                ],
+                "edges": [
+                    {"from": "n1", "to": "n2", "label": "STS AssumeRole With Wildcard Policy"},
+                ],
+                "pills": ["CRITICAL LATERAL PIVOT DETECTED IN PROD"],
+            },
+        }
+        healed_sc = self_heal_rules.heal_scene_for_defects(
+            copy.deepcopy(graph_scene),
+            defect_codes=[
+                "STAGE_CAPTION_OVERLAP",
+                "HORIZONTAL_OFF_CENTER",
+                "ASYMMETRIC_NOIR_RAIL",
+                "GRAPH_PILL_NODE_OVERLAP",
+            ],
+            scale=0.85,
+        )
+        self.assertTrue(healed_sc.get("layoutHealed"))
+        self.assertTrue(healed_sc["props"].get("layoutHealed"))
+        self.assertTrue(healed_sc["props"].get("compactStage"))
+        self.assertTrue(healed_sc["props"].get("compactGraphPills"))
+        self.assertEqual(healed_sc["props"].get("centerLockPx"), 540)
+        self.assertEqual(healed_sc["props"].get("noirRailInsetPx"), 84)
+        self.assertLessEqual(len(healed_sc["props"]["nodes"][0]["label"]), 16)
+        self.assertLessEqual(len(healed_sc["props"]["edges"][0]["label"]), 14)
+        self.assertLessEqual(len(healed_sc["props"]["pills"][0]), 16)
+
+        m_layout = copy.deepcopy(self.manifest_p1)
+        m_layout["scenes"][2] = copy.deepcopy(graph_scene)
+        dom_rep = {
+            "defects": [
+                {"episode": m_layout["id"], "sceneIndex": 0, "code": "STAGE_CAPTION_OVERLAP"},
+                {"episode": m_layout["id"], "sceneIndex": 1, "code": "HORIZONTAL_OFF_CENTER"},
+                {"episode": m_layout["id"], "sceneIndex": 2, "code": "GRAPH_PILL_NODE_OVERLAP"},
+                {"episode": m_layout["id"], "sceneIndex": 3, "code": "ASYMMETRIC_NOIR_RAIL"},
+            ]
+        }
+        m_healed, layout_acts = self_heal_rules.heal_dom_defects(m_layout, dom_rep)
+        self.assertGreaterEqual(len(layout_acts), 4)
+        for idx in (0, 1, 2, 3):
+            self.assertTrue(m_healed["scenes"][idx].get("layoutHealed"), f"Scene {idx} missing layoutHealed=True")
+
+        verbose_line = (
+            "Darasal sach toh yeh hai ki Grand Hotel reception par bilkul aath lakh chalis hazaar "
+            "rupaye ekdum chupke se gayab ho gaye kyunki agle hi pal..."
+        )
+        condensed = self_heal_rules.condense_narration_for_overrun(verbose_line, max_words=14)
+        self.assertLessEqual(len(condensed.split()), 14)
+        self.assertTrue(condensed.endswith("..."), condensed)
+        self.assertNotIn("Darasal", condensed)
+        self.assertNotIn("bilkul", condensed.lower())
+
+        auto_condensed = self_heal_rules.condense_narration_for_overrun(
+            "Hotel reception par teen mehmaano ke khate se aath lakh chalis hazaar rupaye chupke se saaf ho gaye!"
+        )
+        self.assertLess(len(auto_condensed.split()), 18)
+        self.assertTrue(auto_condensed.endswith("!"), auto_condensed)
+
 
 if __name__ == "__main__":
     unittest.main()

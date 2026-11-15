@@ -81,13 +81,15 @@ def sync_registry(
     episodes_dir: Path | None = None,
     output_path: Path | None = None,
     audio_dir: Path | None = None,
+    check_only: bool = False,
 ) -> list[Path]:
     """Generate engine/src/generated/episodeRegistry.ts and return discovered manifest paths."""
     manifests = discover_episode_manifests(episodes_dir)
     out_file = (output_path or DEFAULT_OUTPUT_PATH).resolve()
     aud_dir = (audio_dir or DEFAULT_AUDIO_DIR).resolve()
     out_dir = out_file.parent
-    out_dir.mkdir(parents=True, exist_ok=True)
+    if not check_only:
+        out_dir.mkdir(parents=True, exist_ok=True)
 
     manifest_imports: list[str] = []
     caption_imports: list[str] = []
@@ -127,7 +129,12 @@ def sync_registry(
         "",
     ]
     content = "\n".join(lines)
-    if not out_file.is_file() or out_file.read_text(encoding="utf-8") != content:
+    drifted = not out_file.is_file() or out_file.read_text(encoding="utf-8") != content
+    if check_only:
+        if drifted:
+            raise RuntimeError(f"Episode registry drift detected in {out_file}")
+        return manifests
+    if drifted:
         out_file.write_text(content, encoding="utf-8")
     return manifests
 
@@ -136,14 +143,20 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--episodes-dir", type=Path, default=None, help="Episodes root directory")
     parser.add_argument("--output", type=Path, default=None, help="Generated TypeScript registry path")
+    parser.add_argument("--check", action="store_true", help="Verify episodeRegistry.ts has zero drift without writing")
     parser.add_argument("--quiet", action="store_true", help="Suppress summary output")
     args = parser.parse_args(argv)
 
-    manifests = sync_registry(episodes_dir=args.episodes_dir, output_path=args.output)
+    try:
+        manifests = sync_registry(episodes_dir=args.episodes_dir, output_path=args.output, check_only=args.check)
+    except RuntimeError as exc:
+        print(f"[FAIL] {exc}", file=sys.stderr)
+        return 1
     if not args.quiet:
         out_target = (args.output or DEFAULT_OUTPUT_PATH).resolve()
         rel_out = out_target.relative_to(REPO_ROOT) if out_target.is_relative_to(REPO_ROOT) else out_target
-        print(f"Synced {len(manifests)} episode manifest(s) -> {rel_out}")
+        verb = "Verified" if args.check else "Synced"
+        print(f"{verb} {len(manifests)} episode manifest(s) -> {rel_out}")
     return 0
 
 

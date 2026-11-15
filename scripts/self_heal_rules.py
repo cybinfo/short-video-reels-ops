@@ -141,6 +141,109 @@ def _compact_str(val: str, cap: int, scale: float = 1.0) -> str:
     return _word_compact(s, eff_cap)
 
 
+LAYOUT_DEFECT_CODES: frozenset[str] = frozenset({
+    "STAGE_CAPTION_OVERLAP",
+    "HORIZONTAL_OFF_CENTER",
+    "ASYMMETRIC_NOIR_RAIL",
+    "GRAPH_PILL_NODE_OVERLAP",
+})
+
+_OVERRUN_FILLER_PATTERNS: tuple[re.Pattern[str], ...] = (
+    re.compile(r"\b(?:sach\s+toh\s+yeh\s+hai\s+ki|dekha\s+jaaye\s+toh|poori\s+tarah\s+se|asal\s+mein)\b\s*,?\s*", re.I),
+    re.compile(r"\b(?:bilkul|darasal|ekdum|yaani\s+ki|basically|actually|literally)\b\s*,?\s*", re.I),
+)
+
+
+def condense_narration_for_overrun(text: str, max_words: int | None = None) -> str:
+    """Deterministically condense narration text when TTS rate hits +30% ceiling and duration still overruns."""
+    raw = " ".join(str(text or "").split())
+    if not raw:
+        return ""
+    tail_m = re.search(r"(\.{3}|[.!?।۔؟…]+)$", raw)
+    tail_punct = tail_m.group(1) if tail_m else ""
+    cleaned = raw
+    for pat in _OVERRUN_FILLER_PATTERNS:
+        cleaned = pat.sub("", cleaned)
+    cleaned = re.sub(r"\s+([,.;!?])", r"\1", " ".join(cleaned.split()))
+    words = cleaned.split()
+    orig_words = raw.split()
+    limit = max_words if (isinstance(max_words, int) and max_words > 0) else max(4, int(round(len(orig_words) * 0.82)))
+    if len(words) > limit:
+        words = words[:limit]
+    result = " ".join(words).rstrip(" ,;:-—·|")
+    if tail_punct and not result.endswith(tail_punct):
+        result = re.sub(r"[.!?।۔؟…]+$", "", result).rstrip(" ,;:-—·|") + tail_punct
+    return result
+
+
+def heal_scene_for_defects(
+    scene: dict,
+    defect_codes: list[str] | set[str] | tuple[str, ...] | None = None,
+    scale: float = 0.85,
+) -> dict:
+    """Deterministic layout-code healer for STAGE_CAPTION_OVERLAP, HORIZONTAL_OFF_CENTER, ASYMMETRIC_NOIR_RAIL, and GRAPH_PILL_NODE_OVERLAP."""
+    if not isinstance(scene, dict):
+        return scene
+    codes = {str(c).strip().upper() for c in (defect_codes or LAYOUT_DEFECT_CODES) if c}
+    props = scene.setdefault("props", {})
+    if not isinstance(props, dict):
+        props = {}
+        scene["props"] = props
+
+    for key, cap in (*OVERLAY_CAPS.items(), ("stepOneTitle", 26), ("stepTwoTitle", 26), ("stepOneTag", 24), ("stepTwoTag", 24), ("title", 32), ("subtitle", 38)):
+        if isinstance(orig := props.get(key), str):
+            props[key] = _compact_str(orig, cap, scale)
+
+    for list_k, lcap in (("shotTitles", 28), ("shotTags", 22), ("shockPills", 18), ("exposedItems", 22), ("pills", 18)):
+        if isinstance(arr := props.get(list_k), list):
+            for idx, elem in enumerate(arr):
+                if isinstance(elem, str):
+                    arr[idx] = _compact_str(elem, lcap, scale)
+                elif isinstance(elem, dict):
+                    for fk in ("label", "text", "title", "name", "tag"):
+                        if isinstance(fv := elem.get(fk), str):
+                            elem[fk] = _compact_str(fv, lcap, scale)
+
+    for b_key in ("scrollStopper", "interceptBanner"):
+        if isinstance(bn := props.get(b_key), dict):
+            for sub_k, sub_cap in (("badge", 26), ("text", 42)):
+                if isinstance(orig := bn.get(sub_k), str):
+                    bn[sub_k] = _compact_str(orig, sub_cap, scale)
+
+    for item_list, fld_caps in (
+        ("suspects", (("clue", 20), ("role", 20), ("name", 22))),
+        ("options", (("label", 22), ("detail", 24))),
+        ("devices", (("name", 24), ("status", 32))),
+        ("nodes", (("label", 18), ("title", 18), ("name", 18), ("tag", 14), ("sublabel", 20), ("detail", 20))),
+        ("edges", (("label", 16), ("pill", 16), ("text", 16), ("tag", 14))),
+        ("tiers", (("name", 20), ("tag", 14), ("examples", 24), ("blastRadius", 20))),
+    ):
+        for item in props.get(item_list) or []:
+            if isinstance(item, dict):
+                for fk, fcap in fld_caps:
+                    if isinstance(orig := item.get(fk), str):
+                        item[fk] = _compact_str(orig, fcap, scale)
+
+    if "STAGE_CAPTION_OVERLAP" in codes:
+        props["compactStage"] = True
+        for k_sub, cap_sub in (("subline", 34), ("matchSubline", 34), ("forensicClueBar", 32), ("prompt", 32), ("crisisPrompt", 32)):
+            if isinstance(orig := props.get(k_sub), str):
+                props[k_sub] = _compact_str(orig, cap_sub, min(scale, 0.8))
+
+    if "HORIZONTAL_OFF_CENTER" in codes or "ASYMMETRIC_NOIR_RAIL" in codes:
+        props["centerLockPx"] = 540
+        props["noirRailInsetPx"] = 84
+
+    if "GRAPH_PILL_NODE_OVERLAP" in codes:
+        props["compactGraphPills"] = True
+
+    if codes & LAYOUT_DEFECT_CODES or defect_codes is not None:
+        scene["layoutHealed"] = True
+        props["layoutHealed"] = True
+
+    return scene
+
+
 def heal_dom_defects(manifest: dict, dom_report: dict) -> tuple[dict, list[str]]:
     ep_id = manifest.get("id")
     defects = [d for d in ((dom_report or {}).get("defects") or []) if isinstance(d, dict) and d.get("episode") in (None, "", ep_id)]
@@ -148,6 +251,16 @@ def heal_dom_defects(manifest: dict, dom_report: dict) -> tuple[dict, list[str]]
         return manifest, []
     sc_ids = {str(d["sceneId"]) for d in defects if d.get("sceneId") is not None}
     sc_idxs = {int(d["sceneIndex"]) for d in defects if isinstance(d.get("sceneIndex"), int)}
+    codes_by_idx: dict[int, set[str]] = {}
+    global_codes: set[str] = set()
+    for d in defects:
+        c_str = str(d.get("code") or d.get("type") or "").strip().upper()
+        if not c_str:
+            continue
+        if isinstance(d.get("sceneIndex"), int):
+            codes_by_idx.setdefault(int(d["sceneIndex"]), set()).add(c_str)
+        else:
+            global_codes.add(c_str)
 
     for scale in (1.0, 0.8):
         out, actions = copy.deepcopy(manifest), []
@@ -184,6 +297,12 @@ def heal_dom_defects(manifest: dict, dom_report: dict) -> tuple[dict, list[str]]
                             if isinstance(orig := item.get(fk), str) and (nv := _compact_str(orig, fcap, scale)) != orig:
                                 item[fk] = nv
                                 actions.append(f"scenes[{idx}].{item_list}[{s_i}].{fk}: {orig!r} -> {nv!r}")
+            sc_codes = (codes_by_idx.get(idx, set()) | global_codes) & LAYOUT_DEFECT_CODES
+            if sc_codes:
+                before_sc = copy.deepcopy(scenes[idx])
+                heal_scene_for_defects(scenes[idx], sc_codes, scale=min(scale, 0.85))
+                if scenes[idx] != before_sc:
+                    actions.append(f"scenes[{idx}].layoutHealed: {sorted(sc_codes)}")
         if actions:
             return out, actions
     return manifest, []

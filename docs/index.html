@@ -21,7 +21,7 @@
     </div>
     <div class="progress-wrap">
       <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progBarWrap">
-        <div class="progress-fill" id="progFill"></div>
+        <div class="progress-fill" id="progFill"><span id="setupProgressFill" style="display:none;width:0%"></span></div>
       </div>
       <span class="progress-label" id="progText">0 / 20 Completed (0%)</span>
     </div>
@@ -50,12 +50,12 @@
 
     <section class="workspace-bar" id="workspaceNav" aria-label="Workspace tabs and instant filter">
       <div class="tab-strip" role="tablist" aria-label="Portal workspace views">
-        <button type="button" class="tab-btn" role="tab" data-tab-btn="factory" aria-selected="true">1. Reel Factory (Pipeline)</button>
-        <button type="button" class="tab-btn" role="tab" data-tab-btn="launch" aria-selected="false">2. Tonight's Launch (Case #01)</button>
-        <button type="button" class="tab-btn" role="tab" data-tab-btn="cli" aria-selected="false">3. Master CLI Directory</button>
-        <button type="button" class="tab-btn" role="tab" data-tab-btn="spec" aria-selected="false">4. Show Spec &amp; 6-Season Map</button>
-        <button type="button" class="tab-btn" role="tab" data-tab-btn="setup" aria-selected="false">5. One-Time Setup &amp; API</button>
-        <button type="button" class="tab-btn" role="tab" data-tab-btn="all" aria-selected="false">All Sections</button>
+        <button type="button" class="tab-btn active" role="tab" data-tab-btn="factory" data-tab="factory" aria-selected="true">1. Reel Factory (Pipeline)</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="launch" data-tab="ops" data-tab-alias="launch" aria-selected="false">2. Tonight's Launch (Case #01)</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="cli" data-tab="cli" aria-selected="false">3. Master CLI Directory</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="spec" data-tab="arch" data-tab-alias="spec" aria-selected="false">4. Show Spec &amp; 6-Season Map</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="setup" data-tab="setup" aria-selected="false">5. One-Time Setup &amp; API</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="all" data-tab="gates" data-tab-alias="all" aria-selected="false">All Sections</button>
       </div>
       <div class="search-row">
         <input type="search" id="searchInput" class="search-input" placeholder="Instant filter across all 5 tabs: search script names, pollBranches, *21*, uat:dom, 1930..." aria-label="Instant filter across all portal sections" />
@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <div data-tab-panel="factory">
+    <div data-tab-panel="factory" id="panel-factory" class="tab-panel active">
       <section class="phase-card" id="videoGuide">
         <div class="badge-row">
           <span class="tag tag-gold">WATCH FIRST · 3M 07S HINGLISH VIDEO WALKTHROUGH</span>
@@ -250,7 +250,7 @@ suspects:
         </div>
       </section>
     </div>
-    <div data-tab-panel="launch" hidden>
+    <div data-tab-panel="launch" data-tab-alias="ops" id="panel-ops" class="tab-panel" hidden>
       <section class="phase-card" id="assets">
         <div class="badge-row"><span class="tag tag-gold">TAB 2 · READY ON MAC DISK · ZERO VIDEO TRANSFER NEEDED</span></div>
         <h2>2. Tonight's Launch Pack &amp; Brand Kit (Case #01 · 7:40 PM IST)</h2>
@@ -465,7 +465,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
       </section>
     </div>
 
-    <div data-tab-panel="cli" hidden>
+    <div data-tab-panel="cli" id="panel-cli" class="tab-panel" hidden>
       <section class="phase-card" id="cliDirectory">
         <div class="badge-row">
           <span class="tag tag-cyan">TAB 3 · 100% TOOL COVERAGE (23 PYTHON SCRIPTS + REMOTION ENGINE)</span>
@@ -546,7 +546,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
       </section>
     </div>
 
-    <div data-tab-panel="spec" hidden>
+    <div data-tab-panel="spec" data-tab-alias="arch" id="panel-arch" class="tab-panel" hidden>
       <section class="phase-card" id="curriculum">
         <div class="badge-row">
           <span class="tag tag-gold">TAB 4 · CONSOLIDATED V11 PRODUCTION SPEC</span>
@@ -590,7 +590,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
       </section>
     </div>
 
-    <div data-tab-panel="setup" hidden>
+    <div data-tab-panel="setup" id="panel-setup" class="tab-panel" hidden>
       <section class="phase-card" id="flags">
         <div class="badge-row"><span class="tag tag-crimson">TAB 5 · OWNER AUDIT SUMMARY · HARD FACTS VS. JUDGMENT CALLS</span></div>
         <h2>5. One-Time Account, Privacy &amp; API Setup — 7 Key Audit Flags</h2>
@@ -805,8 +805,10 @@ export IG_ACCESS_TOKEN="YOUR_60_DAY_IG_TOKEN"</pre>
         </ul>
       </section>
     </div>
+    <div id="panel-gates" class="tab-panel" style="display:none" hidden></div>
   </main>
 
+  <script src="assets/00-personal-ui-primitives.js"></script>
   <script src="assets/guide.js"></script>
 </body>
 </html>
