@@ -2,10 +2,10 @@
 
 Data-driven `9:16` (`1080x1920` @ `30fps`) Hindi/Hinglish Crime-Cyber Reels production, validation, and closed-loop growth engine built on **Remotion 4**, **TypeScript**, and **Python**. Every episode dramatizes a real-world cyber fraud vector as an investigative noir whodunit led by **Detective Kabir** (`visualTheme: "noir_cinema"`, with legacy enterprise SOC/GRC modes supported), delivers a 5-second **Suraksha Kavach** (`*#21#`, `##002#`, MHA I4C `1930`), and connects **Part 1 -> Live Community `A / B / C` Poll -> Part 2** voter callout reveals.
 
-## Canonical Documentation Hub (2 Entry Points, Zero Drift)
+## Canonical 5-Tab Documentation Hub (2 Entry Points, Zero Stray Docs)
 
-- **[Interactive Web Command Center (`docs/index.html`)](docs/index.html)** — Centralized visual architecture, interactive `NOIR_GRID` safe-zone map, Hybrid `85% Mac Web + 15% Android` launch workflow, and production playbooks.
-- **[Unified Production & Instagram Operations Handbook (`docs/instagram-launch-and-ops-playbook.md`)](docs/instagram-launch-and-ops-playbook.md)** — Single canonical Markdown reference covering the `42–58s` retention clock, 4-pillar deterministic self-healing engine, voice & asset provenance, Instagram launch SOP, and 6-season case curriculum.
+- **[5-Tab Centralized Web Command Center (`docs/index.html`)](docs/index.html)** — Interactive 5-Tab visual portal (`1. Reel Factory Workflow`, `2. 21-Script CLI Directory`, `3. Show Spec & Safe Zones`, `4. Hybrid Launch & Poll Ops`, `5. Account Privacy & $0 Graph API`), `NOIR_GRID` visual previews (`docs/assets/*`), and sanitized static GitHub Pages export via `scripts/export_sanitized_pages.py`.
+- **[Unified Production & Instagram Operations Handbook (`docs/instagram-launch-and-ops-playbook.md`)](docs/instagram-launch-and-ops-playbook.md)** — Single canonical Markdown reference mirroring all 5 Hub tabs across the 21 Python scripts, Part 1 & Part 2 (`pollBranches`) YAML briefs, `42–58s` retention clock, voice/asset provenance, `85% Mac Web + 15% Android` SOP, and 6-season curriculum.
 
 ## Core Architecture Highlights
 
@@ -46,8 +46,9 @@ python3 scripts/instagram_ops.py poll-tally \
   --part1 episodes/s01-asset-classification/s01e01-forgotten-bucket.json \
   --apply-to episodes/s01-asset-classification/s01e02-crown-jewels.json
 
-# 4. Export on-demand Voice Memos teleprompter script (writes untracked renders/teleprompter-export.md)
-python3 scripts/export_teleprompter.py
+# 4. Export Voice Memos teleprompter & sanitized static GitHub Pages bundle from the 5-Tab Web Hub
+python3 scripts/export_teleprompter.py --output renders/teleprompter-export.md
+python3 scripts/export_sanitized_pages.py --src-dir docs --out-dir renders/gh-pages-bundle
 
 # 5. Run full schema/publish-ready gate, 31-test Python suite & Headless Chrome safe-zone audit
 python3 scripts/validate_episode.py episodes/ --publish-ready
@@ -60,12 +61,14 @@ cd engine && npm run typecheck && npm run uat:dom
 ```text
 SocialMediaShortVideo/
 ├── assets/                  # Brand kit PNGs (DP, 4 Story Highlights) & 1080x1920 cast/B-roll plates
+├── data/                    # Learned retention defaults (learned_defaults.json) & SQLite growth ledger
 ├── docs/
-│   ├── index.html           # Centralized Interactive Web Command Center
-│   └── instagram-launch-and-ops-playbook.md  # Unified Markdown Production & Growth Handbook
-├── episodes/                # Canonical schema.json + Season 01 & Season 02 episode manifests
+│   ├── index.html           # 5-Tab Centralized Web Hub (exported via scripts/export_sanitized_pages.py)
+│   ├── assets/              # Web Hub safe-zone mockups, brand previews & QA stills
+│   └── instagram-launch-and-ops-playbook.md  # Single 5-Section Markdown Production & Ops Handbook
+├── episodes/                # Canonical schema.json, briefs/*.yaml & Season 01–02 JSON manifests (0 .md files)
 ├── engine/                  # Remotion 4 TypeScript compositions, NOIR_GRID tokens & uat-dom-audit.mjs
-├── scripts/                 # Deterministic self-healing builder, voice/matte pipelines & instagram_ops.py
-├── tests/                   # 31-test automated unit & regression suite
-└── renders/                 # Reel covers, QA frames & gitignored H.264 MP4 / teleprompter exports
+├── scripts/                 # All 21 deterministic Python scripts (builder, briefs, voice, mattes, IG ops, Pages)
+├── tests/                   # 31-test automated unit & self-healing ratchet suite
+└── renders/                 # Reel covers, QA frames & gitignored H.264 MP4 / teleprompter / Pages exports
 ```

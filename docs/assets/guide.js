@@ -1,10 +1,18 @@
 (function () {
   var STORAGE_KEY = "cyberjasoos_launch_checks_v1";
   var THEME_KEY = "cyberjasoos_launch_theme_v1";
+  var TAB_KEY = "cyberjasoos_active_tab_v1";
+  var VALID_TABS = { factory: 1, launch: 1, cli: 1, spec: 1, setup: 1, all: 1 };
   var checks = Array.prototype.slice.call(document.querySelectorAll(".step-check"));
   var progFill = document.getElementById("progFill");
   var progText = document.getElementById("progText");
   var progWrap = document.getElementById("progBarWrap");
+  var tabBtns = Array.prototype.slice.call(document.querySelectorAll("[data-tab-btn]"));
+  var tabPanels = Array.prototype.slice.call(document.querySelectorAll("[data-tab-panel]"));
+  var searchInput = document.getElementById("searchInput");
+  var searchClearBtn = document.getElementById("searchClearBtn");
+  var searchStatus = document.getElementById("searchStatus");
+  var activeTab = "factory";
 
   function loadTheme() {
     try {
@@ -13,6 +21,90 @@
         document.documentElement.setAttribute("data-theme", savedTheme);
       }
     } catch (e) {}
+  }
+
+  function clearSearchHidden() {
+    Array.prototype.slice.call(document.querySelectorAll(".is-search-hidden")).forEach(function (el) {
+      el.classList.remove("is-search-hidden");
+    });
+  }
+
+  function renderTabs(viewTab) {
+    tabBtns.forEach(function (btn) {
+      var isSel = btn.getAttribute("data-tab-btn") === viewTab;
+      btn.setAttribute("aria-selected", isSel ? "true" : "false");
+    });
+    tabPanels.forEach(function (panel) {
+      var pName = panel.getAttribute("data-tab-panel");
+      if (viewTab === "all" || pName === viewTab) {
+        panel.removeAttribute("hidden");
+      } else {
+        panel.setAttribute("hidden", "");
+      }
+    });
+  }
+
+  function setActiveTab(tabId, persist) {
+    var nextTab = VALID_TABS[tabId] ? tabId : "factory";
+    activeTab = nextTab;
+    if (persist && searchInput && searchInput.value) {
+      searchInput.value = "";
+    }
+    clearSearchHidden();
+    renderTabs(nextTab);
+    if (searchStatus) {
+      searchStatus.textContent = nextTab === "all" ? "Showing all 5 workspace tabs (20/20 checklist steps visible)" : "Tip: Type above to instant-filter across all 5 tabs";
+    }
+    if (persist) {
+      try {
+        localStorage.setItem(TAB_KEY, nextTab);
+      } catch (e) {}
+    }
+  }
+
+  function applySearch() {
+    if (!searchInput) return;
+    var q = (searchInput.value || "").trim().toLowerCase();
+    clearSearchHidden();
+    if (!q) {
+      renderTabs(activeTab);
+      if (searchStatus) {
+        searchStatus.textContent = activeTab === "all" ? "Showing all 5 workspace tabs (20/20 checklist steps visible)" : "Tip: Type above to instant-filter across all 5 tabs";
+      }
+      return;
+    }
+    renderTabs("all");
+    var matchedCards = 0;
+    var matchedItems = 0;
+    Array.prototype.slice.call(document.querySelectorAll(".phase-card")).forEach(function (card) {
+      var units = Array.prototype.slice.call(
+        card.querySelectorAll(".step-item, .stage-card, .auto-card, .meta-table tbody tr, .tele-line, .standalone-copy")
+      );
+      var h2 = card.querySelector("h2");
+      var headHit = h2 && h2.textContent.toLowerCase().indexOf(q) !== -1;
+      var unitHits = 0;
+      units.forEach(function (u) {
+        if (u.textContent.toLowerCase().indexOf(q) !== -1) {
+          unitHits += 1;
+        } else if (!headHit) {
+          u.classList.add("is-search-hidden");
+        }
+      });
+      if (unitHits > 0 || headHit || (!units.length && card.textContent.toLowerCase().indexOf(q) !== -1)) {
+        if (headHit && unitHits > 0) {
+          units.forEach(function (u) {
+            if (u.textContent.toLowerCase().indexOf(q) === -1) u.classList.add("is-search-hidden");
+          });
+        }
+        matchedCards += 1;
+        matchedItems += unitHits || 1;
+      } else {
+        card.classList.add("is-search-hidden");
+      }
+    });
+    if (searchStatus) {
+      searchStatus.textContent = "Filter \"" + q + "\": " + matchedItems + " match(es) across " + matchedCards + " section(s)";
+    }
   }
 
   function updateProgress() {
@@ -66,10 +158,30 @@
     checks.forEach(function (cb) {
       if (saved[cb.id]) cb.checked = true;
     });
+    var savedTab = localStorage.getItem(TAB_KEY);
+    if (savedTab && VALID_TABS[savedTab]) activeTab = savedTab;
   } catch (e) {}
 
   loadTheme();
+  setActiveTab(activeTab, false);
   updateProgress();
+
+  tabBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      setActiveTab(btn.getAttribute("data-tab-btn") || "factory", true);
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", applySearch);
+  }
+  if (searchClearBtn && searchInput) {
+    searchClearBtn.addEventListener("click", function () {
+      searchInput.value = "";
+      applySearch();
+      searchInput.focus();
+    });
+  }
 
   checks.forEach(function (cb) {
     cb.addEventListener("change", updateProgress);
@@ -101,8 +213,7 @@
     btn.addEventListener("click", function () {
       var target = document.getElementById(btn.getAttribute("data-copy"));
       if (!target) return;
-      var txt = target.textContent || "";
-      copyText(txt);
+      copyText(target.textContent || "");
       btn.setAttribute("data-copied", "1");
       btn.textContent = "Copied!";
       setTimeout(function () {

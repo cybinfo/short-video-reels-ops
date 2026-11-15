@@ -47,6 +47,16 @@ def sanitize_html(raw_html: str) -> str:
     return out
 
 
+def sanitize_text_asset(raw_text: str) -> str:
+    """Strip local path banners and redact forbidden tokens in exported CSS/JS/JSON assets."""
+    out = re.sub(r"/\*\s*=+[\s\S]*?=+\s*\*/\s*", "", raw_text)
+    out = _EMAIL_RE.sub("<DEDICATED_CREATOR_GMAIL>", out)
+    out = _REPO_USER_PATH_RE.sub("<REPO_ROOT>", out)
+    for tok in FORBIDDEN_TOKENS:
+        out = re.sub(re.escape(tok), "<REDACTED>", out, flags=re.IGNORECASE)
+    return out
+
+
 def find_forbidden_leaks(text: str) -> list[str]:
     """Return any forbidden tokens still present (case-insensitive) in exported text."""
     lower = text.lower()
@@ -78,7 +88,9 @@ def export_sanitized_site(src_dir: Path, out_dir: Path) -> dict[str, object]:
     leaks = find_forbidden_leaks(index_dst.read_text(encoding="utf-8"))
     for text_asset in sorted(dst_assets.glob("*")):
         if text_asset.suffix.lower() in {".css", ".js", ".html", ".json", ".svg"}:
-            leaks.extend(find_forbidden_leaks(text_asset.read_text(encoding="utf-8")))
+            cleaned_asset = sanitize_text_asset(text_asset.read_text(encoding="utf-8"))
+            text_asset.write_text(cleaned_asset, encoding="utf-8")
+            leaks.extend(find_forbidden_leaks(cleaned_asset))
     if leaks:
         raise RuntimeError(f"Sanitization assertion failed; forbidden tokens remain: {sorted(set(leaks))}")
 
