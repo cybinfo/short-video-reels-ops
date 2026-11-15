@@ -174,23 +174,29 @@ def build_reel_cover(episode_path: Path | str, frame_path: Path | str, out_path:
     img = decode_rgb(fr_file, 1080, 1920)
     vgrad(img, 0, 560, 0.56, 0.0, NOIR_BG); vgrad(img, 980, 1520, 0.0, 0.88, NOIR_BG); vgrad(img, 1520, 1920, 0.88, 0.96, NOIR_BG)
 
-    m_case = re.search(r"CASE\s*#\d+", f"{manifest.get('securityDomain', '')} {manifest.get('seasonTitle', '')}", re.I)
-    case_label = m_case.group(0).upper() if m_case else f"CASE #{int(manifest.get('season') or 1):02d}"
+    m_case = re.search(r"(?:CASE|GUIDE)\s*#\d+", f"{manifest.get('securityDomain', '')} {manifest.get('seasonTitle', '')}", re.I)
     hud_badge = str(manifest.get("hudPartBadge") or "PART 1/2").upper()
+    is_guide_ep = hud_badge.startswith("GUIDE") or "GUIDE" in str(manifest.get("id", "")).upper()
+    case_label = m_case.group(0).upper() if m_case else ("AUTO FACTORY" if is_guide_ep else f"CASE #{int(manifest.get('season') or 1):02d}")
     prev_vote = (manifest.get("hook") or {}).get("previousVoteResult") or {}
     is_finale = "FINALE" in str(manifest.get("securityDomain", "")).upper() or hud_badge.startswith("PART 2") or bool(prev_vote)
 
-    top_pill = f"{case_label} · FINALE" if is_finale else f"{case_label} · {hud_badge}"
-    pill_fill = (8, 92, 68) if is_finale else CRIMSON
+    top_pill = f"{case_label} · {hud_badge}" if is_guide_ep else (f"{case_label} · FINALE" if is_finale else f"{case_label} · {hud_badge}")
+    pill_fill = (8, 92, 68) if (is_finale or is_guide_ep) else CRIMSON
     rrect(img, 290, 318, 500, 62, 31, pill_fill, a=0.95); rrect(img, 290, 318, 500, 62, 31, GOLD, a=0.95, stroke=3.2)
 
-    if is_finale and prev_vote.get("percentage"):
+    parts = [s.strip() for s in str(manifest.get("coldOpenTag") or manifest.get("episodeTitle") or "CYBER CASE").split("·") if s.strip()]
+    if manifest.get("id") == "s01e02-crown-jewels" and prev_vote.get("percentage"):
         h1, h2 = f"{int(prev_vote['percentage'])}% KA SHAK GALAT NIKLA!", "CHHAT KA ASLI GADDAR REVEAL"
+    elif is_finale and prev_vote.get("percentage"):
+        opt = str(prev_vote.get("winningOption") or "C").upper()
+        h1 = f"{int(prev_vote['percentage'])}% VOTED OPTION {opt}!"
+        h2 = (parts[-1].upper() if len(parts) > 1 else str(manifest.get("episodeTitle") or "ASLI FORENSIC SACH REVEAL").upper())[:36]
     elif "12 lakh" in f"{manifest.get('seasonTitle', '')} {manifest.get('coldOpenTag', '')}".lower():
         h1, h2 = "SHAADI KE 12 LAKH GAYAB!", "ASLI GADDAR: A, B YA C?"
     else:
-        parts = [s.strip() for s in str(manifest.get("coldOpenTag") or manifest.get("episodeTitle") or "CYBER CASE").split("·")]
-        h1, h2 = f"{parts[0].upper()}!", (parts[1].upper() if len(parts) > 1 else ("FULL FORENSIC REVEAL" if is_finale else "ASLI GADDAR: A, B YA C?"))
+        default_h2 = "ZERO-AI PIPELINE GUIDE" if is_guide_ep else ("FULL FORENSIC REVEAL" if is_finale else "ASLI GADDAR: A, B YA C?")
+        h1, h2 = f"{parts[0].upper()}!", (parts[1].upper() if len(parts) > 1 else default_h2)
 
     follow_blob = json.dumps(manifest.get("scenes") or [])
     m_handle = re.search(r"@[A-Za-z0-9_.]+", follow_blob)

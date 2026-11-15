@@ -1,0 +1,122 @@
+id: s99e04-guide-growth-ledger
+season: 99
+episodeNumber: 4
+totalEpisodesInSeason: 4
+part: 1
+preset: guide_walkthrough
+companyName: CYBER JASOOS
+hudPartBadge: "GUIDE 4/4"
+title: "Chapter 4: SQLite Growth Ledger, Auto-Learning Aur 3-Step Routine"
+seasonTitle: "Zero-AI Reel Guide · Chapter 4"
+caseTag: "CHAPTER 4 · AUTO-LEARNING"
+securityDomain: "ZERO-AI REEL FACTORY · CH 4"
+hookPattern: mid_breach_timestamp
+
+plates:
+  hookHero: "characters/guide-08-growth-ledger.png"
+  hookSecondary: "characters/guide-01-portal-hub.png"
+  hookTertiary: "characters/kabir-closeup.png"
+  clueHero: "characters/guide-08-growth-ledger.png"
+  clueSecondary: "characters/guide-04-build-cli-heal.png"
+  twistHero: "characters/guide-08-growth-ledger.png"
+  twistSecondary: "characters/kabir-investigating.png"
+  payoffHero: "characters/sharma-relief-dawn.png"
+  payoffSecondary: "characters/kabir-closeup.png"
+
+caseBadge: "GUIDE 4/4 · GROWTH LEDGER"
+timeLabel: "48H INSIGHTS LOOP"
+locationLabel: "CH 4 · AUTO-LEARNING"
+phoneStatus: "SQLite Ledger -> Auto-Tuned Reels!"
+bankAlertTitle: "CHAPTER 4 · AUTO-LEARNING"
+amountLost: "3-CMD ROUTINE"
+
+scrollStopper:
+  badge: "CHAPTER 4 · AUTO-LEARN"
+  text: "Mosseri Score Tunes Every Next Reel!"
+  tone: emerald
+
+shotTitles:
+  - "SQLITE GROWTH LEDGER"
+  - "MOSSERI RANK SCORE"
+  - "3-STEP DAILY LOOP!"
+shotTags:
+  - "48H IG INSIGHTS"
+  - "45/35/20 WEIGHTS"
+  - "AUTO-INHERIT SPEC"
+shockPills:
+  - "45% SHARE"
+  - "35% SAVE"
+  - "20% VOTE"
+
+clueHeadline: "3 AUTO-LEARNING TELEMETRY GATES!"
+clueSubline: "48h Metrics -> Mosseri Score -> Defaults"
+interceptBadge: "GROWTH DB · GUIDE 4/4"
+interceptText: "45% Share + 35% Save + 20% Poll Vote"
+interceptTone: amber
+
+frameworkBadge: "MOSSERI RANK LEARNER"
+frameworkHeadline: "Winning Hook, WPM & Duration Saved!"
+stepOneTitle: "record-metrics (48h)"
+stepOneTag: "SQLITE TELEMETRY DB"
+stepTwoTitle: "instagram_ops.py learn"
+stepTwoTag: "learned_defaults.json"
+exposedItems:
+  - "growth_ledger.sqlite3"
+  - "45/35/20 MOSSERI"
+  - "learned_defaults.json"
+
+payoffBadge: "3-STEP DAILY WORKFLOW"
+payoffHeadline: "YAML -> build_episode -> learn!"
+radarPinLabel: "AUTO-INHERIT ACTIVE"
+crossedOutLabel: "GUESSWORK PACING BAND"
+matchHeadline: "HAR HAFTE ENGINE KHUD TEZ HOTA HAI!"
+matchSubline: "compile_story_brief auto-loads defaults!"
+verdictPillLeft: "3-CMD DAILY LOOP"
+verdictPillRight: "MOSSERI AUTO-TUNE"
+
+votePrompt: "KAUNSA AUTO-LEARN FEATURE BEST?"
+partBadge: "FULL GUIDE READY"
+spotlightRightBadge: "GUIDE 4/4"
+followHandleLine: "START NOW: FOLLOW @CYBERJASOOS"
+forensicClueBar: "CH 4 · SQLITE GROWTH LEDGER"
+ctaLine: "A, B, ya C comment kijiye @cyberjasoos!"
+loopBridgeText: "neeche A, B, ya C likhiye"
+
+realIncident:
+  incident: "SQLite Growth Ledger & Adam Mosseri Composite Auto-Learner"
+  year: 2025
+  impact: "Weights 45% Share + 35% Save + 20% Poll Vote to auto-tune hook style, WPM, and duration"
+  lesson: "Daily 3-step loop: YAML brief -> build_episode.py -> instagram_ops.py record-metrics & learn."
+
+suspects:
+  - key: A
+    name: "Record 48h Metrics"
+    role: "SQLite Ledger"
+    timestampBadge: "48H SYNC"
+    clue: "Views+Saves+Votes"
+    image: "characters/guide-08-growth-ledger.png"
+    icon: wifi
+    suspicious: false
+  - key: B
+    name: "Mosseri Score Learn"
+    role: "45/35/20 Rank"
+    timestampBadge: "RANK FIT"
+    clue: "45%Share+35%Save!"
+    image: "characters/guide-04-build-cli-heal.png"
+    icon: wifi
+    suspicious: false
+  - key: C
+    name: "Auto-Inherit Defaults"
+    role: "3-Cmd Routine"
+    timestampBadge: "AUTO-TUNE"
+    clue: "Next Brief Synced!"
+    image: "characters/sharma-relief-dawn.png"
+    icon: alert
+    suspicious: true
+
+beats:
+  hook: "Har naye episode ke saath aapka Zero-AI Reel engine bina prompt ke aur smart kaise banta hai? Asli raaz chhupa hai data/growth_ledger.sqlite3 ke local auto-learning SQLite ledger mein!"
+  escalation: "Upload ke artaalis ghante baad instagram_ops.py record-metrics chalaiye, aur har Reel ke asli Instagram Insights jaise views, shares, saves, aur poll_votes seedha SQLite database mein darj kijiye!"
+  framework: "Ab instagram_ops.py learn chalaiye, jo Adam Mosseri ke composite score paintaalis percent Share, paintis percent Save, aur bees percent Vote se winning hook style, WPM, aur duration data/learned_defaults.json mein likh deta hai!"
+  micro_payoff: "Agli baar compile_story_brief.py yeh winning defaults khud auto-inherit kar leta hai, yaani aapka poora daily routine sirf teen kadam hai: YAML brief, build_episode.py, phir record-metrics aur learn!"
+  cliffhanger_vote: "Record 48h Metrics, Mosseri Score Learn, ya Auto-Inherit Defaults: is self-learning engine ka kaunsa hissa aap sabse pehle aazmayenge, neeche A, B, ya C likhiye..."

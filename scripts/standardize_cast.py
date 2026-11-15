@@ -325,6 +325,9 @@ def conform_broll(raw_path: pathlib.Path, dst_path: pathlib.Path) -> None:
     )
 
 
+RAW_IMAGE_EXTS: tuple[str, ...] = (".png", ".jpg", ".jpeg", ".webp")
+_EXT_PRIORITY: dict[str, int] = {ext: idx for idx, ext in enumerate(RAW_IMAGE_EXTS)}
+
 AUTO_BROLL_KEYWORDS: tuple[str, ...] = (
     "broll",
     "bg",
@@ -336,6 +339,20 @@ AUTO_BROLL_KEYWORDS: tuple[str, ...] = (
     "phone",
     "gate",
     "chhat",
+    "ui",
+    "cli",
+    "hub",
+    "portal",
+    "brief",
+    "terminal",
+    "ledger",
+    "guide",
+    "screen",
+    "stage",
+    "safezone",
+    "launch",
+    "poll",
+    "cover",
 )
 _AUTO_DEPTH_SESSION = None
 _AUTO_DEPTH_UNAVAILABLE = False
@@ -463,8 +480,9 @@ def _normalize_plate_set(items: Sequence[str] | None) -> set[str]:
             tok = part.strip()
             if not tok:
                 continue
-            base = Path(tok).name
-            out.add(base if base.lower().endswith(".png") else f"{base}.png")
+            p_tok = Path(tok)
+            stem = p_tok.stem if p_tok.suffix.lower() in _EXT_PRIORITY else p_tok.name
+            out.add(f"{stem}.png")
     return out
 
 
@@ -496,12 +514,17 @@ def main(argv: Sequence[str] | None = None) -> int:
     PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 
     if args.auto_frame or broll_set:
-        for top_png in sorted(case_dir.glob("*.png")):
-            if "cast-sheet" in top_png.name.lower():
-                continue
-            raw_dst = raw_dir / top_png.name
-            if not raw_dst.exists():
-                shutil.copy2(top_png, raw_dst)
+        top_imgs = [
+            p
+            for p in case_dir.iterdir()
+            if p.is_file()
+            and p.suffix.lower() in _EXT_PRIORITY
+            and "cast-sheet" not in p.name.lower()
+        ]
+        top_imgs.sort(key=lambda p: (_EXT_PRIORITY[p.suffix.lower()], p.stem.lower(), p.name))
+        for top_img in top_imgs:
+            if not any((raw_dir / f"{top_img.stem}{ext}").exists() for ext in RAW_IMAGE_EXTS):
+                shutil.copy2(top_img, raw_dir / top_img.name)
 
     processed: set[str] = set()
 
@@ -573,27 +596,40 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     known_case01 = set(CAST_SPECS) | {golu_dial} | set(BROLL_PLATES) | set(TARGETED_BROLL_SPECS)
     if args.auto_frame or broll_set:
-        for raw_file in sorted(raw_dir.glob("*.png")):
-            fname = raw_file.name
-            if fname in processed or (only_set and fname not in only_set):
+        raw_candidates = [
+            p
+            for p in raw_dir.iterdir()
+            if p.is_file()
+            and p.suffix.lower() in _EXT_PRIORITY
+            and "cast-sheet" not in p.name.lower()
+        ]
+        raw_candidates.sort(key=lambda p: (_EXT_PRIORITY[p.suffix.lower()], p.stem.lower(), p.name))
+        raw_by_stem: dict[str, Path] = {}
+        for cand in raw_candidates:
+            raw_by_stem.setdefault(cand.stem, cand)
+
+        for stem in sorted(raw_by_stem):
+            raw_file = raw_by_stem[stem]
+            out_fname = f"{raw_file.stem}.png"
+            if out_fname in processed or (only_set and out_fname not in only_set):
                 continue
-            if fname in known_case01 and fname not in broll_set:
+            if out_fname in known_case01 and out_fname not in broll_set:
                 continue
-            lower_name = fname.lower()
-            is_broll = fname in broll_set or any(kw in lower_name for kw in AUTO_BROLL_KEYWORDS)
+            lower_name = out_fname.lower()
+            is_broll = out_fname in broll_set or any(kw in lower_name for kw in AUTO_BROLL_KEYWORDS)
             if is_broll:
-                conform_broll(raw_file, case_dir / fname)
-                conform_broll(raw_file, PUBLIC_DIR / fname)
-                _apply_broll_lower_vignette(case_dir / fname, PUBLIC_DIR / fname)
-                processed.add(fname)
-                print(f"Conformed auto B-roll {fname:19s} -> 1080x1920")
+                conform_broll(raw_file, case_dir / out_fname)
+                conform_broll(raw_file, PUBLIC_DIR / out_fname)
+                _apply_broll_lower_vignette(case_dir / out_fname, PUBLIC_DIR / out_fname)
+                processed.add(out_fname)
+                print(f"Conformed auto B-roll {out_fname:19s} -> 1080x1920")
             elif args.auto_frame:
                 scale, cx, eye_y = estimate_auto_cast_spec(raw_file)
                 arr = conform_portrait(raw_file, scale, cx, eye_y)
-                _save_png(arr, case_dir / fname)
-                _save_png(arr, PUBLIC_DIR / fname)
-                processed.add(fname)
-                print(f"Auto-framed cast {fname:24s} -> 1080x1920 (scale={scale:.3f}, cx={cx:.3f}, eye_y={eye_y:.3f})")
+                _save_png(arr, case_dir / out_fname)
+                _save_png(arr, PUBLIC_DIR / out_fname)
+                processed.add(out_fname)
+                print(f"Auto-framed cast {out_fname:24s} -> 1080x1920 (scale={scale:.3f}, cx={cx:.3f}, eye_y={eye_y:.3f})")
 
     # Rebuild 5-character standardized cast sheet on full default case01 runs
     cast_files = [

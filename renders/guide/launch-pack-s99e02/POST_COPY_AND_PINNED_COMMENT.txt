@@ -1,0 +1,41 @@
+CYBER JASOOS (@cyberjasoos) - GUIDE #02: CHAPTER 2: SINGLE-COMMAND BUILD, VOICE MODES AUR SAFE-ZONE SELF-HEAL (GUIDE 2/4) LAUNCH PACK
+==============================================================================
+
+[1] ACCOUNT PROFILE & BIO (<= 150 CHARS)
+Primary Handle : @cyberjasoos
+SEO Name       : Cyber Jasoos | Cyber Crime
+Bio            : Asli Cyber Fraud Cases | 60s Rahasya
+                 Saboot Dekho - A, B ya C Gaddar Pehchano!
+                 5-Sec Suraksha Kavach | Cyber Help: 1930
+
+[2] REEL CAPTION + HASHTAGS (1122/2200 CHARS)
+Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4! Teen voice modes milte hain, edge par SalmanNeural preview, kokoro par Apache 2.0 commercial voice, ya recorded mode mein apni M4A voice, jahan har caption acoustic peak par lock hota hai! Agar audio tez ya dheemi ho, toh self-heal loop speech rate tune karke duration 42 se 58 seconds aur 130 se 195 WPM par lock karta hai! Phir Headless Chrome uat-dom-audit dot mjs verify karta hai ki har text x 956 pixels ke andar rahe, Instagram 124 pixel right rail bache, aur font 20 pixel se upar ho! Zero defects par 1080 by 1920 cover, POST COPY AND PINNED COMMENT text, aur final MP4 automatic ban jaate hain! Chaliye agle chapter mein Part 2 branching dekhiye! Suspects: A) Voice & Peak Sync (Edge Kokoro Own M4A · Acoustic Peak Lock!), B) WPM Clock Self-Heal (130-195 WPM Envelope · 42-58s Auto Rate!), C) Chrome Safe-Zone Gate (x<956px · Font>=20px · MP4 + Launch Pack!). Comment A, B, or C!
+
+#CyberJasoos #Remotion #VideoAutomation #SelfHealingCode #ReelsEngine #BuildInPublic
+
+[3] FIRST COMMENT TO POST & PIN WITHIN 60s
+CYBER JASOOS · CHAPTER 2 · 1-CMD
+A = Voice & Peak Sync (Edge Kokoro Own M4A · Acoustic Peak Lock!)
+B = WPM Clock Self-Heal (130-195 WPM Envelope · 42-58s Auto Rate!)
+C = Chrome Safe-Zone Gate (x<956px · Font>=20px · MP4 + Launch Pack!)
+Saboot milaiye aur A, B, ya C comment kijiye!
+
+[4] STORY 3-OPTION POLL STICKER (STRICTLY <= 22 CHARS EACH — NEVER QUIZ STICKER)
+Question : CHAPTER 2 KA SABSE STRONG GATE KAUNSA?
+  Option 1 -> A: Voice & Peak Sync (20 chars)
+  Option 2 -> B: WPM Clock Self-Heal (22 chars)
+  Option 3 -> C: Chrome Safe-Zone (19 chars)
+
+[5] 3 SOCRATIC VOTER REPLIES (ZERO SPOILERS)
+Reply to Vote A:
+Voice & Peak Sync par shak tez hai, par GATE 01 ke baad saboot kisne mitaya hoga?
+
+Reply to Vote B:
+WPM Clock Self-Heal ka suraag chubhta hai, magar kya dikhne wala har saboot asli gunahgaar hota hai?
+
+Reply to Vote C:
+Chrome Safe-Zone Gate sabse zyada ghere mein hai, par kahin yeh dhyaan bhatkane ka jaal toh nahi?
+
+[6] LAUNCH CHECKLIST
+[ ] Upload s99e02-guide-self-heal-build.mp4 in Original 9:16 crop + attach s99e02-guide-self-heal-build-reel-cover.png + enable 'Made with AI' label if synthetic.
+[ ] Pin Block [3] comment within 60s, share Reel to Story with Block [4] 3-option POLL sticker, and reply using Block [5].

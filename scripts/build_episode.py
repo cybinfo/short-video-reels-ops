@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-import argparse, json, re, shutil, subprocess, sys
+import argparse, json, re, shutil, subprocess, sys, tempfile
 from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).resolve().parent
@@ -11,6 +11,7 @@ REPO_ROOT = SCRIPTS_DIR.parent
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import sync_episode_registry  # noqa: E402
 from self_heal_rules import compute_rate_heal_adjustment, generate_launch_copy_pack, heal_dom_defects, heal_manifest_text_guards  # noqa: E402
 from validate_episode import validate_manifest  # noqa: E402
 
@@ -48,14 +49,39 @@ def _iter_scene_plates(obj: object, seen: list[str] | None = None) -> list[str]:
 
 
 def _compile_brief(brief_path: Path, output_manifest: Path | None) -> Path:
-    dst = output_manifest or (REPO_ROOT / "episodes" / f"{brief_path.stem}.json")
-    dst.parent.mkdir(parents=True, exist_ok=True)
+    if output_manifest is not None:
+        output_manifest.parent.mkdir(parents=True, exist_ok=True)
     try:
         import compile_story_brief  # type: ignore
-        compile_story_brief.compile_brief_file(brief_path, dst)
+
+        res = compile_story_brief.compile_brief_file(brief_path, output_manifest)
+        if output_manifest is not None:
+            return output_manifest.resolve()
+        if isinstance(res, Path):
+            return res.resolve()
+        if isinstance(res, str) and Path(res).is_file():
+            return Path(res).resolve()
+        if isinstance(res, tuple):
+            for item in res:
+                if isinstance(item, Path):
+                    return item.resolve()
+            for item in res:
+                if isinstance(item, dict) and item.get("id"):
+                    return (REPO_ROOT / "episodes" / f"{item['id']}.json").resolve()
+        if isinstance(res, dict) and res.get("id"):
+            return (REPO_ROOT / "episodes" / f"{res['id']}.json").resolve()
     except ImportError:
-        subprocess.run([_py(True), str(SCRIPTS_DIR / "compile_story_brief.py"), "--brief", str(brief_path), "--output", str(dst)], check=True)
-    return dst
+        cmd = [_py(True), str(SCRIPTS_DIR / "compile_story_brief.py"), "--brief", str(brief_path)]
+        if output_manifest is not None:
+            cmd.extend(["--output", str(output_manifest)])
+        proc = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        if output_manifest is not None:
+            return output_manifest.resolve()
+        for m in re.findall(r"([^\s\"']+\.json)", proc.stdout):
+            cand = Path(m) if Path(m).is_absolute() else (REPO_ROOT / m)
+            if cand.is_file() and not cand.name.endswith(".brief.json"):
+                return cand.resolve()
+    return (REPO_ROOT / "episodes" / f"{brief_path.stem}.json").resolve()
 
 
 def _ensure_character_assets(manifest: dict, case_dir: Path | None) -> list[str]:
@@ -171,7 +197,8 @@ def _build_parser() -> argparse.ArgumentParser:
     src.add_argument("--brief", type=Path, help="Story brief YAML/JSON to compile into an episode manifest.")
     src.add_argument("--episode", type=Path, help="Existing episode manifest JSON path.")
     for flag, hlp in (("--output-manifest", "Destination manifest JSON."), ("--case-dir", "Raw character plate directory."),
-                      ("--voice-input", "Recorded narration WAV/M4A."), ("--launch-pack-dir", "Output directory for launch pack.")):
+                      ("--voice-input", "Recorded narration WAV/M4A."), ("--launch-pack-dir", "Output directory for launch pack."),
+                      ("--mp4-output", "Explicit destination path for rendered MP4")):
         p.add_argument(flag, type=Path, help=hlp)
     p.add_argument("--voice-mode", choices=("edge", "kokoro", "recorded", "draft_say"), default="edge")
     p.add_argument("--max-heal-iters", type=int, default=3, help="Max self-healing iterations per gate (default: 3).")
@@ -207,11 +234,37 @@ def main(argv: list[str] | None = None) -> int:
 
     mp4_out: str | None = None
     if args.render_mp4:
-        mp4_path = (REPO_ROOT / "renders" / f"{ep_id}.mp4").resolve()
+        mp4_path = args.mp4_output.resolve() if args.mp4_output else (REPO_ROOT / "renders" / f"{ep_id}.mp4").resolve()
         mp4_path.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(["npx", "remotion", "render", "src/index.ts", ep_id, str(mp4_path)], cwd=str(REPO_ROOT / "engine"), check=True)
-        if args.launch_pack_dir:
-            shutil.copy2(mp4_path, pack_dir / f"{ep_id}.mp4")
+        vc = manifest.get("voiceConfig") if isinstance(manifest.get("voiceConfig"), dict) else {}
+        cap_rel = vc.get("captionsFile") or f"audio/{ep_id}.captions.json"
+        cap_path = REPO_ROOT / "engine" / "public" / str(cap_rel)
+        words_list = json.loads(cap_path.read_text(encoding="utf-8")) if cap_path.is_file() else []
+        audio_rel = vc.get("audioFile") or f"audio/{ep_id}.wav"
+        render_props = {
+            "manifest": manifest,
+            "words": words_list,
+            "audioPublicPath": audio_rel,
+            "showSafeZone": False,
+        }
+        registered_paths = {p.resolve() for p in sync_episode_registry.discover_episode_manifests()}
+        comp_id = ep_id if manifest_path.resolve() in registered_paths else "dynamic-episode"
+        tmp_props_path: Path | None = None
+        try:
+            with tempfile.NamedTemporaryFile(mode="w", suffix=".json", encoding="utf-8", delete=False) as tf:
+                json.dump(render_props, tf, ensure_ascii=False)
+                tmp_props_path = Path(tf.name)
+            subprocess.run(
+                ["npx", "remotion", "render", "src/index.ts", comp_id, str(mp4_path), f"--props={tmp_props_path}"],
+                cwd=str(REPO_ROOT / "engine"),
+                check=True,
+            )
+        finally:
+            if tmp_props_path is not None:
+                tmp_props_path.unlink(missing_ok=True)
+        pack_mp4 = (pack_dir / f"{ep_id}.mp4").resolve()
+        if args.launch_pack_dir and mp4_path != pack_mp4:
+            shutil.copy2(mp4_path, pack_mp4)
         mp4_out = str(mp4_path)
 
     print(json.dumps({

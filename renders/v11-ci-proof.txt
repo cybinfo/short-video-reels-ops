@@ -1,0 +1,221 @@
+=== CYBER JASOOS V11.2 FULL CI & PUBLISH-READY PROOF ===
+
+--- STEP 1: Episode Manifest & Season Continuity Validation ---
+$ python3 scripts/validate_episode.py episodes/
+[PASS] episodes/s01-asset-classification/s01e01-forgotten-bucket.json
+[PASS] episodes/s01-asset-classification/s01e02-crown-jewels.json
+[PASS] episodes/s01-asset-classification/s01e03-lobby-printer-pivot.json
+[PASS] episodes/s01-asset-classification/s01e04-automated-cmdb-shield.json
+[PASS] episodes/s02-risk-assessment/s02e01-the-100k-gamble.json
+[exit=0]
+
+--- STEP 2: --publish-ready Gate Blocking Preview Voices (Expected Exit 1) ---
+$ python3 scripts/validate_episode.py episodes/ --publish-ready
+[FAIL] episodes/s01-asset-classification/s01e01-forgotten-bucket.json (1 violation(s)):
+  - Publish-Ready License Guard: engineLicense 'EDGE_READ_ALOUD_PREVIEW' is preview/draft only and cannot be published commercially.
+[FAIL] episodes/s01-asset-classification/s01e02-crown-jewels.json (1 violation(s)):
+  - Publish-Ready License Guard: engineLicense 'EDGE_READ_ALOUD_PREVIEW' is preview/draft only and cannot be published commercially.
+[FAIL] episodes/s01-asset-classification/s01e03-lobby-printer-pivot.json (1 violation(s)):
+  - Publish-Ready License Guard: engineLicense 'MACOS_DRAFT' is preview/draft only and cannot be published commercially.
+[FAIL] episodes/s01-asset-classification/s01e04-automated-cmdb-shield.json (1 violation(s)):
+  - Publish-Ready License Guard: engineLicense 'MACOS_DRAFT' is preview/draft only and cannot be published commercially.
+[FAIL] episodes/s02-risk-assessment/s02e01-the-100k-gamble.json (1 violation(s)):
+  - Publish-Ready License Guard: engineLicense 'MACOS_DRAFT' is preview/draft only and cannot be published commercially.
+[exit=1]
+
+--- STEP 3: Commercial --publish-ready Gate PASS on Real S01E01 (OWN_VOICE) + S01E02 (APACHE_2_0) ---
+$ /Users/rajat.seth/Desktop/ClaudeCode/SocialMediaShortVideo/.venv_audio/bin/python scripts/prepare_voice.py --episode /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/s01/s01e01-forgotten-bucket.json --mode recorded --input /Users/rajat.seth/Desktop/ClaudeCode/SocialMediaShortVideo/engine/public/audio/s01e01-forgotten-bucket.wav --output-dir /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/audio
+Generated audio:    /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/audio/s01e01-forgotten-bucket.wav
+Generated captions: /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/audio/s01e01-forgotten-bucket.captions.json
+[exit=0]
+$ /Users/rajat.seth/Desktop/ClaudeCode/SocialMediaShortVideo/.venv_audio/bin/python scripts/prepare_voice.py --episode /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/s01/s01e02-crown-jewels.json --mode kokoro --sync-manifest --output-dir /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/audio
+Generated audio:    /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/audio/s01e02-crown-jewels.wav
+Generated captions: /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/audio/s01e02-crown-jewels.captions.json
+[exit=0]
+$ python3 scripts/validate_episode.py /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/s01 --publish-ready
+[PASS] /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/s01/s01e01-forgotten-bucket.json
+[PASS] /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpexb4phlv/s01/s01e02-crown-jewels.json
+[exit=0]
+
+--- STEP 4: Python Unit Test Suite ---
+$ python3 -m unittest discover -s tests -v
+[PASS] /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_cli_validation_and_silent_wav_synthesis/s01e01-shadow-jenkins.json
+Generated audio:    /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_draft_voice_bidirectional_pacing_calibration/draft_out/s99e01-pacing.wav
+Generated captions: /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_draft_voice_bidirectional_pacing_calibration/draft_out/s99e01-pacing.captions.json
+Exported teleprompter pack: /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_export_teleprompter_formatting_and_live_pack/teleprompter.md
+Generated audio:    /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpjtn1ez2h/out_short/s01e01-forgotten-bucket.wav
+Generated captions: /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpjtn1ez2h/out_short/s01e01-forgotten-bucket.captions.json
+Generated audio:    /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpjtn1ez2h/out_long/s01e01-forgotten-bucket.wav
+Generated captions: /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpjtn1ez2h/out_long/s01e01-forgotten-bucket.captions.json
+[PASS] /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/preview_ep.json
+[FAIL] /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/preview_ep.json (1 violation(s)):
+  - Publish-Ready License Guard: engineLicense 'MACOS_DRAFT' is preview/draft only and cannot be published commercially.
+Applied poll winner A (38%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+Applied poll winner B (45%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+Applied poll winner C (99%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+Applied poll winner A (68%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+Applied poll winner B (61%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+Applied poll winner C (74%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+Applied poll winner B (74%) -> /var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/breachzero_ut_62337_test_v11_honest_license_word_boundary_peaks_and_poll_branching/s01e02-branch-test.json
+
+test_adversarial_cc_by_nc_voice_license_blocked (test_framework.FrameworkTestSuite.test_adversarial_cc_by_nc_voice_license_blocked) ... ok
+test_asset_tier_matrix_active_tier_mismatch_caught (test_framework.FrameworkTestSuite.test_asset_tier_matrix_active_tier_mismatch_caught) ... ok
+test_bright_detective_edge_neural_and_one_to_one_scene_sync (test_framework.FrameworkTestSuite.test_bright_detective_edge_neural_and_one_to_one_scene_sync) ... ok
+test_cli_validation_and_silent_wav_synthesis (test_framework.FrameworkTestSuite.test_cli_validation_and_silent_wav_synthesis) ... ok
+test_comment_callout_missing_previous_vote_and_spotlight_guards (test_framework.FrameworkTestSuite.test_comment_callout_missing_previous_vote_and_spotlight_guards) ... ok
+test_competitor_hooks_scores_crisis_vs_textbook (test_framework.FrameworkTestSuite.test_competitor_hooks_scores_crisis_vs_textbook) ... ok
+test_deterministic_word_timestamps_bounds_and_highlights (test_framework.FrameworkTestSuite.test_deterministic_word_timestamps_bounds_and_highlights) ... ok
+test_draft_voice_bidirectional_pacing_calibration (test_framework.FrameworkTestSuite.test_draft_voice_bidirectional_pacing_calibration) ... ok
+test_export_teleprompter_formatting_and_live_pack (test_framework.FrameworkTestSuite.test_export_teleprompter_formatting_and_live_pack) ... ok
+test_generic_filler_hook_blocked (test_framework.FrameworkTestSuite.test_generic_filler_hook_blocked) ... ok
+test_kokoro_neural_mode_and_dual_speaker_clause_locked_timestamps (test_framework.FrameworkTestSuite.test_kokoro_neural_mode_and_dual_speaker_clause_locked_timestamps) ... ok
+test_missing_vote_cliffhanger_and_scene_gap_caught (test_framework.FrameworkTestSuite.test_missing_vote_cliffhanger_and_scene_gap_caught) ... ok
+test_mlx_whisper_venv_alignment_and_disable_env_guard (test_framework.FrameworkTestSuite.test_mlx_whisper_venv_alignment_and_disable_env_guard) ... ok
+test_out_of_bounds_speaking_wpm_caught (test_framework.FrameworkTestSuite.test_out_of_bounds_speaking_wpm_caught) ... ok
+test_recorded_m4a_voice_ingest_end_to_end_and_duration_conform (test_framework.FrameworkTestSuite.test_recorded_m4a_voice_ingest_end_to_end_and_duration_conform) ... [prepare_voice] Conformed recorded audio (2.95s -> 56.43s).
+[prepare_voice] Conformed recorded audio (58.00s -> 56.43s).
+Voice preparation failed: Unsupported or corrupt audio input '/var/folders/98/rstbj85x1h145bkq09r8nqt00000gn/T/tmpjtn1ez2h/bad.m4a': file does not start with RIFF id
+ok
+test_season_continuity_across_all_live_episodes_and_negative_case (test_framework.FrameworkTestSuite.test_season_continuity_across_all_live_episodes_and_negative_case) ... ok
+test_v10_cinema_stack_depth_cameos_and_foley (test_framework.FrameworkTestSuite.test_v10_cinema_stack_depth_cameos_and_foley) ... ok
+test_v11_honest_license_word_boundary_peaks_and_poll_branching (test_framework.FrameworkTestSuite.test_v11_honest_license_word_boundary_peaks_and_poll_branching) ... ok
+test_v3_formant_shaping_loudness_peaks_and_shaadi_case_sync (test_framework.FrameworkTestSuite.test_v3_formant_shaping_loudness_peaks_and_shaadi_case_sync) ... ok
+test_v9_part2_finale_cast_voice_and_continuity (test_framework.FrameworkTestSuite.test_v9_part2_finale_cast_voice_and_continuity) ... ok
+test_v9_pixel_locked_chhat_plates_and_vibrate_sfx (test_framework.FrameworkTestSuite.test_v9_pixel_locked_chhat_plates_and_vibrate_sfx) ... ok
+test_valid_manifest_passes_with_zero_errors (test_framework.FrameworkTestSuite.test_valid_manifest_passes_with_zero_errors) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 12.393s
+
+OK
+[exit=0]
+
+--- STEP 5: Zero-Hardcoding Grep Across engine/src/ ---
+matches=0 (exit=1)
+
+--- STEP 6: Per-File ffprobe Dimensions (0 Warnings) & 18 SFX Count ---
+sfx_wav_count=18
+renders/s01e01-forgotten-bucket.mp4: 1080,1920,
+renders/s01e02-crown-jewels.mp4: 1080,1920,
+renders/s01e01-instagram-mockup.png: 1080,1920
+renders/s01e02-instagram-mockup.png: 1080,1920
+engine/public/characters/fg/case02-hotel-wifi.png: 1080,1920
+engine/public/characters/fg/case02-shaadi-qr.png: 1080,1920
+engine/public/characters/fg/case02-smart-printer.png: 1080,1920
+engine/public/characters/fg/golu-caught-tanki.png: 1080,1920
+engine/public/characters/fg/golu-phone-dial.png: 1080,1920
+engine/public/characters/fg/golu.png: 1080,1920
+engine/public/characters/fg/handoff-shadow.png: 1080,1920
+engine/public/characters/fg/kabir-closeup.png: 1080,1920
+engine/public/characters/fg/kabir-investigating.png: 1080,1920
+engine/public/characters/fg/pappu-chachu.png: 1080,1920
+engine/public/characters/fg/puja-otp-divert.png: 1080,1920
+engine/public/characters/fg/puja-phone.png: 1080,1920
+engine/public/characters/fg/ramu-kaka.png: 1080,1920
+engine/public/characters/fg/shaadi-baraat-gate.png: 1080,1920
+engine/public/characters/fg/shaadi-chhat-signal.png: 1080,1920
+engine/public/characters/fg/shaadi-chhat-wide.png: 1080,1920
+engine/public/characters/fg/sharma-eyes-closeup.png: 1080,1920
+engine/public/characters/fg/sharma-relief-dawn.png: 1080,1920
+engine/public/characters/fg/sharma-shock.png: 1080,1920
+engine/public/characters/fg/tanki-burner-phone.png: 1080,1920
+
+--- STEP 7: TypeScript Strict Check ---
+$ npm run typecheck
+> breach-zero-cyber-engine@1.0.0 typecheck
+> tsc --noEmit
+[exit=0]
+
+--- STEP 8: Headless Chrome DOM, >=20px Floor & Peak-Shake Rail UAT ---
+$ npm run uat:dom
+> breach-zero-cyber-engine@1.0.0 uat:dom
+> node scripts/uat-dom-audit.mjs
+
+{
+  "timestamp": "2026-11-15T04:42:43.003Z",
+  "episodesAudited": 5,
+  "scenesAudited": 40,
+  "peakShakeProbesCount": 10,
+  "peakShakeMaxRightPx": 951.9,
+  "peakShakeRightRailLimitPx": 955,
+  "peakShakeProbes": [
+    {
+      "episode": "s01e01-forgotten-bucket",
+      "frame": 0,
+      "ratio": 0,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e01-forgotten-bucket",
+      "frame": 80,
+      "ratio": 0.24,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e01-forgotten-bucket",
+      "frame": 85,
+      "ratio": 0.255,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e01-forgotten-bucket",
+      "frame": 212,
+      "ratio": 0.64,
+      "maxLowerCardRightPx": 948.1
+    },
+    {
+      "episode": "s01e01-forgotten-bucket",
+      "frame": 217,
+      "ratio": 0.655,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e02-crown-jewels",
+      "frame": 0,
+      "ratio": 0,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e02-crown-jewels",
+      "frame": 272,
+      "ratio": 0.684,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e02-crown-jewels",
+      "frame": 278,
+      "ratio": 0.699,
+      "maxLowerCardRightPx": 948
+    },
+    {
+      "episode": "s01e02-crown-jewels",
+      "frame": 336,
+      "ratio": 0.845,
+      "maxLowerCardRightPx": 951.9
+    },
+    {
+      "episode": "s01e02-crown-jewels",
+      "frame": 342,
+      "ratio": 0.86,
+      "maxLowerCardRightPx": 948
+    }
+  ],
+  "uniqueKindsRendered": [
+    "detective_wifi_clue",
+    "detective_evidence_twist",
+    "detective_suspect_board",
+    "detective_crime_hook",
+    "comment_spotlight",
+    "breach_terminal",
+    "network_attack_graph",
+    "asset_tier_matrix",
+    "payoff_proof_card",
+    "vote_cliffhanger",
+    "risk_heatmap"
+  ],
+  "consoleErrorCount": 0,
+  "defectCount": 0,
+  "consoleErrors": [],
+  "defects": []
+}
+[exit=0]

@@ -15,7 +15,7 @@ DEFAULT_EPISODES_DIR = REPO_ROOT / "episodes"
 DEFAULT_OUTPUT_PATH = REPO_ROOT / "engine" / "src" / "generated" / "episodeRegistry.ts"
 DEFAULT_AUDIO_DIR = REPO_ROOT / "engine" / "public" / "audio"
 
-SKIP_DIR_NAMES = {"briefs", "audio", "__pycache__", "node_modules"}
+SKIP_DIR_NAMES = {"briefs", "guides", "audio", "__pycache__", "node_modules"}
 
 
 def _is_skipped_filename(name: str) -> bool:

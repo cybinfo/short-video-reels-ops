@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Formula-driven manifest & retention validator for Cyber Jasoos / BreachZero short episodes."""
 
-import argparse, json, re, sys
+import argparse, json, os, re, sys
 from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).resolve().parent
@@ -436,11 +436,35 @@ def validate_season_continuity(manifests: list[dict]) -> list[str]:
     return errors
 
 
+WALK_SKIP_DIRS = {"briefs", "audio", "__pycache__", "node_modules"}
+
+
 def _collect_targets(raw_args: list[str]) -> list[Path]:
     inputs = [Path(a) for a in raw_args] if raw_args else [REPO_ROOT / "episodes"]
     files: list[Path] = []
     for p in inputs:
-        files.extend(sorted(f for f in p.rglob("*.json") if f.name != "schema.json") if p.is_dir() else [p])
+        if not p.is_dir():
+            files.append(p)
+            continue
+        resolved_p = p.resolve()
+        allow_guides = resolved_p.name.lower() == "guides" or any(
+            part.lower() == "guides" for part in resolved_p.parts
+        )
+        skip_dirs = WALK_SKIP_DIRS if allow_guides else (WALK_SKIP_DIRS | {"guides"})
+        found: list[Path] = []
+        for dirpath, dirnames, filenames in os.walk(p):
+            dirnames[:] = sorted(
+                d for d in dirnames if not d.startswith(".") and d.lower() not in skip_dirs
+            )
+            cur_dir = Path(dirpath)
+            for fname in sorted(filenames):
+                if fname.startswith(".") or fname.endswith(("~", ".tmp")):
+                    continue
+                lower = fname.lower()
+                if not lower.endswith(".json") or lower == "schema.json" or lower.endswith(".brief.json"):
+                    continue
+                found.append(cur_dir / fname)
+        files.extend(sorted(found))
     return files
 
 

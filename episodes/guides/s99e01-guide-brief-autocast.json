@@ -1,0 +1,451 @@
+{
+  "id": "s99e01-guide-brief-autocast",
+  "season": 99,
+  "episode": 1,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Guide #01: Chapter 1: Web Hub, Auto-Cast Aur 35-Line Story Brief",
+  "episodeTitle": "Chapter 1: Web Hub, Auto-Cast Aur 35-Line Story Brief",
+  "companyName": "CYBER JASOOS",
+  "visualTheme": "noir_cinema",
+  "coldOpenTag": "CHAPTER 1 · BRIEF & AUTO-CAST",
+  "hudPartBadge": "GUIDE 1/4",
+  "introSfx": {
+    "file": "sfx/soc-alert-ping.wav",
+    "durationSec": 2.4,
+    "volume": 0.22
+  },
+  "securityDomain": "ZERO-AI REEL FACTORY · CH 1",
+  "realBreachParallel": {
+    "incident": "Short-Video Reels Ops 5-Tab Hub, Depth-Anything-V2 Auto-Cast & 35-Line YAML Compiler",
+    "year": 2026,
+    "impact": "Expands a 35-line YAML brief + raw PNG/JPG folder into 2.5D depth mattes and a 450-line schema-validated manifest",
+    "lesson": "Drop raw plates into assets/characters/<case>/raw/ and author only 35 lines of YAML with zero React hardcoding."
+  },
+  "voiceConfig": {
+    "mode": "edge_neural",
+    "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+    "edgeVoices": {
+      "narrator": "ur-IN-SalmanNeural",
+      "kabir": "hi-IN-MadhurNeural"
+    },
+    "edgeRates": {
+      "narrator": "-10%"
+    },
+    "edgePitches": {
+      "narrator": "-3Hz"
+    },
+    "edgeFormants": {
+      "narrator": 1.0
+    },
+    "audioFile": "audio/s99e01-guide-brief-autocast.wav",
+    "captionsFile": "audio/s99e01-guide-brief-autocast.captions.json",
+    "targetWpm": 140,
+    "kokoroSpeed": 0.883
+  },
+  "durationSeconds": 51.9,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Kya aap bina AI token kharch kiye cinematic crime reel banana chahte hain? Pehle five-tab Web Hub short-video-reels-ops kholiye, jahan poori production pipeline ek jagah milti hai!",
+    "hookPattern": "mid_breach_timestamp"
+  },
+  "scriptSegments": [
+    {
+      "id": "s99e01-guide-brief-autocast-seg-01",
+      "phase": "hook",
+      "speaker": "narrator",
+      "narration": "Kya aap bina AI token kharch kiye cinematic crime reel banana chahte hain? Pehle five-tab Web Hub short-video-reels-ops kholiye, jahan poori production pipeline ek jagah milti hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Kya aap bina AI token kharch kiye cinematic crime reel banana chahte hain?",
+          "hi": "Kya aap bina AI token kharch kiye cinematic crime reel banana chahte hain?"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Pehle five-tab Web Hub short-video-reels-ops kholiye, jahan poori production pipeline ek jagah milti hai!",
+          "hi": "Pehle five-tab Web Hub short-video-reels-ops kholiye, jahan poori production pipeline ek jagah milti hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "bina",
+        "token",
+        "kharch",
+        "kiye",
+        "cinematic"
+      ],
+      "startSec": 0,
+      "endSec": 8.02
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-seg-02",
+      "phase": "escalation",
+      "speaker": "narrator",
+      "narration": "Seedha apne raw PNG ya JPG cast aur scene photos assets characters case raw folder mein daaliye! Local Depth-Anything-V2 model har chehre ka eye-line 36.5 percent par lock karta hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Seedha apne raw PNG ya JPG cast aur scene photos assets characters case raw folder mein daaliye!",
+          "hi": "Seedha apne raw PNG ya JPG cast aur scene photos assets characters case raw folder mein daaliye!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Local Depth-Anything-V2 model har chehre ka eye-line 36.5 percent par lock karta hai!",
+          "hi": "Local Depth-Anything-V2 model har chehre ka eye-line 36.5 percent par lock karta hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "Seedha",
+        "apne",
+        "cast",
+        "scene",
+        "photos"
+      ],
+      "startSec": 8.02,
+      "endSec": 20.9
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-seg-03",
+      "phase": "framework",
+      "speaker": "narrator",
+      "narration": "Saath hi yeh neural engine automatic 2.5D foreground aur background depth mattes bana deta hai! Phir likhiye sirf 35-line ka YAML Story Brief, jismein paanch beats aur teen options hote hain!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Saath hi yeh neural engine automatic 2.5D foreground aur background depth mattes bana deta hai!",
+          "hi": "Saath hi yeh neural engine automatic 2.5D foreground aur background depth mattes bana deta hai!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Phir likhiye sirf 35-line ka YAML Story Brief, jismein paanch beats aur teen options hote hain!",
+          "hi": "Phir likhiye sirf 35-line ka YAML Story Brief, jismein paanch beats aur teen options hote hain!"
+        }
+      ],
+      "highlightKeywords": [
+        "Saath",
+        "neural",
+        "engine",
+        "automatic",
+        "foreground"
+      ],
+      "startSec": 20.9,
+      "endSec": 33.08
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-seg-04",
+      "phase": "micro_payoff",
+      "speaker": "narrator",
+      "narration": "Jaise hi compile story brief dot py chalta hai, aapka chhota YAML brief seedha 450-line ke schema-valid episode manifest mein badal jaata hai, woh bhi zero React hardcoding ke saath!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Jaise hi compile story brief dot py chalta hai, aapka chhota YAML brief seedha 450-line ke schema-valid episode manifest mein badal jaata hai, woh bhi zero React hardcoding ke saath!",
+          "hi": "Jaise hi compile story brief dot py chalta hai, aapka chhota YAML brief seedha 450-line ke schema-valid episode manifest mein badal jaata hai, woh bhi zero React hardcoding ke saath!"
+        }
+      ],
+      "highlightKeywords": [
+        "Jaise",
+        "compile",
+        "story",
+        "brief",
+        "chalta"
+      ],
+      "startSec": 33.08,
+      "endSec": 42.0
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-seg-05",
+      "phase": "cliffhanger_vote",
+      "speaker": "narrator",
+      "narration": "Chapter 1 ke teen pillars tayyar hain, five-tab Web Hub, Auto-Cast 2.5D Depth, aur 35-line YAML Compiler! Chaliye agle chapter mein dekhiye single-command build kaise chalta hai...",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "-8%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Chapter 1 ke teen pillars tayyar hain, five-tab Web Hub, Auto-Cast 2.5D Depth, aur 35-line YAML Compiler!",
+          "hi": "Chapter 1 ke teen pillars tayyar hain, five-tab Web Hub, Auto-Cast 2.5D Depth, aur 35-line YAML Compiler!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "-9%",
+          "pitch": "-4Hz",
+          "pauseAfter": 0.16,
+          "roman": "Chaliye agle chapter mein dekhiye single-command build kaise chalta hai...",
+          "hi": "Chaliye agle chapter mein dekhiye single-command build kaise chalta hai..."
+        }
+      ],
+      "highlightKeywords": [
+        "Chapter",
+        "teen",
+        "pillars",
+        "tayyar",
+        "hain"
+      ],
+      "startSec": 42.0,
+      "endSec": 51.9
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s99e01-guide-brief-autocast-sc-01",
+      "startSec": 0,
+      "endSec": 8.02,
+      "kind": "detective_crime_hook",
+      "sfxCues": [
+        {
+          "file": "sfx/bank-sms-chime.wav",
+          "offsetFrames": 4,
+          "volume": 0.42
+        },
+        {
+          "file": "sfx/cash-drain-ticks.wav",
+          "offsetRatio": 0.35,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "caseBadge": "GUIDE #01",
+        "timeLabel": "ZERO-AI PIPELINE",
+        "locationLabel": "CHAPTER 1",
+        "phoneStatus": "Chapter 1: Web Hub, Auto-Cast Aur 35-Line Story Brief",
+        "bankAlertTitle": "CHAPTER 1 · BRIEF & AUTO-CAST",
+        "amountLost": "90% ZERO-AI",
+        "mode": "loss_drain",
+        "cutRatios": [
+          0.24,
+          0.64
+        ],
+        "scrollStopper": {
+          "badge": "CHAPTER 1 · REEL FACTORY",
+          "text": "35-Line YAML Se 450-Line Manifest Ready",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "CHAPTER 1 · BRIEF & AUTO-CAST",
+          "AUTO SELF-HEAL!",
+          "1-CMD MP4 READY!"
+        ],
+        "shotTags": [
+          "REEL FACTORY",
+          "AUTO-HEAL LOOP",
+          "SAFE-ZONE LOCK"
+        ],
+        "heroImage": "characters/guide-01-portal-hub.png",
+        "secondaryImage": "characters/guide-02-yaml-brief.png",
+        "tertiaryImage": "characters/kabir-closeup.png",
+        "shockPills": [
+          "35-LINE YAML",
+          "0 DOM DEFECTS",
+          "AUTO-LEARN"
+        ]
+      }
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-sc-02",
+      "startSec": 8.02,
+      "endSec": 20.9,
+      "kind": "detective_wifi_clue",
+      "sfxCues": [
+        {
+          "file": "sfx/puja-phone-vibrate.wav",
+          "offsetRatio": 0.42,
+          "volume": 0.44
+        },
+        {
+          "file": "sfx/soc-alert-ping.wav",
+          "offsetRatio": 0.5,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "headline": "AUTO-CAST DEPTH-ANYTHING-V2",
+        "subline": "RAW PNG AUR JPG CAST PLATES TO LOCAL 2.5D",
+        "heroImage": "characters/guide-03-autocast-depth.png",
+        "secondaryImage": "characters/guide-02-yaml-brief.png",
+        "interceptBanner": {
+          "badge": "PIPELINE SCAN · GUIDE #01",
+          "text": "35-Line YAML Se 450-Line Manifest Ready",
+          "tone": "amber"
+        },
+        "devices": [
+          {
+            "name": "5-Tab Web Hub",
+            "status": "STEP 01 · 1-Click Ops Guide!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "Auto-Cast & 2.5D Depth",
+            "status": "STEP 02 · Local FG/BG Mattes!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "35-Line YAML Compiler",
+            "status": "STEP 03 · 450-Line JSON Out!",
+            "icon": "alert",
+            "suspicious": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-sc-03",
+      "startSec": 20.9,
+      "endSec": 33.08,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/keypad-tap-seq.wav",
+          "offsetRatio": 0.16,
+          "volume": 0.4
+        },
+        {
+          "file": "sfx/ussd-dial-tones.wav",
+          "offsetRatio": 0.52,
+          "volume": 0.58
+        }
+      ],
+      "props": {
+        "variant": "cctv_backdoor",
+        "tone": "amber",
+        "badge": "COMPILER · ZERO HARDCODE",
+        "headline": "35-Line Brief Se 450-Line JSON Ready!",
+        "heroImage": "characters/guide-02-yaml-brief.png",
+        "secondaryImage": "characters/kabir-investigating.png",
+        "stepOneTitle": "5-Tab Hub + Auto-Cast",
+        "stepOneTag": "36.5% EYE-LINE + 2.5D",
+        "stepTwoTitle": "compile_story_brief.py",
+        "stepTwoTag": "450-LINE SCHEMA JSON",
+        "exposedItems": [
+          "STEP 01",
+          "STEP 02",
+          "STEP 03"
+        ]
+      }
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-sc-04",
+      "startSec": 33.08,
+      "endSec": 42.0,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/heartbeat-radar-ping.wav",
+          "offsetFrames": 3,
+          "volume": 0.46
+        },
+        {
+          "file": "sfx/stamp-slam.wav",
+          "offsetRatio": 0.45,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "variant": "contact_match",
+        "tone": "crimson",
+        "lockedParallax": true,
+        "badge": "ZERO REACT HARDCODING",
+        "headline": "5 Beats + 3 Options = Full Reel Spec!",
+        "heroImage": "characters/guide-01-portal-hub.png",
+        "secondaryImage": "characters/kabir-closeup.png",
+        "radarPinLabel": "36.5% EYE-LINE LOCKED",
+        "crossedOutLabel": "450-LINE MANUAL JSON",
+        "matchHeadline": "WEB HUB SE YAML BRIEF SEEDHA READY!",
+        "matchSubline": "Zero React edits, 100% schema-validated.",
+        "verdictPillLeft": "5-TAB WEB HUB",
+        "verdictPillRight": "2.5D DEPTH MATTES"
+      }
+    },
+    {
+      "id": "s99e01-guide-brief-autocast-sc-05",
+      "startSec": 42.0,
+      "endSec": 51.9,
+      "kind": "detective_suspect_board",
+      "sfxCues": [
+        {
+          "file": "sfx/cliffhanger-tick.wav",
+          "offsetFrames": 4,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "boardMode": "next_case_vote",
+        "prompt": "CHAPTER 1 KA TOP FEATURE KAUNSA HAI?",
+        "partBadge": "NEXT CHAPTER",
+        "spotlightRightBadge": "GUIDE #01",
+        "followHandleLine": "FULL GUIDE: FOLLOW @CYBERJASOOS",
+        "forensicClueBar": "CYBER JASOOS · CHAPTER 1 · BRIEF &",
+        "suspects": [
+          {
+            "key": "A",
+            "name": "5-Tab Web Hub",
+            "role": "Portal Command Deck",
+            "timestampBadge": "STEP 01",
+            "clue": "1-Click Ops Guide!",
+            "image": "characters/guide-01-portal-hub.png"
+          },
+          {
+            "key": "B",
+            "name": "Auto-Cast & 2.5D Depth",
+            "role": "36.5% Eye-Line Lock",
+            "timestampBadge": "STEP 02",
+            "clue": "Local FG/BG Mattes!",
+            "image": "characters/guide-03-autocast-depth.png"
+          },
+          {
+            "key": "C",
+            "name": "35-Line YAML Compiler",
+            "role": "Zero React Edits",
+            "timestampBadge": "STEP 03",
+            "clue": "450-Line JSON Out!",
+            "image": "characters/guide-02-yaml-brief.png"
+          }
+        ],
+        "optionTimingsSec": [
+          1.55,
+          3.29,
+          5.03
+        ],
+        "ctaLine": "Agla chapter dekhiye @cyberjasoos!",
+        "loopBridgeText": "Chaliye agle chapter mein dekhiye single-command build kaise chalta hai..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "Kya aap bina AI token kharch kiye cinematic crime reel banana chahte hain? Pehle five-tab Web Hub short-video-reels-ops kholiye, jahan poori production pipeline ek jagah milti hai! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) 5-Tab Web Hub, B) Auto-Cast & 2.5D Depth, C) 35-Line YAML Compiler. Drop raw plates into assets/characters/<case>/raw/ and author only 35 lines of YAML with zero React hardcoding. Kaunsa stage sabse powerful hai? Neeche A, B, ya C comment kijiye!",
+    "youtubeShortsTitle": "Chapter 1: Web Hub, Auto-Cast Aur 35-Line Story Brief #Shorts",
+    "linkedinPost": "Chapter 1: Web Hub, Auto-Cast Aur 35-Line Story Brief — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 1):\n\nShort-Video Reels Ops 5-Tab Hub, Depth-Anything-V2 Auto-Cast & 35-Line YAML Compiler (2026): Expands a 35-line YAML brief + raw PNG/JPG folder into 2.5D depth mattes and a 450-line schema-validated manifest\n\nArchitecture Takeaway: Drop raw plates into assets/characters/<case>/raw/ and author only 35 lines of YAML with zero React hardcoding.\n\nStages: A) 5-Tab Web Hub, B) Auto-Cast & 2.5D Depth, C) 35-Line YAML Compiler.",
+    "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = 5-Tab Web Hub (Portal Command Deck · 1-Click Ops Guide!)\nB = Auto-Cast & 2.5D Depth (36.5% Eye-Line Lock · Local FG/BG Mattes!)\nC = 35-Line YAML Compiler (Zero React Edits · 450-Line JSON Out!)\nKaunsa stage sabse powerful hai? Neeche A, B, ya C comment kijiye!",
+    "hashtags": [
+      "#CyberJasoos",
+      "#Remotion",
+      "#VideoAutomation",
+      "#SelfHealingCode",
+      "#ReelsEngine",
+      "#BuildInPublic"
+    ]
+  }
+}

@@ -1,0 +1,442 @@
+{
+  "id": "s99e04-guide-growth-ledger",
+  "season": 99,
+  "episode": 4,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Zero-AI Reel Guide · Chapter 4",
+  "episodeTitle": "Chapter 4: SQLite Growth Ledger, Auto-Learning Aur 3-Step Routine",
+  "companyName": "CYBER JASOOS",
+  "visualTheme": "noir_cinema",
+  "coldOpenTag": "CHAPTER 4 · AUTO-LEARNING",
+  "hudPartBadge": "GUIDE 4/4",
+  "introSfx": {
+    "file": "sfx/soc-alert-ping.wav",
+    "durationSec": 2.4,
+    "volume": 0.22
+  },
+  "securityDomain": "ZERO-AI REEL FACTORY · CH 4",
+  "realBreachParallel": {
+    "incident": "SQLite Growth Ledger & Adam Mosseri Composite Auto-Learner",
+    "year": 2025,
+    "impact": "Weights 45% Share + 35% Save + 20% Poll Vote to auto-tune hook style, WPM, and duration",
+    "lesson": "Daily 3-step loop: YAML brief -> build_episode.py -> instagram_ops.py record-metrics & learn."
+  },
+  "voiceConfig": {
+    "mode": "edge_neural",
+    "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+    "edgeVoices": {
+      "narrator": "ur-IN-SalmanNeural",
+      "kabir": "hi-IN-MadhurNeural"
+    },
+    "edgeRates": {
+      "narrator": "+8%"
+    },
+    "edgePitches": {
+      "narrator": "-3Hz"
+    },
+    "edgeFormants": {
+      "narrator": 1.0
+    },
+    "audioFile": "audio/s99e04-guide-growth-ledger.wav",
+    "captionsFile": "audio/s99e04-guide-growth-ledger.captions.json",
+    "targetWpm": 168
+  },
+  "durationSeconds": 43.78,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Har naye episode ke saath aapka Zero-AI Reel engine bina prompt ke aur smart kaise banta hai? Asli raaz chhupa hai data/growth_ledger.sqlite3 ke local auto-learning SQLite ledger mein!",
+    "hookPattern": "mid_breach_timestamp"
+  },
+  "scriptSegments": [
+    {
+      "id": "s99e04-guide-growth-ledger-seg-01",
+      "phase": "hook",
+      "speaker": "narrator",
+      "narration": "Har naye episode ke saath aapka Zero-AI Reel engine bina prompt ke aur smart kaise banta hai? Asli raaz chhupa hai data/growth_ledger.sqlite3 ke local auto-learning SQLite ledger mein!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Har naye episode ke saath aapka Zero-AI Reel engine bina prompt ke aur smart kaise banta hai?",
+          "hi": "Har naye episode ke saath aapka Zero-AI Reel engine bina prompt ke aur smart kaise banta hai?"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Asli raaz chhupa hai data/growth_ledger.sqlite3 ke local auto-learning SQLite ledger mein!",
+          "hi": "Asli raaz chhupa hai data/growth_ledger.sqlite3 ke local auto-learning SQLite ledger mein!"
+        }
+      ],
+      "highlightKeywords": [
+        "naye",
+        "episode",
+        "saath",
+        "aapka",
+        "Zero-AI"
+      ],
+      "startSec": 0,
+      "endSec": 8.1
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-seg-02",
+      "phase": "escalation",
+      "speaker": "narrator",
+      "narration": "Upload ke artaalis ghante baad instagram_ops.py record-metrics chalaiye, aur har Reel ke asli Instagram Insights jaise views, shares, saves, aur poll_votes seedha SQLite database mein darj kijiye!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Upload ke artaalis ghante baad instagram_ops.py record-metrics chalaiye, aur har Reel ke asli Instagram Insights jaise views, shares, saves, aur poll_votes seedha SQLite database mein darj kijiye!",
+          "hi": "Upload ke artaalis ghante baad instagram_ops.py record-metrics chalaiye, aur har Reel ke asli Instagram Insights jaise views, shares, saves, aur poll_votes seedha SQLite database mein darj kijiye!"
+        }
+      ],
+      "highlightKeywords": [
+        "Upload",
+        "artaalis",
+        "ghante",
+        "baad",
+        "instagram_ops.py"
+      ],
+      "startSec": 8.1,
+      "endSec": 15.67
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-seg-03",
+      "phase": "framework",
+      "speaker": "narrator",
+      "narration": "Ab instagram_ops.py learn chalaiye, jo Adam Mosseri ke composite score paintaalis percent Share, paintis percent Save, aur bees percent Vote se winning hook style, WPM, aur duration data/learned_defaults.json mein likh deta hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Ab instagram_ops.py learn chalaiye, jo Adam Mosseri ke composite score paintaalis percent Share, paintis percent Save, aur bees percent Vote se winning hook style, WPM, aur duration data/learned_defaults.json mein likh deta hai!",
+          "hi": "Ab instagram_ops.py learn chalaiye, jo Adam Mosseri ke composite score paintaalis percent Share, paintis percent Save, aur bees percent Vote se winning hook style, WPM, aur duration data/learned_defaults.json mein likh deta hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "instagram_ops.py",
+        "learn",
+        "chalaiye",
+        "Adam",
+        "Mosseri"
+      ],
+      "startSec": 15.67,
+      "endSec": 27.46
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-seg-04",
+      "phase": "micro_payoff",
+      "speaker": "narrator",
+      "narration": "Agli baar compile_story_brief.py yeh winning defaults khud auto-inherit kar leta hai, yaani aapka poora daily routine sirf teen kadam hai: YAML brief, build_episode.py, phir record-metrics aur learn!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Agli baar compile_story_brief.py yeh winning defaults khud auto-inherit kar leta hai, yaani aapka poora daily routine sirf teen kadam hai:",
+          "hi": "Agli baar compile_story_brief.py yeh winning defaults khud auto-inherit kar leta hai, yaani aapka poora daily routine sirf teen kadam hai:"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "YAML brief, build_episode.py, phir record-metrics aur learn!",
+          "hi": "YAML brief, build_episode.py, phir record-metrics aur learn!"
+        }
+      ],
+      "highlightKeywords": [
+        "Agli",
+        "baar",
+        "compile_story_brief.py",
+        "winning",
+        "defaults"
+      ],
+      "startSec": 27.46,
+      "endSec": 35.41
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-seg-05",
+      "phase": "cliffhanger_vote",
+      "speaker": "narrator",
+      "narration": "Record 48h Metrics, Mosseri Score Learn, ya Auto-Inherit Defaults: is self-learning engine ka kaunsa hissa aap sabse pehle aazmayenge, neeche A, B, ya C likhiye...",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Record 48h Metrics, Mosseri Score Learn, ya Auto-Inherit Defaults:",
+          "hi": "Record 48h Metrics, Mosseri Score Learn, ya Auto-Inherit Defaults:"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+9%",
+          "pitch": "-4Hz",
+          "pauseAfter": 0.16,
+          "roman": "is self-learning engine ka kaunsa hissa aap sabse pehle aazmayenge, neeche A, B, ya C likhiye...",
+          "hi": "is self-learning engine ka kaunsa hissa aap sabse pehle aazmayenge, neeche A, B, ya C likhiye..."
+        }
+      ],
+      "highlightKeywords": [
+        "Record",
+        "Metrics",
+        "Mosseri",
+        "Score",
+        "Learn"
+      ],
+      "startSec": 35.41,
+      "endSec": 43.78
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s99e04-guide-growth-ledger-sc-01",
+      "startSec": 0,
+      "endSec": 8.1,
+      "kind": "detective_crime_hook",
+      "sfxCues": [
+        {
+          "file": "sfx/bank-sms-chime.wav",
+          "offsetFrames": 4,
+          "volume": 0.42
+        },
+        {
+          "file": "sfx/cash-drain-ticks.wav",
+          "offsetRatio": 0.35,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "caseBadge": "GUIDE 4/4 · GROWTH LEDGER",
+        "timeLabel": "48H INSIGHTS LOOP",
+        "locationLabel": "CH 4 · AUTO-LEARNING",
+        "phoneStatus": "SQLite Ledger -> Auto-Tuned Reels!",
+        "bankAlertTitle": "CHAPTER 4 · AUTO-LEARNING",
+        "amountLost": "3-CMD ROUTINE",
+        "mode": "loss_drain",
+        "cutRatios": [
+          0.24,
+          0.64
+        ],
+        "scrollStopper": {
+          "badge": "CHAPTER 4 · AUTO-LEARN",
+          "text": "Mosseri Score Tunes Every Next Reel!",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "SQLITE GROWTH LEDGER",
+          "MOSSERI RANK SCORE",
+          "3-STEP DAILY LOOP!"
+        ],
+        "shotTags": [
+          "48H IG INSIGHTS",
+          "45/35/20 WEIGHTS",
+          "AUTO-INHERIT SPEC"
+        ],
+        "heroImage": "characters/guide-08-growth-ledger.png",
+        "secondaryImage": "characters/guide-01-portal-hub.png",
+        "tertiaryImage": "characters/kabir-closeup.png",
+        "shockPills": [
+          "45% SHARE",
+          "35% SAVE",
+          "20% VOTE"
+        ]
+      }
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-sc-02",
+      "startSec": 8.1,
+      "endSec": 15.67,
+      "kind": "detective_wifi_clue",
+      "sfxCues": [
+        {
+          "file": "sfx/puja-phone-vibrate.wav",
+          "offsetRatio": 0.42,
+          "volume": 0.44
+        },
+        {
+          "file": "sfx/soc-alert-ping.wav",
+          "offsetRatio": 0.5,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "headline": "3 AUTO-LEARNING TELEMETRY GATES!",
+        "subline": "48h Metrics -> Mosseri Score -> Defaults",
+        "heroImage": "characters/guide-08-growth-ledger.png",
+        "secondaryImage": "characters/guide-04-build-cli-heal.png",
+        "interceptBanner": {
+          "badge": "GROWTH DB · GUIDE 4/4",
+          "text": "45% Share + 35% Save + 20% Poll Vote",
+          "tone": "amber"
+        },
+        "devices": [
+          {
+            "name": "Record 48h Metrics",
+            "status": "48H SYNC · Views+Saves+Votes",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "Mosseri Score Learn",
+            "status": "RANK FIT · 45%Share+35%Save!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "Auto-Inherit Defaults",
+            "status": "AUTO-TUNE · Next Brief Synced!",
+            "icon": "alert",
+            "suspicious": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-sc-03",
+      "startSec": 15.67,
+      "endSec": 27.46,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/keypad-tap-seq.wav",
+          "offsetRatio": 0.16,
+          "volume": 0.4
+        },
+        {
+          "file": "sfx/ussd-dial-tones.wav",
+          "offsetRatio": 0.52,
+          "volume": 0.58
+        }
+      ],
+      "props": {
+        "variant": "cctv_backdoor",
+        "tone": "amber",
+        "badge": "MOSSERI RANK LEARNER",
+        "headline": "Winning Hook, WPM & Duration Saved!",
+        "heroImage": "characters/guide-08-growth-ledger.png",
+        "secondaryImage": "characters/kabir-investigating.png",
+        "stepOneTitle": "record-metrics (48h)",
+        "stepOneTag": "SQLITE TELEMETRY DB",
+        "stepTwoTitle": "instagram_ops.py learn",
+        "stepTwoTag": "learned_defaults.json",
+        "exposedItems": [
+          "growth_ledger.sqlite3",
+          "45/35/20 MOSSERI",
+          "learned_defaults.json"
+        ]
+      }
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-sc-04",
+      "startSec": 27.46,
+      "endSec": 35.41,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/heartbeat-radar-ping.wav",
+          "offsetFrames": 3,
+          "volume": 0.46
+        },
+        {
+          "file": "sfx/stamp-slam.wav",
+          "offsetRatio": 0.45,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "variant": "contact_match",
+        "tone": "crimson",
+        "lockedParallax": true,
+        "badge": "3-STEP DAILY WORKFLOW",
+        "headline": "YAML -> build_episode -> learn!",
+        "heroImage": "characters/sharma-relief-dawn.png",
+        "secondaryImage": "characters/kabir-closeup.png",
+        "radarPinLabel": "AUTO-INHERIT ACTIVE",
+        "crossedOutLabel": "GUESSWORK PACING BAND",
+        "matchHeadline": "HAR HAFTE ENGINE KHUD TEZ HOTA HAI!",
+        "matchSubline": "compile_story_brief auto-loads defaults!",
+        "verdictPillLeft": "3-CMD DAILY LOOP",
+        "verdictPillRight": "MOSSERI AUTO-TUNE"
+      }
+    },
+    {
+      "id": "s99e04-guide-growth-ledger-sc-05",
+      "startSec": 35.41,
+      "endSec": 43.78,
+      "kind": "detective_suspect_board",
+      "sfxCues": [
+        {
+          "file": "sfx/cliffhanger-tick.wav",
+          "offsetFrames": 4,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "boardMode": "next_case_vote",
+        "prompt": "KAUNSA AUTO-LEARN FEATURE BEST?",
+        "partBadge": "FULL GUIDE READY",
+        "spotlightRightBadge": "GUIDE 4/4",
+        "followHandleLine": "START NOW: FOLLOW @CYBERJASOOS",
+        "forensicClueBar": "CH 4 · SQLITE GROWTH LEDGER",
+        "suspects": [
+          {
+            "key": "A",
+            "name": "Record 48h Metrics",
+            "role": "SQLite Ledger",
+            "timestampBadge": "48H SYNC",
+            "clue": "Views+Saves+Votes",
+            "image": "characters/guide-08-growth-ledger.png"
+          },
+          {
+            "key": "B",
+            "name": "Mosseri Score Learn",
+            "role": "45/35/20 Rank",
+            "timestampBadge": "RANK FIT",
+            "clue": "45%Share+35%Save!",
+            "image": "characters/guide-04-build-cli-heal.png"
+          },
+          {
+            "key": "C",
+            "name": "Auto-Inherit Defaults",
+            "role": "3-Cmd Routine",
+            "timestampBadge": "AUTO-TUNE",
+            "clue": "Next Brief Synced!",
+            "image": "characters/sharma-relief-dawn.png"
+          }
+        ],
+        "optionTimingsSec": [
+          1.5,
+          3.18,
+          4.86
+        ],
+        "ctaLine": "A, B, ya C comment kijiye @cyberjasoos!",
+        "loopBridgeText": "neeche A, B, ya C likhiye"
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "Har naye episode ke saath aapka Zero-AI Reel engine bina prompt ke aur smart kaise banta hai? Asli raaz chhupa hai data/growth_ledger.sqlite3 ke local auto-learning SQLite ledger mein! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) Record 48h Metrics, B) Mosseri Score Learn, C) Auto-Inherit Defaults. Daily 3-step loop: YAML brief -> build_episode.py -> instagram_ops.py record-metrics & learn. A, B, ya C comment kijiye @cyberjasoos!",
+    "youtubeShortsTitle": "Chapter 4: SQLite Growth Ledger, Auto-Learning Aur 3-Step Routine #Shorts",
+    "linkedinPost": "Chapter 4: SQLite Growth Ledger, Auto-Learning Aur 3-Step Routine — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 4):\n\nSQLite Growth Ledger & Adam Mosseri Composite Auto-Learner (2025): Weights 45% Share + 35% Save + 20% Poll Vote to auto-tune hook style, WPM, and duration\n\nArchitecture Takeaway: Daily 3-step loop: YAML brief -> build_episode.py -> instagram_ops.py record-metrics & learn.\n\nStages: A) Record 48h Metrics, B) Mosseri Score Learn, C) Auto-Inherit Defaults.",
+    "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = Record 48h Metrics (SQLite Ledger · Views+Saves+Votes)\nB = Mosseri Score Learn (45/35/20 Rank · 45%Share+35%Save!)\nC = Auto-Inherit Defaults (3-Cmd Routine · Next Brief Synced!)\nA, B, ya C comment kijiye @cyberjasoos!",
+    "hashtags": [
+      "#CyberJasoos",
+      "#Remotion",
+      "#VideoAutomation",
+      "#SelfHealingCode",
+      "#ReelsEngine",
+      "#BuildInPublic"
+    ]
+  }
+}

@@ -53,28 +53,33 @@ def load_brief(path: Path) -> dict:
     return data
 
 
+_MODE_LICENSES = {"recorded": "OWN_VOICE", "kokoro_neural": "APACHE_2_0", "azure_commercial": "COMMERCIAL_API", "edge_neural": "EDGE_READ_ALOUD_PREVIEW", "draft_say": "MACOS_DRAFT"}
+
+
 def compile_brief(brief: dict, defaults_path: Path | None = None) -> dict:
     """Compile a parsed brief dictionary into a validated noir_cinema EpisodeManifest."""
     learned = load_learned_defaults(defaults_path)
+    is_guide = str(brief.get("preset") or "crime_case").strip().lower() == "guide_walkthrough"
     season = int(brief.get("season") or 1)
     ep_num = int(brief.get("episodeNumber") or brief.get("episode") or 1)
     part = int(brief.get("part") or (2 if brief.get("pollBranches") else 1))
-    slug = re.sub(r"[^a-z0-9-]+", "-", str(brief.get("slug") or brief.get("title") or "case").lower()).strip("-")[:28]
+    company_name = str(brief.get("companyName") or "CYBER JASOOS")
+    slug = re.sub(r"[^a-z0-9-]+", "-", str(brief.get("slug") or brief.get("title") or ("guide" if is_guide else "case")).lower()).strip("-")[:28]
     ep_id = str(brief.get("id") or f"s{season:02d}e{ep_num:02d}-{slug}")
-    title = str(brief.get("title") or brief.get("episodeTitle") or f"Case #{season:02d} Mystery")
-    season_title = str(brief.get("seasonTitle") or f"Case #{season:02d}: {title}")
-    concept = str(brief.get("cyberConcept") or brief.get("securityDomain") or f"CYBER JASOOS · CASE #{season:02d}")
-    raw_dom = str(brief.get("securityDomain") or (f"CYBER JASOOS · CASE #{season:02d}" + (" FINALE" if part == 2 else ""))).strip()
+    title = str(brief.get("title") or brief.get("episodeTitle") or (f"Guide #{ep_num:02d} Walkthrough" if is_guide else f"Case #{season:02d} Mystery"))
+    season_title = str(brief.get("seasonTitle") or (f"Guide #{ep_num:02d}: {title}" if is_guide else f"Case #{season:02d}: {title}"))
+    concept = str(brief.get("cyberConcept") or brief.get("securityDomain") or (f"{company_name} · GUIDE #{ep_num:02d}" if is_guide else f"CYBER JASOOS · CASE #{season:02d}"))
+    raw_dom = str(brief.get("securityDomain") or (f"{company_name} · GUIDE #{ep_num:02d}" if is_guide else (f"CYBER JASOOS · CASE #{season:02d}" + (" FINALE" if part == 2 else "")))).strip()
     hud_domain = (raw_dom[:32].rsplit(" ", 1)[0] if len(raw_dom) > 32 and " " in raw_dom[:32] else raw_dom[:32]).rstrip(" ·—|,-:")
-    case_tag = str(brief.get("caseTag") or brief.get("coldOpenTag") or f"CASE #{season:02d} · LIVE JAANCH")
+    case_tag = str(brief.get("caseTag") or brief.get("coldOpenTag") or (f"GUIDE #{ep_num:02d} · ZERO-AI" if is_guide else f"CASE #{season:02d} · LIVE JAANCH"))
 
     raw_inc = brief.get("realIncident") or brief.get("realBreachParallel") or {}
-    real_inc = raw_inc if isinstance(raw_inc, dict) else {"incident": str(raw_inc), "year": 2024, "impact": str(raw_inc), "lesson": "Verify before scanning and dial 1930 immediately."}
+    real_inc = raw_inc if isinstance(raw_inc, dict) else {"incident": str(raw_inc), "year": 2024, "impact": str(raw_inc), "lesson": "35-line YAML brief auto-heals DOM & rate." if is_guide else "Verify before scanning and dial 1930 immediately."}
     real_inc = {
-        "incident": str(real_inc.get("incident") or "MHA I4C 1930 Cyber Fraud Advisory"),
+        "incident": str(real_inc.get("incident") or ("Deterministic 9:16 Reel Pipeline" if is_guide else "MHA I4C 1930 Cyber Fraud Advisory")),
         "year": int(real_inc.get("year") or 2024),
-        "impact": str(real_inc.get("impact") or "Unauthorized instant digital payment drain via social/technical trap"),
-        "lesson": str(real_inc.get("lesson") or "Never enter UPI PIN to receive money and call 1930 in the golden hour."),
+        "impact": str(real_inc.get("impact") or ("Eliminates manual timeline, caption, and safe-zone rework" if is_guide else "Unauthorized instant digital payment drain via social/technical trap")),
+        "lesson": str(real_inc.get("lesson") or ("35-line YAML brief compiles & self-heals DOM/audio automatically." if is_guide else "Never enter UPI PIN to receive money and call 1930 in the golden hour.")),
     }
 
     beats_in = brief.get("beats") or {}
@@ -114,20 +119,28 @@ def compile_brief(brief: dict, defaults_path: Path | None = None) -> dict:
         {
             "key": str(s.get("key")).upper(),
             "name": str(s.get("name")),
-            "role": str(s.get("role") or f"Suspect {s.get('key')}"),
+            "role": str(s.get("role") or (f"Stage {s.get('key')}" if is_guide else f"Suspect {s.get('key')}")),
             "timestampBadge": str(s.get("timestampBadge") or s.get("time") or f"CLUE {s.get('key')}"),
-            "clue": str(s.get("clue") or "Forensic Match!"),
+            "clue": str(s.get("clue") or ("Auto-Verified!" if is_guide else "Forensic Match!")),
             "image": str(s.get("image") or "characters/handoff-shadow.png"),
+            **({"icon": str(s["icon"])} if s.get("icon") is not None else {}),
+            **({"suspicious": bool(s["suspicious"])} if s.get("suspicious") is not None else {}),
         }
         for s in raw_suspects if isinstance(s, dict)
     ]
+    if not suspects and is_guide:
+        suspects = [
+            {"key": "A", "name": "YAML Brief Compiler", "role": "Stage 1", "timestampBadge": "GATE 01", "clue": "35-Line Spec!", "image": "characters/kabir-closeup.png"},
+            {"key": "B", "name": "Audio & WPM Sync", "role": "Stage 2", "timestampBadge": "GATE 02", "clue": "42-58s Lock!", "image": "characters/kabir-investigating.png"},
+            {"key": "C", "name": "Headless DOM Heal", "role": "Stage 3", "timestampBadge": "GATE 03", "clue": "0 Overflows!", "image": "characters/handoff-shadow.png"},
+        ]
 
     raw_stop = brief.get("scrollStopper") or {}
-    stopper = raw_stop if isinstance(raw_stop, dict) else {"badge": case_tag, "text": str(raw_stop), "tone": "danger"}
+    stopper = raw_stop if isinstance(raw_stop, dict) else {"badge": case_tag, "text": str(raw_stop), "tone": "emerald" if is_guide else "danger"}
     stopper = {
         "badge": str(stopper.get("badge") or case_tag),
         "text": str(stopper.get("text") or title),
-        "tone": str(stopper.get("tone") or ("danger" if part == 1 else "emerald")),
+        "tone": str(stopper.get("tone") or ("emerald" if (is_guide or part != 1) else "danger")),
     }
     scenes = build_noir_scenes(ep_id, season, part, title, concept, case_tag, real_inc, brief, seg_specs, suspects, stopper)
 
@@ -141,25 +154,51 @@ def compile_brief(brief: dict, defaults_path: Path | None = None) -> dict:
             "outcomeVerdict": str(prev.get("outcomeVerdict") or "74% suspected Option C before Kabir traced the full forensic chain."),
         }
 
+    default_sfx = {"file": "sfx/soc-alert-ping.wav", "durationSec": 2.4, "volume": 0.22} if is_guide else {"file": "sfx/shaadi-distant-intro.wav", "durationSec": 3.6, "volume": 0.25}
+    raw_sfx = brief.get("introSfx")
+    if isinstance(raw_sfx, str) and raw_sfx.strip():
+        intro_sfx = {**default_sfx, "file": raw_sfx.strip()}
+    elif isinstance(raw_sfx, dict):
+        intro_sfx = {
+            "file": str(raw_sfx.get("file") or default_sfx["file"]),
+            "durationSec": float(raw_sfx["durationSec"]) if raw_sfx.get("durationSec") is not None else default_sfx["durationSec"],
+            "volume": float(raw_sfx["volume"]) if raw_sfx.get("volume") is not None else default_sfx["volume"],
+        }
+    else:
+        intro_sfx = default_sfx
+
+    voice_cfg: dict[str, object] = {
+        "mode": "edge_neural", "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+        "edgeVoices": {"narrator": "ur-IN-SalmanNeural", "kabir": "hi-IN-MadhurNeural"},
+        "edgeRates": {"narrator": "+8%"}, "edgePitches": {"narrator": "-3Hz"}, "edgeFormants": {"narrator": 1.0},
+        "audioFile": f"audio/{ep_id}.wav", "captionsFile": f"audio/{ep_id}.captions.json", "targetWpm": target_wpm,
+    }
+    if isinstance(raw_vc := brief.get("voiceConfig"), dict):
+        for vk, vv in raw_vc.items():
+            if vv is None:
+                continue
+            if isinstance(vv, dict) and isinstance(voice_cfg.get(vk), dict):
+                voice_cfg[vk] = {**voice_cfg[vk], **vv}  # type: ignore[dict-item]
+            else:
+                voice_cfg[vk] = vv
+        if "mode" in raw_vc and "engineLicense" not in raw_vc and str(voice_cfg["mode"]) in _MODE_LICENSES:
+            voice_cfg["engineLicense"] = _MODE_LICENSES[str(voice_cfg["mode"])]
+
     manifest: dict[str, object] = {
         "id": ep_id, "season": season, "episode": ep_num,
         "totalEpisodesInSeason": int(brief.get("totalEpisodesInSeason") or 4),
-        "seasonTitle": season_title, "episodeTitle": title, "companyName": "CYBER JASOOS",
-        "visualTheme": "noir_cinema", "coldOpenTag": case_tag, "hudPartBadge": f"PART {part}/2",
-        "introSfx": {"file": "sfx/shaadi-distant-intro.wav", "durationSec": 3.6, "volume": 0.25},
-        "securityDomain": hud_domain, "realBreachParallel": real_inc,
-        "voiceConfig": {
-            "mode": "edge_neural", "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
-            "edgeVoices": {"narrator": "ur-IN-SalmanNeural", "kabir": "hi-IN-MadhurNeural"},
-            "edgeRates": {"narrator": "+8%"}, "edgePitches": {"narrator": "-3Hz"}, "edgeFormants": {"narrator": 1.0},
-            "audioFile": f"audio/{ep_id}.wav", "captionsFile": f"audio/{ep_id}.captions.json", "targetWpm": target_wpm,
-        },
-        "durationSeconds": duration, "fps": 30, "hook": hook_obj,
+        "seasonTitle": season_title, "episodeTitle": title, "companyName": company_name,
+        "visualTheme": "noir_cinema", "coldOpenTag": case_tag,
+        "hudPartBadge": str(brief.get("hudPartBadge") or f"PART {part}/2"),
+        "introSfx": intro_sfx, "securityDomain": hud_domain, "realBreachParallel": real_inc,
+        "voiceConfig": voice_cfg, "durationSeconds": duration, "fps": 30, "hook": hook_obj,
         "scriptSegments": seg_specs, "scenes": scenes,
-        "postCopy": build_post_copy(title, concept, real_inc, seg_specs[0]["narration"], suspects, part),
+        "postCopy": build_post_copy(title, concept, real_inc, seg_specs[0]["narration"], suspects, part, brief),
     }
+    if isinstance(raw_labels := brief.get("speakerLabels"), dict):
+        manifest["speakerLabels"] = {str(k): str(v) for k, v in raw_labels.items()}
     if part == 2 and isinstance(brief.get("pollBranches"), dict):
-        manifest["pollBranches"] = expand_poll_branches(brief["pollBranches"], title, concept, real_inc, suspects)
+        manifest["pollBranches"] = expand_poll_branches(brief["pollBranches"], title, concept, real_inc, suspects, brief)
         pvr = hook_obj["previousVoteResult"]
         assert isinstance(pvr, dict)
         manifest = apply_poll_branch(manifest, str(pvr["winningOption"]), int(pvr["percentage"]))

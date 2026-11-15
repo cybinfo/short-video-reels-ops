@@ -1,0 +1,55 @@
+id: s99e02-guide-self-heal-build
+season: 99
+episodeNumber: 2
+part: 1
+preset: guide_walkthrough
+hudPartBadge: "GUIDE 2/4"
+title: "Chapter 2: Single-Command Build, Voice Modes Aur Safe-Zone Self-Heal"
+caseTag: "CHAPTER 2 · 1-CMD SELF-HEAL"
+securityDomain: "ZERO-AI REEL FACTORY · CH 2"
+realIncident:
+  incident: "Single-Command Self-Healing Orchestrator (build_episode.py + uat-dom-audit.mjs)"
+  year: 2026
+  impact: "Synthesizes voice with acoustic peak lock, self-heals 42-58s WPM clock, enforces Chrome x<956px safe zones, and exports MP4 + Launch Pack"
+  lesson: "Run build_episode.py --brief <yaml> --render-mp4 for zero-defect 1080x1920 @ 30fps delivery."
+scrollStopper:
+  badge: "CHAPTER 2 · 1-CMD BUILD"
+  text: "Voice, WPM Clock Aur DOM Safe-Zone Heal!"
+  tone: "emerald"
+clueHeadline: "3 VOICE MODES · ACOUSTIC PEAK SYNC!"
+clueSubline: "SALMAN PREVIEW, KOKORO 2.0 YA OWN VOICE"
+frameworkBadge: "WPM + CHROME DOM HEALER"
+frameworkHeadline: "42-58s Clock Aur x < 956px Auto-Lock!"
+stepOneTitle: "42-58s · 130-195 WPM"
+stepOneTag: "AUTO RATE SELF-HEAL"
+stepTwoTitle: "uat-dom-audit.mjs Gate"
+stepTwoTag: "X < 956PX · FONT >= 20PX"
+payoffBadge: "1-CMD LAUNCH PACK READY"
+payoffHeadline: "1080p MP4, Cover Aur Copy Pack Tayyar!"
+radarPinLabel: "124PX RIGHT RAIL CLEAR"
+crossedOutLabel: "MANUAL CAPTION TIMING"
+matchHeadline: "MP4 + REEL COVER + PINNED COPY READY!"
+matchSubline: "Zero DOM defects, 1080x1920 @ 30fps MP4."
+verdictPillLeft: "ACOUSTIC PEAK LOCK"
+verdictPillRight: "0 DOM DEFECTS"
+votePrompt: "CHAPTER 2 KA SABSE STRONG GATE KAUNSA?"
+plates:
+  hookHero: "characters/guide-04-build-cli-heal.png"
+  hookSecondary: "characters/guide-05-safezone-stage.png"
+  hookTertiary: "characters/kabir-closeup.png"
+  clueHero: "characters/guide-05-safezone-stage.png"
+  clueSecondary: "characters/guide-04-build-cli-heal.png"
+  twistHero: "characters/guide-04-build-cli-heal.png"
+  twistSecondary: "characters/kabir-investigating.png"
+  payoffHero: "characters/guide-06-launch-pack.png"
+  payoffSecondary: "characters/kabir-closeup.png"
+beats:
+  hook: "Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4!"
+  escalation: "Teen voice modes milte hain, edge par SalmanNeural preview, kokoro par Apache 2.0 commercial voice, ya recorded mode mein apni M4A voice, jahan har caption acoustic peak par lock hota hai!"
+  framework: "Agar audio tez ya dheemi ho, toh self-heal loop speech rate tune karke duration 42 se 58 seconds aur 130 se 195 WPM par lock karta hai!"
+  micro_payoff: "Phir Headless Chrome uat-dom-audit dot mjs verify karta hai ki har text x 956 pixels ke andar rahe, Instagram 124 pixel right rail bache, aur font 20 pixel se upar ho!"
+  cliffhanger_vote: "Zero defects par 1080 by 1920 cover, POST COPY AND PINNED COMMENT text, aur final MP4 automatic ban jaate hain! Chaliye agle chapter mein Part 2 branching dekhiye..."
+suspects:
+  - { key: A, name: "Voice & Peak Sync", role: "Edge Kokoro Own M4A", timestampBadge: "GATE 01", clue: "Acoustic Peak Lock!", image: "characters/guide-04-build-cli-heal.png" }
+  - { key: B, name: "WPM Clock Self-Heal", role: "130-195 WPM Envelope", timestampBadge: "GATE 02", clue: "42-58s Auto Rate!", image: "characters/guide-04-build-cli-heal.png" }
+  - { key: C, name: "Chrome Safe-Zone Gate", role: "x<956px · Font>=20px", timestampBadge: "GATE 03", clue: "MP4 + Launch Pack!", image: "characters/guide-05-safezone-stage.png" }

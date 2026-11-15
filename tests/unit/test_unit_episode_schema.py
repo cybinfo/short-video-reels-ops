@@ -28,7 +28,7 @@ class EpisodeSchemaAndTokenContractUnitTests(unittest.TestCase):
 
         ep_files = sorted(
             f for f in (REPO_ROOT / "episodes").rglob("*.json")
-            if f.name != "schema.json" and "brief" not in f.name
+            if f.name != "schema.json" and "brief" not in f.name and "briefs" not in f.parts
         )
         self.assertGreaterEqual(len(ep_files), 5)
         for ep_file in ep_files:

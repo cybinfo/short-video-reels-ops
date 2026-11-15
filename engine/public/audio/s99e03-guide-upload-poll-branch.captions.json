@@ -1,0 +1,1809 @@
+[
+  {
+    "word": "Athhattar",
+    "startSec": 0.06,
+    "endSec": 0.367,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.852,
+      0.559,
+      0.705,
+      0.968
+    ]
+  },
+  {
+    "word": "percent",
+    "startSec": 0.4149,
+    "endSec": 0.6182,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.359,
+      0.701,
+      0.882,
+      0.462
+    ]
+  },
+  {
+    "word": "audience",
+    "startSec": 0.6182,
+    "endSec": 0.8216,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.917,
+      0.877,
+      0.809,
+      0.589
+    ]
+  },
+  {
+    "word": "poll",
+    "startSec": 0.8933,
+    "endSec": 1.0967,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.011,
+      0.766,
+      0.892,
+      0.988
+    ]
+  },
+  {
+    "word": "votes",
+    "startSec": 1.1565,
+    "endSec": 1.3718,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.34,
+      0.626,
+      0.97,
+      0.807
+    ]
+  },
+  {
+    "word": "ne",
+    "startSec": 1.3718,
+    "endSec": 1.4795,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.029,
+      0.387,
+      0.703,
+      0.761
+    ]
+  },
+  {
+    "word": "Option",
+    "startSec": 1.5153,
+    "endSec": 1.7666,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.254,
+      0.796,
+      0.838,
+      0.808
+    ]
+  },
+  {
+    "word": "C,",
+    "startSec": 1.8144,
+    "endSec": 1.9879,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.294,
+      0.717,
+      0.716,
+      0.101
+    ]
+  },
+  {
+    "word": "Live",
+    "startSec": 1.9879,
+    "endSec": 2.1613,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.113,
+      0.43,
+      0.695,
+      0.841
+    ]
+  },
+  {
+    "word": "Part",
+    "startSec": 2.257,
+    "endSec": 2.3886,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.667,
+      0.554,
+      0.659,
+      0.73
+    ]
+  },
+  {
+    "word": "2",
+    "startSec": 2.4843,
+    "endSec": 2.6278,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.648,
+      0.616,
+      0.759,
+      0.891
+    ]
+  },
+  {
+    "word": "Branch",
+    "startSec": 2.75,
+    "endSec": 2.9747,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.643,
+      0.695,
+      0.739,
+      0.415
+    ]
+  },
+  {
+    "word": "chuna,",
+    "startSec": 3.2378,
+    "endSec": 3.3694,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.254,
+      0.368,
+      1.0,
+      0.952
+    ]
+  },
+  {
+    "word": "jahan",
+    "startSec": 3.4292,
+    "endSec": 3.7522,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.387,
+      0.805,
+      0.804,
+      0.36
+    ]
+  },
+  {
+    "word": "pichhaanve",
+    "startSec": 3.96,
+    "endSec": 4.2068,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.217,
+      0.883,
+      0.784,
+      0.908
+    ]
+  },
+  {
+    "word": "percent",
+    "startSec": 4.2666,
+    "endSec": 4.4819,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.023,
+      0.758,
+      0.527,
+      0.738
+    ]
+  },
+  {
+    "word": "Part",
+    "startSec": 4.4819,
+    "endSec": 4.5895,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.474,
+      0.884,
+      0.84,
+      0.849
+    ]
+  },
+  {
+    "word": "2",
+    "startSec": 4.71,
+    "endSec": 4.93,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.614,
+      0.642,
+      0.649,
+      0.216
+    ]
+  },
+  {
+    "word": "kaam",
+    "startSec": 5.1278,
+    "endSec": 5.2474,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.276,
+      0.293,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "word": "hamara",
+    "startSec": 5.2474,
+    "endSec": 5.4771,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.736,
+      0.517,
+      0.916,
+      0.95
+    ]
+  },
+  {
+    "word": "Zero-AI",
+    "startSec": 5.4771,
+    "endSec": 5.6302,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.808,
+      0.719,
+      0.836,
+      0.647
+    ]
+  },
+  {
+    "word": "engine",
+    "startSec": 5.6302,
+    "endSec": 5.9531,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.443,
+      0.903,
+      0.617,
+      0.861
+    ]
+  },
+  {
+    "word": "bina",
+    "startSec": 6.001,
+    "endSec": 6.2283,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.322,
+      0.844,
+      0.777,
+      0.786
+    ]
+  },
+  {
+    "word": "ruke",
+    "startSec": 6.2881,
+    "endSec": 6.3838,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.024,
+      0.01,
+      0.196,
+      0.759
+    ]
+  },
+  {
+    "word": "karta",
+    "startSec": 6.3838,
+    "endSec": 6.5751,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.553,
+      0.448,
+      0.022,
+      0.485
+    ]
+  },
+  {
+    "word": "hai!",
+    "startSec": 6.5751,
+    "endSec": 6.8024,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.485,
+      0.176,
+      0.436,
+      0.477
+    ]
+  },
+  {
+    "word": "Shaam",
+    "startSec": 7.25,
+    "endSec": 7.4477,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.262,
+      0.572,
+      1.0,
+      0.916
+    ]
+  },
+  {
+    "word": "7:40",
+    "startSec": 7.4716,
+    "endSec": 7.9321,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.684,
+      0.854,
+      0.847,
+      0.729
+    ]
+  },
+  {
+    "word": "PM",
+    "startSec": 7.9321,
+    "endSec": 8.1624,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.688,
+      0.697,
+      0.9,
+      0.835
+    ]
+  },
+  {
+    "word": "IST",
+    "startSec": 8.1624,
+    "endSec": 8.3926,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.518,
+      0.184,
+      0.665,
+      1.0
+    ]
+  },
+  {
+    "word": "par",
+    "startSec": 8.3926,
+    "endSec": 8.6229,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.398,
+      0.424,
+      0.221,
+      0.926
+    ]
+  },
+  {
+    "word": "Launch",
+    "startSec": 8.6229,
+    "endSec": 8.8532,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.217,
+      0.345,
+      0.935,
+      0.705
+    ]
+  },
+  {
+    "word": "Pack",
+    "startSec": 8.8532,
+    "endSec": 9.0834,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.728,
+      0.935,
+      0.623,
+      0.496
+    ]
+  },
+  {
+    "word": "phone",
+    "startSec": 9.0834,
+    "endSec": 9.3137,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.706,
+      0.863,
+      0.856,
+      0.623
+    ]
+  },
+  {
+    "word": "par",
+    "startSec": 9.3496,
+    "endSec": 9.529,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.102,
+      0.575,
+      0.655,
+      0.618
+    ]
+  },
+  {
+    "word": "AirDrop",
+    "startSec": 9.6008,
+    "endSec": 9.9238,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.195,
+      0.901,
+      0.888,
+      0.84
+    ]
+  },
+  {
+    "word": "kijiye,",
+    "startSec": 9.9716,
+    "endSec": 10.2826,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.387,
+      0.771,
+      0.885,
+      0.593
+    ]
+  },
+  {
+    "word": "custom",
+    "startSec": 10.39,
+    "endSec": 10.5218,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.357,
+      0.957,
+      0.876,
+      0.747
+    ]
+  },
+  {
+    "word": "1080",
+    "startSec": 10.5817,
+    "endSec": 10.785,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.048,
+      0.352,
+      0.897,
+      0.947
+    ]
+  },
+  {
+    "word": "by",
+    "startSec": 10.8688,
+    "endSec": 11.2755,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.582,
+      0.837,
+      0.882,
+      0.661
+    ]
+  },
+  {
+    "word": "1920",
+    "startSec": 11.2874,
+    "endSec": 11.6941,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.406,
+      0.674,
+      0.665,
+      0.656
+    ]
+  },
+  {
+    "word": "cover",
+    "startSec": 11.92,
+    "endSec": 12.2802,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.671,
+      0.662,
+      0.58,
+      0.844
+    ]
+  },
+  {
+    "word": "chuniye,",
+    "startSec": 12.3041,
+    "endSec": 13.1534,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.55,
+      0.526,
+      0.629,
+      0.701
+    ]
+  },
+  {
+    "word": "AI-generated",
+    "startSec": 13.2013,
+    "endSec": 13.4405,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.418,
+      0.83,
+      0.729,
+      0.707
+    ]
+  },
+  {
+    "word": "content",
+    "startSec": 13.4525,
+    "endSec": 14.5888,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.455,
+      0.646,
+      0.723,
+      0.671
+    ]
+  },
+  {
+    "word": "label",
+    "startSec": 14.6367,
+    "endSec": 14.9238,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.172,
+      0.806,
+      0.521,
+      0.742
+    ]
+  },
+  {
+    "word": "on",
+    "startSec": 15.11,
+    "endSec": 15.486,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.64,
+      0.592,
+      0.489,
+      0.733
+    ]
+  },
+  {
+    "word": "kijiye,",
+    "startSec": 15.5218,
+    "endSec": 15.8568,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.358,
+      0.805,
+      0.46,
+      0.726
+    ]
+  },
+  {
+    "word": "aur",
+    "startSec": 15.8927,
+    "endSec": 16.084,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.034,
+      0.555,
+      0.701,
+      0.696
+    ]
+  },
+  {
+    "word": "tees",
+    "startSec": 16.2395,
+    "endSec": 16.4668,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.105,
+      0.767,
+      0.825,
+      0.839
+    ]
+  },
+  {
+    "word": "second",
+    "startSec": 16.61,
+    "endSec": 16.7778,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.513,
+      0.815,
+      0.777,
+      0.585
+    ]
+  },
+  {
+    "word": "ke",
+    "startSec": 16.7898,
+    "endSec": 17.1367,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.723,
+      0.728,
+      0.113,
+      0.666
+    ]
+  },
+  {
+    "word": "andar",
+    "startSec": 17.2085,
+    "endSec": 17.3161,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.047,
+      0.035,
+      0.067,
+      0.781
+    ]
+  },
+  {
+    "word": "A,",
+    "startSec": 17.364,
+    "endSec": 17.6989,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.537,
+      0.73,
+      0.596,
+      0.592
+    ]
+  },
+  {
+    "word": "B,",
+    "startSec": 17.7348,
+    "endSec": 17.7945,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.31,
+      0.302,
+      0.37,
+      0.318
+    ]
+  },
+  {
+    "word": "C",
+    "startSec": 17.9501,
+    "endSec": 17.974,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.089,
+      0.277,
+      0.109,
+      0.214
+    ]
+  },
+  {
+    "word": "poll",
+    "startSec": 18.0936,
+    "endSec": 18.2133,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.102,
+      0.341,
+      0.641,
+      0.431
+    ]
+  },
+  {
+    "word": "comment",
+    "startSec": 18.285,
+    "endSec": 18.4764,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.032,
+      0.639,
+      0.912,
+      0.883
+    ]
+  },
+  {
+    "word": "pin",
+    "startSec": 18.5362,
+    "endSec": 18.8592,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.207,
+      0.675,
+      0.76,
+      0.645
+    ]
+  },
+  {
+    "word": "kijiye!",
+    "startSec": 18.98,
+    "endSec": 19.0865,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.268,
+      0.822,
+      0.429,
+      0.457
+    ]
+  },
+  {
+    "word": "Chaubis",
+    "startSec": 19.55,
+    "endSec": 19.7199,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.206,
+      0.347,
+      0.51,
+      0.935
+    ]
+  },
+  {
+    "word": "ghante",
+    "startSec": 19.7199,
+    "endSec": 19.8381,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.648,
+      0.844,
+      0.875,
+      1.0
+    ]
+  },
+  {
+    "word": "baad",
+    "startSec": 19.8979,
+    "endSec": 19.9995,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.142,
+      0.131,
+      0.094,
+      0.104
+    ]
+  },
+  {
+    "word": "free",
+    "startSec": 19.9995,
+    "endSec": 20.1012,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.364,
+      0.76,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "word": "Meta",
+    "startSec": 20.1251,
+    "endSec": 20.3883,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      1.0,
+      0.895,
+      0.511,
+      0.769
+    ]
+  },
+  {
+    "word": "Graph",
+    "startSec": 20.4361,
+    "endSec": 20.5198,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.371,
+      0.274,
+      0.411,
+      0.668
+    ]
+  },
+  {
+    "word": "API",
+    "startSec": 20.5198,
+    "endSec": 20.6873,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.961,
+      0.921,
+      0.823,
+      0.423
+    ]
+  },
+  {
+    "word": "ya",
+    "startSec": 20.7352,
+    "endSec": 20.8747,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.39,
+      0.42,
+      0.927,
+      0.586
+    ]
+  },
+  {
+    "word": "comment",
+    "startSec": 20.8747,
+    "endSec": 21.1538,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.094,
+      0.941,
+      0.927,
+      0.842
+    ]
+  },
+  {
+    "word": "JSON",
+    "startSec": 21.1658,
+    "endSec": 21.2974,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.764,
+      0.689,
+      0.952,
+      1.0
+    ]
+  },
+  {
+    "word": "par",
+    "startSec": 21.3572,
+    "endSec": 21.7041,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.385,
+      0.726,
+      0.916,
+      0.84
+    ]
+  },
+  {
+    "word": "instagram_ops.py",
+    "startSec": 21.7519,
+    "endSec": 22.2663,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.42,
+      0.861,
+      0.712,
+      0.889
+    ]
+  },
+  {
+    "word": "tally-comments",
+    "startSec": 22.3381,
+    "endSec": 22.7448,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.539,
+      0.787,
+      0.826,
+      0.711
+    ]
+  },
+  {
+    "word": "aur",
+    "startSec": 22.98,
+    "endSec": 23.1634,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.668,
+      0.672,
+      0.706,
+      0.767
+    ]
+  },
+  {
+    "word": "reply-drafts",
+    "startSec": 23.2232,
+    "endSec": 23.4744,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.406,
+      0.803,
+      0.937,
+      0.945
+    ]
+  },
+  {
+    "word": "chalaiye,",
+    "startSec": 23.4744,
+    "endSec": 23.5581,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.99,
+      0.919,
+      0.9,
+      0.45
+    ]
+  },
+  {
+    "word": "jo",
+    "startSec": 23.78,
+    "endSec": 23.8931,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.164,
+      0.224,
+      0.627,
+      1.0
+    ]
+  },
+  {
+    "word": "har",
+    "startSec": 23.917,
+    "endSec": 24.0047,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.993,
+      0.522,
+      0.449,
+      0.294
+    ]
+  },
+  {
+    "word": "asli",
+    "startSec": 24.0047,
+    "endSec": 24.1802,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.188,
+      0.632,
+      0.662,
+      0.641
+    ]
+  },
+  {
+    "word": "voter",
+    "startSec": 24.24,
+    "endSec": 24.5031,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.31,
+      0.88,
+      0.642,
+      0.533
+    ]
+  },
+  {
+    "word": "ginkar",
+    "startSec": 24.539,
+    "endSec": 24.74,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.504,
+      0.691,
+      0.71,
+      0.777
+    ]
+  },
+  {
+    "word": "Socratic",
+    "startSec": 24.74,
+    "endSec": 25.0414,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.086,
+      0.759,
+      0.327,
+      0.572
+    ]
+  },
+  {
+    "word": "replies",
+    "startSec": 25.0414,
+    "endSec": 25.3923,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.206,
+      0.505,
+      0.617,
+      0.72
+    ]
+  },
+  {
+    "word": "aur",
+    "startSec": 25.3923,
+    "endSec": 25.5678,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.781,
+      0.736,
+      0.603,
+      0.576
+    ]
+  },
+  {
+    "word": "winning",
+    "startSec": 25.6276,
+    "endSec": 25.8428,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.264,
+      0.792,
+      0.859,
+      0.835
+    ]
+  },
+  {
+    "word": "option",
+    "startSec": 25.8907,
+    "endSec": 26.1897,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.368,
+      0.768,
+      0.77,
+      0.654
+    ]
+  },
+  {
+    "word": "turant",
+    "startSec": 26.2256,
+    "endSec": 26.3692,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.062,
+      0.405,
+      0.725,
+      0.569
+    ]
+  },
+  {
+    "word": "nikaalta",
+    "startSec": 26.3692,
+    "endSec": 26.5845,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.054,
+      0.395,
+      0.491,
+      0.822
+    ]
+  },
+  {
+    "word": "hai!",
+    "startSec": 26.5964,
+    "endSec": 26.8357,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.489,
+      0.21,
+      0.466,
+      0.472
+    ]
+  },
+  {
+    "word": "Ab",
+    "startSec": 27.26,
+    "endSec": 27.3301,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.601,
+      1.0,
+      0.928,
+      0.93
+    ]
+  },
+  {
+    "word": "apply_poll_result.py",
+    "startSec": 27.63,
+    "endSec": 27.7846,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.601,
+      0.754,
+      0.628,
+      0.708
+    ]
+  },
+  {
+    "word": "mein",
+    "startSec": 27.8086,
+    "endSec": 28.0478,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.888,
+      0.932,
+      0.902,
+      0.928
+    ]
+  },
+  {
+    "word": "winner",
+    "startSec": 28.0717,
+    "endSec": 28.311,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.699,
+      0.806,
+      0.939,
+      0.895
+    ]
+  },
+  {
+    "word": "C",
+    "startSec": 28.3947,
+    "endSec": 28.5741,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.774,
+      0.718,
+      0.81,
+      0.858
+    ]
+  },
+  {
+    "word": "aur",
+    "startSec": 28.5861,
+    "endSec": 28.8253,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.373,
+      0.915,
+      0.945,
+      0.969
+    ]
+  },
+  {
+    "word": "pct",
+    "startSec": 28.9091,
+    "endSec": 29.3636,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.65,
+      0.743,
+      0.663,
+      0.654
+    ]
+  },
+  {
+    "word": "78",
+    "startSec": 29.3875,
+    "endSec": 29.7823,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.687,
+      0.476,
+      0.392,
+      0.683
+    ]
+  },
+  {
+    "word": "pass",
+    "startSec": 29.854,
+    "endSec": 30.1172,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.327,
+      0.779,
+      0.762,
+      0.674
+    ]
+  },
+  {
+    "word": "kijiye,",
+    "startSec": 30.36,
+    "endSec": 30.488,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.52,
+      0.776,
+      0.651,
+      0.736
+    ]
+  },
+  {
+    "word": "phir",
+    "startSec": 30.5478,
+    "endSec": 30.6316,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.103,
+      0.042,
+      0.127,
+      0.233
+    ]
+  },
+  {
+    "word": "build_episode.py",
+    "startSec": 30.6794,
+    "endSec": 31.6124,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.787,
+      0.755,
+      0.297,
+      0.737
+    ]
+  },
+  {
+    "word": "ke",
+    "startSec": 31.6124,
+    "endSec": 31.7679,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.286,
+      0.088,
+      0.524,
+      0.963
+    ]
+  },
+  {
+    "word": "saath",
+    "startSec": 31.7679,
+    "endSec": 31.9234,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.858,
+      0.785,
+      0.787,
+      0.532
+    ]
+  },
+  {
+    "word": "render-mp4",
+    "startSec": 32.15,
+    "endSec": 32.366,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.627,
+      1.0,
+      0.989,
+      0.926
+    ]
+  },
+  {
+    "word": "chalaiye,",
+    "startSec": 32.3899,
+    "endSec": 32.5932,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.435,
+      0.63,
+      0.934,
+      0.653
+    ]
+  },
+  {
+    "word": "aur",
+    "startSec": 32.72,
+    "endSec": 32.7846,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.066,
+      0.401,
+      0.9,
+      1.0
+    ]
+  },
+  {
+    "word": "live",
+    "startSec": 32.7846,
+    "endSec": 32.8923,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.898,
+      1.0,
+      1.0,
+      0.962
+    ]
+  },
+  {
+    "word": "poll",
+    "startSec": 32.9521,
+    "endSec": 33.1016,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.316,
+      0.441,
+      0.654,
+      0.836
+    ]
+  },
+  {
+    "word": "branch",
+    "startSec": 33.1016,
+    "endSec": 33.2511,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.873,
+      0.877,
+      0.688,
+      0.193
+    ]
+  },
+  {
+    "word": "wala",
+    "startSec": 33.287,
+    "endSec": 33.5263,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.349,
+      0.786,
+      0.675,
+      0.766
+    ]
+  },
+  {
+    "word": "Part",
+    "startSec": 33.5981,
+    "endSec": 33.933,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.382,
+      0.674,
+      0.597,
+      0.07
+    ]
+  },
+  {
+    "word": "2",
+    "startSec": 34.1602,
+    "endSec": 34.3038,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.247,
+      0.214,
+      1.0,
+      0.989
+    ]
+  },
+  {
+    "word": "video",
+    "startSec": 34.3277,
+    "endSec": 34.6268,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.412,
+      0.662,
+      0.583,
+      0.908
+    ]
+  },
+  {
+    "word": "ek",
+    "startSec": 34.6507,
+    "endSec": 34.854,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.654,
+      0.686,
+      0.206,
+      0.289
+    ]
+  },
+  {
+    "word": "command",
+    "startSec": 34.9139,
+    "endSec": 35.189,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.086,
+      0.646,
+      0.685,
+      0.721
+    ]
+  },
+  {
+    "word": "mein",
+    "startSec": 35.2009,
+    "endSec": 35.3265,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.716,
+      0.537,
+      0.422,
+      0.639
+    ]
+  },
+  {
+    "word": "taiyaar!",
+    "startSec": 35.3265,
+    "endSec": 35.4521,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.545,
+      0.493,
+      0.429,
+      0.368
+    ]
+  },
+  {
+    "word": "7:40",
+    "startSec": 35.88,
+    "endSec": 37.0797,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.891,
+      0.746,
+      0.702,
+      0.67
+    ]
+  },
+  {
+    "word": "PM",
+    "startSec": 37.0797,
+    "endSec": 37.7096,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.614,
+      0.789,
+      0.661,
+      0.88
+    ]
+  },
+  {
+    "word": "Upload,",
+    "startSec": 37.7575,
+    "endSec": 38.1043,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.589,
+      0.3,
+      0.962,
+      1.0
+    ]
+  },
+  {
+    "word": "Poll",
+    "startSec": 38.36,
+    "endSec": 38.535,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.602,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "word": "Tally,",
+    "startSec": 38.5948,
+    "endSec": 38.8341,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.119,
+      0.989,
+      0.807,
+      0.902
+    ]
+  },
+  {
+    "word": "ya",
+    "startSec": 38.9297,
+    "endSec": 39.0852,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.483,
+      0.774,
+      0.915,
+      1.0
+    ]
+  },
+  {
+    "word": "Live",
+    "startSec": 39.1091,
+    "endSec": 39.2407,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.768,
+      0.72,
+      0.662,
+      0.986
+    ]
+  },
+  {
+    "word": "Part",
+    "startSec": 39.37,
+    "endSec": 39.62,
+    "emphasis": true,
+    "speaker": "narrator",
+    "peak": [
+      0.591,
+      0.664,
+      0.574,
+      0.208
+    ]
+  },
+  {
+    "word": "2",
+    "startSec": 39.8627,
+    "endSec": 40.0063,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.245,
+      0.766,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "word": "Branch:",
+    "startSec": 40.0661,
+    "endSec": 40.3293,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.503,
+      0.708,
+      0.525,
+      0.331
+    ]
+  },
+  {
+    "word": "kaunsa",
+    "startSec": 40.86,
+    "endSec": 41.094,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.329,
+      0.357,
+      0.848,
+      1.0
+    ]
+  },
+  {
+    "word": "step",
+    "startSec": 41.15,
+    "endSec": 41.2147,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.042,
+      0.766,
+      1.0,
+      0.949
+    ]
+  },
+  {
+    "word": "sabse",
+    "startSec": 41.2147,
+    "endSec": 41.2992,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.918,
+      0.837,
+      0.7,
+      0.773
+    ]
+  },
+  {
+    "word": "kamaal",
+    "startSec": 41.2992,
+    "endSec": 41.4682,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.611,
+      0.384,
+      0.332,
+      0.815
+    ]
+  },
+  {
+    "word": "laga,",
+    "startSec": 41.613,
+    "endSec": 41.8786,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.403,
+      0.924,
+      0.942,
+      0.857
+    ]
+  },
+  {
+    "word": "aur",
+    "startSec": 41.951,
+    "endSec": 42.0556,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.196,
+      0.018,
+      0.307,
+      0.584
+    ]
+  },
+  {
+    "word": "Chapter",
+    "startSec": 42.0556,
+    "endSec": 42.2649,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.888,
+      0.256,
+      0.021,
+      0.68
+    ]
+  },
+  {
+    "word": "4",
+    "startSec": 42.3373,
+    "endSec": 42.5788,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.055,
+      0.723,
+      0.739,
+      0.641
+    ]
+  },
+  {
+    "word": "mein",
+    "startSec": 42.627,
+    "endSec": 42.8805,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.666,
+      0.814,
+      0.708,
+      0.717
+    ]
+  },
+  {
+    "word": "growth",
+    "startSec": 42.9771,
+    "endSec": 43.0656,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.118,
+      0.073,
+      0.19,
+      0.563
+    ]
+  },
+  {
+    "word": "ledger",
+    "startSec": 43.0656,
+    "endSec": 43.2427,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.765,
+      0.83,
+      0.761,
+      0.163
+    ]
+  },
+  {
+    "word": "dekhein...",
+    "startSec": 43.303,
+    "endSec": 43.6048,
+    "emphasis": false,
+    "speaker": "narrator",
+    "peak": [
+      0.3,
+      0.689,
+      0.343,
+      0.581
+    ]
+  }
+]

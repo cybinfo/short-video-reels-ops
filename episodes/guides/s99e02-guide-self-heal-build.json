@@ -1,0 +1,426 @@
+{
+  "id": "s99e02-guide-self-heal-build",
+  "season": 99,
+  "episode": 2,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Guide #02: Chapter 2: Single-Command Build, Voice Modes Aur Safe-Zone Self-Heal",
+  "episodeTitle": "Chapter 2: Single-Command Build, Voice Modes Aur Safe-Zone Self-Heal",
+  "companyName": "CYBER JASOOS",
+  "visualTheme": "noir_cinema",
+  "coldOpenTag": "CHAPTER 2 · 1-CMD SELF-HEAL",
+  "hudPartBadge": "GUIDE 2/4",
+  "introSfx": {
+    "file": "sfx/soc-alert-ping.wav",
+    "durationSec": 2.4,
+    "volume": 0.22
+  },
+  "securityDomain": "ZERO-AI REEL FACTORY · CH 2",
+  "realBreachParallel": {
+    "incident": "Single-Command Self-Healing Orchestrator (build_episode.py + uat-dom-audit.mjs)",
+    "year": 2026,
+    "impact": "Synthesizes voice with acoustic peak lock, self-heals 42-58s WPM clock, enforces Chrome x<956px safe zones, and exports MP4 + Launch Pack",
+    "lesson": "Run build_episode.py --brief <yaml> --render-mp4 for zero-defect 1080x1920 @ 30fps delivery."
+  },
+  "voiceConfig": {
+    "mode": "edge_neural",
+    "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+    "edgeVoices": {
+      "narrator": "ur-IN-SalmanNeural",
+      "kabir": "hi-IN-MadhurNeural"
+    },
+    "edgeRates": {
+      "narrator": "+8%"
+    },
+    "edgePitches": {
+      "narrator": "-3Hz"
+    },
+    "edgeFormants": {
+      "narrator": 1.0
+    },
+    "audioFile": "audio/s99e02-guide-self-heal-build.wav",
+    "captionsFile": "audio/s99e02-guide-self-heal-build.captions.json",
+    "targetWpm": 168
+  },
+  "durationSeconds": 47.15,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4!",
+    "hookPattern": "mid_breach_timestamp"
+  },
+  "scriptSegments": [
+    {
+      "id": "s99e02-guide-self-heal-build-seg-01",
+      "phase": "hook",
+      "speaker": "narrator",
+      "narration": "Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4!",
+          "hi": "Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4!"
+        }
+      ],
+      "highlightKeywords": [
+        "Story",
+        "brief",
+        "likhne",
+        "baad",
+        "poori"
+      ],
+      "startSec": 0,
+      "endSec": 5.36
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-seg-02",
+      "phase": "escalation",
+      "speaker": "narrator",
+      "narration": "Teen voice modes milte hain, edge par SalmanNeural preview, kokoro par Apache 2.0 commercial voice, ya recorded mode mein apni M4A voice, jahan har caption acoustic peak par lock hota hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Teen voice modes milte hain, edge par SalmanNeural preview, kokoro par Apache 2.0 commercial voice, ya recorded mode mein apni M4A voice, jahan har caption acoustic peak par lock hota hai!",
+          "hi": "Teen voice modes milte hain, edge par SalmanNeural preview, kokoro par Apache 2.0 commercial voice, ya recorded mode mein apni M4A voice, jahan har caption acoustic peak par lock hota hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "Teen",
+        "voice",
+        "modes",
+        "milte",
+        "hain"
+      ],
+      "startSec": 5.36,
+      "endSec": 16.53
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-seg-03",
+      "phase": "framework",
+      "speaker": "narrator",
+      "narration": "Agar audio tez ya dheemi ho, toh self-heal loop speech rate tune karke duration 42 se 58 seconds aur 130 se 195 WPM par lock karta hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Agar audio tez ya dheemi ho, toh self-heal loop speech rate tune karke duration 42 se 58 seconds aur 130 se 195 WPM par lock karta hai!",
+          "hi": "Agar audio tez ya dheemi ho, toh self-heal loop speech rate tune karke duration 42 se 58 seconds aur 130 se 195 WPM par lock karta hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "Agar",
+        "audio",
+        "dheemi",
+        "self-heal",
+        "loop"
+      ],
+      "startSec": 16.53,
+      "endSec": 25.43
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-seg-04",
+      "phase": "micro_payoff",
+      "speaker": "narrator",
+      "narration": "Phir Headless Chrome uat-dom-audit dot mjs verify karta hai ki har text x 956 pixels ke andar rahe, Instagram 124 pixel right rail bache, aur font 20 pixel se upar ho!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Phir Headless Chrome uat-dom-audit dot mjs verify karta hai ki har text x 956 pixels ke andar rahe, Instagram 124 pixel right rail bache, aur font 20 pixel se upar ho!",
+          "hi": "Phir Headless Chrome uat-dom-audit dot mjs verify karta hai ki har text x 956 pixels ke andar rahe, Instagram 124 pixel right rail bache, aur font 20 pixel se upar ho!"
+        }
+      ],
+      "highlightKeywords": [
+        "Phir",
+        "Headless",
+        "Chrome",
+        "uat-dom-audit",
+        "verify"
+      ],
+      "startSec": 25.43,
+      "endSec": 35.89
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-seg-05",
+      "phase": "cliffhanger_vote",
+      "speaker": "narrator",
+      "narration": "Zero defects par 1080 by 1920 cover, POST COPY AND PINNED COMMENT text, aur final MP4 automatic ban jaate hain! Chaliye agle chapter mein Part 2 branching dekhiye...",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Zero defects par 1080 by 1920 cover, POST COPY AND PINNED COMMENT text, aur final MP4 automatic ban jaate hain!",
+          "hi": "Zero defects par 1080 by 1920 cover, POST COPY AND PINNED COMMENT text, aur final MP4 automatic ban jaate hain!"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+9%",
+          "pitch": "-4Hz",
+          "pauseAfter": 0.16,
+          "roman": "Chaliye agle chapter mein Part 2 branching dekhiye...",
+          "hi": "Chaliye agle chapter mein Part 2 branching dekhiye..."
+        }
+      ],
+      "highlightKeywords": [
+        "Zero",
+        "defects",
+        "1080",
+        "1920",
+        "cover"
+      ],
+      "startSec": 35.89,
+      "endSec": 47.15
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s99e02-guide-self-heal-build-sc-01",
+      "startSec": 0,
+      "endSec": 5.36,
+      "kind": "detective_crime_hook",
+      "sfxCues": [
+        {
+          "file": "sfx/bank-sms-chime.wav",
+          "offsetFrames": 4,
+          "volume": 0.42
+        },
+        {
+          "file": "sfx/cash-drain-ticks.wav",
+          "offsetRatio": 0.35,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "caseBadge": "GUIDE #02",
+        "timeLabel": "ZERO-AI PIPELINE",
+        "locationLabel": "CHAPTER 2",
+        "phoneStatus": "Chapter 2: Single-Command Build, Voice Modes Aur Safe-Zone Self-Heal",
+        "bankAlertTitle": "CHAPTER 2 · 1-CMD SELF-HEAL",
+        "amountLost": "90% ZERO-AI",
+        "mode": "loss_drain",
+        "cutRatios": [
+          0.24,
+          0.64
+        ],
+        "scrollStopper": {
+          "badge": "CHAPTER 2 · 1-CMD BUILD",
+          "text": "Voice, WPM Clock Aur DOM Safe-Zone Heal!",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "CHAPTER 2 · 1-CMD SELF-HEAL",
+          "AUTO SELF-HEAL!",
+          "1-CMD MP4 READY!"
+        ],
+        "shotTags": [
+          "REEL FACTORY",
+          "AUTO-HEAL LOOP",
+          "SAFE-ZONE LOCK"
+        ],
+        "heroImage": "characters/guide-04-build-cli-heal.png",
+        "secondaryImage": "characters/guide-05-safezone-stage.png",
+        "tertiaryImage": "characters/kabir-closeup.png",
+        "shockPills": [
+          "35-LINE YAML",
+          "0 DOM DEFECTS",
+          "AUTO-LEARN"
+        ]
+      }
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-sc-02",
+      "startSec": 5.36,
+      "endSec": 16.53,
+      "kind": "detective_wifi_clue",
+      "sfxCues": [
+        {
+          "file": "sfx/puja-phone-vibrate.wav",
+          "offsetRatio": 0.42,
+          "volume": 0.44
+        },
+        {
+          "file": "sfx/soc-alert-ping.wav",
+          "offsetRatio": 0.5,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "headline": "3 VOICE MODES · ACOUSTIC PEAK SYNC!",
+        "subline": "SALMAN PREVIEW, KOKORO 2.0 YA OWN VOICE",
+        "heroImage": "characters/guide-05-safezone-stage.png",
+        "secondaryImage": "characters/guide-04-build-cli-heal.png",
+        "interceptBanner": {
+          "badge": "PIPELINE SCAN · GUIDE #02",
+          "text": "Voice, WPM Clock Aur DOM Safe-Zone Heal!",
+          "tone": "amber"
+        },
+        "devices": [
+          {
+            "name": "Voice & Peak Sync",
+            "status": "GATE 01 · Acoustic Peak Lock!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "WPM Clock Self-Heal",
+            "status": "GATE 02 · 42-58s Auto Rate!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "Chrome Safe-Zone Gate",
+            "status": "GATE 03 · MP4 + Launch Pack!",
+            "icon": "alert",
+            "suspicious": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-sc-03",
+      "startSec": 16.53,
+      "endSec": 25.43,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/keypad-tap-seq.wav",
+          "offsetRatio": 0.16,
+          "volume": 0.4
+        },
+        {
+          "file": "sfx/ussd-dial-tones.wav",
+          "offsetRatio": 0.52,
+          "volume": 0.58
+        }
+      ],
+      "props": {
+        "variant": "cctv_backdoor",
+        "tone": "amber",
+        "badge": "WPM + CHROME DOM HEALER",
+        "headline": "42-58s Clock Aur x < 956px Auto-Lock!",
+        "heroImage": "characters/guide-04-build-cli-heal.png",
+        "secondaryImage": "characters/kabir-investigating.png",
+        "stepOneTitle": "42-58s · 130-195 WPM",
+        "stepOneTag": "AUTO RATE SELF-HEAL",
+        "stepTwoTitle": "uat-dom-audit.mjs Gate",
+        "stepTwoTag": "X < 956PX · FONT >= 20PX",
+        "exposedItems": [
+          "GATE 01",
+          "GATE 02",
+          "GATE 03"
+        ]
+      }
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-sc-04",
+      "startSec": 25.43,
+      "endSec": 35.89,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/heartbeat-radar-ping.wav",
+          "offsetFrames": 3,
+          "volume": 0.46
+        },
+        {
+          "file": "sfx/stamp-slam.wav",
+          "offsetRatio": 0.45,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "variant": "contact_match",
+        "tone": "crimson",
+        "lockedParallax": true,
+        "badge": "1-CMD LAUNCH PACK READY",
+        "headline": "1080p MP4, Cover Aur Copy Pack Tayyar!",
+        "heroImage": "characters/guide-06-launch-pack.png",
+        "secondaryImage": "characters/kabir-closeup.png",
+        "radarPinLabel": "124PX RIGHT RAIL CLEAR",
+        "crossedOutLabel": "MANUAL CAPTION TIMING",
+        "matchHeadline": "MP4 + REEL COVER + PINNED COPY READY!",
+        "matchSubline": "Zero DOM defects, 1080x1920 @ 30fps MP4.",
+        "verdictPillLeft": "ACOUSTIC PEAK LOCK",
+        "verdictPillRight": "0 DOM DEFECTS"
+      }
+    },
+    {
+      "id": "s99e02-guide-self-heal-build-sc-05",
+      "startSec": 35.89,
+      "endSec": 47.15,
+      "kind": "detective_suspect_board",
+      "sfxCues": [
+        {
+          "file": "sfx/cliffhanger-tick.wav",
+          "offsetFrames": 4,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "boardMode": "next_case_vote",
+        "prompt": "CHAPTER 2 KA SABSE STRONG GATE KAUNSA?",
+        "partBadge": "NEXT CHAPTER",
+        "spotlightRightBadge": "GUIDE #02",
+        "followHandleLine": "FULL GUIDE: FOLLOW @CYBERJASOOS",
+        "forensicClueBar": "CYBER JASOOS · CHAPTER 2 · 1-CMD",
+        "suspects": [
+          {
+            "key": "A",
+            "name": "Voice & Peak Sync",
+            "role": "Edge Kokoro Own M4A",
+            "timestampBadge": "GATE 01",
+            "clue": "Acoustic Peak Lock!",
+            "image": "characters/guide-04-build-cli-heal.png"
+          },
+          {
+            "key": "B",
+            "name": "WPM Clock Self-Heal",
+            "role": "130-195 WPM Envelope",
+            "timestampBadge": "GATE 02",
+            "clue": "42-58s Auto Rate!",
+            "image": "characters/guide-04-build-cli-heal.png"
+          },
+          {
+            "key": "C",
+            "name": "Chrome Safe-Zone Gate",
+            "role": "x<956px · Font>=20px",
+            "timestampBadge": "GATE 03",
+            "clue": "MP4 + Launch Pack!",
+            "image": "characters/guide-05-safezone-stage.png"
+          }
+        ],
+        "optionTimingsSec": [
+          1.64,
+          3.49,
+          5.33
+        ],
+        "ctaLine": "Agla chapter dekhiye @cyberjasoos!",
+        "loopBridgeText": "Chaliye agle chapter mein Part 2 branching dekhiye..."
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "Story brief likhne ke baad poori reel banane ke liye sirf ek command chalaiye, build episode dot py dash-dash brief yaml aur dash-dash render mp4! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) Voice & Peak Sync, B) WPM Clock Self-Heal, C) Chrome Safe-Zone Gate. Run build_episode.py --brief <yaml> --render-mp4 for zero-defect 1080x1920 @ 30fps delivery. Kaunsa stage sabse powerful hai? Neeche A, B, ya C comment kijiye!",
+    "youtubeShortsTitle": "Chapter 2: Single-Command Build, Voice Modes Aur Safe-Zone Self-Heal #Shorts",
+    "linkedinPost": "Chapter 2: Single-Command Build, Voice Modes Aur Safe-Zone Self-Heal — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 2):\n\nSingle-Command Self-Healing Orchestrator (build_episode.py + uat-dom-audit.mjs) (2026): Synthesizes voice with acoustic peak lock, self-heals 42-58s WPM clock, enforces Chrome x<956px safe zones, and exports MP4 + Launch Pack\n\nArchitecture Takeaway: Run build_episode.py --brief <yaml> --render-mp4 for zero-defect 1080x1920 @ 30fps delivery.\n\nStages: A) Voice & Peak Sync, B) WPM Clock Self-Heal, C) Chrome Safe-Zone Gate.",
+    "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = Voice & Peak Sync (Edge Kokoro Own M4A · Acoustic Peak Lock!)\nB = WPM Clock Self-Heal (130-195 WPM Envelope · 42-58s Auto Rate!)\nC = Chrome Safe-Zone Gate (x<956px · Font>=20px · MP4 + Launch Pack!)\nKaunsa stage sabse powerful hai? Neeche A, B, ya C comment kijiye!",
+    "hashtags": [
+      "#CyberJasoos",
+      "#Remotion",
+      "#VideoAutomation",
+      "#SelfHealingCode",
+      "#ReelsEngine",
+      "#BuildInPublic"
+    ]
+  }
+}

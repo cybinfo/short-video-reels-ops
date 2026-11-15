@@ -17,7 +17,7 @@ const {makeOrReuseServer} = require(path.join(RENDERER_DIST, 'prepare-server.js'
 
 const UAT_RENDER_DIR = path.join(ROOT_DIR, 'renders', 'uat');
 const DEFAULT_REPORT_PATH = path.join(UAT_RENDER_DIR, 'dom-audit-report.json');
-const SKIP_DIR_NAMES = new Set(['briefs', 'audio', '__pycache__', 'node_modules']);
+const SKIP_DIR_NAMES = new Set(['briefs', 'guides', 'audio', '__pycache__', 'node_modules']);
 
 function parseCliArgs(argv) {
   let episode = null;
@@ -173,6 +173,7 @@ async function run() {
     }
     if (!cli.episode) {
       for (const c of compositions) {
+        if (c.id === 'dynamic-episode') continue;
         const bundledManifest = c.defaultProps?.manifest;
         if (bundledManifest?.id && Array.isArray(bundledManifest.scenes) && !seenIds.has(bundledManifest.id)) {
           episodes.push(bundledManifest);
@@ -190,7 +191,7 @@ async function run() {
     watchdog.unref();
 
     for (const manifest of episodes) {
-      const comp = compMap.get(manifest.id) ?? (cli.episode ? compositions[0] : null);
+      const comp = compMap.get(manifest.id) ?? (cli.episode ? (compMap.get('dynamic-episode') ?? compositions[0]) : null);
       if (!comp) {
         defects.push({episode: manifest.id, type: 'MISSING_COMPOSITION'});
         continue;
@@ -306,7 +307,7 @@ async function run() {
         for (const ratio of probeRatios) {
           const probeSec = scene.startSec + (scene.endSec - scene.startSec) * ratio;
           const probeFrame = Math.min(
-            comp.durationInFrames - 1,
+            effectiveDurationInFrames - 1,
             Math.max(0, Math.round(probeSec * comp.fps))
           );
 
@@ -749,7 +750,8 @@ async function run() {
             renderedSamples.add(scene.kind);
             const outPng = path.join(UAT_RENDER_DIR, `sample-${scene.kind}-${manifest.id}-f${probeFrame}.png`);
             await renderStill({
-              composition: comp,
+              composition: {...comp, durationInFrames: effectiveDurationInFrames, defaultProps: effectiveProps},
+              inputProps: effectiveProps,
               serveUrl: bundleLocation,
               puppeteerInstance: browser,
               frame: probeFrame,

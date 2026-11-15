@@ -193,8 +193,8 @@ class FrameworkTestSuite(unittest.TestCase):
             self.assertTrue(any(field in e for e in errs2), errs2)
 
     def test_season_continuity_across_all_live_episodes_and_negative_case(self) -> None:
-        ep_files = sorted(f for f in (REPO_ROOT / "episodes").rglob("*.json") if f.name != "schema.json")
-        self.assertEqual(len(ep_files), 5)
+        ep_files = validate_episode._collect_targets([str(REPO_ROOT / "episodes")])
+        self.assertGreaterEqual(len(ep_files), 5)
         manifests = [json.loads(f.read_text(encoding="utf-8")) for f in ep_files]
         for m in manifests:
             self.assertEqual(validate_episode.validate_manifest(m), [], m["id"])

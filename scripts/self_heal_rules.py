@@ -12,7 +12,8 @@ if str(SCRIPTS_DIR) not in sys.path:
 from instagram_ops import draft_socratic_reply  # noqa: E402
 
 OVERLAY_CAPS: dict[str, int] = {
-    "badge": 26, "caseBadge": 26, "radarPinLabel": 26, "verdictPillLeft": 24, "verdictPillRight": 24,
+    "badge": 26, "caseBadge": 26, "radarPinLabel": 26, "crossedOutLabel": 26,
+    "verdictPillLeft": 24, "verdictPillRight": 24,
     "headline": 38, "matchHeadline": 38, "forensicClueBar": 38, "bankAlertTitle": 38, "prompt": 38,
     "subline": 42, "matchSubline": 42, "followHandleLine": 32,
 }
@@ -160,17 +161,23 @@ def heal_dom_defects(manifest: dict, dom_report: dict) -> tuple[dict, list[str]]
             props = scenes[idx].get("props") if isinstance(scenes[idx], dict) else None
             if not isinstance(props, dict):
                 continue
-            for key, cap in OVERLAY_CAPS.items():
+            for key, cap in (*OVERLAY_CAPS.items(), ("stepOneTitle", 26), ("stepTwoTitle", 26), ("stepOneTag", 24), ("stepTwoTag", 24)):
                 if isinstance(orig := props.get(key), str) and (nv := _compact_str(orig, cap, scale)) != orig:
                     props[key] = nv
                     actions.append(f"scenes[{idx}].{key}: {orig!r} -> {nv!r}")
+            for list_k, lcap in (("shotTitles", 28), ("shotTags", 22), ("shockPills", 18), ("exposedItems", 22)):
+                if isinstance(arr := props.get(list_k), list):
+                    for l_i, elem in enumerate(arr):
+                        if isinstance(elem, str) and (nv := _compact_str(elem, lcap, scale)) != elem:
+                            arr[l_i] = nv
+                            actions.append(f"scenes[{idx}].{list_k}[{l_i}]: {elem!r} -> {nv!r}")
             for b_key in ("scrollStopper", "interceptBanner"):
                 if isinstance(bn := props.get(b_key), dict):
                     for sub_k, sub_cap in (("badge", 26), ("text", 42)):
                         if isinstance(orig := bn.get(sub_k), str) and (nv := _compact_str(orig, sub_cap, scale)) != orig:
                             bn[sub_k] = nv
                             actions.append(f"scenes[{idx}].{b_key}.{sub_k}: {orig!r} -> {nv!r}")
-            for item_list, fld_caps in (("suspects", (("clue", 20), ("role", 20))), ("options", (("label", 22), ("detail", 24)))):
+            for item_list, fld_caps in (("suspects", (("clue", 20), ("role", 20))), ("options", (("label", 22), ("detail", 24))), ("devices", (("name", 24), ("status", 32)))):
                 for s_i, item in enumerate(props.get(item_list) or []):
                     if isinstance(item, dict):
                         for fk, fcap in fld_caps:

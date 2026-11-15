@@ -1,0 +1,592 @@
+{
+  "id": "s99e03-guide-upload-poll-branch",
+  "season": 99,
+  "episode": 3,
+  "totalEpisodesInSeason": 4,
+  "seasonTitle": "Zero-AI Reel Guide · Chapter 3",
+  "episodeTitle": "Chapter 3 (78% Vote C): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch",
+  "companyName": "CYBER JASOOS",
+  "visualTheme": "noir_cinema",
+  "coldOpenTag": "CH 3 · 78% POLL AUTO-BRANCH",
+  "hudPartBadge": "GUIDE 3/4",
+  "introSfx": {
+    "file": "sfx/soc-alert-ping.wav",
+    "durationSec": 2.4,
+    "volume": 0.22
+  },
+  "securityDomain": "ZERO-AI REEL FACTORY · CH 3",
+  "realBreachParallel": {
+    "incident": "7:40 PM IST Launch Pack & Deterministic Poll Branching",
+    "year": 2025,
+    "impact": "Turns live Part 1 audience A/B/C comments into a custom Part 2 Reel with 95% Zero-AI work",
+    "lesson": "Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically."
+  },
+  "voiceConfig": {
+    "mode": "edge_neural",
+    "engineLicense": "EDGE_READ_ALOUD_PREVIEW",
+    "edgeVoices": {
+      "narrator": "ur-IN-SalmanNeural",
+      "kabir": "hi-IN-MadhurNeural"
+    },
+    "edgeRates": {
+      "narrator": "+8%"
+    },
+    "edgePitches": {
+      "narrator": "-3Hz"
+    },
+    "edgeFormants": {
+      "narrator": 1.0
+    },
+    "audioFile": "audio/s99e03-guide-upload-poll-branch.wav",
+    "captionsFile": "audio/s99e03-guide-upload-poll-branch.captions.json",
+    "targetWpm": 168
+  },
+  "durationSeconds": 43.99,
+  "fps": 30,
+  "hook": {
+    "openingLine": "Athhattar percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!",
+    "hookPattern": "comment_callout",
+    "previousVoteResult": {
+      "winningOption": "C",
+      "percentage": 78,
+      "outcomeVerdict": "78% audience votes unlocked Live Part 2 Auto-Branching with 95% Zero-AI work."
+    }
+  },
+  "scriptSegments": [
+    {
+      "id": "s99e03-guide-upload-poll-branch-seg-01",
+      "phase": "hook",
+      "speaker": "narrator",
+      "narration": "Athhattar percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Athhattar percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!",
+          "hi": "Athhattar percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "Athhattar percent",
+        "pct_word",
+        "percent",
+        "audience",
+        "poll"
+      ],
+      "startSec": 0,
+      "endSec": 7.19
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-seg-02",
+      "phase": "escalation",
+      "speaker": "narrator",
+      "narration": "Shaam 7:40 PM IST par Launch Pack phone par AirDrop kijiye, custom 1080 by 1920 cover chuniye, AI-generated content label on kijiye, aur tees second ke andar A, B, C poll comment pin kijiye!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Shaam 7:40 PM IST par Launch Pack phone par AirDrop kijiye, custom 1080 by 1920 cover chuniye, AI-generated content label on kijiye, aur tees second ke andar A, B, C poll comment pin kijiye!",
+          "hi": "Shaam 7:40 PM IST par Launch Pack phone par AirDrop kijiye, custom 1080 by 1920 cover chuniye, AI-generated content label on kijiye, aur tees second ke andar A, B, C poll comment pin kijiye!"
+        }
+      ],
+      "highlightKeywords": [
+        "Shaam",
+        "Launch",
+        "Pack",
+        "phone",
+        "AirDrop"
+      ],
+      "startSec": 7.19,
+      "endSec": 19.48
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-seg-03",
+      "phase": "framework",
+      "speaker": "narrator",
+      "narration": "Chaubis ghante baad free Meta Graph API ya comment JSON par instagram_ops.py tally-comments aur reply-drafts chalaiye, jo har asli voter ginkar Socratic replies aur winning option turant nikaalta hai!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Chaubis ghante baad free Meta Graph API ya comment JSON par instagram_ops.py tally-comments aur reply-drafts chalaiye, jo har asli voter ginkar Socratic replies aur winning option turant nikaalta hai!",
+          "hi": "Chaubis ghante baad free Meta Graph API ya comment JSON par instagram_ops.py tally-comments aur reply-drafts chalaiye, jo har asli voter ginkar Socratic replies aur winning option turant nikaalta hai!"
+        }
+      ],
+      "highlightKeywords": [
+        "Chaubis",
+        "ghante",
+        "baad",
+        "free",
+        "Meta"
+      ],
+      "startSec": 19.48,
+      "endSec": 27.2
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-seg-04",
+      "phase": "micro_payoff",
+      "speaker": "narrator",
+      "narration": "Ab apply_poll_result.py mein winner C aur pct 78 pass kijiye, phir build_episode.py ke saath render-mp4 chalaiye, aur live poll branch wala Part 2 video ek command mein taiyaar!",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "Ab apply_poll_result.py mein winner C aur pct 78 pass kijiye, phir build_episode.py ke saath render-mp4 chalaiye, aur live poll branch wala Part 2 video ek command mein taiyaar!",
+          "hi": "Ab apply_poll_result.py mein winner C aur pct 78 pass kijiye, phir build_episode.py ke saath render-mp4 chalaiye, aur live poll branch wala Part 2 video ek command mein taiyaar!"
+        }
+      ],
+      "highlightKeywords": [
+        "apply_poll_result.py",
+        "winner",
+        "pass",
+        "kijiye",
+        "phir"
+      ],
+      "startSec": 27.2,
+      "endSec": 35.82
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-seg-05",
+      "phase": "cliffhanger_vote",
+      "speaker": "narrator",
+      "narration": "7:40 PM Upload, Poll Tally, ya Live Part 2 Branch: kaunsa step sabse kamaal laga, aur Chapter 4 mein growth ledger dekhein...",
+      "ttsClauses": [
+        {
+          "speaker": "narrator",
+          "rate": "+10%",
+          "pitch": "-3Hz",
+          "pauseAfter": 0.16,
+          "roman": "7:40 PM Upload, Poll Tally, ya Live Part 2 Branch:",
+          "hi": "7:40 PM Upload, Poll Tally, ya Live Part 2 Branch:"
+        },
+        {
+          "speaker": "narrator",
+          "rate": "+9%",
+          "pitch": "-4Hz",
+          "pauseAfter": 0.16,
+          "roman": "kaunsa step sabse kamaal laga, aur Chapter 4 mein growth ledger dekhein...",
+          "hi": "kaunsa step sabse kamaal laga, aur Chapter 4 mein growth ledger dekhein..."
+        }
+      ],
+      "highlightKeywords": [
+        "Upload",
+        "Poll",
+        "Tally",
+        "Live",
+        "Part"
+      ],
+      "startSec": 35.82,
+      "endSec": 43.99
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s99e03-guide-upload-poll-branch-sc-01",
+      "startSec": 0,
+      "endSec": 7.19,
+      "kind": "detective_crime_hook",
+      "sfxCues": [
+        {
+          "file": "sfx/bank-sms-chime.wav",
+          "offsetFrames": 4,
+          "volume": 0.42
+        },
+        {
+          "file": "sfx/cash-drain-ticks.wav",
+          "offsetRatio": 0.35,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "caseBadge": "GUIDE 3/4 · POLL BRANCH",
+        "timeLabel": "7:40 PM IST LAUNCH",
+        "locationLabel": "CH 3 · UPLOAD & POLL",
+        "phoneStatus": "78% Voted C · Live Auto-Branch!",
+        "bankAlertTitle": "CHAPTER 3 · UPLOAD & POLL",
+        "amountLost": "95% ZERO-AI",
+        "mode": "suspect_unmask",
+        "cutRatios": [
+          0.24,
+          0.64
+        ],
+        "scrollStopper": {
+          "badge": "POLL · 78% VOTED C",
+          "text": "95% Zero-AI Part 2 Auto-Branch!",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "78% VOTED C",
+          "LIVE POLL INJECTED",
+          "1-CMD PART 2 MP4!"
+        ],
+        "shotTags": [
+          "AIRDROP + PIN 30s",
+          "GRAPH API TALLY",
+          "POLL AUTO-INJECT"
+        ],
+        "heroImage": "characters/guide-06-launch-pack.png",
+        "secondaryImage": "characters/guide-07-poll-branch-part2.png",
+        "tertiaryImage": "characters/kabir-closeup.png",
+        "shockPills": [
+          "7:40 PM IST",
+          "PIN IN 30s",
+          "95% ZERO-AI"
+        ]
+      }
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-sc-02",
+      "startSec": 7.19,
+      "endSec": 19.48,
+      "kind": "detective_wifi_clue",
+      "sfxCues": [
+        {
+          "file": "sfx/puja-phone-vibrate.wav",
+          "offsetRatio": 0.42,
+          "volume": 0.44
+        },
+        {
+          "file": "sfx/soc-alert-ping.wav",
+          "offsetRatio": 0.5,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "headline": "3 PUBLISH & POLL AUTOMATION STEPS!",
+        "subline": "7:40 PM Upload -> 24h Tally -> Part 2 MP4",
+        "heroImage": "characters/guide-07-poll-branch-part2.png",
+        "secondaryImage": "characters/guide-06-launch-pack.png",
+        "interceptBanner": {
+          "badge": "POLL ENGINE · GUIDE 3/4",
+          "text": "Pin A/B/C in 30s · Tally After 24h",
+          "tone": "amber"
+        },
+        "devices": [
+          {
+            "name": "7:40 PM Mobile Upload",
+            "status": "7:40 PM · Pin Poll in 30s!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "Comment Poll Tally",
+            "status": "24H TALLY · Tally + Replies!",
+            "icon": "wifi",
+            "suspicious": false
+          },
+          {
+            "name": "Live Part 2 Branch",
+            "status": "78% WIN · --winner C --pct!",
+            "icon": "alert",
+            "suspicious": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-sc-03",
+      "startSec": 19.48,
+      "endSec": 27.2,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/keypad-tap-seq.wav",
+          "offsetRatio": 0.16,
+          "volume": 0.4
+        },
+        {
+          "file": "sfx/ussd-dial-tones.wav",
+          "offsetRatio": 0.52,
+          "volume": 0.58
+        }
+      ],
+      "props": {
+        "variant": "cctv_backdoor",
+        "tone": "emerald",
+        "badge": "LIVE POLL INJECTOR",
+        "headline": "Winner C (78%) -> Part 2 Auto-Synced!",
+        "heroImage": "characters/guide-07-poll-branch-part2.png",
+        "secondaryImage": "characters/kabir-investigating.png",
+        "stepOneTitle": "instagram_ops.py",
+        "stepOneTag": "24H TALLY + REPLIES",
+        "stepTwoTitle": "apply_poll_result.py",
+        "stepTwoTag": "--winner C --pct 78",
+        "exposedItems": [
+          "7:40 PM COVER+PIN",
+          "24H GRAPH TALLY",
+          "--winner C --pct 78"
+        ]
+      }
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-sc-04",
+      "startSec": 27.2,
+      "endSec": 35.82,
+      "kind": "detective_evidence_twist",
+      "sfxCues": [
+        {
+          "file": "sfx/heartbeat-radar-ping.wav",
+          "offsetFrames": 3,
+          "volume": 0.46
+        },
+        {
+          "file": "sfx/stamp-slam.wav",
+          "offsetRatio": 0.45,
+          "volume": 0.36
+        }
+      ],
+      "props": {
+        "variant": "contact_match",
+        "tone": "emerald",
+        "lockedParallax": true,
+        "badge": "PART 2 AUTO-RENDER LOCK",
+        "headline": "1 Command Se Branched Part 2 Ready!",
+        "heroImage": "characters/guide-06-launch-pack.png",
+        "secondaryImage": "characters/kabir-closeup.png",
+        "radarPinLabel": "95% ZERO-AI PART 2",
+        "crossedOutLabel": "MANUAL REWRITE BAND",
+        "matchHeadline": "POLL WINNER SEEDHA MP4 MEIN LOCK!",
+        "matchSubline": "apply_poll_result + build_episode --render",
+        "verdictPillLeft": "PIN POLL IN 30s",
+        "verdictPillRight": "1-CMD PART 2 MP4"
+      }
+    },
+    {
+      "id": "s99e03-guide-upload-poll-branch-sc-05",
+      "startSec": 35.82,
+      "endSec": 43.99,
+      "kind": "detective_suspect_board",
+      "sfxCues": [
+        {
+          "file": "sfx/cliffhanger-tick.wav",
+          "offsetFrames": 4,
+          "volume": 0.34
+        }
+      ],
+      "props": {
+        "boardMode": "next_case_vote",
+        "prompt": "KAUNSA STEP SABSE KAMAAL HAI?",
+        "partBadge": "CHAPTER 4 NEXT",
+        "spotlightRightBadge": "GUIDE 3/4",
+        "followHandleLine": "CHAPTER 4: FOLLOW @CYBERJASOOS",
+        "forensicClueBar": "CH 3 · 7:40 PM UPLOAD & POLL",
+        "suspects": [
+          {
+            "key": "A",
+            "name": "7:40 PM Mobile Upload",
+            "role": "AirDrop + Cover",
+            "timestampBadge": "7:40 PM",
+            "clue": "Pin Poll in 30s!",
+            "image": "characters/guide-06-launch-pack.png"
+          },
+          {
+            "key": "B",
+            "name": "Comment Poll Tally",
+            "role": "24h Graph API",
+            "timestampBadge": "24H TALLY",
+            "clue": "Tally + Replies!",
+            "image": "characters/guide-07-poll-branch-part2.png"
+          },
+          {
+            "key": "C",
+            "name": "Live Part 2 Branch",
+            "role": "Auto-Inject CLI",
+            "timestampBadge": "78% WIN",
+            "clue": "--winner C --pct!",
+            "image": "characters/kabir-investigating.png"
+          }
+        ],
+        "optionTimingsSec": [
+          1.32,
+          2.8,
+          4.28
+        ],
+        "ctaLine": "A, B, ya C comment kijiye · Ch 4 next!",
+        "loopBridgeText": "Chapter 4 growth ledger dekhein"
+      }
+    }
+  ],
+  "postCopy": {
+    "instagramCaption": "Athhattar percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch. Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically. A, B, ya C comment kijiye · Ch 4 next!",
+    "youtubeShortsTitle": "Chapter 3 (78% Vote C): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch #Shorts",
+    "linkedinPost": "Chapter 3 (78% Vote C): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 3):\n\n7:40 PM IST Launch Pack & Deterministic Poll Branching (2025): Turns live Part 1 audience A/B/C comments into a custom Part 2 Reel with 95% Zero-AI work\n\nArchitecture Takeaway: Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically.\n\nStages: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch.",
+    "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = 7:40 PM Mobile Upload (AirDrop + Cover · Pin Poll in 30s!)\nB = Comment Poll Tally (24h Graph API · Tally + Replies!)\nC = Live Part 2 Branch (Auto-Inject CLI · --winner C --pct!)\nA, B, ya C comment kijiye · Ch 4 next!",
+    "hashtags": [
+      "#CyberJasoos",
+      "#Remotion",
+      "#VideoAutomation",
+      "#SelfHealingCode",
+      "#ReelsEngine",
+      "#BuildInPublic"
+    ]
+  },
+  "pollBranches": {
+    "A": {
+      "episodeTitle": "Chapter 3 ({pct}% Vote A): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch",
+      "coldOpenTag": "CH 3 · {pct}% VOTED UPLOAD",
+      "outcomeVerdict": "{pct}% builders chose 7:40 PM Mobile Upload as the key retention trigger.",
+      "openingLine": "{pct_word} percent builders ne Option A, 7:40 PM Mobile Upload chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam Zero-AI engine khud karta hai!",
+      "seg01": {
+        "narration": "{pct_word} percent builders ne Option A, 7:40 PM Mobile Upload chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam Zero-AI engine khud karta hai!",
+        "ttsClauses": [
+          {
+            "speaker": "narrator",
+            "rate": "+10%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.16,
+            "roman": "{pct_word} percent builders ne Option A, 7:40 PM Mobile Upload chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam Zero-AI engine khud karta hai!",
+            "hi": "{pct_word} percent builders ne Option A, 7:40 PM Mobile Upload chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam Zero-AI engine khud karta hai!"
+          }
+        ],
+        "highlightKeywords": [
+          "{pct_word} percent",
+          "pct_word",
+          "percent",
+          "builders",
+          "Option"
+        ]
+      },
+      "scene01Props": {
+        "phoneStatus": "{pct}% Voted A · 7:40 PM Upload!",
+        "scrollStopper": {
+          "badge": "POLL · {pct}% VOTED A",
+          "text": "7:40 PM Launch Pack & 30s Pin!",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "{pct}% VOTED A",
+          "7:40 PM IST UPLOAD",
+          "PIN POLL IN 30s!"
+        ]
+      },
+      "postCopy": {
+        "instagramCaption": "{pct_word} percent builders ne Option A, 7:40 PM Mobile Upload chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam Zero-AI engine khud karta hai! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch. Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically. A, B, ya C comment kijiye · Ch 4 next!",
+        "youtubeShortsTitle": "Chapter 3 ({pct}% Vote A): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch #Shorts",
+        "linkedinPost": "Chapter 3 ({pct}% Vote A): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 3):\n\n7:40 PM IST Launch Pack & Deterministic Poll Branching (2025): Turns live Part 1 audience A/B/C comments into a custom Part 2 Reel with 95% Zero-AI work\n\nArchitecture Takeaway: Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically.\n\nStages: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch.",
+        "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = 7:40 PM Mobile Upload (AirDrop + Cover · Pin Poll in 30s!)\nB = Comment Poll Tally (24h Graph API · Tally + Replies!)\nC = Live Part 2 Branch (Auto-Inject CLI · --winner C --pct!)\nA, B, ya C comment kijiye · Ch 4 next!",
+        "hashtags": [
+          "#CyberJasoos",
+          "#Remotion",
+          "#VideoAutomation",
+          "#SelfHealingCode",
+          "#ReelsEngine",
+          "#BuildInPublic"
+        ]
+      }
+    },
+    "B": {
+      "episodeTitle": "Chapter 3 ({pct}% Vote B): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch",
+      "coldOpenTag": "CH 3 · {pct}% VOTED TALLY",
+      "outcomeVerdict": "{pct}% builders chose 24h Comment Poll Tally & Socratic Replies.",
+      "openingLine": "{pct_word} percent builders ne Option B, Comment Poll Tally chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam hamara Zero-AI engine khud karta hai!",
+      "seg01": {
+        "narration": "{pct_word} percent builders ne Option B, Comment Poll Tally chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam hamara Zero-AI engine khud karta hai!",
+        "ttsClauses": [
+          {
+            "speaker": "narrator",
+            "rate": "+10%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.16,
+            "roman": "{pct_word} percent builders ne Option B, Comment Poll Tally chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam hamara Zero-AI engine khud karta hai!",
+            "hi": "{pct_word} percent builders ne Option B, Comment Poll Tally chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam hamara Zero-AI engine khud karta hai!"
+          }
+        ],
+        "highlightKeywords": [
+          "{pct_word} percent",
+          "pct_word",
+          "percent",
+          "builders",
+          "Option"
+        ]
+      },
+      "scene01Props": {
+        "phoneStatus": "{pct}% Voted B · 24h Poll Tally!",
+        "scrollStopper": {
+          "badge": "POLL · {pct}% VOTED B",
+          "text": "24h Graph API Poll Tally Ready!",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "{pct}% VOTED B",
+          "24H COMMENT TALLY",
+          "SOCRATIC REPLIES!"
+        ]
+      },
+      "postCopy": {
+        "instagramCaption": "{pct_word} percent builders ne Option B, Comment Poll Tally chuna, jahan audience poll votes se pichhaanve percent Part 2 kaam hamara Zero-AI engine khud karta hai! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch. Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically. A, B, ya C comment kijiye · Ch 4 next!",
+        "youtubeShortsTitle": "Chapter 3 ({pct}% Vote B): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch #Shorts",
+        "linkedinPost": "Chapter 3 ({pct}% Vote B): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 3):\n\n7:40 PM IST Launch Pack & Deterministic Poll Branching (2025): Turns live Part 1 audience A/B/C comments into a custom Part 2 Reel with 95% Zero-AI work\n\nArchitecture Takeaway: Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically.\n\nStages: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch.",
+        "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = 7:40 PM Mobile Upload (AirDrop + Cover · Pin Poll in 30s!)\nB = Comment Poll Tally (24h Graph API · Tally + Replies!)\nC = Live Part 2 Branch (Auto-Inject CLI · --winner C --pct!)\nA, B, ya C comment kijiye · Ch 4 next!",
+        "hashtags": [
+          "#CyberJasoos",
+          "#Remotion",
+          "#VideoAutomation",
+          "#SelfHealingCode",
+          "#ReelsEngine",
+          "#BuildInPublic"
+        ]
+      }
+    },
+    "C": {
+      "episodeTitle": "Chapter 3 ({pct}% Vote C): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch",
+      "coldOpenTag": "CH 3 · {pct}% POLL AUTO-BRANCH",
+      "outcomeVerdict": "{pct}% audience votes unlocked Live Part 2 Auto-Branching with 95% Zero-AI work.",
+      "openingLine": "{pct_word} percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!",
+      "seg01": {
+        "narration": "{pct_word} percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!",
+        "ttsClauses": [
+          {
+            "speaker": "narrator",
+            "rate": "+10%",
+            "pitch": "-3Hz",
+            "pauseAfter": 0.16,
+            "roman": "{pct_word} percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!",
+            "hi": "{pct_word} percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai!"
+          }
+        ],
+        "highlightKeywords": [
+          "{pct_word} percent",
+          "pct_word",
+          "percent",
+          "audience",
+          "poll"
+        ]
+      },
+      "scene01Props": {
+        "phoneStatus": "{pct}% Voted C · Live Auto-Branch!",
+        "scrollStopper": {
+          "badge": "POLL · {pct}% VOTED C",
+          "text": "95% Zero-AI Part 2 Auto-Branch!",
+          "tone": "emerald"
+        },
+        "shotTitles": [
+          "{pct}% VOTED C",
+          "LIVE POLL INJECTED",
+          "1-CMD PART 2 MP4!"
+        ]
+      },
+      "postCopy": {
+        "instagramCaption": "{pct_word} percent audience poll votes ne Option C, Live Part 2 Branch chuna, jahan pichhaanve percent Part 2 kaam hamara Zero-AI engine bina ruke karta hai! Cyber Jasoos (@cyberjasoos) Zero-AI pipeline ke 3 pillars: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch. Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically. A, B, ya C comment kijiye · Ch 4 next!",
+        "youtubeShortsTitle": "Chapter 3 ({pct}% Vote C): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch #Shorts",
+        "linkedinPost": "Chapter 3 ({pct}% Vote C): 7:40 PM Upload, Poll Tally Aur Part 2 Auto-Branch — Cyber Jasoos (ZERO-AI REEL FACTORY · CH 3):\n\n7:40 PM IST Launch Pack & Deterministic Poll Branching (2025): Turns live Part 1 audience A/B/C comments into a custom Part 2 Reel with 95% Zero-AI work\n\nArchitecture Takeaway: Pin the A/B/C poll in 30s, tally after 24h, and inject --winner C --pct 78 automatically.\n\nStages: A) 7:40 PM Mobile Upload, B) Comment Poll Tally, C) Live Part 2 Branch.",
+        "pinnedCommentVote": "CYBER JASOOS PIPELINE POLL — APNA STAGE CHUNIYE:\nA = 7:40 PM Mobile Upload (AirDrop + Cover · Pin Poll in 30s!)\nB = Comment Poll Tally (24h Graph API · Tally + Replies!)\nC = Live Part 2 Branch (Auto-Inject CLI · --winner C --pct!)\nA, B, ya C comment kijiye · Ch 4 next!",
+        "hashtags": [
+          "#CyberJasoos",
+          "#Remotion",
+          "#VideoAutomation",
+          "#SelfHealingCode",
+          "#ReelsEngine",
+          "#BuildInPublic"
+        ]
+      }
+    }
+  }
+}
