@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-brand="creator">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Jasoos (@cyberjasoos) - 5-Tab Reels Factory &amp; Launch Hub</title>
+  <link rel="stylesheet" href="assets/00-personal-ui-shared.css" />
+  <link rel="stylesheet" href="assets/guide.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-pill">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>CYBER JASOOS (@cyberjasoos)</span>
+      </div>
+      <div class="nav-links" aria-label="Theme and checklist controls">
+        <button type="button" class="action-btn" id="themeBtn" aria-label="Toggle light or dark theme">Light / Dark</button>
+        <button type="button" class="action-btn" id="resetBtn" aria-label="Reset completed checkboxes">Reset</button>
+      </div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progBarWrap">
+        <div class="progress-fill" id="progFill"><span id="setupProgressFill" style="display:none;width:0%"></span></div>
+      </div>
+      <span class="progress-label" id="progText">0 / 20 Completed (0%)</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="recommend">
+      <div class="badge-row">
+        <span class="tag tag-crimson">ACCOUNT: &lt;DEDICATED_CREATOR_GMAIL&gt;</span>
+        <span class="tag tag-gold">TONIGHT: 7:40 PM IST</span>
+        <span class="tag tag-emerald">LOCKED VOICE: SALMAN + MADHUR NEURAL (56.43S)</span>
+        <span class="tag tag-cyan">ZERO-AI REEL FACTORY</span>
+      </div>
+      <h1>Centralized 5-Tab Cyber Jasoos Reels Factory, Launch &amp; CLI Hub</h1>
+      <p>Organized around repeatable daily episode creation first: watch the <strong>3m 07s Hinglish Video Guide</strong> &amp; compile Case #02–Season 6 Reels from 35-line YAML briefs in <strong>Tab 1</strong>, execute tonight's <strong>85% Mac Web (<code>instagram.com</code>) + 15% Android App</strong> Case #01 launch in <strong>Tab 2</strong>, browse all 24 Python &amp; Remotion CLI tools in <strong>Tab 3</strong>, check safe zones &amp; the 6-season map in <strong>Tab 4</strong>, and reference one-time setup in <strong>Tab 5</strong>.</p>
+      <div class="badge-row" aria-label="Verified Instagram character limits">
+        <span class="tag tag-emerald">Name: 26 / 29 (&lt; 30 chars)</span>
+        <span class="tag tag-emerald">Bio: 119 / 150 (&lt;= 150 chars)</span>
+        <span class="tag tag-emerald">Caption: 841 / 2200 (&lt;= 2200 chars)</span>
+        <span class="tag tag-gold">3-Option Poll Sticker: &lt;= 22 chars</span>
+      </div>
+      <div class="verdict-box">
+        <strong>Active Operational Lock (Mac Web + Android Hybrid):</strong> Upload <code>case01-part1-shaadi-12lakh-scam.mp4</code> (<code>= 00-case01-part1-publish-ready.mp4</code>, <code>56.43s</code>, <code>ur-IN-SalmanNeural</code> + <code>hi-IN-MadhurNeural</code>) and covers directly from Mac Web at full 1080p bitrate, use Android only for the 4 mobile-only Meta taps (2FA, Bio Link, Pin Comment, 3-Option Poll Sticker), and switch to <code>$0</code> free-tier Azure Speech <code>F0</code> (<code>COMMERCIAL_API</code>, 500k chars/mo) or <code>OWN_VOICE</code> whenever monetizing.
+      </div>
+    </section>
+
+    <section class="workspace-bar" id="workspaceNav" aria-label="Workspace tabs and instant filter">
+      <div class="tab-strip" role="tablist" aria-label="Portal workspace views">
+        <button type="button" class="tab-btn active" role="tab" data-tab-btn="factory" data-tab="factory" aria-selected="true">1. Reel Factory (Pipeline)</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="launch" data-tab="ops" data-tab-alias="launch" aria-selected="false">2. Tonight's Launch (Case #01)</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="cli" data-tab="cli" aria-selected="false">3. Master CLI Directory</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="spec" data-tab="arch" data-tab-alias="spec" aria-selected="false">4. Show Spec &amp; 6-Season Map</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="setup" data-tab="setup" aria-selected="false">5. One-Time Setup &amp; API</button>
+        <button type="button" class="tab-btn" role="tab" data-tab-btn="all" data-tab="gates" data-tab-alias="all" aria-selected="false">All Sections</button>
+      </div>
+      <div class="search-row">
+        <input type="search" id="searchInput" class="search-input" placeholder="Instant filter across all 5 tabs: search script names, hinglish_tts_translit, pollBranches, *21*, uat:dom, 1930..." aria-label="Instant filter across all portal sections" />
+        <button type="button" class="action-btn" id="searchClearBtn" aria-label="Clear search filter">Clear</button>
+        <span class="search-status" id="searchStatus">Tip: Type above to instant-filter across all 5 tabs</span>
+      </div>
+    </section>
+
+    <div data-tab-panel="factory" id="panel-factory" class="tab-panel active">
+      <section class="phase-card" id="videoGuide">
+        <div class="badge-row">
+          <span class="tag tag-gold">WATCH FIRST · 3M 07S HINGLISH VIDEO WALKTHROUGH</span>
+          <span class="tag tag-cyan">4 FFMETADATA1 CHAPTERS · 1080X1920 @ 30FPS</span>
+          <span class="tag tag-emerald">YAML PRESET: GUIDE_WALKTHROUGH</span>
+        </div>
+        <h2>End-to-End Hinglish Video Guide (3m 07s · 4 Chapters)</h2>
+        <p>Master stitched video at <code>renders/guide/cyber-jasoos-automation-master-guide.mp4</code> — produced by this exact pipeline using YAML Story Briefs with <code>preset: guide_walkthrough</code> (built for non-crime explainer &amp; tutorial Reels alongside default <code>crime_case</code> mysteries), deterministic plates from <code>scripts/render_guide_plates.py</code>, and multi-chapter stitching via <code>scripts/stitch_video_guide.py</code>.</p>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Open Master Guide (3m 07s)</span><button type="button" class="copy-btn" data-copy="cp-open-guide">Copy Command</button></div>
+          <pre id="cp-open-guide">open renders/guide/cyber-jasoos-automation-master-guide.mp4</pre>
+        </div>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Chapter &amp; Timestamp</th><th>What You See in Action</th><th>Standalone Chapter Reel MP4</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>00:00 — Ch 1 (51.9s)</strong></td><td>5-Tab Web Hub, <code>.png/.jpg</code> Auto-Cast &amp; 35-Line Story Brief (<code>preset: guide_walkthrough</code>)</td><td><code>renders/guide/ch01-story-brief-autocast.mp4</code></td></tr>
+              <tr><td><strong>00:52 — Ch 2 (47.2s)</strong></td><td>Single-Command <code>build_episode.py</code>, Voice Modes &amp; Safe-Zone Self-Heal</td><td><code>renders/guide/ch02-self-healing-build.mp4</code></td></tr>
+              <tr><td><strong>01:39 — Ch 3 (44.1s)</strong></td><td><code>7:40 PM IST</code> Upload SOP, Comment Tally &amp; <code>95%</code> Zero-AI Part 2 Branch</td><td><code>renders/guide/ch03-upload-and-poll-branch.mp4</code></td></tr>
+              <tr><td><strong>02:23 — Ch 4 (43.8s)</strong></td><td>SQLite Mosseri Growth Ledger &amp; Auto-Inherited Defaults</td><td><code>renders/guide/ch04-growth-ledger-learning.mp4</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="phase-card" id="automation">
+        <div class="badge-row">
+          <span class="tag tag-cyan">TAB 1 · REPEATABLE END-TO-END REEL PIPELINE</span>
+          <span class="tag tag-emerald">$0 RUNTIME · PYTHON + ONNX + REMOTION 4</span>
+        </div>
+        <h2>1. Repeatable 6-Stage Reel Factory (Zero-AI Automation vs. Human Split)</h2>
+        <p>Every new Case #02–Season 6 episode (or non-crime explainer Reel via <code>preset: guide_walkthrough</code>) flows through these 6 deterministic local stages — zero external prompt APIs required, while keeping story hooks, optional human voiceover, and 30-second mobile Meta actions in your control.</p>
+
+        <div class="stage-grid">
+          <div class="stage-card">
+            <div class="split-row"><span class="tag tag-emerald">20% Zero-AI</span><span class="tag tag-gold">80% Human Creative</span></div>
+            <h3>Stage 1: Hook Score &amp; 35-Line Brief</h3>
+            <p>You pick the real RBI / I4C <code>1930</code> scam twist and write a 35-line YAML brief (or set <code>preset: guide_walkthrough</code> for tutorial/explainer Reels). <code>competitor_hooks.py --score</code> grades cold-open hooks (<code>0-100</code>); <code>compile_story_brief.py</code> + <code>story_brief_templates.py</code> + <code>hinglish_tts_translit.py</code> expand it into a validated <code>EpisodeManifest</code> with native Devanagari &amp; unvocalized Urdu Nastaliq TTS clauses.</p>
+          </div>
+          <div class="stage-card">
+            <div class="split-row"><span class="tag tag-emerald">90% Zero-AI</span><span class="tag tag-gold">10% Human Art Drop</span></div>
+            <h3>Stage 2: Auto-Cast Framing &amp; Local ONNX 2.5D Mattes</h3>
+            <p>Drop raw <code>.png/.jpg/.webp</code> character/B-roll art into <code>assets/characters/caseXX/raw/</code> (or generate walkthrough plates via <code>render_guide_plates.py</code>). <code>standardize_cast.py --auto-frame</code> locks <code>1080x1920</code> portrait framing, <code>generate_depth_mattes.py</code> builds Apache-2.0 Depth-Anything-V2 <code>fg/*.png</code> + <code>bg/*.jpg</code> parallax plates, and <code>sync_episode_registry.py</code> registers compositions.</p>
+          </div>
+          <div class="stage-card">
+            <div class="split-row"><span class="tag tag-emerald">100% Zero-AI</span><span class="tag tag-cyan">Optional Human Voice</span></div>
+            <h3>Stage 3: Self-Healing Voice, ASR Gate, Foley &amp; Safe-Zone Build</h3>
+            <p><code>build_episode.py</code> (supports <code>--mp4-output</code>) + <code>self_heal_rules.py</code> run <code>prepare_voice.py</code> (or ingest Voice Memos takes from <code>export_teleprompter.py</code>), mix 18 procedural 44.1kHz WAVs from <code>generate_cinema_foley.py</code> &amp; <code>generate_sfx.py</code>, auto-heal WPM/clock (<code>42.5-57.5s</code>, <code>132-192 WPM</code>, Edge rate <code>[+2%, +20%]</code> &amp; pauses <code>[0.10s, 0.26s]</code>), audit WAV intelligibility via local cached <code>mlx-community/whisper-base-mlx</code>, pass <code>validate_episode.py</code> + <code>npm run uat:dom</code>, and optionally stitch multi-chapter guides via <code>stitch_video_guide.py</code>.</p>
+          </div>
+          <div class="stage-card">
+            <div class="split-row"><span class="tag tag-emerald">85% Zero-AI</span><span class="tag tag-gold">15% Human Visual QA</span></div>
+            <h3>Stage 4: Instagram Mockup &amp; Remotion Studio QA</h3>
+            <p><code>generate_ig_brand_kit.py</code> creates <code>3:4</code>-grid-safe <code>1080x1920</code> Reel Covers, <code>render_instagram_ui_mockup.py --multi-shot-grid</code> (<code>render_ig_mockup.py</code>) overlays Reels chrome + <code>124px</code> right-rail icons, and Remotion Studio (<code>npm run studio</code> / <code>npm start</code>, <code>npm run typecheck</code>, <code>npm run uat:dom</code>) previews every frame live.</p>
+          </div>
+          <div class="stage-card">
+            <div class="split-row"><span class="tag tag-emerald">65% Zero-AI</span><span class="tag tag-gold">35% Human Hybrid Ops</span></div>
+            <h3>Stage 5: Hybrid Publish &amp; Part 1 -&gt; Part 2 Poll Branching</h3>
+            <p>Upload 1080p MP4 + Cover on Mac Web (<code>Original 9:16</code>), Pin + add 3-Option <strong>Poll Sticker</strong> on Android, approve <code>[y/N]</code> Socratic replies via <code>instagram_ops.py reply-comments --approve</code>, and inject winning Part 1 <code>%</code> into Part 2 via <code>instagram_ops.py poll-tally</code> or offline <code>apply_poll_result.py --winner C --pct 74</code>.</p>
+          </div>
+          <div class="stage-card">
+            <div class="split-row"><span class="tag tag-emerald">95% Zero-AI</span><span class="tag tag-gold">5% Human Review</span></div>
+            <h3>Stage 6: SQLite Mosseri Telemetry &amp; Auto-Improvement</h3>
+            <p><code>instagram_ops.py record-metrics</code> + <code>growth_ledger.py</code> store Views, Reach, Saves, Shares &amp; Vote rates in <code>data/growth_ledger.sqlite3</code>, rank episodes via <code>0.45*Share + 0.35*Save + 0.20*Vote</code>, tune <code>data/learned_defaults.json</code> via <code>instagram_ops.py learn</code>, and export clean Pages HTML via <code>export_sanitized_pages.py</code>.</p>
+          </div>
+        </div>
+
+        <h3>3-Layer Voice Quality &amp; Intelligibility Gate (90%+ Zero-AI Studio Clarity)</h3>
+        <div class="auto-grid">
+          <div class="auto-card">
+            <h3>1. Zero-AI Native Script Phonetic Transliterator (<code>hinglish_tts_translit.py</code>)</h3>
+            <p>Automatically converts Roman Hinglish, currency/numbers, times, USSD codes (<code>*21*</code>, <code>*#21#</code>, <code>##002#</code>), and CLI/tech loanwords into clean unvocalized Urdu Nastaliq (<code>ur-IN-SalmanNeural</code>) and Hindi Devanagari (<code>hi-IN-MadhurNeural</code> / <code>Kokoro</code>) inside <code>compile_story_brief.py</code>, preventing broken English-letter G2P and <code>NoAudioReceived</code> script crashes.</p>
+          </div>
+          <div class="auto-card">
+            <h3>2. Validator Native-Script &amp; Articulation Rate Guards (<code>validate_episode.py</code> + <code>self_heal_rules.py</code>)</h3>
+            <p>Blocks raw Latin, wrong-script, or Arabic harakat diacritics in <code>ttsClauses[*].hi</code> and clamps Edge speech-rate self-healing to <code>[+2%, +20%]</code> paired with micro-pause scaling (<code>[0.10s, 0.26s]</code>) so voices never drop into negative <code>-8%</code> slurred drawls.</p>
+          </div>
+          <div class="auto-card">
+            <h3>3. Local Cached MLX Whisper ASR Intelligibility Gate (<code>build_episode.py</code>)</h3>
+            <p>Audits generated WAV audio offline via local cached <code>mlx-community/whisper-base-mlx</code> (<code>HF_HUB_OFFLINE=1</code>, <code>nativeScriptRatio &gt;= 0.55</code>, <code>wordCount &gt;= 12</code>) before allowing MP4 render (<code>--skip-asr-audit</code> bypass available when local cache is absent).</p>
+          </div>
+        </div>
+
+        <h3>1-Click Copy Repeatable Pipeline Commands (Stages 1–6)</h3>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Stage 1: Score Hook &amp; Export Teleprompter</span><button type="button" class="copy-btn" data-copy="cp-auto-hook">Copy Stage 1</button></div>
+          <pre id="cp-auto-hook">python3 scripts/competitor_hooks.py --score "10:15 PM Grand Hotel reception: 3 guests scanned Shagun QR and lost Rs 8,40,000 while phones stayed silent!" &amp;&amp; python3 scripts/export_teleprompter.py --output renders/teleprompter-export.md</pre>
+        </div>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Stage 2: Cast Framing, 2.5D Mattes &amp; Foley</span><button type="button" class="copy-btn" data-copy="cp-auto-cast">Copy Stage 2</button></div>
+          <pre id="cp-auto-cast">.venv_audio/bin/python scripts/standardize_cast.py --case-dir assets/characters/case02 --auto-frame &amp;&amp; .venv_audio/bin/python scripts/generate_depth_mattes.py --skip-existing &amp;&amp; .venv_audio/bin/python scripts/generate_cinema_foley.py</pre>
+        </div>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Stage 3: Build &amp; Self-Heal MP4 from YAML</span><button type="button" class="copy-btn" data-copy="cp-auto-build">Copy Build CLI</button></div>
+          <pre id="cp-auto-build">python3 scripts/build_episode.py --brief episodes/briefs/case02-part1-shaadi-qr.yaml --render-mp4</pre>
+        </div>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Stage 4: IG UI Mockup Grid &amp; Studio UAT</span><button type="button" class="copy-btn" data-copy="cp-auto-qa">Copy QA CLI</button></div>
+          <pre id="cp-auto-qa">.venv_audio/bin/python scripts/render_instagram_ui_mockup.py --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --multi-shot-grid --output renders/s01e01-ig-grid.png &amp;&amp; (cd engine &amp;&amp; npm run typecheck &amp;&amp; npm run uat:dom)
+# Interactive Remotion Studio preview on localhost: (cd engine &amp;&amp; npm run studio)</pre>
+        </div>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Stage 5: Poll Tally (API or Offline) -&gt; Part 2</span><button type="button" class="copy-btn" data-copy="cp-auto-part2">Copy Part 2 CLI</button></div>
+          <pre id="cp-auto-part2"># Live API or --comments-file tally:
+python3 scripts/instagram_ops.py poll-tally --media-id &lt;PART1_MEDIA_ID&gt; --part1 episodes/s01-asset-classification/s01e01-forgotten-bucket.json --apply-to episodes/s01-asset-classification/s01e02-crown-jewels.json &amp;&amp; python3 scripts/build_episode.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --render-mp4
+# Offline manual tally alternative (explicit 1..99 %):
+python3 scripts/apply_poll_result.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --winner C --pct 74</pre>
+        </div>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Stage 6: Log Mosseri Metrics &amp; Export Pages</span><button type="button" class="copy-btn" data-copy="cp-auto-learn">Copy Learn CLI</button></div>
+          <pre id="cp-auto-learn">python3 scripts/instagram_ops.py record-metrics --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --media-id &lt;PART1_MEDIA_ID&gt; &amp;&amp; python3 scripts/instagram_ops.py learn &amp;&amp; python3 scripts/export_sanitized_pages.py --out-dir renders/pages-bundle</pre>
+        </div>
+        <h3>Starter YAML Story Brief Templates (Part 1 Whodunit + Part 2 Poll-Reveal with pollBranches)</h3>
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Part 1 Whodunit Brief (.yaml)</span><button type="button" class="copy-btn" data-copy="cp-brief-tpl">Copy Part 1 YAML</button></div>
+          <pre id="cp-brief-tpl">id: s02e01-shaadi-qr-trap
+season: 2
+episodeNumber: 1
+part: 1
+title: "Shagun QR Ya Hotel Wi-Fi? Reception Par 8 Lakh Saaf!"
+cyberConcept: "Quishing (Malicious QR Sticker Overlay) &amp; Rogue Hotel Wi-Fi"
+caseTag: "HOTEL RECEPTION · 8 LAKH SAAF"
+realIncident:
+  incident: "RBI &amp; MHA I4C 1930 Advisory (2024) Shagun QR Overlay Fraud"
+  year: 2024
+  impact: "Tampered UPI collect QR stickers over venue standees drain wedding guests"
+  lesson: "Receiving money never needs a UPI PIN; avoid open Wi-Fi for banking and dial 1930 in the golden hour."
+scrollStopper:
+  badge: "RECEPTION ALERT · 10:15 PM"
+  text: "3 Mehmaano Ke A/c Se Rs 8,40,000 Saaf!"
+  tone: "danger"
+plates:
+  hookHero: "characters/case02-shaadi-qr.png"
+  clueHero: "characters/case02-hotel-wifi.png"
+  twistHero: "characters/handoff-shadow.png"
+  payoffHero: "characters/kabir-closeup.png"
+beats:
+  hook: "Grand Hotel reception par dulha-dulhan muskura rahe the, tabhi teen mehmaano ke phone ek saath baje: Aath lakh chalis hazaar gayab!"
+  escalation: "Kisi ne anjaan call nahi uthaya! Ek ne Hotel Wi-Fi joda, doosre ne lobby printer use kiya, aur teesre ne Shagun QR scan kiya!"
+  framework: "Jab Cyber Jasoos Kabir ne jaanch ki, toh theek das barah par lobby ke ek chhupe jaal ne chupke se UPI payment divert kar diya!"
+  micro_payoff: "Yaad rakhiye, paise lene ke liye UPI PIN kabhi nahi lagta! Thagi hote hi 1930 milaiye, par hotel lobby ka jaal abhi zinda tha!"
+  cliffhanger_vote: "Shak ke ghere mein teen suraag hain: Hotel Wi-Fi, Smart Printer, ya Shagun QR Standee! Neeche A, B, C comment kijiye, kyunki agle hi pal..."
+suspects:
+  - { key: A, name: "Hotel Reception Wi-Fi", role: "10:05 PM · Free Lounge", timestampBadge: "10:05 PM", clue: "Fake Captive Portal!", image: "characters/case02-hotel-wifi.png" }
+  - { key: B, name: "Lobby Smart Printer", role: "10:08 PM · ID Check-In", timestampBadge: "10:08 PM", clue: "Cached Guest IDs!", image: "characters/case02-smart-printer.png" }
+  - { key: C, name: "Shagun QR Standee", role: "10:12 PM · Stage Gate", timestampBadge: "10:12 PM", clue: "Sticker Par Fake QR!", image: "characters/case02-shaadi-qr.png" }</pre>
+        </div>
+
+        <div class="copy-block standalone-copy">
+          <div class="copy-head"><span class="copy-title">Part 2 Poll-Reveal Brief + pollBranches (.yaml)</span><button type="button" class="copy-btn" data-copy="cp-brief-part2-tpl">Copy Part 2 YAML</button></div>
+          <pre id="cp-brief-part2-tpl">id: s02e02-shaadi-qr-reveal
+season: 2
+episodeNumber: 2
+part: 2
+title: "Shagun QR Overlay Ka Pardafaash — 5-Sec UPI Kavach!"
+cyberConcept: "UPI Collect Quishing Overlay vs. Rogue Wi-Fi Forensic Elimination"
+caseTag: "CASE #02 FINALE · PARDAFAASH"
+previousVoteResult:
+  winningOption: C
+  percentage: 74
+  outcomeVerdict: "74% viewers spotted the Shagun QR sticker trap before Kabir peeled back the tampered collect overlay."
+pollBranches:
+  A:
+    episodeTitle: "{pct}% Voted Hotel Wi-Fi — Asli QR Jaal Khula!"
+    coldOpenTag: "{pct}% VOTED A · PARDAFAASH"
+    stopperText: "{pct}% Ne Wi-Fi Chuna — Asli Khel Stage Gate Par Tha!"
+    openingLine: "Aap mein se {pct_word} percent logon ko Hotel Wi-Fi par shak tha, magar Kabir ne jab stage gate ka QR standee chhua toh asli khel khul gaya!"
+  B:
+    episodeTitle: "{pct}% Voted Smart Printer — Asli QR Jaal Khula!"
+    coldOpenTag: "{pct}% VOTED B · PARDAFAASH"
+    stopperText: "{pct}% Ne Printer Chuna — Asli Khel Stage Gate Par Tha!"
+    openingLine: "Aap mein se {pct_word} percent logon ne Lobby Printer ko gaddar maana, magar Kabir ki forensic jaanch mein printer sirf dhokha nikla!"
+  C:
+    episodeTitle: "{pct}% Sahi Pehchane — Shagun QR Sticker Trap!"
+    coldOpenTag: "{pct}% BULLSEYE · QR OVERLAY"
+    stopperText: "{pct}% Bilkul Sahi — Stage QR Par Naya Sticker Chipka Tha!"
+    openingLine: "Kamaal ki nazar! Aap mein se {pct_word} percent logon ne bilkul sahi pakda — stage gate ke Shagun QR ke upar nakli UPI Collect sticker chipka tha!"
+realIncident:
+  incident: "RBI &amp; MHA I4C 1930 Advisory (2024) Tampered QR Collect Request Fraud"
+  year: 2024
+  impact: "Fraudulent QR overlays trigger outgoing UPI Collect/Pay prompts instead of Shagun transfers"
+  lesson: "Check payee name on screen, never enter UPI PIN to receive money, run finger over public QR stickers, and dial 1930 within the golden hour."
+plates:
+  hookHero: "characters/case02-shaadi-qr.png"
+  clueHero: "characters/case02-hotel-wifi.png"
+  twistHero: "characters/kabir-investigating.png"
+  payoffHero: "characters/kabir-closeup.png"
+beats:
+  hook: "Kamaal ki nazar! Aap mein se chauhattar percent logon ne bilkul sahi pakda — stage gate ke Shagun QR par nakli sticker chipka tha!"
+  escalation: "Kabir ne pehle Wi-Fi aur Printer jaanche: Wi-Fi sirf slow tha aur Printer mein bas hotel bills the, par 10:12 PM CCTV mein ek ajnabi standee par sticker chipkata dikha!"
+  framework: "Jaise hi mehmaano ne Shagun dene ke liye scan kiya, nakli QR ne mule merchant account khola aur jaldbazi mein logon ne bina naam padhe UPI PIN daal diya!"
+  micro_payoff: "Paanch second ka Suraksha Kavach yaad rakhiye: QR par ungli pheriye, screen par asli naam padhiye, paise lene par PIN kabhi mat daaliye, aur thagi hote hi 1930 milaiye!"
+  cliffhanger_vote: "Agla Case kaunsa kholein: Aadhi Raat Push-Bombing, Courier APK SMS Chori, ya Deepfake Boss Call? Neeche A, B, C comment kijiye, kyunki agle hi pal..."
+suspects:
+  - { key: A, name: "2 AM MFA Push-Bomb", role: "Case #03 · SIM + Prompt", timestampBadge: "02:14 AM", clue: "14 Login Prompts!", image: "characters/kabir-closeup.png" }
+  - { key: B, name: "Courier APK SMS Mirror", role: "Case #04 · Fake Parcel", timestampBadge: "04:30 PM", clue: "Rs 5 Delivery Trap!", image: "characters/handoff-shadow.png" }
+  - { key: C, name: "Voice-Clone Emergency", role: "Case #06 · Fake Call", timestampBadge: "09:10 PM", clue: "30-Sec Cloned Audio!", image: "characters/sharma-shock.png" }</pre>
+        </div>
+      </section>
+    </div>
+    <div data-tab-panel="launch" data-tab-alias="ops" id="panel-ops" class="tab-panel" hidden>
+      <section class="phase-card" id="assets">
+        <div class="badge-row"><span class="tag tag-gold">TAB 2 · READY ON MAC DISK · ZERO VIDEO TRANSFER NEEDED</span></div>
+        <h2>2. Tonight's Launch Pack &amp; Brand Kit (Case #01 · 7:40 PM IST)</h2>
+        <p>Folder on Mac: <code>renders/launch-pack-case01-part1/</code> · Upload <code>case01-part1-shaadi-12lakh-scam.mp4</code> (identical master: <code>00-case01-part1-publish-ready.mp4</code>, <code>56.43s</code>, <code>@CYBERJASOOS</code> end-card), <code>01-profile-dp-1080x1080.png</code>, and <code>02-case01-part1-reel-cover-1080x1920.png</code> straight from Mac <code>instagram.com</code>! (Only drop the 4 tiny 180 KB <code>03..06-highlight-*.png</code> icons to Android if adding custom Highlight covers.)</p>
+        <div class="asset-grid">
+          <div class="asset-card">
+            <img src="assets/profile-dp.png" alt="Cyber Jasoos 1080x1080 HD Profile Picture" loading="lazy" />
+            <div class="asset-title">Profile DP</div>
+            <div class="asset-sub">1080x1080 · 01-profile-dp</div>
+          </div>
+          <div class="asset-card">
+            <img src="assets/part1-cover.png" alt="Case 01 Part 1 Reel Cover 1080x1920" loading="lazy" />
+            <div class="asset-title">Part 1 Reel Cover</div>
+            <div class="asset-sub">1080x1920 · 3:4 Grid Safe</div>
+          </div>
+          <div class="asset-card">
+            <img src="assets/part2-cover.png" alt="Case 01 Part 2 Finale Cover 1080x1920" loading="lazy" />
+            <div class="asset-title">Part 2 Finale Cover</div>
+            <div class="asset-sub">1080x1920 · Updates w/ %</div>
+          </div>
+          <div class="asset-card">
+            <img src="assets/highlight-cases.png" alt="Cases Story Highlight Cover" loading="lazy" />
+            <div class="asset-title">Highlight: Cases</div>
+            <div class="asset-sub">03-highlight-cases.png</div>
+          </div>
+          <div class="asset-card">
+            <img src="assets/highlight-polls.png" alt="Polls Story Highlight Cover" loading="lazy" />
+            <div class="asset-title">Highlight: Polls</div>
+            <div class="asset-sub">04-highlight-polls.png</div>
+          </div>
+          <div class="asset-card">
+            <img src="assets/highlight-kavach.png" alt="5s Kavach Story Highlight Cover" loading="lazy" />
+            <div class="asset-title">Highlight: 5s Kavach</div>
+            <div class="asset-sub">05-highlight-5s-kavach.png</div>
+          </div>
+          <div class="asset-card">
+            <img src="assets/highlight-1930.png" alt="1930 Help Story Highlight Cover" loading="lazy" />
+            <div class="asset-title">Highlight: 1930 Help</div>
+            <div class="asset-sub">06-highlight-1930-help.png</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="phase-card" id="phase4">
+        <div class="badge-row"><span class="tag tag-crimson">TONIGHT 7:40 PM - 8:30 PM IST · VIRAL LAUNCH WINDOW</span></div>
+        <h2>Phase 4 — Hybrid Launch: Upload on Mac Web, Pin &amp; Story Sticker on Android</h2>
+        <ul class="step-list">
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-11" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-11">Step 4.1 [ON MAC WEB] (7:40 PM IST) — Exact 3-Modal Upload: Select MP4 -&gt; Crop 9:16 -&gt; Cover Photo</label>
+              <div class="step-desc">
+                1) <strong>Modal 1 (Select file):</strong> On Mac <code>instagram.com</code>, click <code>+ Create (left sidebar) -&gt; Post -&gt; Select from computer</code> -&gt; pick <code>renders/launch-pack-case01-part1/case01-part1-shaadi-12lakh-scam.mp4</code> (or <code>00-case01-part1-publish-ready.mp4</code>).<br />
+                2) <strong>Modal 2 (Crop — DO NOT SKIP):</strong> Click the <strong>Crop icon (bottom-left corner of preview)</strong> -&gt; select <strong>9:16</strong> (or <strong>Original</strong>) -&gt; click top-right <code>Next</code>.<br />
+                3) <strong>Modal 3 (Edit — Cover photo):</strong> Under <strong>Cover photo</strong>, click <code>Select from computer</code> -&gt; pick <code>brand-and-cover/02-case01-part1-reel-cover-1080x1920.png</code> -&gt; click top-right <code>Next</code>.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Mac Web Upload Wins Here</span>Feeds Instagram the locked <code>56.43s</code> 1080x1920 H.264 master directly from disk with zero phone transfer, zero Data Saver downscaling, and -14 LUFS foley/narration mixed inside!</div>
+                <div class="flag-box"><span class="why-tag">Audit / Web Crop Trap (Do Not Miss!)</span>Instagram Desktop Web defaults Modal 2's preview crop to <code>1:1</code> square unless you click the bottom-left Crop button and choose <strong>9:16 / Original</strong> before clicking <code>Next</code>!</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-12" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-12">Step 4.2 [ON MAC WEB] (7:43 PM IST) — Click Copy Caption Here &amp; Paste Into Mac Web</label>
+              <div class="step-desc">Click <code>Copy Caption</code> below and paste straight into the Mac Web caption box. Open <code>Advanced settings</code>: if <strong>Add AI label</strong> is visible on web, toggle it ON now (otherwise toggle on Android in Step 4.3).</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Tags Only Categorize (Mosseri Rule)</span>Per Instagram Head Adam Mosseri, hashtags do <strong>not</strong> boost Reels reach — they only index topic search (3-6 relevant tags is plenty; watch time &amp; DM sends drive distribution).</div>
+                <div class="flag-box"><span class="why-tag">Audit / Desktop UI Quirk Flag</span>Instagram's desktop web uploader often omits the manual <code>Add AI label</code> toggle prior to publishing — so verify/enable it via <code>... -&gt; Edit</code> on Android right after Step 4.3!</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Reel Caption + 6 Hashtags (841 / 2200)</span><button type="button" class="copy-btn" data-copy="cp-caption">Copy Caption</button></div>
+                <pre id="cp-caption">Subah beti ki doli uthne wali thi, magar aadhi raat Sharma Ji ke pairon tale zameen khisak gayi - shaadi account se poore Rs 12 Lakh saaf! Phone shaam se Puja Ghar mein band rakha tha, na koi anjaan call aaya na link khula - par Cyber Jasoos ki jaanch mein khula ki sangeet ke shor mein theek 7:42 PM par kisi ne chupke se *21* call-forwarding lagayi, jisse bank ki saari IVR OTP calls chhat par chalu ek farzi SIM par jaa rahi thin! Shak ke ghere mein 3 apne hain: A) Pados Ka Golu (7:40 PM 2 minute phone maangkar phone off aur gayab), B) Ramu Kaka (7:42 PM Puja Ghar ke paas, jeb mein naye SIM ka packet), ya C) Pappu Chachu (5 Lakh maange, 11:25 PM chhat par chupke baat karte dikhe). Asli gaddar kaun hai? Neeche A, B, ya C comment kijiye!
+
+#CyberJasoos #AsliGaddarKaun #ShaadiMystery #HindiCrimeStory #OTPScamAlert #CyberSafetyIndia</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-13" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-13">Step 4.3 [MAC WEB -&gt; 10s ANDROID TAP] (7:45 PM IST) — Publish &amp; Post Ballot on Mac, Then Pin + AI Label on Android</label>
+              <div class="step-desc">
+                1) <strong>On Mac Web:</strong> Click <strong>Share</strong> at 7:45 PM IST. Open the published Reel on Mac Web, click <code>Copy Ballot</code> below, and post it as the first comment.<br />
+                2) <strong>On Android App (10 seconds):</strong> Open your profile -&gt; tap the Reel -&gt; <strong>long-press</strong> that comment -&gt; tap the top <strong>thumbtack Pin icon</strong>. If web hid the AI label, tap <code>&#8942; (top right) -&gt; Edit -&gt; Add AI label -&gt; Done</code>.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Post on Mac + Pin on Android</span>Posting the 5-line ballot on Mac takes 2 seconds with zero phone typing, while Android supplies the <code>Pin comment</code> and post-publish <code>Add AI label</code> controls missing from desktop web.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Clock Heuristic Flag</span>Exact minute (<code>7:45 PM</code> vs <code>8:20 PM</code>) matters far less than completion rate and shares. Never rush past the <code>Original 9:16</code> crop check just to hit 7:45 PM on the dot.</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Creator First Comment (Post -&gt; Pin)</span><button type="button" class="copy-btn" data-copy="cp-pin">Copy Ballot</button></div>
+                <pre id="cp-pin">LIVE TRACE: CHORI KA SIM ABHI BHI GHAR KI CHHAT PAR CHALU HAI!
+A = Pados Ka Golu (7:40 PM 2 minute phone maangkar gayab, phone switched off)
+B = Ramu Kaka (7:42 PM Puja Ghar ke paas, jeb mein naye SIM ka packet)
+C = Pappu Chachu (5 Lakh udhaar maange, 11:25 PM chhat par chupke baat karte mile)
+Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-14" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-14">Step 4.4 [ON ANDROID APP] (7:48 PM IST) — Share Reel to Story with 3-Option POLL Sticker (&lt;=22 chars, Never Quiz!)</label>
+              <div class="step-desc">While on the Reel in your Android app, tap paper-plane <code>Share -&gt; Add to story</code>, select the <strong>POLL Sticker</strong> (tap <code>Add another option</code> for 3 choices, max <code>&lt;= 22</code> chars each: <code>A: Pados Ka Golu</code> [16], <code>B: Ramu Kaka</code> [12], <code>C: Pappu Chachu</code> [15]), place clear of center, publish Story, and save to <strong>Cases</strong> &amp; <strong>Polls</strong> Highlights.</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Story on a 0-Follower Account?</span>Stories do <strong>not</strong> bring cold traffic on Day 1 — their job is <strong>Profile Conversion</strong>! When non-followers tap <code>@cyberjasoos</code> from Reels, an active Story ring + Highlights makes the channel worth following for Part 2.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Spoiler Trap (POLL vs QUIZ!)</span>Use the <strong>POLL Sticker</strong> (shows only vote <code>%</code>), <strong>NEVER the Quiz Sticker</strong>! Instagram's Quiz Sticker flashes GREEN immediately when tapped — spoiling Part 2's culprit on Day 1!</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-15" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-15">Step 4.5 [ON MAC WEB] (7:50 PM - 8:30 PM IST) — Reply to Early Voters in 1 Click from Mac</label>
+              <div class="step-desc">Refresh your Reel on Mac <code>instagram.com</code>, click <code>Copy A/B/C Reply</code> below, add the voter's <code>@handle</code> + tweak 2-3 words, and reply right from your Mac keyboard:</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Socratic Replies [2x Loop Boost]</span>1) Multi-turn comment threads rank higher than dead "Thanks!" replies. 2) While a viewer reads your counter-clue and types back in the comment sheet, your Reel keeps looping behind the drawer — pushing watch time past 100%!</div>
+                <div class="flag-box"><span class="why-tag">Audit / Anti-Spam Flag</span>Never paste the exact identical sentence 20 times in 2 minutes (triggers comment spam blocks). Tweak 2-3 words per user and include their <code>@name</code>.</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Reply to Vote A (Pados Ka Golu)</span><button type="button" class="copy-btn" data-copy="cp-rep-a">Copy A Reply</button></div>
+                <pre id="cp-rep-a">Golu ne 7:40 PM par phone zaroor liya aur ab uska number off hai, par live trace wala farzi SIM toh abhi bhi isi ghar ki chhat par chalu hai - phir chhat par kaun tha?</pre>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Reply to Vote B (Ramu Kaka)</span><button type="button" class="copy-btn" data-copy="cp-rep-b">Copy B Reply</button></div>
+                <pre id="cp-rep-b">Ramu Kaka theek 7:42 PM par Puja Ghar ke paas naye SIM packet ke saath mile, par raat 11:25 PM par chhat par chupke se baat kaun kar raha tha?</pre>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Reply to Vote C (Pappu Chachu)</span><button type="button" class="copy-btn" data-copy="cp-rep-c">Copy C Reply</button></div>
+                <pre id="cp-rep-c">Chachu ne 5 Lakh zaroor maange aur 11:25 PM par chhat par dikhe, par sangeet ke shor mein 7:40 PM par Sharma Ji ka phone 2 minute kisne liya tha?</pre>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="phase-card" id="phase5">
+        <div class="badge-row"><span class="tag tag-gold">T+24H TO T+48H · POLL REVEAL &amp; PART 2 FINALE</span></div>
+        <h2>Phase 5 — Read Insights, Auto-Count A/B/C Votes &amp; Render Part 2</h2>
+        <ul class="step-list">
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-16" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-16">Step 5.1 — Pull Views, Reach, Saves &amp; Share Rates via Graph API</label>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Official Top 3 Signals (Adam Mosseri)</span>Instagram's confirmed Top 3 Reels signals are: 1) <strong>Watch time</strong> (3s survival + % completion + loops), 2) <strong>Sends per reach</strong> (DM/WhatsApp shares — #1 driver of non-follower reach), and 3) <strong>Likes per reach</strong> (follower feed).</div>
+                <div class="flag-box"><span class="why-tag">Audit / API Metric Flag</span>Meta sometimes delays <code>reels_skip_rate</code> on low-view Reels (returns HTTP 400); our client automatically falls back to core <code>views/reach/saved/shares</code> without failing.</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Fetch Live Reel Insights</span><button type="button" class="copy-btn" data-copy="cp-ins">Copy Command</button></div>
+                <pre id="cp-ins">python3 scripts/instagram_ops.py insights --media-id &lt;PART1_MEDIA_ID&gt;</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-17" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-17">Step 5.2 — Draft &amp; Human-Approve Socratic Voter Replies</label>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Human-in-the-Loop + 2.2s Spacing</span>Auto-bots replying blindly look fake and risk Meta spam flags. <code>--approve</code> prompts you <code>[y/N]</code> per reply and enforces a <code>2.2s</code> interval + <code>180/hr</code> ceiling.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Nuance Flag</span>If a commenter shares a real personal fraud story instead of an <code>A/B/C</code> vote, skip the automated template (<code>N</code>) and reply empathetically by hand pointing them to <code>1930</code>.</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Interactive y/N Reply Dispatcher</span><button type="button" class="copy-btn" data-copy="cp-rep-cli">Copy Command</button></div>
+                <pre id="cp-rep-cli">python3 scripts/instagram_ops.py reply-comments --media-id &lt;PART1_MEDIA_ID&gt; --part1 episodes/s01-asset-classification/s01e01-forgotten-bucket.json --approve</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-18" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-18">Step 5.3 — Deduplicate A/B/C Comments &amp; Auto-Inject Winning % Into Part 2</label>
+              <div class="step-desc">Counts 1 vote per viewer, ignores owner handles, and rewrites Part 2's opening Hindi-Urdu hook with the real voter percentage (or use <code>apply_poll_result.py --winner C --pct 74</code> / <code>--comments-file part1-comments.txt</code> offline):</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Real Voter % in Frame 1</span>Opening Part 2 with the exact percentage of viewers who guessed wrong (or right!) proves audience votes genuinely steer the show, compounding comment rates on Case #02+.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Low-Volume Edge Case Flag</span>If your brand-new Day-1 Reel has fewer than ~8-10 comments at <code>T+24h</code>, wait until <code>T+48h</code> (and add Story Poll votes to your tally) before locking Part 2's percentage!</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Live Poll Tally -&gt; Part 2 Injection</span><button type="button" class="copy-btn" data-copy="cp-tally">Copy Command</button></div>
+                <pre id="cp-tally">python3 scripts/instagram_ops.py poll-tally --media-id &lt;PART1_MEDIA_ID&gt; --part1 episodes/s01-asset-classification/s01e01-forgotten-bucket.json --apply-to episodes/s01-asset-classification/s01e02-crown-jewels.json</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-19" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-19">Step 5.4 — Render Part 2 Finale &amp; Updated Cover (Matching SalmanNeural + MadhurNeural Voice)</label>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Re-Generate Cover + Audio Together</span>Because Part 2's opening line AND cover headline (<code>"XX% KA SHAK GALAT NIKLA!"</code>) depend on the live Part 1 winning branch, both must be regenerated after Step 5.3.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Voice Consistency Flag</span><code>--mode edge</code> keeps the exact same <code>SalmanNeural + MadhurNeural</code> voices on Part 2 as Part 1 so Kabir's voice stays 100% consistent across the case (if you recorded <code>OWN_VOICE</code> on Part 1, pass <code>--mode recorded</code> instead).</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Part 2 Voice, Gate, Cover &amp; Render</span><button type="button" class="copy-btn" data-copy="cp-p2">Copy Command</button></div>
+                <pre id="cp-p2">.venv_audio/bin/python scripts/prepare_voice.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --mode edge --sync-manifest &amp;&amp; python3 scripts/validate_episode.py episodes/s01-asset-classification/s01e02-crown-jewels.json &amp;&amp; .venv_audio/bin/python scripts/generate_ig_brand_kit.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --frame engine/public/characters/pappu-chachu.png --output renders/s01e02-reel-cover.png &amp;&amp; (cd engine &amp;&amp; npx remotion render src/index.ts s01e02-crown-jewels ../renders/s01e02-crown-jewels-publish.mp4)</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-20" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-20">Step 5.5 [MAC WEB -&gt; ANDROID PIN] — Upload Part 2 on Mac Web (Original 9:16!) &amp; Cross-Link Part 1</label>
+              <div class="step-desc">Upload <code>renders/s01e02-crown-jewels-publish.mp4</code> + updated <code>renders/s01e02-reel-cover.png</code> on Mac <code>instagram.com</code> (set Crop = <strong>Original 9:16</strong>!), post the Case #02 mystery vote comment (<code>A: Hotel Wi-Fi | B: Smart Printer | C: Shagun QR</code>) on Mac, then <strong>long-press -&gt; Pin</strong> + enable <strong>Add AI label</strong> + save <code>5s Kavach</code> / <code>1930</code> Highlights on Android.</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Cross-Link Part 1 &lt;-&gt; Part 2</span>Reply to your own Pinned Comment on Part 1 saying "Part 2 Finale is LIVE on profile!" — notifying Part 1 commenters and funneling repeat views straight into Part 2!</div>
+                <div class="flag-box"><span class="why-tag">Audit / Highlight Order Flag</span>We wait until Part 2 to create the <code>5s Kavach</code> and <code>1930 Help</code> Highlights so they don't spoil the <code>*#21#</code> call-forwarding twist while Part 1 voters are still guessing!</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div data-tab-panel="cli" id="panel-cli" class="tab-panel" hidden>
+      <section class="phase-card" id="cliDirectory">
+        <div class="badge-row">
+          <span class="tag tag-cyan">TAB 3 · 100% TOOL COVERAGE (24 PYTHON SCRIPTS + REMOTION ENGINE)</span>
+          <span class="tag tag-emerald">MODULAR ZERO-HARDCODING STACK</span>
+        </div>
+        <h2>3. Master Script &amp; CLI Directory (All 24 Python Tools + Remotion Studio)</h2>
+        <p>Complete reference covering every script in <code>scripts/</code> and <code>engine/</code> across 4 functional groups. Type any tool or flag into the search bar above to filter rows instantly.</p>
+
+        <h3>Group 1 — Orchestration, Brief Compiler, Guide Stitcher, Registry &amp; Remotion Engine</h3>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py --brief &lt;yaml&gt; --render-mp4 [--mp4-output &lt;mp4&gt;] [--skip-asr-audit]</code></td><td>Single-command closed-loop orchestrator: compiles brief, conforms cast/mattes, heals TTS WPM &amp; DOM defects, audits WAV intelligibility via offline <code>mlx-community/whisper-base-mlx</code> (<code>nativeScriptRatio &gt;= 0.55</code>, <code>wordCount &gt;= 12</code>), renders MP4, and writes <code>renders/launch-pack-&lt;id&gt;/</code>.</td></tr>
+              <tr><td><code>self_heal_rules.py</code></td><td>Library imported by <code>build_episode.py</code></td><td>Deterministic TTS rate-adjustment math (<code>42.5-57.5s</code>, <code>132-192 WPM</code>, Edge rate clamp <code>[+2%, +20%]</code> + <code>[0.10s, 0.26s]</code> micro-pauses), native-script <code>ttsClauses[*].hi</code> repair, <code>NOIR_GRID</code> badge compaction, DOM defect repair &amp; launch-copy pack writer.</td></tr>
+              <tr><td><code>compile_story_brief.py</code></td><td><code>python3 scripts/compile_story_brief.py --brief &lt;yaml&gt; -o &lt;json&gt;</code></td><td>Compiles a 30-35 line <code>.yaml</code>/<code>.json</code> story brief (<code>crime_case</code> or <code>preset: guide_walkthrough</code>) into a schema-valid <code>noir_cinema</code> <code>EpisodeManifest</code> with native-script TTS clauses &amp; <code>pollBranches</code>.</td></tr>
+              <tr><td><code>story_brief_templates.py</code></td><td>Library imported by <code>compile_story_brief.py</code></td><td>Builds the 5 <code>detective_*</code> scenes (plus <code>preset: guide_walkthrough</code> labels), transliterates Roman Hinglish TTS clauses via <code>hinglish_tts_translit.py</code> with <code>...</code> Loop Suspension Guard, and expands <code>pollBranches</code> <code>A/B/C</code>.</td></tr>
+              <tr><td><code>stitch_video_guide.py</code></td><td><code>python3 scripts/stitch_video_guide.py --inputs &lt;ch.mp4...&gt; --titles &lt;t...&gt; --output &lt;master.mp4&gt;</code></td><td>FFmpeg <code>1080x1920 @ 30fps</code> multi-chapter MP4 stitcher with embedded <code>FFMETADATA1</code> chapter markers (<code>--inputs</code>, <code>--titles</code>, <code>--output</code>).</td></tr>
+              <tr><td><code>sync_episode_registry.py</code></td><td><code>python3 scripts/sync_episode_registry.py</code></td><td>Scans <code>episodes/**/*.json</code> sorted by <code>(season, episode, id)</code> and regenerates <code>engine/src/generated/episodeRegistry.ts</code> automatically.</td></tr>
+              <tr><td><code>validate_episode.py</code></td><td><code>python3 scripts/validate_episode.py episodes/ --publish-ready</code></td><td>Enforces Draft 2020-12 JSON Schema, <code>42-58s</code> retention clock, <code>130-195 WPM</code>, <code>TTS Native Script Guard</code> (zero Latin/wrong-script/harakat), <code>Edge Rate Articulation Guard</code> (<code>[+0%, +25%]</code>), 5-phase order &amp; commercial voice license gate (rejects <code>CC-BY-NC</code>).</td></tr>
+              <tr><td><code>npm run studio</code> / <code>npm start</code></td><td><code>cd engine &amp;&amp; npm run studio</code> (<code>npx remotion studio</code>)</td><td>Launches interactive Remotion 4 timeline preview &amp; frame-by-frame safe-zone inspector on <code>127.0.0.1</code> (<code>studio</code> script in <code>engine/package.json</code>).</td></tr>
+              <tr><td><code>npm run typecheck</code></td><td><code>cd engine &amp;&amp; npm run typecheck</code></td><td>Runs <code>sync_episode_registry.py</code> followed by <code>tsc --noEmit</code> across all strict TypeScript scene &amp; manifest interfaces.</td></tr>
+              <tr><td><code>npm run uat:dom</code></td><td><code>cd engine &amp;&amp; npm run uat:dom</code></td><td>Zero-token Headless Chrome DOM auditor (<code>uat-dom-audit.mjs</code>) asserting <code>NOIR_GRID</code> bounds, <code>x &gt;= 956</code> right-rail clearance &amp; <code>fontSize &gt;= 20px</code>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Group 2 — Voice DSP, Native-Script Phonetic Transliterator, Word Captions, Procedural Foley &amp; Teleprompter</h3>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>hinglish_tts_translit.py</code></td><td>Library imported by <code>story_brief_templates.py</code>, <code>self_heal_rules.py</code> &amp; <code>prepare_voice.py</code></td><td>Zero-AI Roman Hinglish + currency/number/time/USSD/CLI phonetic transliterator into clean Hindi Devanagari (<code>hi-IN-MadhurNeural</code> / <code>Kokoro</code>) &amp; unvocalized Urdu Nastaliq (<code>ur-IN-SalmanNeural</code>), eliminating English-letter G2P &amp; <code>NoAudioReceived</code> crashes.</td></tr>
+              <tr><td><code>prepare_voice.py</code></td><td><code>.venv_audio/bin/python scripts/prepare_voice.py --episode &lt;json&gt; --mode edge --sync-manifest</code></td><td>Synthesizes <code>SalmanNeural + MadhurNeural</code> (<code>edge</code>), local <code>kokoro</code> ONNX, Azure <code>F0</code>, or ingests human <code>recorded</code> <code>.m4a</code> at <code>-14 LUFS</code> + word <code>.captions.json</code>.</td></tr>
+              <tr><td><code>generate_cinema_foley.py</code></td><td><code>.venv_audio/bin/python scripts/generate_cinema_foley.py</code></td><td>Synthesizes procedural 44.1kHz 16-bit mono NumPy/SciPy noir foley WAVs (bank SMS chime, USSD tones, phone buzz, radar ping — zero <code>CC-BY-NC</code>).</td></tr>
+              <tr><td><code>generate_sfx.py</code></td><td><code>python3 scripts/generate_sfx.py</code></td><td>Deterministic Python stdlib 44.1kHz WAV synthesizer for cold-open impacts, glitch transitions, terminal clicks &amp; suspense risers in <code>engine/public/sfx/</code>.</td></tr>
+              <tr><td><code>export_teleprompter.py</code></td><td><code>python3 scripts/export_teleprompter.py --output renders/teleprompter-export.md</code></td><td>Exports Season 01-02 human Voice Memos scripts with <strong>BOLD CAPS</strong> punch highlights, <code>//</code> <code>&lt;250ms</code> breath markers, and exact ingest commands.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Group 3 — Cast Framing, Guide Plates, 2.5D Depth Mattes, Brand Covers &amp; Instagram UI Mockups</h3>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>standardize_cast.py</code></td><td><code>.venv_audio/bin/python scripts/standardize_cast.py --case-dir assets/characters/case01 --auto-frame</code></td><td>Conforms raw <code>.png/.jpg/.webp</code> portrait/B-roll art to <code>1080x1920</code> portrait lock using local ONNX saliency auto-frame (<code>--auto-frame</code>) &amp; trademark cleanup into <code>engine/public/characters/</code>.</td></tr>
+              <tr><td><code>render_guide_plates.py</code></td><td><code>python3 scripts/render_guide_plates.py --out-dir assets/characters/guide01/raw</code></td><td>Deterministic <code>1080x1920</code> UI, YAML, CLI &amp; Safe-Zone visual plate generator (<code>assets/characters/guide01/raw/</code>) for walkthrough &amp; tutorial Reels.</td></tr>
+              <tr><td><code>generate_depth_mattes.py</code></td><td><code>.venv_audio/bin/python scripts/generate_depth_mattes.py --skip-existing</code></td><td>Runs local Apache-2.0 Depth-Anything-V2 ONNX to generate native <code>1080x1920</code> foreground alpha mattes (<code>fg/*.png</code>) &amp; blurred backgrounds (<code>bg/*.jpg</code>).</td></tr>
+              <tr><td><code>generate_ig_brand_kit.py</code></td><td><code>.venv_audio/bin/python scripts/generate_ig_brand_kit.py --episode &lt;json&gt; --output &lt;png&gt;</code></td><td>Renders <code>1080x1080</code> Kabir Profile DP, <code>3:4</code>-grid-safe <code>1080x1920</code> Reel Covers (dynamic <code>%</code> on Part 2), and 4 Story Highlight icons.</td></tr>
+              <tr><td><code>render_instagram_ui_mockup.py</code></td><td><code>.venv_audio/bin/python scripts/render_instagram_ui_mockup.py --multi-shot-grid -o &lt;png&gt;</code></td><td>Composites translucent Instagram Reels mobile UI chrome, caption drawer &amp; <code>x &gt;= 956</code> <code>124px</code> right-rail icons onto single frames or multi-shot QA grids.</td></tr>
+              <tr><td><code>render_ig_mockup.py</code></td><td><code>.venv_audio/bin/python scripts/render_ig_mockup.py -i &lt;frame.png&gt; -o &lt;out.png&gt;</code></td><td>Concise CLI &amp; Python import alias wrapping <code>render_instagram_ui_mockup.py</code> for fast safe-zone &amp; multi-shot grid verification.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Group 4 — Hook Scorer, Instagram Graph API, Poll Tally, Growth Ledger &amp; Pages Export</h3>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>competitor_hooks.py</code></td><td><code>python3 scripts/competitor_hooks.py --score "&lt;cold_open_hook&gt;"</code></td><td>Scores cold-open hooks (<code>0-100</code>) or public Reels via <code>yt-dlp</code> (<code>--url</code>) on timestamps/numbers, active breach verbs, curiosity gap, <code>&lt; 22</code> words &amp; zero filler.</td></tr>
+              <tr><td><code>instagram_ops.py</code></td><td><code>python3 scripts/instagram_ops.py insights | reply-comments | poll-tally | record-metrics | learn</code></td><td>Unified operator CLI for live Reel Insights, human-approved <code>[y/N]</code> Socratic replies, deduplicated <code>A/B/C</code> vote counting, and Mosseri telemetry learning.</td></tr>
+              <tr><td><code>ig_graph_client.py</code></td><td>Library imported by <code>instagram_ops.py</code></td><td>Official <code>graph.instagram.com</code> v22 REST client enforcing a <code>200 calls/hr</code> ceiling, <code>2.2s</code> reply spacing, and automatic <code>reels_skip_rate</code> fallback.</td></tr>
+              <tr><td><code>apply_poll_result.py</code></td><td><code>python3 scripts/apply_poll_result.py --episode &lt;part2.json&gt; --winner C --pct 74</code></td><td>Offline Part 1 -&gt; Part 2 branch injector converting integer <code>1..99</code> <code>%</code> into Hindi-Urdu words (<code>74</code> -&gt; <code>Chauhattar</code>) across title, audio &amp; scene props.</td></tr>
+              <tr><td><code>growth_ledger.py</code></td><td>Library imported by <code>instagram_ops.py</code> &amp; <code>compile_story_brief.py</code></td><td>Persists episode metrics in <code>data/growth_ledger.sqlite3</code>, computes <code>0.45*Share + 0.35*Save + 0.20*Vote</code>, and updates <code>data/learned_defaults.json</code>.</td></tr>
+              <tr><td><code>export_sanitized_pages.py</code></td><td><code>python3 scripts/export_sanitized_pages.py --out-dir &lt;dir&gt;</code></td><td>Exports a sanitized static GitHub Pages bundle from <code>docs/</code>, redacting creator emails, local <code>&lt;REPO_ROOT&gt;</code> paths &amp; spoilers with zero-leak verification.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div data-tab-panel="spec" data-tab-alias="arch" id="panel-arch" class="tab-panel" hidden>
+      <section class="phase-card" id="curriculum">
+        <div class="badge-row">
+          <span class="tag tag-gold">TAB 4 · CONSOLIDATED V11 PRODUCTION SPEC</span>
+          <span class="tag tag-crimson">6-SEASON · 24-EPISODE CASE ROADMAP</span>
+        </div>
+        <h2>4. Show Spec, Scene Catalog, Safe Zones &amp; 6-Season Case Curriculum</h2>
+        <p>Canonical production guardrails uniting the <code>42-58s</code> Noir Thriller Clock, Remotion 4 scene catalog, <code>NOIR_GRID</code> <code>1080x1920</code> safe zones, commercial voice licensing matrix, and the 24-episode roadmap.</p>
+        <div class="auto-grid">
+          <div class="auto-card">
+            <h3>1. 42-58s Noir Retention Clock (30fps)</h3>
+            <p><code>hook</code> (<code>0:00-0:04</code> mid-crime scroll-stopper) -&gt; <code>escalation</code> (suspect motives &amp; timestamps) -&gt; <code>framework</code> (live forensic exploit on stage) -&gt; <code>micro_payoff</code> (5s <code>Kavach</code> + <code>1930</code> hold for Saves/Shares) -&gt; <code>cliffhanger_vote</code> (<code>A / B / C</code> poll ending on <code>...</code> Loop Suspension Guard at <code>130-195 WPM</code>).</p>
+          </div>
+          <div class="auto-card">
+            <h3>2. Remotion Scene Component Catalog</h3>
+            <p><strong>Noir 2.5D Parallax:</strong> <code>detective_crime_hook</code> (3-shot cold open), <code>detective_wifi_clue</code> (3-device scan), <code>detective_evidence_twist</code> (<code>cctv_backdoor</code> &amp; <code>contact_match</code>), and <code>detective_suspect_board</code> (<code>suspect_vote</code> / <code>next_case_vote</code>).<br /><strong>Enterprise Support:</strong> <code>comment_spotlight</code>, <code>breach_terminal</code>, <code>network_attack_graph</code>, <code>asset_tier_matrix</code>, <code>risk_heatmap</code>, <code>payoff_proof_card</code>, <code>vote_cliffhanger</code>.</p>
+          </div>
+          <div class="auto-card">
+            <h3>3. NOIR_GRID &amp; 124px Right-Rail Safe Zones</h3>
+            <p>Canvas <code>1080x1920</code>: Top/Bottom exclusions (<code>y: 0..185</code>, <code>y: 1480..1920</code>), Upper Stage (<code>x: 84..996</code>, <code>y: 190..999</code>), Lower Overlay Band (<code>x: 132..948</code>, <code>y: 1000..1460</code> keeping <code>x &gt;= 956</code> 100% clear of Reels right-rail icons), Kinetic Captions (<code>y: 1296..1468</code>), and hard <code>fontSize &gt;= 20px</code> mobile floor.</p>
+          </div>
+          <div class="auto-card">
+            <h3>4. Voice &amp; Licensing Matrix (--publish-ready)</h3>
+            <p><strong>Preview:</strong> <code>SalmanNeural + MadhurNeural</code> (<code>edge_neural</code> / <code>EDGE_READ_ALOUD_PREVIEW</code> + Meta <strong>Add AI label</strong> ON).<br /><strong>Commercial Pass:</strong> <code>$0</code> Azure Speech <code>F0</code> (<code>COMMERCIAL_API</code>, 500k chars/mo free), local <code>kokoro_neural</code> (<code>APACHE_2_0</code>), or human <code>recorded</code> (<code>OWN_VOICE</code>; <code>CC-BY-NC</code> banned).</p>
+          </div>
+          <div class="auto-card">
+            <h3>5. 3-Layer Voice Quality &amp; Intelligibility Gate</h3>
+            <p><strong>Layer 1:</strong> Zero-AI native-script phonetic transliterator (<code>hinglish_tts_translit.py</code> -&gt; Urdu Nastaliq &amp; Devanagari). <strong>Layer 2:</strong> Native-script/harakat validator &amp; <code>[+2%, +20%]</code> Edge rate + <code>[0.10s, 0.26s]</code> pause clamp (<code>validate_episode.py</code> + <code>self_heal_rules.py</code>). <strong>Layer 3:</strong> Offline <code>mlx-community/whisper-base-mlx</code> ASR gate (<code>nativeScriptRatio &gt;= 0.55</code>, <code>wordCount &gt;= 12</code> in <code>build_episode.py</code>).</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Season</th><th>Core Fraud / Security Arc &amp; Episodes</th><th>Primary Advisory / Real Incident Parallel</th><th>5s Kavach &amp; Interactive A / B / C Poll</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Season 1</strong></td><td><strong>Call-Forwarding OTP Divert &amp; Shadow Assets</strong><br />Case #01 Shaadi Rs 12L Drain (<code>s01e01..e02</code>) + Printer Pivot &amp; Auto-CMDB (<code>s01e03..e04</code>)</td><td>DoT Advisory (PIB 1995304) <code>*21*</code> IVR OTP Forward, MHA I4C <code>1930</code>, Capital One &amp; MGM Sprawl</td><td>Dial <code>*#21#</code> check + <code>##002#</code> reset; Whodunit <code>A/B/C</code> insider &amp; asset-tier votes</td></tr>
+              <tr><td><strong>Season 2</strong></td><td><strong>Quishing QR Overlays, Rogue Wi-Fi &amp; Risk Math</strong><br />Case #02 Reception Rs 8.4L QR Trap + <code>$100K</code> Gamble, Insurance Trap &amp; Vendor Cascade (<code>s02e01..e04</code>)</td><td>RBI &amp; I4C Shagun QR Collect Trap, Target Card Breach, NotPetya Warranty Void &amp; MOVEit</td><td>Zero-PIN Receive Rule + Merchant Verify; <code>A/B/C</code> Wi-Fi vs Printer vs QR Standee vote</td></tr>
+              <tr><td><strong>Season 3</strong></td><td><strong>MFA Push-Bombing, SIM-Swap &amp; Zero-Trust</strong><br /><code>s03e01</code> MFA Fatigue, <code>s03e02</code> Standing Admin, <code>s03e03</code> Immortal Keys, <code>s03e04</code> East-West mTLS</td><td>DoT SIM-Swap Lock, Uber Push-Bombing (2022), MGM Helpdesk, CircleCI &amp; Colonial VPN</td><td>SIM PIN + Number-Matching FIDO2; <code>A/B/C</code> containment &amp; JIT privilege votes</td></tr>
+              <tr><td><strong>Season 4</strong></td><td><strong>Payment Tampering, Courier APK &amp; Cloud Leaks</strong><br /><code>s04e01</code> Negative P2P STRIDE, <code>s04e02</code> Metadata SSRF, <code>s04e03</code> CI/CD Poison, <code>s04e04</code> KMS Leak</td><td>CERT-In Malicious APK SMS Mirroring, Optus API, Capital One SSRF &amp; Codecov Supply Chain</td><td>Play Protect + Block Unknown APKs + IMDSv2; <code>A/B/C</code> launch-gate &amp; key-revocation votes</td></tr>
+              <tr><td><strong>Season 5</strong></td><td><strong>Golden-Hour Extortion &amp; Immutable Recovery</strong><br /><code>s05e01</code> First 15m Triage, <code>s05e02</code> Payroll Freeze, <code>s05e03</code> WORM Backups, <code>s05e04</code> Extortion Clock</td><td>MHA I4C <code>1930</code> Golden-Hour Bank Lien Freeze, Change Healthcare &amp; Rackspace Outage</td><td>Immediate <code>1930</code> / <code>cybercrime.gov.in</code> Lien Hold + <code>3-2-1-1-0</code> WORM; <code>A/B/C</code> IR votes</td></tr>
+              <tr><td><strong>Season 6</strong></td><td><strong>Voice-Clone Scams, Invoice Injection &amp; Autonomous Fraud</strong><br /><code>s06e01</code> PDF Wire Injection, <code>s06e02</code> Data Leak, <code>s06e03</code> Over-Agency, <code>s06e04</code> ACL Bleed</td><td>I4C Deepfake / Voice-Clone Kidnap Scam Advisories, Invoice Wire Fraud &amp; OWASP LLM06</td><td>Offline Family Safe-Word + Hard Payment Caps; <code>A/B/C</code> verification &amp; HITL guardrail votes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div data-tab-panel="setup" id="panel-setup" class="tab-panel" hidden>
+      <section class="phase-card" id="flags">
+        <div class="badge-row"><span class="tag tag-crimson">TAB 5 · OWNER AUDIT SUMMARY · HARD FACTS VS. JUDGMENT CALLS</span></div>
+        <h2>5. One-Time Account, Privacy &amp; API Setup — 7 Key Audit Flags</h2>
+        <p>Completed Day-1 setup &amp; API reference. Every step in Phases 1-5 pairs <strong>WHY WE DO THIS</strong> with an <strong>AUDIT / WATCH-OUT FLAG</strong> distinguishing 100% verified Meta rules from strategic heuristics.</p>
+        <div class="table-scroll">
+          <table class="meta-table">
+            <thead>
+              <tr><th>Decision</th><th>Basis</th><th>Why Chosen &amp; What Could Go Wrong (Your Audit Check)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>1. Android Contacts &amp; Accounts Center</strong></td><td>100% Hard Risk</td><td>On Android, tap <strong>Don't allow</strong> when Android asks Instagram for Contacts access, decline Instagram Contact Sync, and do <strong>not</strong> merge into your personal Meta Accounts Center.</td></tr>
+              <tr><td><strong>2. Faceless Avatar &amp; 2FA Backup Codes</strong></td><td>100% Hard Risk</td><td>Because the DP is an illustrated detective (Kabir) rather than your real face, automated selfie-video recovery will fail if locked out. Saving Instagram's 8-digit 2FA backup codes offline is mandatory.</td></tr>
+              <tr><td><strong>3. SalmanNeural Voice &amp; Commercial ToS Note</strong></td><td>Locked + ToS Note</td><td><code>SalmanNeural + MadhurNeural</code> (<code>edge-tts</code>) delivers authentic Hindi drama over robotic Kokoro. Turn <strong>Add AI label</strong> ON when posting; once monetizing, switch the exact same <code>ur-IN-SalmanNeural</code> voice to <code>$0</code> free-tier Azure Speech <code>F0</code> (<code>COMMERCIAL_API</code>, 500k chars/mo free) or <code>OWN_VOICE</code>.</td></tr>
+              <tr><td><strong>4. 6-8 Hour Warmup &amp; 7:45 PM Slot</strong></td><td>Heuristic (Not Official Doc)</td><td>Meta publishes no fixed timer. Waiting a few hours avoids 0-minute spam-bot patterns, and 7:45 PM IST catches evening family scroll — posting at 8:15 PM or tomorrow evening works equally well if watch-time is strong.</td></tr>
+              <tr><td><strong>5. Phase 3 Meta Graph API Timing</strong></td><td>Optional on Day 1</td><td>Do <strong>not</strong> let Developer Portal setup block tonight's upload. With 5-50 Day-1 comments, you can read/reply in the phone app tonight and connect <code>instagram_ops.py</code> tomorrow in 5 minutes.</td></tr>
+              <tr><td><strong>6. Mac Web Upload (<code>9:16</code> Crop) + Android Pin &amp; Poll</strong></td><td>Hybrid Platform Rule</td><td>Mac Web uploads clean 1080p MP4s + Covers (set crop to <strong>Original <code>9:16</code></strong>!), while Pinning Comments, 3-Option <strong>Poll Stickers</strong> (never Quiz!), and reliable <strong>Add AI label</strong> toggles take 30s on Android.</td></tr>
+              <tr><td><strong>7. Low Day-1 Poll Votes (&lt;10 Votes)</strong></td><td>Edge-Case Guard</td><td>On a 0-follower account, Part 1 may take 24-48h to gather votes. Combine Reel comments + Story Poll taps, and wait until you have at least ~8-10 real votes before rendering Part 2's percentage hook.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="phase-card" id="phase1">
+        <div class="badge-row"><span class="tag tag-emerald">COMPLETED DAY-1 SETUP · SCREEN-BY-SCREEN 2026 UI</span></div>
+        <h2>Phase 1 — Exact Real-Screen Setup (Android Signup -&gt; Dedicated Chrome Profile)</h2>
+        <ul class="step-list">
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-1" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-1">Step 1.1 [DONE ON ANDROID APP] — Complete 8-Screen Mobile Signup (Skip Phone, DP &amp; Contacts)</label>
+              <div class="step-desc">
+                1) <strong>Email:</strong> <code>&lt;DEDICATED_CREATOR_GMAIL&gt;</code> -&gt; 6-digit email code -&gt; <strong>Create password</strong> -&gt; <strong>Date of birth</strong>.<br />
+                2) <strong>What's your name? (&lt;30 chars):</strong> <code>Cyber Jasoos | Cyber Crime</code> (26 chars).<br />
+                3) <strong>Create a username:</strong> <code>cyberjasoos</code> (REGISTERED!).<br />
+                4) <strong>Add mobile number?</strong> Tap <strong>Skip</strong> -&gt; <strong>Create a profile:</strong> Tap <strong>Skip</strong> -&gt; <strong>Contacts:</strong> Tap <strong>Don't allow</strong> &amp; <strong>Skip</strong>.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Skip Phone Number &amp; Contacts</span>Attaching your personal mobile number lets colleagues/relatives who saved your number see <code>@cyberjasoos</code> in "Suggested for you". Skipping phone + denying Contacts keeps the channel 100% isolated.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Real UI Cap Caught</span>Instagram caps <strong>Name</strong> at strictly <code>&lt; 30</code> chars (<code>Cyber Jasoos | Cyber Crime</code> = 26 chars) and locks <code>@username</code> for 14 days after 2 changes.</div>
+              </div>
+              <div class="grid-2">
+                <div class="copy-block">
+                  <div class="copy-head"><span class="copy-title">Account Email</span><button type="button" class="copy-btn" data-copy="cp-email">Copy Email</button></div>
+                  <pre id="cp-email">&lt;DEDICATED_CREATOR_GMAIL&gt;</pre>
+                </div>
+                <div class="copy-block">
+                  <div class="copy-head"><span class="copy-title">Registered Name (26/29)</span><button type="button" class="copy-btn" data-copy="cp-name">Copy Name</button></div>
+                  <pre id="cp-name">Cyber Jasoos | Cyber Crime</pre>
+                  <div style="font-size:13px;color:var(--text-dim);margin-top:6px;">Handle locked: <code id="cp-handle">cyberjasoos</code></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-2" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-2">Step 1.2 [DONE ON MAC CHROME] — Create Dedicated Chrome Profile, Log Into instagram.com &amp; Pin This Hub</label>
+              <div class="step-desc">
+                1) Click top-right Chrome avatar -&gt; <strong>Add</strong> -&gt; create a dedicated Chrome Profile (separate from personal Chrome, <strong>not</strong> Incognito).<br />
+                2) Open <code>https://www.instagram.com</code> -&gt; log in as <code>cyberjasoos</code> -&gt; click <strong>Save info</strong>.<br />
+                3) Open this portal (<code>docs/index.html</code>) in Tab 2 of that same Chrome Profile and bookmark/pin it.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Dedicated Profile Beats Incognito</span>Incognito wipes cookies every time you close the window, triggering Meta "unrecognized browser" flags on tonight's upload. A dedicated Chrome Profile keeps cookies saved while staying 100% isolated.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Zero File Transfer Win</span>With <code>instagram.com</code> + <code>docs/index.html</code> open side-by-side on Mac, DP, Bio, 45 MB MP4, Cover, and Comments require zero phone file transfers!</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-3" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-3">Step 1.3 [DO ON ANDROID APP — NOT MAC WEB!] — Enable Authenticator 2FA &amp; Save 8-Digit Backup Codes</label>
+              <div class="step-desc">
+                1) Secure <code>&lt;DEDICATED_CREATOR_GMAIL&gt;</code> with Google 2-Step Verification.<br />
+                2) <strong>On your Android Instagram App</strong>: tap <code>Profile -&gt; &#9776; -&gt; Settings and activity -&gt; Accounts Center -&gt; Password and security -&gt; Two-factor authentication -&gt; @cyberjasoos -&gt; Authentication app</code>.<br />
+                3) Bind Google Authenticator / 1Password, then tap <code>Additional methods -&gt; Backup codes</code> and save the <strong>8-digit codes</strong> offline.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Android Only for 2FA [Real Meta Gate]</span>Trying to enable 2FA from a brand-new Mac browser session throws Meta's notorious <em>"You can't make this change at the moment"</em> security block! Your Android signup device is trusted immediately.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Lockout Flag (Critical!)</span>Save those <strong>8-digit backup codes</strong> offline! Because your DP is Kabir (illustrated detective, not your real face) and you skipped adding a phone number, selfie-video &amp; SMS recovery cannot rescue a lost phone.</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-4" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-4">Step 1.4 [ON MAC WEB] — Switch to Professional Creator ("For professionals" Sidebar)</label>
+              <div class="step-desc">
+                1) <strong>On Mac Web (<code>instagram.com</code>):</strong> Click <code>&#9776; More (bottom-left) -&gt; Settings</code> -&gt; scroll to <strong>For professionals</strong> -&gt; click <code>Account type and tools -&gt; Switch to professional account</code>.<br />
+                2) Leave <strong>Show category on profile</strong> UNCHECKED, select <strong>Reel creator</strong>, click <code>Done</code> -&gt; select <strong>Creator</strong> -&gt; click <code>Next</code>.<br />
+                3) <strong>On Android App:</strong> <code>Settings and activity -&gt; Data usage and media quality</code> -&gt; <strong>Data Saver: OFF</strong>, <strong>Upload at highest quality: ON</strong>.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why We Do This [100% Platform Rule]</span>Personal accounts cannot view Reel Insights (watch time, sends, reach) or connect to <code>graph.instagram.com</code>. Keeping the category badge OFF preserves vertical space above the fold.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Real UI Fallback</span>If Mac Web glitches on the Creator wizard for a 5-minute-old account, run the exact same switch on Android (<code>Profile -&gt; &#9776; -&gt; Settings and activity -&gt; Account type and tools</code>).</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-5" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-5">Step 1.5 [MAC WEB FOR DP + BIO · ANDROID FOR 1930 LINK] — Complete Your Public Profile</label>
+              <div class="step-desc">
+                1) <strong>On Mac Web:</strong> Click <code>Profile -&gt; Edit profile</code>: upload <code>01-profile-dp-1080x1080.png</code>, paste <strong>Bio (119 / 150)</strong> below, toggle <strong>AI-generated profile: ON</strong>, keep <strong>Show account suggestions on profiles: ON</strong> and <strong>Facebook: Unconnected</strong> -&gt; click <strong>Submit</strong>.<br />
+                2) <strong>On Android App:</strong> Tap <code>Profile -&gt; Edit profile -&gt; Links -&gt; Add external link</code> -&gt; URL <code>https://cybercrime.gov.in</code> &amp; Title <code>Report Fraud: 1930 / cybercrime.gov.in</code>.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why Exact Split Matches 2026 UI</span>Meta moved <code>Name</code> to Accounts Center and locked <code>Links</code> to mobile-only, while Mac Web gives uncompressed 1080x1080 DP upload and 1-click Bio paste.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Official AI-Generated Profile Rule</span>Per <code>help.instagram.com</code>, turning <strong>AI-generated profile: ON</strong> for an illustrated persona (Kabir) causes <strong>zero reach penalty</strong>, whereas leaving it OFF risks losing Reels/Explore eligibility!</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">External Link URL (Android Links)</span><button type="button" class="copy-btn" data-copy="cp-link">Copy URL</button></div>
+                <pre id="cp-link">https://cybercrime.gov.in</pre>
+                <div style="font-size:13px;color:var(--text-dim);margin-top:6px;">Title: <code>Report Fraud: 1930 / cybercrime.gov.in</code></div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">3-Line Hinglish Bio (119 / 150)</span><button type="button" class="copy-btn" data-copy="cp-bio">Copy Bio</button></div>
+                <pre id="cp-bio">Asli Cyber Fraud Cases | 60s Rahasya
+Saboot Dekho - A, B ya C Gaddar Pehchano!
+5-Sec Suraksha Kavach | Cyber Help: 1930</pre>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-6" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-6">Step 1.6 [ON ANDROID APP] — 5-Minute Human Warmup &amp; Close Until Evening</label>
+              <div class="step-desc">Search and follow 5-6 verified Indian cyber/news handles (<code>@cyberdost</code>, <code>@pibindia</code>), watch 6-8 Hindi crime/tech Reels to the end, like 2-3 Reels, and close Instagram until ~7:40 PM IST.</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why We Do This [Cold-Start Seeding]</span>Accounts that register and upload an MP4 within 2 minutes resemble automated repost bots. Normal scrolling ages the session and seeds your Hindi crime/cybersecurity interest graph.</div>
+                <div class="flag-box"><span class="why-tag">Audit / Heuristic Flag</span>Meta publishes no official "warmup timer" — this is a cautious anti-spam heuristic. Do <strong>not</strong> follow 30+ accounts rapidly (triggers real action blocks).</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="phase-card" id="phase2">
+        <div class="badge-row"><span class="tag tag-emerald">COMPLETED &amp; LOCKED · SALMAN + MADHUR NEURAL (56.43S)</span></div>
+        <h2>Phase 2 — Voice Check: COMPLETED &amp; LOCKED on SalmanNeural + MadhurNeural (Optional Own-Voice Kept Below)</h2>
+        <p>Episode 1 voice check is <strong>COMPLETED &amp; LOCKED</strong> on the Hindi-Urdu thriller voice pair (<code>ur-IN-SalmanNeural</code> + <code>hi-IN-MadhurNeural</code>, <code>56.43s</code>) inside <code>case01-part1-shaadi-12lakh-scam.mp4</code> (<code>= 00-case01-part1-publish-ready.mp4</code>). No recording is needed tonight — the 5-line teleprompter script and 1-command render below stay intact in case you ever want an <code>OWN_VOICE</code> take (or run <code>export_teleprompter.py</code> for Seasons 1-2):</p>
+        <div class="tele-line"><span class="tele-time">[00.0s - 11.1s]</span>Subah beti ki <span class="punch">DOLI UTHNE</span> wali thi, magar aadhi raat Sharma Ji ki <span class="punch">CHEEKH GOONJ</span> uthi: Arre, shaadi ke poore <span class="punch">BAARAH LAKH KAHAN GAYE?!</span><span class="breath">//</span>Dekhte hi dekhte shaadi ka khaata <span class="punch">SAAF HO CHUKA</span> tha!</div>
+        <div class="tele-line"><span class="tele-time">[11.1s - 23.1s]</span>Sabse <span class="punch">KHAUFNAAK BAAT</span> thi ki Sharma Ji ka phone shaam se <span class="punch">PUJA GHAR</span> mein <span class="punch">BAND RAKHA</span> tha!<span class="breath">//</span>Na koi anjaan call aaya, na link khula, phir bhi bank ki saari <span class="punch">OTP CALLS</span> kisi <span class="punch">KHUFIYA NUMBER</span> par jaa rahi thin!</div>
+        <div class="tele-line"><span class="tele-time">[23.1s - 33.2s]</span>Jab <span class="punch">CYBER JASOOS</span> ne jaanch ki, toh <span class="punch">GEHRA RAAZ</span> khula.<span class="breath">//</span>Sangeet ke shor mein theek <span class="punch">SAAT BAYAALIS</span> par kisi ne chupke se <span class="punch">STAR IKKIS</span> code lagaya, aur <span class="punch">SABOOT MITA DIYA!</span></div>
+        <div class="tele-line"><span class="tele-time">[33.2s - 40.2s]</span>Aur <span class="punch">HOSH TOH TAB</span> ude: jis <span class="punch">FARZI SIM</span> par <span class="punch">OTP CALLS</span> gayin, woh SIM abhi bhi <span class="punch">SHAADI GHAR</span> ki <span class="punch">CHHAT PAR CHALU</span> tha!</div>
+        <div class="tele-line"><span class="tele-time">[40.2s - 56.2s]</span>Shak ke ghere mein teen apne hain: do minute phone maangkar gayab pados ka <span class="punch">GOLU,</span> jeb mein naye SIM wala <span class="punch">RAMU KAKA,</span> aur chhat par chupke baat karte <span class="punch">PAPPU CHACHU!</span><span class="breath">//</span><span class="punch">ASLI GADDAR</span> kaun hai?<span class="breath">//</span>Neeche <span class="punch">A, B, C</span> comment kijiye, kyunki bas kuch hi <span class="punch">GHANTON BAAD...</span></div>
+        <ul class="step-list">
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-7" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-7">Step 2.1 [COMPLETED &amp; LOCKED] — Confirm SalmanNeural + MadhurNeural Master (Or Optional Own-Voice Override)</label>
+              <div class="step-desc">Locked master ready at <code>renders/launch-pack-case01-part1/case01-part1-shaadi-12lakh-scam.mp4</code> (<code>56.43s</code>). Only if you ever want to record an <code>OWN_VOICE</code> take later, save <code>episodes/audio/s01e01-forgotten-bucket.m4a</code> and run:</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why SalmanNeural + MadhurNeural Won</span>Direct A/B listening confirmed <code>ur-IN-SalmanNeural</code> + <code>hi-IN-MadhurNeural</code> delivers authentic Hindi-Urdu crime suspense and sharp pacing (<code>56.43s</code>), whereas Kokoro ONNX sounded robotic on Hindi drama.</div>
+                <div class="flag-box"><span class="why-tag">Audit / AI Label &amp; Monetization Flag</span>Because <code>edge-tts</code> is non-commercial preview audio, toggle <strong>Add AI label</strong> ON when posting, and switch the exact same <code>ur-IN-SalmanNeural</code> voice to <code>$0</code> free-tier Azure Speech <code>F0</code> (<code>COMMERCIAL_API</code>, 500k chars/mo free) or <code>OWN_VOICE</code> once monetizing.</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">1-Command Own-Voice Master &amp; Render</span><button type="button" class="copy-btn" data-copy="cp-rec-cmd">Copy Command</button></div>
+                <pre id="cp-rec-cmd">.venv_audio/bin/python scripts/prepare_voice.py --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --mode recorded --input episodes/audio/s01e01-forgotten-bucket.m4a --sync-manifest &amp;&amp; python3 scripts/validate_episode.py episodes/s01-asset-classification/s01e01-forgotten-bucket.json --publish-ready &amp;&amp; (cd engine &amp;&amp; npx remotion render src/index.ts s01e01-forgotten-bucket ../renders/s01e01-forgotten-bucket-publish.mp4)</pre>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="phase-card" id="phase3">
+        <div class="badge-row"><span class="tag tag-emerald">$0 OFFICIAL META API · NO FACEBOOK PAGE NEEDED</span></div>
+        <h2>Phase 3 — 5-Minute Meta Graph API Setup (For Live Insights, Poll Tally &amp; Replies)</h2>
+        <ul class="step-list">
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-8" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-8">Step 3.1 — Create Free Business App on developers.facebook.com</label>
+              <div class="step-desc">Open <code>https://developers.facebook.com/apps/</code> -&gt; click <strong>Create App</strong> -&gt; select <strong>Other</strong> -&gt; choose <strong>Business</strong> -&gt; name the app <code>CyberJasoosOps</code>.</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why We Do This [Zero Ban Risk]</span>Unofficial Python scrapers (<code>instagrapi</code>, cookie bots) violate Meta ToS and trigger account bans. Official <code>graph.instagram.com</code> gives free, sanctioned API access (<code>200 calls/hr</code>).</div>
+                <div class="flag-box"><span class="why-tag">Audit / FB Login Privacy Flag</span>While <code>@cyberjasoos</code> needs <strong>no Facebook Page</strong>, logging into <code>developers.facebook.com</code> still requires a Meta/Facebook account. Either create a clean Meta dev login on <code>&lt;DEDICATED_CREATOR_GMAIL&gt;</code> tomorrow OR skip Phase 3 and use <code>poll-tally --comments-file</code> / <code>apply_poll_result.py</code> offline!</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-9" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-9">Step 3.2 — Add Instagram Login &amp; Accept Tester Invite on Phone</label>
+              <div class="step-desc">
+                1) In the App Dashboard, click <strong>Instagram -&gt; Set up -&gt; API setup with Instagram login</strong>.<br />
+                2) Go to <strong>App Roles -&gt; Roles -&gt; Add People -&gt; Instagram Tester</strong> -&gt; enter <code>cyberjasoos</code>.<br />
+                3) On your phone Instagram app, go to <code>Settings and activity -&gt; Website permissions -&gt; Apps and websites -&gt; Tester Invites</code> and tap <strong>Accept</strong>.
+              </div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why We Do This [No FB Page Needed]</span>Meta's "Instagram API with Instagram Login" connects straight to your Creator account without forcing a dummy Facebook Page, and Development Mode works immediately for your own Tester account without App Review.</div>
+                <div class="flag-box"><span class="why-tag">Audit / UI Path Flag</span>The Tester Invite only appears inside the mobile/web Instagram settings menu (<code>Apps and websites -&gt; Tester Invites</code>) — Meta does not email the invite link.</div>
+              </div>
+            </div>
+          </li>
+          <li class="step-item">
+            <input class="step-check" type="checkbox" id="chk-10" />
+            <div style="flex:1">
+              <label class="step-label" for="chk-10">Step 3.3 — Generate Scoped Token &amp; Export in Local Mac Terminal</label>
+              <div class="step-desc">Back in <strong>Instagram -&gt; API setup with Instagram login -&gt; Generate access tokens</strong>, log in as <code>@cyberjasoos</code>, check all 4 scopes (<code>instagram_business_basic</code>, <code>instagram_business_content_publish</code>, <code>instagram_business_manage_comments</code>, <code>instagram_business_manage_insights</code>), and export them locally in your Mac shell:</div>
+              <div class="why-grid">
+                <div class="why-box"><span class="why-tag">Why We Do This [Least-Privilege Security]</span>Grants read/comment/insight access strictly to <code>@cyberjasoos</code> while keeping credentials in volatile shell memory (zero secret files tracked in git).</div>
+                <div class="flag-box"><span class="why-tag">Audit / Expiry Flag</span>Long-lived Instagram tokens expire every <strong>60 days</strong>. Set a calendar reminder to regenerate or refresh every ~50 days.</div>
+              </div>
+              <div class="copy-block">
+                <div class="copy-head"><span class="copy-title">Terminal Session Env Setup</span><button type="button" class="copy-btn" data-copy="cp-env">Copy Export</button></div>
+                <pre id="cp-env">export IG_USER_ID="YOUR_IG_USER_ID"
+export IG_ACCESS_TOKEN="YOUR_60_DAY_IG_TOKEN"</pre>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div id="panel-gates" class="tab-panel" style="display:none" hidden></div>
+  </main>
+
+  <script src="assets/00-personal-ui-primitives.js"></script>
+  <script src="assets/guide.js"></script>
+</body>
+</html>
