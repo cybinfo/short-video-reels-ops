@@ -188,10 +188,10 @@
         </div>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Stage 5: Voter Spotlight Fetch -&gt; Part 2 --poll-json Injection</span><button type="button" class="copy-btn" data-copy="cp-auto-part2">Copy Part 2 CLI</button></div>
-          <pre id="cp-auto-part2"># Fetch @username voter spotlight cards &amp; inject winning/losing % + counterfactuals into Part 2:
-python3 scripts/fetch_voter_spotlight.py --media-id &lt;PART1_MEDIA_ID&gt; --options A,B,C --output renders/part1-poll.json &amp;&amp; python3 scripts/apply_poll_result.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --poll-json renders/part1-poll.json &amp;&amp; python3 scripts/build_episode.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --render-mp4
+          <pre id="cp-auto-part2"># Fetch @username voter spotlight cards &amp; run single-command Part 2 poll injection + voice + word-anchor + MP4 build:
+python3 scripts/fetch_voter_spotlight.py --media-id &lt;PART1_MEDIA_ID&gt; --options A,B,C --output renders/part1-poll.json &amp;&amp; python3 scripts/build_episode.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --poll-json renders/part1-poll.json --ambience-bed --render-mp4
 # Offline manual tally alternative (explicit 1..99 %):
-python3 scripts/apply_poll_result.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --winner C --pct 74</pre>
+python3 scripts/build_episode.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --poll-winner C --poll-pct 74 --ambience-bed --render-mp4</pre>
         </div>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Stage 6: Log Mosseri Metrics &amp; Export Pages</span><button type="button" class="copy-btn" data-copy="cp-auto-learn">Copy Learn CLI</button></div>
@@ -516,7 +516,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
               <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
             </thead>
             <tbody>
-              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py --brief &lt;yaml&gt; --render-mp4 [--mp4-output &lt;mp4&gt;] [--skip-asr-audit]</code></td><td>Single-command closed-loop orchestrator: compiles brief, conforms cast/mattes, heals TTS WPM &amp; DOM defects, audits WAV via offline MLX Whisper ASR, renders MP4, runs Step-7 <code>render_qa_contact_sheet.py</code>, and writes <code>renders/launch-pack-&lt;id&gt;/</code>.</td></tr>
+              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py (--brief &lt;yaml&gt; | --episode &lt;json&gt;) [--poll-json &lt;json&gt;] [--ambience-bed] --render-mp4</code></td><td>Single-command closed-loop orchestrator: compiles brief / injects Part-1 poll JSON, conforms cast/mattes, synthesizes voice + DSP bed, auto-snaps <code>word_anchor_align.py</code>, heals WPM &amp; DOM defects, audits WAV via offline MLX Whisper ASR, renders MP4, runs Step-7 <code>render_qa_contact_sheet.py</code>, and writes <code>renders/launch-pack-&lt;id&gt;/</code>.</td></tr>
               <tr><td><code>self_heal_rules.py</code></td><td>Library imported by <code>build_episode.py</code></td><td>Deterministic TTS rate-adjustment math (Edge rate clamp <code>[+2%, +20%]</code> + <code>[0.10s, 0.26s]</code> micro-pauses), Radio-Noir pause lint, native-script <code>ttsClauses[*].hi</code> repair, DOM overflow repair &amp; launch-copy pack writer.</td></tr>
               <tr><td><code>compile_story_brief.py</code></td><td><code>python3 scripts/compile_story_brief.py --brief &lt;yaml&gt; -o &lt;json&gt;</code></td><td>Compiles a 30-35 line <code>.yaml</code>/<code>.json</code> story brief (<code>crime_case</code> or <code>preset: guide_walkthrough</code>, <code>durationProfile</code>, <code>paceStyle: radio_noir</code>) into a schema-valid <code>EpisodeManifest</code> with <code>pollBranches</code>.</td></tr>
               <tr><td><code>story_brief_templates.py</code></td><td>Library imported by <code>compile_story_brief.py</code></td><td>Builds the 5 <code>detective_*</code> scenes (plus <code>preset: guide_walkthrough</code> labels), transliterates Roman Hinglish TTS clauses via <code>hinglish_tts_translit.py</code> with <code>...</code> Loop Suspension Guard, and expands <code>pollBranches</code> <code>A/B/C</code>.</td></tr>
