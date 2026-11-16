@@ -189,6 +189,21 @@
   } catch (e) {}
 
   loadTheme();
+  Array.prototype.slice.call(document.querySelectorAll("#panel-cli .meta-table td:nth-child(2) code")).forEach(function (codeEl) {
+    if (codeEl.children.length > 0) return;
+    var parts = (codeEl.textContent || "").split(/(\s+)/);
+    codeEl.textContent = "";
+    parts.forEach(function (part) {
+      if (part.indexOf("-") !== -1 && !/^\s+$/.test(part)) {
+        var sp = document.createElement("span");
+        sp.className = "cli-tok";
+        sp.textContent = part;
+        codeEl.appendChild(sp);
+      } else {
+        codeEl.appendChild(document.createTextNode(part));
+      }
+    });
+  });
   setActiveTab(activeTab, false);
   updateProgress();
 
