@@ -89,7 +89,13 @@ html[data-privacy-masked="true"] .amount,
 html[data-privacy-masked="true"] .slider-amount-highlight,
 html[data-privacy-masked="true"] .vault-id-value,
 html[data-privacy-masked="true"] .mk-card-dd.mono,
-html[data-privacy-masked="true"] td.mono {
+html[data-privacy-masked="true"] td.mono,
+html[data-privacy-masked="true"] #tab-overview .mono.fw-700,
+html[data-privacy-masked="true"] #tab-overview .rem-amount,
+html[data-privacy-masked="true"] #tab-overview .own-val,
+html[data-privacy-masked="true"] #tab-overview .owe-val,
+html[data-privacy-masked="true"] #total-assets-badge,
+html[data-privacy-masked="true"] #total-liabilities-badge {
   filter: blur(8px);
   user-select: none;
   transition: filter 120ms ease;
