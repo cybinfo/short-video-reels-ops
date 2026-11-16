@@ -232,12 +232,24 @@ body.is-app-backgrounded main {
     gap: 8px;
   }
 
+  .pui-action-grid > .badge {
+    grid-column: 1 / -1;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    max-width: 100%;
+  }
+
   .pui-action-btn,
   .fo-vault-actions > button,
   #pending-gmail-drawer .action-cluster > button {
     min-height: var(--pui-touch-min, 44px);
-    padding: 8px 12px;
-    font-size: 13px;
+    padding: 8px 10px;
+    font-size: 12.5px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.22;
+    max-width: 100%;
   }
 
   /* Prevent iOS Safari < 16px input auto-zoom on mobile forms & drawers */
