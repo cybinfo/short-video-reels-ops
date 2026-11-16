@@ -4,14 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cyber Jasoos (@cyberjasoos) - 5-Tab Reels Factory &amp; Launch Hub</title>
+  <link rel="manifest" href="assets/manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/00-personal-ui-shared.css" />
   <link rel="stylesheet" href="assets/guide.css" />
+  <script src="assets/00-personal-ui-primitives.js" defer></script>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand-pill">
-        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="pui-brand-mark" data-slot="personal-brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cj-hdr-kl" x1="9" y1="30" x2="20" y2="23" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#9a3412" />
+                <stop offset="52%" stop-color="#f97316" />
+                <stop offset="100%" stop-color="#fde047" />
+              </linearGradient>
+              <linearGradient id="cj-hdr-kr" x1="20" y1="23" x2="31" y2="30" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#fef08a" />
+                <stop offset="42%" stop-color="#f59e0b" />
+                <stop offset="100%" stop-color="#c2410c" />
+              </linearGradient>
+              <linearGradient id="cj-hdr-mll" x1="8" y1="9" x2="20" y2="17" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#312e81" />
+              </linearGradient>
+              <linearGradient id="cj-hdr-mrl" x1="19" y1="15" x2="32" y2="25" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#a855f7" />
+                <stop offset="45%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#4338ca" />
+              </linearGradient>
+              <linearGradient id="cj-hdr-mld" x1="8" y1="9" x2="20" y2="17" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#4f46e5" />
+              </linearGradient>
+              <linearGradient id="cj-hdr-mrd" x1="19" y1="15" x2="32" y2="25" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#d8b4fe" />
+                <stop offset="45%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#4f46e5" />
+              </linearGradient>
+            </defs>
+            <path d="M20 24.45Q19.1 24.45 18.3 25.3L14.6 29.0C12.2 31.4 8.6 30.2 8.6 26.6V25.6" stroke="url(#cj-hdr-kl)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M31.4 25.6V26.6C31.4 30.2 27.8 31.4 25.4 29.0L21.7 25.3Q20.9 24.45 20 24.45" stroke="url(#cj-hdr-kr)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8.6 25.0V27.0M31.4 25.0V27.0" stroke="#7c2d12" stroke-opacity="0.42" stroke-width="5.6" stroke-linecap="round" />
+            <g class="pui-mark-m-light">
+              <path d="M8.6 25.8V13.4C8.6 9.8 12.2 8.6 14.6 11.0L18.3 14.7Q19.1 15.55 20 15.55" stroke="url(#cj-hdr-mll)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20 15.55Q20.9 15.55 21.7 14.7L25.4 11.0C27.8 8.6 31.4 9.8 31.4 13.4V25.8" stroke="url(#cj-hdr-mrl)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <g class="pui-mark-m-dark">
+              <path d="M8.6 25.8V13.4C8.6 9.8 12.2 8.6 14.6 11.0L18.3 14.7Q19.1 15.55 20 15.55" stroke="url(#cj-hdr-mld)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20 15.55Q20.9 15.55 21.7 14.7L25.4 11.0C27.8 8.6 31.4 9.8 31.4 13.4V25.8" stroke="url(#cj-hdr-mrd)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </span>
         <span>CYBER JASOOS (@cyberjasoos)</span>
       </div>
       <div class="nav-links" aria-label="Theme and checklist controls">
@@ -181,27 +230,27 @@
         </div>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Stage 3: Radio-Noir Voice DSP, Word Anchors &amp; Self-Heal Build</span><button type="button" class="copy-btn" data-copy="cp-auto-build">Copy Build CLI</button></div>
-          <pre id="cp-auto-build">.venv_audio/bin/python scripts/prepare_voice.py --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --mode sarvam --ambience-bed --fallback-zero-ai --sync-manifest &amp;&amp; python3 scripts/word_anchor_align.py --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json &amp;&amp; python3 scripts/build_episode.py --brief episodes/briefs/case02-part1-shaadi-qr.yaml --render-mp4</pre>
+          <pre id="cp-auto-build">.venv_audio/bin/python scripts/prepare_voice.py --episode episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json --mode sarvam --ambience-bed --fallback-zero-ai --sync-manifest &amp;&amp; python3 scripts/word_anchor_align.py --episode episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json &amp;&amp; python3 scripts/build_episode.py --brief episodes/briefs/case02-part1-shaadi-qr.yaml --render-mp4</pre>
         </div>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Stage 4: Step-7 12-Frame Contact Sheet, IG Grid &amp; Studio UAT</span><button type="button" class="copy-btn" data-copy="cp-auto-qa">Copy QA CLI</button></div>
-          <pre id="cp-auto-qa">.venv_audio/bin/python scripts/render_qa_contact_sheet.py --video renders/s01e01-forgotten-bucket.mp4 --manifest episodes/s01-asset-classification/s01e01-forgotten-bucket.json --fail-on-black &amp;&amp; .venv_audio/bin/python scripts/render_instagram_ui_mockup.py --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --multi-shot-grid --output renders/s01e01-ig-grid.png &amp;&amp; (cd engine &amp;&amp; npm run typecheck &amp;&amp; npm run uat:dom)</pre>
+          <pre id="cp-auto-qa">.venv_audio/bin/python scripts/render_qa_contact_sheet.py --video renders/publish/case01-part1-shaadi-12lakh/01-reel-video.mp4 --manifest episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json --fail-on-black &amp;&amp; .venv_audio/bin/python scripts/render_instagram_ui_mockup.py --episode episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json --multi-shot-grid --output renders/qa/case01-part1-ig-grid.png &amp;&amp; (cd engine &amp;&amp; npm run typecheck &amp;&amp; npm run uat:dom)</pre>
         </div>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Stage 5: Voter Spotlight Fetch &rarr; Part 2 --poll-json Injection</span><button type="button" class="copy-btn" data-copy="cp-auto-part2">Copy Part 2 CLI</button></div>
           <pre id="cp-auto-part2"># Fetch @username voter spotlight cards &amp; run single-command Part 2 poll injection + voice + word-anchor + MP4 build:
-python3 scripts/fetch_voter_spotlight.py --media-id &lt;PART1_MEDIA_ID&gt; --options A,B,C --output renders/part1-poll.json &amp;&amp; python3 scripts/build_episode.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --poll-json renders/part1-poll.json --ambience-bed --render-mp4
+python3 scripts/fetch_voter_spotlight.py --media-id &lt;PART1_MEDIA_ID&gt; --options A,B,C --output renders/part1-poll.json &amp;&amp; python3 scripts/build_episode.py --episode episodes/case01-shaadi-12lakh/case01-part2-asli-gaddar.json --poll-json renders/part1-poll.json --ambience-bed --render-mp4
 # Offline manual tally alternative (explicit 1..99 %):
-python3 scripts/build_episode.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --poll-winner C --poll-pct 74 --ambience-bed --render-mp4</pre>
+python3 scripts/build_episode.py --episode episodes/case01-shaadi-12lakh/case01-part2-asli-gaddar.json --poll-winner C --poll-pct 74 --ambience-bed --render-mp4</pre>
         </div>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Stage 6: Log Mosseri Metrics &amp; Export Pages</span><button type="button" class="copy-btn" data-copy="cp-auto-learn">Copy Learn CLI</button></div>
-          <pre id="cp-auto-learn">python3 scripts/instagram_ops.py record-metrics --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --media-id &lt;PART1_MEDIA_ID&gt; &amp;&amp; python3 scripts/instagram_ops.py learn &amp;&amp; python3 scripts/export_sanitized_pages.py --out-dir renders/pages-bundle</pre>
+          <pre id="cp-auto-learn">python3 scripts/instagram_ops.py record-metrics --episode episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json --media-id &lt;PART1_MEDIA_ID&gt; &amp;&amp; python3 scripts/instagram_ops.py learn &amp;&amp; python3 scripts/export_sanitized_pages.py --out-dir renders/pages-bundle</pre>
         </div>
         <h3>Starter YAML Story Brief Templates (Part 1 Whodunit + Part 2 Poll-Reveal with pollBranches)</h3>
         <div class="copy-block standalone-copy">
           <div class="copy-head"><span class="copy-title">Part 1 Whodunit Brief (.yaml)</span><button type="button" class="copy-btn" data-copy="cp-brief-tpl">Copy Part 1 YAML</button></div>
-          <pre id="cp-brief-tpl">id: s02e01-shaadi-qr-trap
+          <pre id="cp-brief-tpl">id: case02-part1-shaadi-qr
 season: 2
 episodeNumber: 1
 part: 1
@@ -290,7 +339,7 @@ suspects:
       <section class="phase-card" id="assets">
         <div class="badge-row"><span class="tag tag-gold">TAB 2 · READY ON MAC DISK · ZERO VIDEO TRANSFER NEEDED</span></div>
         <h2>2. Tonight's Launch Pack &amp; Brand Kit (Case #01 · 7:40 PM IST)</h2>
-        <p>Folder on Mac: <code>renders/launch-pack-case01-part1/</code> · Upload <code>case01-part1-shaadi-12lakh-scam.mp4</code> (identical V12 Radio-Noir tight master: <code>00-case01-part1-publish-ready.mp4</code>, <code>55.99s</code>, <code>@CYBERJASOOS</code> end-card), <code>01-profile-dp-1080x1080.png</code>, and <code>02-case01-part1-reel-cover-1080x1920.png</code> straight from Mac <code>instagram.com</code>! (Only drop the 4 tiny 180 KB <code>03..06-highlight-*.png</code> icons to Android if adding custom Highlight covers.)</p>
+        <p>Folder on Mac: <code>renders/publish/case01-part1-shaadi-12lakh/</code> &middot; Upload <code>01-reel-video.mp4</code> (commercial Sarvam <code>bulbul:v3</code> Radio-Noir master, <code>65.19s</code>, <code>@CYBERJASOOS</code> end-card), <code>renders/publish/brand-kit/01-profile-dp-1080x1080.png</code>, and <code>02-reel-cover.png</code> straight from Mac <code>instagram.com</code>! (Only drop the 4 tiny 180 KB <code>renders/publish/brand-kit/02..05-highlight-*.png</code> icons to Android if adding custom Highlight covers.)</p>
         <div class="asset-grid">
           <div class="asset-card">
             <img src="assets/profile-dp.png" alt="Cyber Jasoos 1080x1080 HD Profile Picture" loading="lazy" />
@@ -339,9 +388,9 @@ suspects:
             <div style="flex:1">
               <label class="step-label" for="chk-11">Step 4.1 [ON MAC WEB] (7:40 PM IST) — Exact 3-Modal Upload: Select MP4 &rarr; Crop 9:16 &rarr; Cover Photo</label>
               <div class="step-desc">
-                1) <strong>Modal 1 (Select file):</strong> On Mac <code>instagram.com</code>, click <code>+ Create (left sidebar) &rarr; Post &rarr; Select from computer</code> &rarr; pick <code>renders/launch-pack-case01-part1/case01-part1-shaadi-12lakh-scam.mp4</code> (or <code>00-case01-part1-publish-ready.mp4</code>).<br />
+                1) <strong>Modal 1 (Select file):</strong> On Mac <code>instagram.com</code>, click <code>+ Create (left sidebar) &rarr; Post &rarr; Select from computer</code> &rarr; pick <code>renders/publish/case01-part1-shaadi-12lakh/01-reel-video.mp4</code>.<br />
                 2) <strong>Modal 2 (Crop — DO NOT SKIP):</strong> Click the <strong>Crop icon (bottom-left corner of preview)</strong> &rarr; select <strong>9:16</strong> (or <strong>Original</strong>) &rarr; click top-right <code>Next</code>.<br />
-                3) <strong>Modal 3 (Edit — Cover photo):</strong> Under <strong>Cover photo</strong>, click <code>Select from computer</code> &rarr; pick <code>brand-and-cover/02-case01-part1-reel-cover-1080x1920.png</code> &rarr; click top-right <code>Next</code>.
+                3) <strong>Modal 3 (Edit — Cover photo):</strong> Under <strong>Cover photo</strong>, click <code>Select from computer</code> &rarr; pick <code>renders/publish/case01-part1-shaadi-12lakh/02-reel-cover.png</code> &rarr; click top-right <code>Next</code>.
               </div>
               <div class="why-grid">
                 <div class="why-box"><span class="why-tag">Why Mac Web Upload Wins Here</span>Feeds Instagram the locked <code>55.99s</code> V12 Radio-Noir 1080x1920 H.264 stereo master directly from disk with zero phone transfer, zero Data Saver downscaling, and -14.6 LUFS stereo foley/narration mixed inside!</div>
@@ -453,7 +502,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
               </div>
               <div class="copy-block">
                 <div class="copy-head"><span class="copy-title">Interactive y/N Reply Dispatcher</span><button type="button" class="copy-btn" data-copy="cp-rep-cli">Copy Command</button></div>
-                <pre id="cp-rep-cli">python3 scripts/instagram_ops.py reply-comments --media-id &lt;PART1_MEDIA_ID&gt; --part1 episodes/s01-asset-classification/s01e01-forgotten-bucket.json --approve</pre>
+                <pre id="cp-rep-cli">python3 scripts/instagram_ops.py reply-comments --media-id &lt;PART1_MEDIA_ID&gt; --part1 episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json --approve</pre>
               </div>
             </div>
           </li>
@@ -468,21 +517,21 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
               </div>
               <div class="copy-block">
                 <div class="copy-head"><span class="copy-title">Voter Spotlight Fetch &rarr; Part 2 Injection</span><button type="button" class="copy-btn" data-copy="cp-tally">Copy Command</button></div>
-                <pre id="cp-tally">python3 scripts/fetch_voter_spotlight.py --media-id &lt;PART1_MEDIA_ID&gt; --options A,B,C --output renders/part1-poll.json &amp;&amp; python3 scripts/apply_poll_result.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --poll-json renders/part1-poll.json</pre>
+                <pre id="cp-tally">python3 scripts/fetch_voter_spotlight.py --media-id &lt;PART1_MEDIA_ID&gt; --options A,B,C --output renders/part1-poll.json &amp;&amp; python3 scripts/apply_poll_result.py --episode episodes/case01-shaadi-12lakh/case01-part2-asli-gaddar.json --poll-json renders/part1-poll.json</pre>
               </div>
             </div>
           </li>
           <li class="step-item">
             <input class="step-check" type="checkbox" id="chk-19" />
             <div style="flex:1">
-              <label class="step-label" for="chk-19">Step 5.4 — Render Part 2 Finale &amp; Updated Cover (Matching SalmanNeural + MadhurNeural Voice)</label>
+              <label class="step-label" for="chk-19">Step 5.4 — Render Part 2 Finale &amp; Updated Cover (Commercial Sarvam bulbul:v3 Voice)</label>
               <div class="why-grid">
                 <div class="why-box"><span class="why-tag">Why Re-Generate Cover + Audio Together</span>Because Part 2's opening line AND cover headline (<code>"XX% KA SHAK GALAT NIKLA!"</code>) depend on the live Part 1 winning branch, both must be regenerated after Step 5.3.</div>
-                <div class="flag-box"><span class="why-tag">Audit / Voice Consistency Flag</span><code>--mode edge</code> keeps the exact same <code>SalmanNeural + MadhurNeural</code> voices on Part 2 as Part 1 so Kabir's voice stays 100% consistent across the case (if you recorded <code>OWN_VOICE</code> on Part 1, pass <code>--mode recorded</code> instead).</div>
+                <div class="flag-box"><span class="why-tag">Audit / Voice Consistency Flag</span><code>--voice-mode sarvam --ambience-bed</code> keeps the exact same Kabir + Chachu voices on Part 2 as Part 1 so narration stays 100% consistent across the case (if you recorded <code>OWN_VOICE</code> on Part 1, pass <code>--voice-mode recorded</code> instead).</div>
               </div>
               <div class="copy-block">
                 <div class="copy-head"><span class="copy-title">Part 2 Voice, Gate, Cover &amp; Render</span><button type="button" class="copy-btn" data-copy="cp-p2">Copy Command</button></div>
-                <pre id="cp-p2">.venv_audio/bin/python scripts/prepare_voice.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --mode edge --sync-manifest &amp;&amp; python3 scripts/validate_episode.py episodes/s01-asset-classification/s01e02-crown-jewels.json &amp;&amp; .venv_audio/bin/python scripts/generate_ig_brand_kit.py --episode episodes/s01-asset-classification/s01e02-crown-jewels.json --frame engine/public/characters/pappu-chachu.png --output renders/s01e02-reel-cover.png &amp;&amp; (cd engine &amp;&amp; npx remotion render src/index.ts s01e02-crown-jewels ../renders/s01e02-crown-jewels.mp4)</pre>
+                <pre id="cp-p2">.venv_audio/bin/python scripts/build_episode.py --episode episodes/case01-shaadi-12lakh/case01-part2-asli-gaddar.json --voice-mode sarvam --ambience-bed --render-mp4</pre>
               </div>
             </div>
           </li>
@@ -490,7 +539,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
             <input class="step-check" type="checkbox" id="chk-20" />
             <div style="flex:1">
               <label class="step-label" for="chk-20">Step 5.5 [MAC WEB &rarr; ANDROID PIN] — Upload Part 2 on Mac Web (Original 9:16!) &amp; Cross-Link Part 1</label>
-              <div class="step-desc">Upload <code>renders/s01e02-crown-jewels.mp4</code> + updated <code>renders/s01e02-reel-cover.png</code> on Mac <code>instagram.com</code> (set Crop = <strong>Original 9:16</strong>!), post the Case #02 mystery vote comment (<code>A: Hotel Wi-Fi | B: Smart Printer | C: Shagun QR</code>) on Mac, then <strong>long-press &rarr; Pin</strong> + enable <strong>Add AI label</strong> + save <code>5s Kavach</code> / <code>1930</code> Highlights on Android.</div>
+              <div class="step-desc">Upload <code>renders/publish/case01-part2-asli-gaddar/01-reel-video.mp4</code> + updated <code>renders/publish/case01-part2-asli-gaddar/02-reel-cover.png</code> on Mac <code>instagram.com</code> (set Crop = <strong>Original 9:16</strong>!), post the Case #02 mystery vote comment (<code>A: Hotel Wi-Fi | B: Smart Printer | C: Shagun QR</code>) on Mac, then <strong>long-press &rarr; Pin</strong> + enable <strong>Add AI label</strong> + save <code>5s Kavach</code> / <code>1930</code> Highlights on Android.</div>
               <div class="why-grid">
                 <div class="why-box"><span class="why-tag">Why Cross-Link Part 1 &harr; Part 2</span>Reply to your own Pinned Comment on Part 1 saying "Part 2 Finale is LIVE on profile!" — notifying Part 1 commenters and funneling repeat views straight into Part 2!</div>
                 <div class="flag-box"><span class="why-tag">Audit / Highlight Order Flag</span>We wait until Part 2 to create the <code>5s Kavach</code> and <code>1930 Help</code> Highlights so they don't spoil the <code>*#21#</code> call-forwarding twist while Part 1 voters are still guessing!</div>
@@ -517,7 +566,7 @@ Saboot milaiye aur A, B, ya C comment kijiye - Part 2 mein teeno raaz khulenge!<
               <tr><th>Tool / Script</th><th>Primary CLI Invocation</th><th>What It Does &amp; Guardrail Enforced</th></tr>
             </thead>
             <tbody>
-              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py (--brief &lt;yaml&gt; | --episode &lt;json&gt;) [--poll-json &lt;json&gt;] [--ambience-bed] --render-mp4</code></td><td>Single-command closed-loop orchestrator: compiles brief / injects Part-1 poll JSON, conforms cast/mattes, synthesizes voice + DSP bed, auto-snaps <code>word_anchor_align.py</code>, heals WPM &amp; DOM defects, audits WAV via offline MLX Whisper ASR, renders MP4, runs Step-7 <code>render_qa_contact_sheet.py</code>, and writes <code>renders/launch-pack-&lt;id&gt;/</code>.</td></tr>
+              <tr><td><code>build_episode.py</code></td><td><code>python3 scripts/build_episode.py (--brief &lt;yaml&gt; | --episode &lt;json&gt;) [--poll-json &lt;json&gt;] [--ambience-bed] --render-mp4</code></td><td>Single-command closed-loop orchestrator: compiles brief / injects Part-1 poll JSON, conforms cast/mattes, synthesizes voice + DSP bed, auto-snaps <code>word_anchor_align.py</code>, heals WPM &amp; DOM defects, audits WAV via offline MLX Whisper ASR, renders MP4, runs Step-7 <code>render_qa_contact_sheet.py</code>, and writes <code>renders/publish/&lt;id&gt;/</code> (<code>01..04</code> standardized files).</td></tr>
               <tr><td><code>self_heal_rules.py</code></td><td>Library imported by <code>build_episode.py</code></td><td>Deterministic TTS rate-adjustment math (Edge rate clamp <code>[+2%, +20%]</code> + <code>[0.10s, 0.26s]</code> micro-pauses), Radio-Noir pause lint, native-script <code>ttsClauses[*].hi</code> repair, DOM overflow repair &amp; launch-copy pack writer.</td></tr>
               <tr><td><code>compile_story_brief.py</code></td><td><code>python3 scripts/compile_story_brief.py --brief &lt;yaml&gt; -o &lt;json&gt;</code></td><td>Compiles a 30-35 line <code>.yaml</code>/<code>.json</code> story brief (<code>crime_case</code> or <code>preset: guide_walkthrough</code>, <code>durationProfile</code>, <code>paceStyle: radio_noir</code>) into a schema-valid <code>EpisodeManifest</code> with <code>pollBranches</code>.</td></tr>
               <tr><td><code>story_brief_templates.py</code></td><td>Library imported by <code>compile_story_brief.py</code></td><td>Builds the 5 <code>detective_*</code> scenes (plus <code>preset: guide_walkthrough</code> labels), transliterates Roman Hinglish TTS clauses via <code>hinglish_tts_translit.py</code> with <code>...</code> Loop Suspension Guard, and expands <code>pollBranches</code> <code>A/B/C</code>.</td></tr>
@@ -786,15 +835,15 @@ Saboot Dekho - A, B ya C Gaddar Pehchano!
           <li class="step-item">
             <input class="step-check" type="checkbox" id="chk-7" />
             <div style="flex:1">
-              <label class="step-label" for="chk-7">Step 2.1 [COMPLETED &amp; LOCKED] — Confirm V12 SalmanNeural + MadhurNeural Master ($0 Azure F0 or Own-Voice Ready)</label>
-              <div class="step-desc">Locked V12 Radio-Noir tight master ready at <code>renders/launch-pack-case01-part1/case01-part1-shaadi-12lakh-scam.mp4</code> (<code>55.99s</code>, <code>7.6%</code> cinema clutter, <code>2.24s</code> spoken 12L hook). Export <code>AZURE_SPEECH_KEY</code> ($0 F0 Free Tier) for <code>COMMERCIAL_API</code> or save <code>episodes/audio/s01e01-forgotten-bucket.m4a</code> for <code>OWN_VOICE</code>:</div>
+              <label class="step-label" for="chk-7">Step 2.1 [COMPLETED &amp; LOCKED] — Confirm Commercial Sarvam bulbul:v3 Radio-Noir Master (or Own-Voice Take)</label>
+              <div class="step-desc">Locked V12 commercial Sarvam <code>bulbul:v3</code> Radio-Noir master ready at <code>renders/publish/case01-part1-shaadi-12lakh/01-reel-video.mp4</code> (<code>65.19s</code>, <code>9.97/10</code>, <code>-14.6 LUFS</code>). Or save <code>episodes/audio/case01-part1-shaadi-12lakh.m4a</code> for an <code>OWN_VOICE</code> take:</div>
               <div class="why-grid">
-                <div class="why-box"><span class="why-tag">Why SalmanNeural + MadhurNeural Won</span>Direct A/B listening confirmed <code>ur-IN-SalmanNeural</code> + <code>hi-IN-MadhurNeural</code> with compound <code>shock_vacuum</code> + <code>-31dB</code> stereo suspense pauses delivers authentic Hindi-Urdu crime suspense (<code>55.99s</code>), whereas Kokoro ONNX sounded robotic on Hindi drama.</div>
-                <div class="flag-box"><span class="why-tag">Audit / AI Label &amp; Monetization Flag</span>Because <code>edge-tts</code> is non-commercial preview audio, toggle <strong>Add AI label</strong> ON when posting, and run <code>--voice-mode azure</code> with <code>AZURE_SPEECH_KEY</code> ($0 Azure Speech <code>F0</code>, <code>COMMERCIAL_API</code>, 500k chars/mo free) or <code>OWN_VOICE</code> once monetizing.</div>
+                <div class="why-box"><span class="why-tag">Why Sarvam bulbul:v3 + Radio-Noir DSP Won</span>Expressive Indian voice acting (<code>kabir</code> + <code>ashutosh</code> / <code>ratan</code>) paired with <code>-81dBFS</code> <code>shock_vacuum</code> and <code>-28.5dB</code> sidechained suspense pauses delivers authentic Hindi-Urdu crime suspense with full <code>COMMERCIAL_API</code> licensing.</div>
+                <div class="flag-box"><span class="why-tag">Audit / AI Label Disclosure Flag</span>Toggle <strong>Add AI label</strong> ON when posting synthetic neural audio or AI-generated visual plates on Instagram Reels.</div>
               </div>
               <div class="copy-block">
                 <div class="copy-head"><span class="copy-title">1-Command Own-Voice Master &amp; Render</span><button type="button" class="copy-btn" data-copy="cp-rec-cmd">Copy Command</button></div>
-                <pre id="cp-rec-cmd">.venv_audio/bin/python scripts/prepare_voice.py --episode episodes/s01-asset-classification/s01e01-forgotten-bucket.json --mode recorded --input episodes/audio/s01e01-forgotten-bucket.m4a --sync-manifest &amp;&amp; python3 scripts/validate_episode.py episodes/s01-asset-classification/s01e01-forgotten-bucket.json --publish-ready &amp;&amp; (cd engine &amp;&amp; npx remotion render src/index.ts s01e01-forgotten-bucket ../renders/s01e01-forgotten-bucket-publish.mp4)</pre>
+                <pre id="cp-rec-cmd">.venv_audio/bin/python scripts/build_episode.py --episode episodes/case01-shaadi-12lakh/case01-part1-shaadi-12lakh.json --voice-mode recorded --voice-input episodes/audio/case01-part1-shaadi-12lakh.m4a --ambience-bed --render-mp4</pre>
               </div>
             </div>
           </li>
@@ -853,7 +902,6 @@ export IG_ACCESS_TOKEN="YOUR_60_DAY_IG_TOKEN"</pre>
     <div id="panel-gates" class="tab-panel" style="display:none" hidden></div>
   </main>
 
-  <script src="assets/00-personal-ui-primitives.js"></script>
   <script src="assets/guide.js"></script>
 </body>
 </html>

@@ -375,3 +375,97 @@ body:not([data-show-workflows="true"]) div:has(> [data-slot="dialog-workflow-ste
   min-height: 38px;
   padding: 6px 14px;
 }
+
+.pui-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.pui-brand-mark svg {
+  display: block;
+  overflow: visible;
+}
+
+/* Automatic Light/Dark 3D M-plane adaptation when both light & dark gradients exist */
+.pui-brand-mark .pui-mark-m-dark {
+  display: none;
+}
+
+html[data-theme="dark"] .pui-brand-mark .pui-mark-m-light,
+html.dark .pui-brand-mark .pui-mark-m-light,
+body[data-palette="midnight"] .pui-brand-mark .pui-mark-m-light,
+body[data-palette="obsidian"] .pui-brand-mark .pui-mark-m-light {
+  display: none;
+}
+
+html[data-theme="dark"] .pui-brand-mark .pui-mark-m-dark,
+html.dark .pui-brand-mark .pui-mark-m-dark,
+body[data-palette="midnight"] .pui-brand-mark .pui-mark-m-dark,
+body[data-palette="obsidian"] .pui-brand-mark .pui-mark-m-dark {
+  display: inline;
+}
+
+.pui-loader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  vertical-align: middle;
+}
+
+.pui-loader--stacked {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pui-loader svg {
+  display: block;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.pui-loader-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+@keyframes pui-comet-indigo {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+@keyframes pui-comet-amber {
+  from {
+    stroke-dashoffset: -50;
+  }
+  to {
+    stroke-dashoffset: -150;
+  }
+}
+
+.pui-loader-comet-indigo {
+  animation: pui-comet-indigo 1.55s linear infinite;
+  will-change: stroke-dashoffset;
+}
+
+.pui-loader-comet-amber {
+  animation: pui-comet-amber 1.55s linear infinite;
+  will-change: stroke-dashoffset;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pui-loader-comet-indigo,
+  .pui-loader-comet-amber {
+    animation: none !important;
+    stroke-dasharray: none !important;
+    opacity: 0.92;
+  }
+}

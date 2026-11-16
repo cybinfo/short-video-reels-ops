@@ -1,0 +1,34 @@
+<svg width="512" height="512" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mk-bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#09090b" />
+      <stop offset="100%" stop-color="#18181b" />
+    </linearGradient>
+    <linearGradient id="mk-kl" x1="9" y1="30" x2="20" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9a3412" />
+      <stop offset="52%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fde047" />
+    </linearGradient>
+    <linearGradient id="mk-kr" x1="20" y1="23" x2="31" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="42%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="mk-ml" x1="8" y1="9" x2="20" y2="17" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="mk-mr" x1="19" y1="15" x2="32" y2="25" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#d8b4fe" />
+      <stop offset="45%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="url(#mk-bg)" />
+  <rect x="2.5" y="2.5" width="35" height="35" rx="9.5" stroke="#ffffff" stroke-opacity="0.14" />
+  <path d="M20 24.45Q19.1 24.45 18.3 25.3L14.6 29.0C12.2 31.4 8.6 30.2 8.6 26.6V25.6" stroke="url(#mk-kl)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M31.4 25.6V26.6C31.4 30.2 27.8 31.4 25.4 29.0L21.7 25.3Q20.9 24.45 20 24.45" stroke="url(#mk-kr)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M8.6 25.0V27.0M31.4 25.0V27.0" stroke="#7c2d12" stroke-opacity="0.45" stroke-width="5.6" stroke-linecap="round" />
+  <path d="M8.6 25.8V13.4C8.6 9.8 12.2 8.6 14.6 11.0L18.3 14.7Q19.1 15.55 20 15.55" stroke="url(#mk-ml)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M20 15.55Q20.9 15.55 21.7 14.7L25.4 11.0C27.8 8.6 31.4 9.8 31.4 13.4V25.8" stroke="url(#mk-mr)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
